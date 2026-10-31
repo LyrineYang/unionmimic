@@ -1,0 +1,66 @@
+{
+  "cuda": {
+    "passed": true,
+    "torch": "2.1.0+cu118",
+    "cuda_runtime": "11.8",
+    "gpu": "Tesla V100-SXM2-32GB",
+    "capability": [
+      7,
+      0
+    ],
+    "gradient_norm": 8.605047225952148,
+    "returncode": 0
+  },
+  "gym": {
+    "passed": true,
+    "physics_steps": 100,
+    "minimum_box_z": 0.0768318697810173,
+    "maximum_contact_force": 636.060791015625,
+    "depth_shape": [
+      72,
+      96
+    ],
+    "valid_depth_pixels": 6048,
+    "depth_device": "cuda:0",
+    "returncode": 0
+  },
+  "policy": {
+    "passed": true,
+    "checkpoint_sha256": "3215205fe1fad48e97f5745ab90bb2377d53012c1a0d2634edf186699ccab7f7",
+    "seed": 42,
+    "control_steps": 200,
+    "num_envs": 1,
+    "object": "set_obj6_block_corner",
+    "reward_sum": 446.49267315957695,
+    "reward_mean": 2.232463365797885,
+    "episode_terminations": 0,
+    "explicit_reset_passed": true,
+    "max_joint_displacement": 1.5707601308822632,
+    "max_fingertip_force": 39.66432189941406,
+    "contact_switches": 232,
+    "depth_shapes": [
+      [
+        1,
+        72,
+        96,
+        1
+      ]
+    ],
+    "elapsed_seconds": 36.12881339713931,
+    "peak_torch_memory_bytes": 180174336,
+    "parameters_unchanged": true,
+    "parameter_sha256": {
+      "policy": "73e10b6e625ff59e2805ad565378f2d725da3b2d8b19bb9f0ee4bdba223fbff0",
+      "world_model": "15ce4ddd118784a4417ece7127cedc47f992c3916efa03a564a0fdcc12e03c38"
+    },
+    "returncode": 0
+  },
+  "passed": true,
+  "provenance": {
+    "completed_at_utc": "2026-10-31T17:38:52.027115+00:00",
+    "python": "3.8.20",
+    "verifier_sha256": "2e8a1b22e5c6efd8c2de706a9b585fc3fbedb50382d3feaade2b83c993d64073",
+    "upstream_revision": "a1e825acaf50ade298e30b0b13c6671627af3a1e",
+    "upstream_status": ""
+  }
+}

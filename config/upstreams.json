@@ -1,0 +1,18 @@
+{
+  "wm_craftnet": {
+    "url": "https://github.com/sharpa-robotics/WM-Craftnet.git",
+    "revision": "a1e825acaf50ade298e30b0b13c6671627af3a1e",
+    "directory": "work/upstreams/WM-Craftnet"
+  },
+  "sm_reference": {
+    "url": "https://github.com/Msornerrrr/in-hand-rotation-mjlab.git",
+    "revision": "0ab03eb2244b4a1a020d94ef38a4823bb9e15ba0",
+    "role": "Reference learner code only; do not install its MuJoCo stack."
+  },
+  "checkpoint": {
+    "url": "https://huggingface.co/SharpaIT/WM-Craftnet/resolve/main/wm_craftnet_set_z.pth",
+    "directory": "work/checkpoints",
+    "heads": ["prop", "depth"],
+    "sha256": "3215205fe1fad48e97f5745ab90bb2377d53012c1a0d2634edf186699ccab7f7"
+  }
+}

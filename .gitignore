@@ -1,0 +1,15 @@
+.venv/
+work/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.agents/
+.codex/
+.aws/
+*.pth
+*.pt
+*.h5
+*.hdf5
+core
+core.*
+config/network.local.env
