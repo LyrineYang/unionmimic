@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">UnionMimic — From sensing to learning.</title>
+  <desc id="desc">An editorial cover with an abstract contact and prediction study, on warm ivory.</desc>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#d8d5ca"/></pattern>
+    <clipPath id="crop"><rect x="800" width="480" height="440"/></clipPath>
+  </defs>
+  <rect width="1280" height="440" fill="#f4f2ea"/>
+  <path d="M56 42v23a17 17 0 0 0 34 0V42m-17 0v23a17 17 0 0 0 34 0V42" fill="none" stroke="#242720" stroke-width="3"/>
+  <text x="125" y="72" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="-1" fill="#242720">unionmimic</text>
+  <text x="57" y="142" font-family="monospace" font-size="13" letter-spacing="2" fill="#706d62">AN EXPERIMENT IN EMBODIED LEARNING</text>
+  <text x="53" y="218" font-family="Georgia, 'Times New Roman', serif" font-size="64" letter-spacing="-2" fill="#242720">From sensing</text>
+  <text x="53" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="64" letter-spacing="-2" fill="#242720">to learning.</text>
+  <text x="57" y="342" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#625f54">Visuotactile world models for dexterous control.</text>
+  <path d="M57 387H730" stroke="#cecabe"/>
+  <text x="57" y="414" font-family="monospace" font-size="12" letter-spacing="1" fill="#706d62">OBSERVE → IMAGINE → IMPROVE</text>
+  <text x="730" y="414" text-anchor="end" font-family="monospace" font-size="12" fill="#706d62">RESEARCH PREVIEW / 2026</text>
+  <g clip-path="url(#crop)">
+    <rect x="800" width="480" height="440" fill="#e8e7db"/>
+    <rect x="800" width="480" height="440" fill="url(#grid)"/>
+    <g fill="none" stroke="#a8ada0" stroke-width="1">
+      <ellipse cx="1050" cy="224" rx="182" ry="108" transform="rotate(-35 1050 224)"/>
+      <ellipse cx="1050" cy="224" rx="182" ry="108" transform="rotate(35 1050 224)"/>
+      <circle cx="1050" cy="224" r="156" stroke-dasharray="3 7"/>
+    </g>
+    <path d="m1050 135 80 45v91l-80 46-79-46v-91Z" fill="#bf7155" stroke="#804c3d" stroke-width="1.5"/>
+    <path d="m971 180 79 46 80-46m-80 46v91" stroke="#f0c5aa" stroke-width="1.5" fill="none"/>
+    <path d="M861 418V270q0-24 22-24h15v-58q0-21 18-21t18 21v62m0-37v-81q0-20 18-20t18 20v83m0-56V96q0-19 18-19t18 19v47M1134 414V295q0-16 14-28l32-29q16-15 29-1t-2 30l-31 31v116" fill="none" stroke="#343e33" stroke-width="4" stroke-linecap="round"/>
+    <g fill="#f4f2ea" stroke="#343e33" stroke-width="2"><circle cx="934" cy="250" r="6"/><circle cx="970" cy="215" r="6"/><circle cx="1006" cy="143" r="6"/><circle cx="1180" cy="238" r="6"/></g>
+    <path d="M1160 118q51 36 54 91" fill="none" stroke="#343e33" stroke-width="2"/>
+    <path d="m1208 200 6 12 6-12" fill="none" stroke="#343e33" stroke-width="2"/>
+    <text x="824" y="34" font-family="monospace" font-size="11" letter-spacing="1" fill="#625f54">STUDY 01 / CONTACT &amp; PREDICTION</text>
+  </g>
+</svg>

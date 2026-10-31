@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="590" viewBox="0 0 560 590" role="img" aria-labelledby="title desc">
+  <title id="title">Contact and prediction — a conceptual study</title>
+  <desc id="desc">Articulated fingers surround a terracotta object. Fine orbit lines suggest possible motion. This is an illustration, not an experiment.</desc>
+  <defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".75" fill="#bfc3b3"/></pattern><pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(25)"><path d="M0 0V7" stroke="#9b513b" stroke-width=".6"/></pattern></defs>
+  <rect width="560" height="590" rx="3" fill="#e5e8db"/>
+  <rect x="20" y="20" width="520" height="550" fill="url(#dots)"/>
+  <path d="M30 30h26M30 30v26M530 30h-26M530 30v26M30 560h26M30 560v-26M530 560h-26M530 560v-26" stroke="#929a84" fill="none"/>
+  <g fill="none" stroke="#a6ae99" stroke-width="1">
+    <circle cx="282" cy="268" r="170" stroke-dasharray="3 6"/>
+    <ellipse cx="282" cy="268" rx="208" ry="119" transform="rotate(-36 282 268)"/>
+    <ellipse cx="282" cy="268" rx="208" ry="119" transform="rotate(36 282 268)"/>
+    <path d="M282 69v392M83 268h398" stroke-dasharray="2 6"/>
+  </g>
+  <g stroke="#7f4936" stroke-width="1.5" stroke-linejoin="round"><path d="m281 172 91 51v104l-91 52-89-52V223Z" fill="#bf7658"/><path d="m192 223 89 53 91-53-91-51Z" fill="#d89e7c"/><path d="m281 276 91-53v104l-91 52Z" fill="#aa5e43"/><path d="m192 223 89 53v103l-89-52Z" fill="url(#hatch)"/></g>
+  <g fill="#e5e8db" stroke="#34432e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M123 528v-87l-45-79q-10-18 5-28t27 8l37 56 3-106q0-18 15-18t16 18l2 81 12-145q1-17 16-16t15 19l-6 140 15-181q2-18 18-16t15 21l-12 181 19-136q2-18 17-16t15 20l-15 165q-2 22-9 44l-18 59"/>
+    <path d="M357 531v-72q0-25 16-44l45-59 22-97q5-19 20-15t11 23l-18 102-43 69v93"/>
+    <path d="m367 419-15-70q-4-20 12-23t21 17l13 61"/>
+  </g>
+  <g fill="none" stroke="#78846a" stroke-width="1"><path d="m155 329 24 1m18-50 26 1m13-42 27 2m13 64 27 3m-197 57 17-13m304-29 26 5m-96 38 25-5"/><path d="m147 398 12 32m24-57 3 61m34-63-1 62m37-61-9 65m28-14-9 33M134 471q53-26 116-8M371 469h38"/></g>
+  <g fill="#f4f2ea" stroke="#34432e" stroke-width="2"><circle cx="165" cy="291" r="6"/><circle cx="211" cy="230" r="6"/><circle cx="253" cy="190" r="6"/><circle cx="292" cy="257" r="6"/><circle cx="456" cy="259" r="6"/></g>
+  <g stroke="#9d543c" fill="none"><circle cx="253" cy="190" r="14" stroke-dasharray="2 3"/><circle cx="292" cy="257" r="14" stroke-dasharray="2 3"/><path d="M370 112q59 34 73 94" stroke-width="1.8"/><path d="m433 197 11 13 4-17" stroke-width="1.8"/></g>
+  <g font-family="monospace" fill="#526048" font-size="10" letter-spacing=".6"><text x="51" y="60">SENSORY EVIDENCE</text><text x="364" y="94">PREDICTED MOTION</text><text x="51" y="548">BELIEF → ACTION → CONTACT</text><text x="474" y="548">01</text></g>
+</svg>

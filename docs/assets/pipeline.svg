@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="430" viewBox="0 0 1280 430" role="img" aria-labelledby="title desc">
+  <title id="title">UnionMimic target training loop</title>
+  <desc id="desc">Physical observations update an RSSM posterior. Actor and RSSM prior alternate over four imagined steps. Predicted return updates the actor. The actor returns to physics; recorded transitions train the model separately. Gradients do not pass through physics.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#4f5c49"/></marker><marker id="back" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#a34f36"/></marker></defs>
+  <rect width="1280" height="430" rx="12" fill="#f4f2ea"/>
+  <text x="36" y="40" font-family="monospace" font-size="13" letter-spacing="1.5" fill="#666456">UNIONMIMIC / TARGET ARCHITECTURE</text>
+  <rect x="598" y="72" width="646" height="234" rx="10" stroke="#a7b09e" fill="#e9ecdf" stroke-dasharray="5 5"/>
+  <text x="620" y="101" font-family="monospace" font-size="13" fill="#4f5c49">DIFFERENTIABLE IMAGINATION · H = 4</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g fill="#fcfbf7" stroke="#cbc8bb"><rect x="36" y="132" width="238" height="124" rx="8"/><rect x="322" y="132" width="228" height="124" rx="8"/><rect x="620" y="132" width="290" height="124" rx="8"/><rect x="958" y="132" width="264" height="124" rx="8"/></g>
+    <g font-size="23" fill="#282c25"><text x="56" y="171">01  Physical rollout</text><text x="342" y="171">02  Observe</text><text x="640" y="171">03  Imagine</text><text x="978" y="171">04  Improve</text></g>
+    <g font-size="16" fill="#625f54"><text x="56" y="203">Depth · touch · joints</text><text x="56" y="230">Execute in Isaac Gym</text><text x="342" y="203">RSSM posterior</text><text x="342" y="230">Restore belief + history</text><text x="640" y="203">Actor ↔ RSSM prior</text><text x="640" y="230">No future observations</text><text x="978" y="203">Reward + survival + value</text><text x="978" y="230">Update actor through model</text></g>
+  </g>
+  <g fill="none" stroke="#4f5c49" stroke-width="2" marker-end="url(#arrow)"><path d="M275 192H314"/><path d="M551 192H612"/><path d="M911 192H950"/><path d="M1090 307v43H155v-85"/></g>
+  <path d="M1090 258v23H766v-16" fill="none" stroke="#a34f36" stroke-width="2" marker-end="url(#back)"/>
+  <text x="882" y="298" font-family="monospace" font-size="12" fill="#a34f36">ACTOR GRADIENT</text>
+  <rect x="398" y="337" width="462" height="26" fill="#f4f2ea"/>
+  <text x="629" y="355" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#4f5c49">Updated policy → physical evaluation &amp; fresh data</text>
+  <text x="36" y="402" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#666456">Model fitting uses recorded transitions separately. During actor updates: model parameters fixed, input gradients enabled.</text>
+</svg>

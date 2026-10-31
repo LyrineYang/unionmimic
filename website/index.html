@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2ea">
+  <meta name="description" content="UnionMimic explores visuotactile world models for dexterous control: one RSSM for observing the present and learning through imagined futures.">
+  <meta property="og:title" content="UnionMimic — From sensing to learning">
+  <meta property="og:description" content="One visuotactile world model. Observe the present. Imagine what comes next. An independent research and engineering project.">
+  <meta property="og:type" content="website">
+  <title>UnionMimic — From sensing to learning</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="UnionMimic home"><svg viewBox="0 0 52 44" aria-hidden="true"><path d="M3 5v22a13 13 0 0 0 26 0V5M20 5v22a13 13 0 0 0 26 0V5"/></svg><span>unionmimic</span></a>
+    <nav aria-label="Main navigation"><a href="#approach">Approach</a><a href="#research">Research</a><a href="#progress">Progress</a><a class="nav-repo" href="https://github.com/LyrineYang/unionmimic">GitHub <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AN EXPERIMENT IN EMBODIED LEARNING</p>
+        <h1 id="hero-title">A sense of touch.<br>A model of<br><em>what’s next.</em></h1>
+        <p class="hero-description">Teaching a dexterous hand to learn through the world it senses. One visuotactile model, from observation to imagined action.</p>
+        <div class="hero-actions"><a class="button" href="#approach">Explore the approach <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/LyrineYang/unionmimic/blob/main/docs/INSIGHTS.md">Read the research notes <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <figure class="hero-art"><img src="assets/contact-study.svg" width="560" height="590" alt="Conceptual line drawing of articulated fingers around a rotating object, with contact points and predicted paths."><figcaption><span>STUDY 01 — CONTACT &amp; PREDICTION</span><span>CONCEPT ILLUSTRATION</span></figcaption></figure>
+    </section>
+
+    <div class="scope wrap" aria-label="Project scope"><span>THE FIRST STUDY</span><p>One hand. One object. A complete learning loop.</p><span>SHARPA / Z-AXIS ROTATION</span></div>
+
+    <section class="section wrap introduction" id="approach" aria-labelledby="approach-title">
+      <div><p class="eyebrow">01 / THE APPROACH</p><h2 id="approach-title">From knowing<br>to <em>doing.</em></h2></div>
+      <div class="prose"><p class="lead">A model that understands the present does not necessarily know how to improve the next action.</p><p>UnionMimic explores that gap. We preserve WM-Craftnet’s depth, touch, and proprioceptive inputs, then adapt its recurrent world model for SuperMimic-style policy learning.</p><p>The same model observes real interactions and predicts short futures. The policy learns through those predictions, then returns to physics to test whether it actually improved.</p><a class="text-link" href="https://github.com/LyrineYang/unionmimic/blob/main/docs/ARCHITECTURE.md">Inside the architecture <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="model-section" aria-labelledby="model-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">ONE MODEL / TWO CAPABILITIES</p><h2 id="model-title">Observe. Imagine. Improve.</h2></div><span class="small-note">Target training architecture</span></div>
+        <div class="pipeline" aria-label="Four-stage training pipeline">
+          <div class="pipeline-step"><span class="step-number">01</span><h3>Interact</h3><p>Depth, touch and joint state from the physical simulator.</p><span class="step-tag">REAL OBSERVATIONS</span></div>
+          <div class="pipeline-step"><span class="step-number">02</span><h3>Observe</h3><p>The RSSM updates its belief using new sensor evidence.</p><span class="step-tag">POSTERIOR UPDATE</span></div>
+          <div class="pipeline-step imagined"><span class="step-number">03</span><h3>Imagine</h3><p>Actor and model alternate through four predicted steps.</p><span class="step-tag">NO FUTURE SENSORS</span></div>
+          <div class="pipeline-step imagined"><span class="step-number">04</span><h3>Improve</h3><p>Predicted return carries a gradient back to the actor.</p><span class="step-tag">POLICY UPDATE</span></div>
+        </div>
+        <p class="loop-caption"><span aria-hidden="true">↳</span> Updated policy → physical evaluation → fresh observations <span class="loop-end">↵</span></p>
+        <div class="mode-explorer">
+          <div class="mode-controls" role="group" aria-label="Explore model capabilities"><button type="button" aria-pressed="true" data-mode="observe">Observe</button><button type="button" aria-pressed="false" data-mode="imagine">Imagine</button></div>
+          <div id="mode-copy" aria-live="polite"><h3>Let the world correct the model.</h3><p>Real depth, touch, and joint history update the recurrent belief. This observation path is part of the verified original-policy replay.</p></div>
+          <p class="mode-note">Model parameters stay fixed during actor updates. Gradients flow through the learned dynamics, never through the simulator.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="research" aria-labelledby="research-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / RESEARCH NOTES</p><h2 id="research-title">Questions worth<br><em>building around.</em></h2></div><p class="heading-note">A focused adaptation today.<br>A foundation for further experiments.</p></div>
+      <div class="journal">
+        <a class="journal-row" href="https://github.com/LyrineYang/unionmimic/blob/main/docs/INSIGHTS.md"><span class="journal-type">INSIGHT / 01</span><div><h3>A good state estimate is only the beginning.</h3><p>Separate observation quality, open-loop prediction, and the usefulness of model gradients.</p></div><span class="journal-arrow" aria-hidden="true">↗</span></a>
+        <a class="journal-row" href="https://github.com/LyrineYang/unionmimic/blob/main/docs/ARCHITECTURE.md"><span class="journal-type">DESIGN / 02</span><div><h3>The interface is part of the method.</h3><p>Align actions, controller memory, sensor history and resets before learning through them.</p></div><span class="journal-arrow" aria-hidden="true">↗</span></a>
+        <a class="journal-row" href="https://github.com/LyrineYang/unionmimic/blob/main/docs/EXPERIMENTS.md"><span class="journal-type">EXPERIMENT / 03</span><div><h3>Count the whole learning loop.</h3><p>Compare PPO and SM from the same starting point, including model fitting and evaluation costs.</p></div><span class="journal-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="evidence wrap" aria-labelledby="evidence-title">
+      <div class="evidence-copy"><p class="eyebrow">03 / RECORDED EVIDENCE</p><h2 id="evidence-title">Start with<br>something <em>real.</em></h2><p>The original sensing and control stack passed a single-V100 runtime check. The next question is whether learning through the model improves the policy.</p><a class="text-link" href="https://github.com/LyrineYang/unionmimic/blob/main/docs/STATUS.md">Read the acceptance record <span aria-hidden="true">↗</span></a></div>
+      <div class="evidence-data"><div class="runtime-metric"><strong>200</strong><span>CONTROL STEPS<br>ORIGINAL POLICY REPLAY</span></div><div class="evidence-details"><p><strong>36.13 s</strong><span>Recorded replay + checks</span></p><p><strong>1 × V100</strong><span>Single simulation environment</span></p></div><figure class="depth-strip"><img src="assets/depth-0000.png" alt="Actual depth-camera sample at the first recorded replay frame" width="160" height="120" loading="lazy"><figcaption><strong>Through the hand’s eyes.</strong><br>Recorded depth sample · 72 × 96<br>Five fingertip contact channels also verified.</figcaption></figure></div>
+      <p class="evidence-caveat">Runtime acceptance only. No full-episode success rate or PPO/SM speedup is established. Model and policy parameters remained unchanged during this replay.</p>
+    </section>
+
+    <section class="section wrap progress" id="progress" aria-labelledby="progress-title">
+      <div><p class="eyebrow">04 / PROJECT PROGRESS</p><h2 id="progress-title">A clear path<br>to <em>evidence.</em></h2><p class="progress-intro">First: a working WM + SM loop for one object. Then: a fair comparison and a reproducible release.</p><p class="small-note">Documentation snapshot · 1 November 2026<br>Acceptance evidence, not a live job monitor.</p></div>
+      <ol class="milestones"><li><span class="milestone-index">01</span><div><h3>Restore the original system</h3><p>Physics, sensing, checkpoint and policy replay.</p></div><span class="state complete">Verified</span></li><li><span class="milestone-index">02</span><div><h3>Make prediction usable</h3><p>Aligned data, recurrent starts, reward and failure calibration.</p></div><span class="state">In progress</span></li><li><span class="milestone-index">03</span><div><h3>Learn through the model</h3><p>Short imagination, actor gradients and value learning.</p></div><span class="state">In progress</span></li><li><span class="milestone-index">04</span><div><h3>Compare in physics</h3><p>Paired PPO/SM runs, cost breakdown and failure analysis.</p></div><span class="state">Planned</span></li></ol>
+    </section>
+
+    <section class="reading wrap" aria-labelledby="reading-title"><p class="eyebrow">BUILT ON OPEN RESEARCH</p><h2 id="reading-title">Two ideas.<br>A shared direction.</h2><div class="references"><a href="https://github.com/sharpa-robotics/WM-Craftnet"><span>01 / SENSING</span><strong>WM-Craftnet <i aria-hidden="true">↗</i></strong><p>Visuotactile state estimation, task assets, and the released policy.</p></a><a href="https://supermimic.github.io/"><span>02 / LEARNING</span><strong>SuperMimic <i aria-hidden="true">↗</i></strong><p>Policy optimization through short rollouts of a learned world model.</p></a></div><p class="small-note">Independent adaptation. Upstream authors retain credit for their methods and assets.</p></section>
+  </main>
+  <footer class="footer wrap"><div><a class="footer-wordmark" href="#">unionmimic</a><p>From sensing to learning.</p></div><div class="footer-links"><a href="https://github.com/LyrineYang/unionmimic">Repository ↗</a><a href="https://github.com/LyrineYang/unionmimic/blob/main/docs/GETTING_STARTED.md">Get started ↗</a><a href="https://github.com/LyrineYang/unionmimic/blob/main/NOTICE.md">Attribution ↗</a></div><p class="footer-note">RESEARCH PREVIEW · 2026<br>Comparative results forthcoming.</p></footer>
+</body>
+</html>

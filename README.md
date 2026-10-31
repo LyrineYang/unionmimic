@@ -1,38 +1,104 @@
-# unionmimic
+<p align="center">
+  <img src="docs/assets/cover.svg" alt="UnionMimic — From sensing to learning. Visuotactile world models for dexterous control." width="100%">
+</p>
 
-在 WM-Craftnet 中保留视触觉 RSSM 状态估计，接入 SuperMimic 式短段预测、策略反传和价值训练。首轮只做 Sharpa 单物体 z 轴旋转，复用发布权重，与相同起点的 PPO 微调比较。
+<p align="center">
+  <a href="#the-idea">The idea</a> ·
+  <a href="docs/INSIGHTS.md">Research insights</a> ·
+  <a href="docs/ARCHITECTURE.md">Architecture</a> ·
+  <a href="docs/EXPERIMENTS.md">Experiments</a> ·
+  <a href="docs/GETTING_STARTED.md">Get started</a>
+</p>
 
-步骤 1 已完成：单张 V100 上通过 CUDA、GPU 物理/深度相机及原策略 200 步回放，三个进程均正常退出。见 [验收记录](docs/STEP1.md)。第 2、3 步已细化适配方案，尚未实施或启动训练。
+# UnionMimic
 
-## 源码和运行环境
+**One visuotactile world model. Two capabilities: observe the present, imagine what comes next.**
 
-- 上游版本固定在 `config/upstreams.json`，完整源码存放在 `work/upstreams/WM-Craftnet`。
-- Python 3.8、PyTorch 2.1/CUDA 11.8、Isaac Gym Preview 4，使用项目独立环境。
-- 环境、安装包、权重、数据和日志存放在 `.venv/`、`work/`，不提交 Git。
-- `source scripts/env.sh` 设置项目路径及缓存。服务器专属代理配置放在忽略的 `config/network.local.env`，格式见 `config/network.example.env`。
-- Isaac Gym 的凸分解缓存使用其默认目录 `~/.isaacgym/vhacd`。
-- 不修改系统 Python、驱动或其他项目。
+UnionMimic adapts WM-Craftnet's recurrent state-space model (RSSM) for SuperMimic-style policy learning. Depth, touch, and proprioception estimate the state of a dexterous hand; short imagined rollouts are intended to carry gradients back to its policy.
 
-## 步骤 1 验收
+The first task is concrete: **one Sharpa hand, one object, z-axis rotation**, initialized from released weights and compared with PPO fine-tuning from the same starting point.
+
+> **Research preview · November 2026**
+> The original policy and sensing stack passed a single-V100 replay check. Data collection, prediction calibration, and policy-training integration are under active development. Comparative training results are not yet established. [Evidence & status →](docs/STATUS.md)
+
+## The idea
+
+A useful state estimate is not automatically a useful training model. A model corrected by sensors at every step can still drift when asked to predict the future on its own.
+
+UnionMimic makes that gap explicit. It reuses the **same RSSM** for observation updates and action-conditioned imagination, then checks whether its predictions and gradients improve control in the original physics simulator.
+
+| Observe | Imagine | Improve |
+| :--- | :--- | :--- |
+| Fuse real depth, touch, and joint history into a recurrent state. | Predict a short future without access to future sensor observations. | Update the actor through model dynamics, then evaluate it in physics. |
+
+This is an engineering adaptation and research program. The intended contribution is a working WM + SM loop with explicit sensor, action, reset, and gradient contracts—and evidence about when it helps.
+
+## The pipeline
+
+<img src="docs/assets/pipeline.svg" alt="Target loop: simulator observations update the RSSM posterior; actor and RSSM prior alternate for four imagined steps; predicted reward and terminal value update the actor; the updated policy returns to physics. Gradients pass through the learned model, not the simulator." width="100%">
+
+*Target architecture. Start with H = 4, approximately 0.4 seconds at the original control rate. Model and critic parameters are fixed during actor updates; gradients through their inputs remain enabled.*
+
+[Read the architecture →](docs/ARCHITECTURE.md)
+
+## What is established
+
+The recorded acceptance run used a **Tesla V100-SXM2-32GB**, the released z-axis checkpoint, and one environment.
+
+| Check | Recorded evidence |
+| :--- | :--- |
+| Physics & sensing | GPU physics, 72 × 96 depth, five fingertip contact channels |
+| Original policy replay | 200 control steps in 36.13 seconds |
+| Runtime integrity | Strict checkpoint loading; finite outputs; explicit reset passed |
+| Training isolation | Policy/model parameters unchanged; all three processes exited normally |
+
+This verifies the runtime path. It is **not** a full-episode success rate, a training-speed benchmark, or evidence that SM outperforms PPO. [Machine-readable record](docs/evidence/step1-summary.json) · [Acceptance report](docs/STATUS.md)
+
+## Research notes
+
+| Read | What it answers |
+| :--- | :--- |
+| [Insights](docs/INSIGHTS.md) | What can perception and differentiable control share? |
+| [Architecture](docs/ARCHITECTURE.md) | Where do observations, actions and gradients go? |
+| [Experiment design](docs/EXPERIMENTS.md) | How will PPO and SM be compared fairly? |
+| [Roadmap](docs/ROADMAP.md) | What does each stage deliver to the next? |
+| [Getting started](docs/GETTING_STARTED.md) | How can the runtime check be reproduced? |
+| [Website foundation](docs/WEBSITE.md) | How does the project page grow into a full website? |
+
+## Get started
+
+The simulation stack targets **Linux + an NVIDIA GPU**, Python 3.8, PyTorch 2.1 / CUDA 11.8, and Isaac Gym Preview 4. Bootstrap currently targets the verified V100 environment; review the prerequisites before installing elsewhere.
 
 ```bash
+git clone https://github.com/LyrineYang/unionmimic.git
+cd unionmimic
+# Review prerequisites in docs/GETTING_STARTED.md first.
 bash scripts/bootstrap.sh
 bash scripts/run_step1.sh --gpu 0 --steps 200
 ```
 
-结果和完整日志保存于 `work/results/step1/`。可使用 `--stage cuda|gym|policy` 独立复测失败环节。显式指定 GPU 序号，不重映射 `CUDA_VISIBLE_DEVICES`，使 CUDA 与 Vulkan 使用同一设备编号。
+The website preview needs no ML dependencies or build tools:
 
-1. V100 上的 FP32 张量运算与反向传播。
-2. Isaac Gym GPU 物理步进和 GPU 深度图读取。
-3. Sharpa 触觉有有效值及接触响应。
-4. z 轴 checkpoint 严格兼容加载，RSSM 和原策略产生有限输出。
-5. 单环境运行至少 200 个控制步，记录奖励、终止、重置、显存和耗时；固定种子与物体。
-6. 策略和世界模型参数保持不变，不发生 PPO 或世界模型训练。
+```bash
+cd website
+python3 -m http.server 8080 --bind 127.0.0.1
+```
 
-验收快照保存在 [step1-summary.json](docs/evidence/step1-summary.json)，包含退出码、checkpoint 校验值、源码版本和验收脚本校验值。200 步用于确认运行链路；完整 episode 的成功率评估安排在后续训练比较中。
+Open `http://localhost:8080` on that machine. For a remote server, see [port forwarding](docs/WEBSITE.md).
 
-## 接续
+<details>
+<summary>Preview the project website</summary>
 
-[RSSM 与 SM 的具体适配顺序](docs/ADAPTATION.md) 包含可复用部分、必改接口、交付物和验收条件。
+![UnionMimic website preview](docs/assets/website-preview.png)
 
-本阶段不做跨本体迁移、共享潜空间、真机部署或其他任务扩展。
+Static source: [website/](website/) · Design and publication guide: [docs/WEBSITE.md](docs/WEBSITE.md).
+
+</details>
+
+## Built on
+
+- **[WM-Craftnet](https://github.com/sharpa-robotics/WM-Craftnet)** — Sharpa's task, sensors, visuotactile RSSM, and released policy. [Paper](https://arxiv.org/abs/2609.07002)
+- **[SuperMimic](https://supermimic.github.io/)** — short imagined rollouts and policy optimization through learned dynamics. [Paper](https://arxiv.org/abs/2610.28480)
+- **[LEAP adaptation reference](https://github.com/Msornerrrr/in-hand-rotation-mjlab/tree/0ab03eb2244b4a1a020d94ef38a4823bb9e15ba0)** — reference learner; its MuJoCo stack is not a dependency.
+
+Exact versions and checksums: [config/upstreams.json](config/upstreams.json). UnionMimic is an independent project, not an official release of either upstream. [Attribution and reuse notes](NOTICE.md).
