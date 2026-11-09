@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "method": "SM",
+      "minutes": 47.097402747472124,
+      "mean_return": 263.8439636230469,
+      "mean_rotation_rad": 1.953675627708435,
+      "failure_rate": 0.66796875,
+      "mean_axis_deviation_rad": 0.3498748540878296,
+      "episodes": 512,
+      "seed": 20261105,
+      "checkpoint_sha256": "439d0cc0c863544a41b7b3b559752fa336238132848908c5304ba96b431c7d78"
+    },
+    {
+      "method": "SM",
+      "minutes": 62.332407605648044,
+      "mean_return": 454.6441955566406,
+      "mean_rotation_rad": 13.366945266723633,
+      "failure_rate": 0.490234375,
+      "mean_axis_deviation_rad": 0.34098362922668457,
+      "episodes": 512,
+      "seed": 20261105,
+      "checkpoint_sha256": "b301e781d4a5405b425c18ee8195529dbc019c70fe93d5b4a3cfb4671e3301b3"
+    },
+    {
+      "method": "SM",
+      "minutes": 87.61530357996622,
+      "mean_return": 612.5391845703125,
+      "mean_rotation_rad": 26.860048294067383,
+      "failure_rate": 0.203125,
+      "mean_axis_deviation_rad": 0.3000095784664154,
+      "episodes": 512,
+      "seed": 20261105,
+      "checkpoint_sha256": "5c0b7fe3e624956c0805f0256501030e7233a5d167de888de5f8e39f362529a5"
+    },
+    {
+      "method": "SM",
+      "minutes": 118.00245817104975,
+      "mean_return": 805.1019287109375,
+      "mean_rotation_rad": 40.43413543701172,
+      "failure_rate": 0.0703125,
+      "mean_axis_deviation_rad": 0.32789146900177,
+      "episodes": 512,
+      "seed": 20261105,
+      "checkpoint_sha256": "c324cdf7595b6f33a70d671d67315a26c6fdf62c48a3bd2ffe28d2174b1d79d2"
+    },
+    {
+      "method": "PPO-Sim",
+      "minutes": 15.261358984311421,
+      "mean_return": -37.971797943115234,
+      "mean_rotation_rad": 0.8352199196815491,
+      "failure_rate": 1.0,
+      "mean_axis_deviation_rad": 0.4617071747779846,
+      "episodes": 512,
+      "seed": 20261105,
+      "checkpoint_sha256": "0f27826bfb974a2ad2852f7e471d515ac47f342174a96d4e889b641690daa28c"
+    }
+  ],
+  "speedup_established": false,
+  "training_seeds": 1,
+  "evaluation": "512 first completed episodes per checkpoint; fixed development seed, all failures included.",
+  "timing": "SM early checkpoint times use historical file timestamps; PPO uses saved event elapsed time. Different evaluation schedules.",
+  "conclusion": "SM achieves effective rotation within approximately two hours. PPO coverage is insufficient for time-to-matched-performance comparison.",
+  "new_heldout_evaluation": false
+}

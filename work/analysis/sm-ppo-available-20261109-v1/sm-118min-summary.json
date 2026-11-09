@@ -1,0 +1,17 @@
+{
+  "checkpoint_minutes": 118.00245817104977,
+  "episodes": 512,
+  "failures": 36,
+  "failure_rate": 0.0703125,
+  "failure_wilson95": [
+    0.05121802443586032,
+    0.09580672032599169
+  ],
+  "rotation_mean_rad": 40.43413543701172,
+  "return_mean": 805.1019287109375,
+  "axis_deviation_rad": 0.32789146900177,
+  "source": "work/analysis/sm-attainment-20261104-v1/checkpoint-cycle-000861.json",
+  "training_seed_count": 1,
+  "evaluation_seed": 20261105,
+  "scope": "Episode-level uncertainty conditional on one trained policy; not across-training-seed significance."
+}

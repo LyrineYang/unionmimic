@@ -8,7 +8,7 @@
 - 实时几何Demo的对齐转移，以及Sharpa参考预览使用的重定向轨迹；参考预览仍不是物理策略结果。
 - 项目源码、训练配置、测试、上游补丁及版本信息。上游实现／资产的作者与许可见[NOTICE](../NOTICE.md)和`docs/upstream-notices/`。
 
-共766项测量／媒体／演示产物，约145.30 MiB，逐文件字节数与SHA256记录在[发布清单](../work/publications/results-demo-20261109/manifest.json)。普通Git clone即可获得这些文件，不依赖Git LFS或本机挂载。
+共770项测量／媒体／演示产物，约145.45 MiB，逐文件字节数与SHA256记录在[发布清单](../work/publications/results-demo-20261109/manifest.json)。普通Git clone即可获得这些文件，不依赖Git LFS或本机挂载。
 
 ```bash
 python3 scripts/verify_published_artifacts.py

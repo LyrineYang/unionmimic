@@ -3837,6 +3837,26 @@
       "path": "work/runs/sharpa-paired-ppo-pilot-20261104-v1/status.json",
       "bytes": 85,
       "sha256": "e1c949c5db16d3b887cbb348f9647ec70fe7f241d6f99946440a13d5f9526e5e"
+    },
+    {
+      "path": "work/analysis/sm-ppo-available-20261109-v1/learning-coverage.png",
+      "bytes": 158628,
+      "sha256": "f3f53eadd06cb6f56f7ba95fb621f9b333c0c8f3f6edbebfab0375e0b0e8f3c4"
+    },
+    {
+      "path": "work/analysis/sm-ppo-available-20261109-v1/measurements.csv",
+      "bytes": 949,
+      "sha256": "4765594abba68a0431c10587dea7ee609a99d1cdcec3bef17985c3363fc0cab4"
+    },
+    {
+      "path": "work/analysis/sm-ppo-available-20261109-v1/results.json",
+      "bytes": 2444,
+      "sha256": "db7c91829201e012c29368384d197f05aba737fbfe2d3ebcabafba66407c262e"
+    },
+    {
+      "path": "work/analysis/sm-ppo-available-20261109-v1/sm-118min-summary.json",
+      "bytes": 568,
+      "sha256": "c9d8bc17d271e315d97b17b23e8bf6dd2ab36bb0c7c24656c8823a72d6340a49"
     }
   ]
 }
