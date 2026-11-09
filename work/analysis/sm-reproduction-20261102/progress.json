@@ -1,0 +1,396 @@
+{
+  "checked_unix": 1793633257.986094,
+  "checked_shanghai": "2026-11-02T23:27:37.986094+08:00",
+  "run": "work/runs/sm-baseline-12h-20261102-v1",
+  "source_hashes_match": true,
+  "lanes": [
+    {
+      "name": "sm-seed92001",
+      "gpu": 0,
+      "elapsed_hours": 3.8683335822820664,
+      "deadline_unix": 1793662531.9851978,
+      "status": {
+        "status": "running",
+        "phase": "update",
+        "pid": 38415,
+        "gpu": 0,
+        "arm": "sm",
+        "updated_unix": 1793633255.2037027,
+        "started_unix": 1793619339.5465202,
+        "deadline_unix": 1793660731.9851978,
+        "counts": {
+          "model": 27990,
+          "actor": 2779,
+          "critic": 55580,
+          "cycles": 2779
+        },
+        "frames": 1431552
+      },
+      "worker_pid_alive": false,
+      "development": [
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-00/evaluation.json",
+          "unix": 1793622414.2950037,
+          "return_mean": -35.519658885896206,
+          "rotation": 0.141495033272804,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.30030781051543765,
+          "mean_steps": 77.1875
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-01/evaluation.json",
+          "unix": 1793625429.8451507,
+          "return_mean": -3.9279701709747314,
+          "rotation": 0.07803630256239558,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.2881799587643447,
+          "mean_steps": 61.0
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-02/evaluation.json",
+          "unix": 1793628411.639769,
+          "return_mean": -6.827836632728577,
+          "rotation": 0.03162758111284347,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.3139398664352505,
+          "mean_steps": 57.90625
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-03/evaluation.json",
+          "unix": 1793631395.075499,
+          "return_mean": 6.940433323383331,
+          "rotation": 0.08549233924713917,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.3863746752342783,
+          "mean_steps": 61.09375
+        }
+      ],
+      "latest_cycle": {
+        "kind": "cycle",
+        "unix": 1793633253.8521204,
+        "cycle": 2779,
+        "frames": 1431040,
+        "model_updates": 27990,
+        "actor_updates": 2779,
+        "critic_updates": 55580,
+        "seconds": 4.562917470932007,
+        "collected_actor_version": 2778,
+        "model_loss": 0.03493603654205799,
+        "terminal_loss": 0.013202912465203553,
+        "model_grad": 0.08181792497634888,
+        "actor_objective": 0.04982057213783264,
+        "actor_grad": 0.27880263328552246,
+        "critic_loss": 0.0036778582725673914,
+        "imagined_reward": -0.022210925817489624,
+        "survival": 0.8624452352523804
+      },
+      "latest_prediction": {
+        "kind": "cycle",
+        "unix": 1793633211.5923545,
+        "cycle": 2770,
+        "frames": 1426432,
+        "model_updates": 27900,
+        "actor_updates": 2770,
+        "critic_updates": 55400,
+        "seconds": 4.808314561843872,
+        "collected_actor_version": 2769,
+        "model_loss": 0.035648544877767564,
+        "terminal_loss": 0.007842588308267295,
+        "model_grad": 0.4178157448768616,
+        "actor_objective": 0.04581904411315918,
+        "actor_grad": 0.28253281116485596,
+        "critic_loss": 0.004044925328344107,
+        "imagined_reward": -0.027547571808099747,
+        "survival": 0.843087911605835,
+        "heldout_model_h1_mse": 0.025311186909675598,
+        "heldout_model_hk_mse": 0.04200844094157219,
+        "heldout_reward_hk_rmse": 0.0012898362474516034,
+        "heldout_joint_hk_rmse": 0.016531767323613167
+      },
+      "all_logged_cycle_metrics_finite": true
+    },
+    {
+      "name": "sm-seed92002",
+      "gpu": 1,
+      "elapsed_hours": 3.868337044318517,
+      "deadline_unix": 1793662531.9727345,
+      "status": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 37894,
+        "gpu": 1,
+        "arm": "sm",
+        "updated_unix": 1793633257.7533479,
+        "started_unix": 1793619339.5354843,
+        "deadline_unix": 1793660731.9727345,
+        "counts": {
+          "model": 28080,
+          "actor": 2788,
+          "critic": 55760,
+          "cycles": 2788
+        },
+        "frames": 1435648
+      },
+      "worker_pid_alive": false,
+      "development": [
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92002/development-00/evaluation.json",
+          "unix": 1793622411.891017,
+          "return_mean": -68.68269281089306,
+          "rotation": 0.3617432729806751,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.5358555951686246,
+          "mean_steps": 73.65625
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92002/development-01/evaluation.json",
+          "unix": 1793625458.27326,
+          "return_mean": -54.3198966383934,
+          "rotation": -0.06425444325213903,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.25363657781552734,
+          "mean_steps": 75.0
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92002/development-02/evaluation.json",
+          "unix": 1793628459.7589824,
+          "return_mean": -21.055130898952484,
+          "rotation": 0.025727584225478495,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.29339988460050354,
+          "mean_steps": 63.375
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92002/development-03/evaluation.json",
+          "unix": 1793631371.1357505,
+          "return_mean": 15.710206031799316,
+          "rotation": 0.12774218530284998,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.4082414099636973,
+          "mean_steps": 73.625
+        }
+      ],
+      "latest_cycle": {
+        "kind": "cycle",
+        "unix": 1793633257.7368078,
+        "cycle": 2788,
+        "frames": 1435648,
+        "model_updates": 28080,
+        "actor_updates": 2788,
+        "critic_updates": 55760,
+        "seconds": 4.585082054138184,
+        "collected_actor_version": 2787,
+        "model_loss": 0.03978341557085514,
+        "terminal_loss": 0.01495788204483688,
+        "model_grad": 0.6201337575912476,
+        "actor_objective": 0.014182640239596367,
+        "actor_grad": 0.4147377610206604,
+        "critic_loss": 0.005019910633563995,
+        "imagined_reward": -0.02144482173025608,
+        "survival": 0.8884851932525635
+      },
+      "latest_prediction": {
+        "kind": "cycle",
+        "unix": 1793633220.5095282,
+        "cycle": 2780,
+        "frames": 1431552,
+        "model_updates": 28000,
+        "actor_updates": 2780,
+        "critic_updates": 55600,
+        "seconds": 4.798414707183838,
+        "collected_actor_version": 2779,
+        "model_loss": 0.03942927196621895,
+        "terminal_loss": 0.010948139615356922,
+        "model_grad": 0.21249030530452728,
+        "actor_objective": 0.04108535498380661,
+        "actor_grad": 0.27127930521965027,
+        "critic_loss": 0.002917821053415537,
+        "imagined_reward": -0.021926620975136757,
+        "survival": 0.8793453574180603,
+        "heldout_model_h1_mse": 0.034563686698675156,
+        "heldout_model_hk_mse": 0.04642992839217186,
+        "heldout_reward_hk_rmse": 0.03145832195878029,
+        "heldout_joint_hk_rmse": 0.020121585577726364
+      },
+      "all_logged_cycle_metrics_finite": true
+    },
+    {
+      "name": "ppo-seed92001",
+      "gpu": 2,
+      "elapsed_hours": 3.868325306640731,
+      "deadline_unix": 1793662532.01499,
+      "status": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 31254,
+        "gpu": 2,
+        "arm": "ppo",
+        "updated_unix": 1793633254.0143538,
+        "started_unix": 1793619339.693361,
+        "deadline_unix": 1793660732.01499,
+        "counts": {
+          "model": 0,
+          "actor": 32240,
+          "critic": 32240,
+          "cycles": 2015
+        },
+        "frames": 4134912
+      },
+      "worker_pid_alive": false,
+      "development": [
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-00/evaluation.json",
+          "unix": 1793622296.1996508,
+          "return_mean": 507.2329275608063,
+          "rotation": 36.89339924417436,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.2609988599982535,
+          "mean_steps": 481.59375
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-01/evaluation.json",
+          "unix": 1793625249.5160959,
+          "return_mean": 518.905600309372,
+          "rotation": 37.89129835925996,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.2736676191672489,
+          "mean_steps": 473.03125
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-02/evaluation.json",
+          "unix": 1793628170.5038893,
+          "return_mean": 589.3209686279297,
+          "rotation": 41.82001483999193,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.25446911783761983,
+          "mean_steps": 475.5625
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-03/evaluation.json",
+          "unix": 1793631050.5156646,
+          "return_mean": 656.7623703479767,
+          "rotation": 46.371941393241286,
+          "failures": 1,
+          "episodes": 32,
+          "axis_deviation": 0.25401847633013286,
+          "mean_steps": 482.46875
+        }
+      ],
+      "latest_cycle": {
+        "kind": "cycle",
+        "unix": 1793633253.9976826,
+        "cycle": 2015,
+        "frames": 4134912,
+        "model_updates": 0,
+        "actor_updates": 32240,
+        "critic_updates": 32240,
+        "seconds": 6.340532541275024,
+        "collected_actor_version": 32224,
+        "actor_loss": -0.04930933564901352,
+        "critic_loss": 0.0011056984076276422,
+        "actor_grad": 3.1179542541503906,
+        "gaussian_kl": 0.01819173620242509,
+        "sigma": 0.6007817387580872,
+        "actor_lr": 0.00015000000000000001
+      },
+      "latest_prediction": null,
+      "all_logged_cycle_metrics_finite": true
+    },
+    {
+      "name": "ppo-seed92002",
+      "gpu": 3,
+      "elapsed_hours": 3.868325163324674,
+      "deadline_unix": 1793662532.015506,
+      "status": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 42584,
+        "gpu": 3,
+        "arm": "ppo",
+        "updated_unix": 1793633253.0400357,
+        "started_unix": 1793619339.5702145,
+        "deadline_unix": 1793660732.015506,
+        "counts": {
+          "model": 0,
+          "actor": 29536,
+          "critic": 29536,
+          "cycles": 1846
+        },
+        "frames": 3788800
+      },
+      "worker_pid_alive": false,
+      "development": [
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92002/development-00/evaluation.json",
+          "unix": 1793622488.9545884,
+          "return_mean": 6.267302937805653,
+          "rotation": 0.9317523380741477,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.827779301784983,
+          "mean_steps": 11.03125
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92002/development-01/evaluation.json",
+          "unix": 1793625693.9457216,
+          "return_mean": 0.177158385515213,
+          "rotation": 1.0794768370687962,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.7304960990031456,
+          "mean_steps": 17.125
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92002/development-02/evaluation.json",
+          "unix": 1793628881.4406147,
+          "return_mean": -0.2180163785815239,
+          "rotation": 1.0839734724722803,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.7157457521478985,
+          "mean_steps": 15.3125
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92002/development-03/evaluation.json",
+          "unix": 1793631989.5302672,
+          "return_mean": 2.2781357802450657,
+          "rotation": 1.1488771240692586,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.7344645942019851,
+          "mean_steps": 16.34375
+        }
+      ],
+      "latest_cycle": {
+        "kind": "cycle",
+        "unix": 1793633253.0225475,
+        "cycle": 1846,
+        "frames": 3788800,
+        "model_updates": 0,
+        "actor_updates": 29536,
+        "critic_updates": 29536,
+        "seconds": 6.890791177749634,
+        "collected_actor_version": 29520,
+        "actor_loss": -0.0535535030066967,
+        "critic_loss": 0.0034270561300218105,
+        "actor_grad": 3.6454129219055176,
+        "gaussian_kl": 0.01333387626982585,
+        "sigma": 0.7582845091819763,
+        "actor_lr": 0.0001
+      },
+      "latest_prediction": null,
+      "all_logged_cycle_metrics_finite": true
+    }
+  ]
+}

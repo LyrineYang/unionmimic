@@ -1,0 +1,45 @@
+{
+  "wm_revision": "a1e825acaf50ade298e30b0b13c6671627af3a1e",
+  "sm_reference_revision": "0ab03eb2244b4a1a020d94ef38a4823bb9e15ba0",
+  "tests_passed": 25,
+  "checks": [
+    {
+      "component": "BPTT objective",
+      "reference": "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py:313-335",
+      "implementation": "unionmimic/sm.py:imagined_return",
+      "result": "same discount/survival/terminal-value equation; values and gradients checked against prefix-product expression"
+    },
+    {
+      "component": "critic TD(lambda)",
+      "reference": "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py:343-354",
+      "implementation": "unionmimic/sm.py:lambda_returns",
+      "result": "bit-identical numerical output against extracted pinned reference recurrence, including soft survival and terminal cases"
+    },
+    {
+      "component": "failure head",
+      "reference": "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py:276-290",
+      "implementation": "unionmimic/models.py and calibrate.py",
+      "result": "BCE on true failures, timeout excluded; survival remains differentiable. Class-weight correction and failure-stratified sampling differ; held-out probability reliability remains unverified"
+    },
+    {
+      "component": "data/cache",
+      "reference": "world_model/replay.py:42-83",
+      "implementation": "collect.py,prepare.py",
+      "result": "episode-contained windows and true terminal state; incoming-action convention audited; state hashes reject stale cache; full observed history precedes imagined actions"
+    },
+    {
+      "component": "RSSM supervision",
+      "reference": "WM-Craftnet/wsm/models.py:_train plus SM train_yaw.py:257-290",
+      "implementation": "dynamics_fit.py",
+      "result": "native observe/img_step/KL; autoregressive prior supervision uses logged executed actions; padding masked; encoder fixed; derivative readiness passed; updated-model predictive quality pending"
+    }
+  ],
+  "intentional_differences": [
+    "WM-Craft categorical stochastic latent state versus reference deterministic physical/context state",
+    "Released actor clamp instead of reference tanh preserves checkpoint behavior but has zero gradients at saturation",
+    "Latent critic with fixed input convention, one update versus reference normalized critic with 20 minibatch updates",
+    "Reference value-target clamp is specific to its reward bound and is not copied to this different reward",
+    "Original-policy anchor is an additional project regularizer; preserve it as an explicit ablation factor"
+  ],
+  "conclusion": "Implementation contracts support bounded pilots; neither reference agreement nor finite gradients demonstrate learned-model accuracy or policy improvement."
+}

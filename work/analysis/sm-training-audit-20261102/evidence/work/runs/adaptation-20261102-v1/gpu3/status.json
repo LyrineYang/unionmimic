@@ -1,0 +1,27 @@
+{
+  "status": "running",
+  "cycle": 2,
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/cycle-0001/dynamics/last.pt",
+  "cache": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/cycle-0001/prepared/cache.pt",
+  "checkpoint_sha256": "aad9c494fd2ca6d3902f4327b3d4f5894021a6c827dd969d35f56f791d846391",
+  "cache_sha256": "48c3e2f2917b8f8565c9304f1cc9a09767e38617de775f458a052b8131d504dd",
+  "manifest_sha256": "0fb38ac9c6d4d2c73d322d7d4f78d0b2216ac1580fdc4fcb15f8016093726b51",
+  "started_unix": 1793604535.2365203,
+  "training_deadline_unix": 1793633335.2365203,
+  "deadline_unix": 1793639815.2365203,
+  "next_dev_index": 1,
+  "physical_frames": 7968,
+  "sm_updates": 0,
+  "recent": [
+    "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/cycle-0001/data"
+  ],
+  "regressions": 0,
+  "pid": 563,
+  "gpu": 3,
+  "arm": "dynamics",
+  "updated_unix": 1793608704.5459635,
+  "phase": "prepare",
+  "log": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/cycle-0002/prepare.log",
+  "dynamics_updates": 250,
+  "child_pid": 45010
+}

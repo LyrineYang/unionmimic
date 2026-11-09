@@ -1,0 +1,2110 @@
+{
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sharpa-leap-12h-20261103-v1/ckpt/best.pt",
+  "sha256": "60588994e0ca0d436eeeed8ccee9f9f0fa628fe55ed983e95d7838c875959321",
+  "seed": 20261106,
+  "frames": 300,
+  "control_dt": 0.10001999884843826,
+  "selection": "first env, first episode, no selection",
+  "rows": [
+    {
+      "step": 0,
+      "reward": 1.0862213373184204,
+      "rotation": 0.001880756695754826,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 1,
+      "reward": 1.0733731985092163,
+      "rotation": 0.008452295325696468,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 2,
+      "reward": 1.0612969398498535,
+      "rotation": 0.0176028311252594,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 3,
+      "reward": 1.3230726718902588,
+      "rotation": 0.03661978617310524,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 4,
+      "reward": 1.5196969509124756,
+      "rotation": 0.04676336795091629,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 5,
+      "reward": 1.424375057220459,
+      "rotation": 0.03800593316555023,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 6,
+      "reward": 0.6466094255447388,
+      "rotation": 0.0028834810946136713,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 7,
+      "reward": -0.3652454912662506,
+      "rotation": -0.04481809586286545,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 8,
+      "reward": 0.6198713779449463,
+      "rotation": 0.005379721522331238,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 9,
+      "reward": 1.1236214637756348,
+      "rotation": 0.033590320497751236,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 10,
+      "reward": 1.0249351263046265,
+      "rotation": 0.01860569790005684,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 11,
+      "reward": 1.399997353553772,
+      "rotation": 0.03681585565209389,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 12,
+      "reward": 1.5057933330535889,
+      "rotation": 0.04402671009302139,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 13,
+      "reward": 0.9812512397766113,
+      "rotation": 0.01954430341720581,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 14,
+      "reward": 1.1866663694381714,
+      "rotation": 0.0328122116625309,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 15,
+      "reward": 2.595595121383667,
+      "rotation": 0.11200257390737534,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 16,
+      "reward": 1.3385192155838013,
+      "rotation": 0.03893114626407623,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 17,
+      "reward": 0.7732448577880859,
+      "rotation": 0.013734214939177036,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 18,
+      "reward": -0.502508282661438,
+      "rotation": -0.05488967522978783,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 19,
+      "reward": 0.8995840549468994,
+      "rotation": 0.025945916771888733,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 20,
+      "reward": 1.3992968797683716,
+      "rotation": 0.04187937453389168,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 21,
+      "reward": 1.0695880651474,
+      "rotation": 0.030943484976887703,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 22,
+      "reward": 1.798813819885254,
+      "rotation": 0.06676681339740753,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 23,
+      "reward": 2.475252151489258,
+      "rotation": 0.09367956221103668,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 24,
+      "reward": 1.2111473083496094,
+      "rotation": 0.03704934939742088,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 25,
+      "reward": 0.34328556060791016,
+      "rotation": -0.01528015173971653,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 26,
+      "reward": -0.40208157896995544,
+      "rotation": -0.051847223192453384,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 27,
+      "reward": 0.2991117537021637,
+      "rotation": -0.01201699860394001,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 28,
+      "reward": 0.7321719527244568,
+      "rotation": 0.01335597038269043,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 29,
+      "reward": 0.7246883511543274,
+      "rotation": 0.014451778493821621,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 30,
+      "reward": 2.474975347518921,
+      "rotation": 0.10209661722183228,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 31,
+      "reward": 2.0114169120788574,
+      "rotation": 0.07664230465888977,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 32,
+      "reward": 2.5164921283721924,
+      "rotation": 0.1161775216460228,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 33,
+      "reward": 1.9113707542419434,
+      "rotation": 0.06602191925048828,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 34,
+      "reward": 2.162022113800049,
+      "rotation": 0.08049777150154114,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 35,
+      "reward": 2.2248189449310303,
+      "rotation": 0.11126472055912018,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 36,
+      "reward": 1.6351892948150635,
+      "rotation": 0.05963340029120445,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 37,
+      "reward": 0.6471239328384399,
+      "rotation": 0.012205906212329865,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 38,
+      "reward": 1.6747757196426392,
+      "rotation": 0.06329171359539032,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 39,
+      "reward": 0.820838212966919,
+      "rotation": 0.020843321457505226,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 40,
+      "reward": 1.0088796615600586,
+      "rotation": 0.026897473260760307,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 41,
+      "reward": 1.4569612741470337,
+      "rotation": 0.04322894662618637,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 42,
+      "reward": 1.7438877820968628,
+      "rotation": 0.059884972870349884,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 43,
+      "reward": 2.3646793365478516,
+      "rotation": 0.1174251139163971,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 44,
+      "reward": 1.684255838394165,
+      "rotation": 0.06002651900053024,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 45,
+      "reward": 1.2528693675994873,
+      "rotation": 0.04244975745677948,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 46,
+      "reward": 1.6368517875671387,
+      "rotation": 0.06038975715637207,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 47,
+      "reward": 2.316836357116699,
+      "rotation": 0.08817706257104874,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 48,
+      "reward": 1.402280330657959,
+      "rotation": 0.054366763681173325,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 49,
+      "reward": -0.38678857684135437,
+      "rotation": -0.039588503539562225,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 50,
+      "reward": 1.0189064741134644,
+      "rotation": 0.034118592739105225,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 51,
+      "reward": 1.618153691291809,
+      "rotation": 0.0685136616230011,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 52,
+      "reward": 2.16033935546875,
+      "rotation": 0.09060854464769363,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 53,
+      "reward": 1.113777756690979,
+      "rotation": 0.029816916212439537,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 54,
+      "reward": 2.2905752658843994,
+      "rotation": 0.09379344433546066,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 55,
+      "reward": 2.2909514904022217,
+      "rotation": 0.09075108915567398,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 56,
+      "reward": 2.4190778732299805,
+      "rotation": 0.10677601397037506,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 57,
+      "reward": 1.7935104370117188,
+      "rotation": 0.060847848653793335,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 58,
+      "reward": 2.5066258907318115,
+      "rotation": 0.1922188103199005,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 59,
+      "reward": 2.6135690212249756,
+      "rotation": 0.13056457042694092,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 60,
+      "reward": 1.3872138261795044,
+      "rotation": 0.03885243833065033,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 61,
+      "reward": 0.5676159262657166,
+      "rotation": 0.00530772190541029,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 62,
+      "reward": 1.8595764636993408,
+      "rotation": 0.06970489025115967,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 63,
+      "reward": 1.13594651222229,
+      "rotation": 0.0329291857779026,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 64,
+      "reward": 0.5377795696258545,
+      "rotation": 0.002169486600905657,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 65,
+      "reward": 1.440629243850708,
+      "rotation": 0.04772185906767845,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 66,
+      "reward": 2.5392751693725586,
+      "rotation": 0.12357481569051743,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 67,
+      "reward": 2.3789305686950684,
+      "rotation": 0.14816339313983917,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 68,
+      "reward": 1.611764669418335,
+      "rotation": 0.06253233551979065,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 69,
+      "reward": 1.7869418859481812,
+      "rotation": 0.06875243037939072,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 70,
+      "reward": 0.12424323707818985,
+      "rotation": -0.010426333174109459,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 71,
+      "reward": 1.08346426486969,
+      "rotation": 0.042550329118967056,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 72,
+      "reward": 2.378457546234131,
+      "rotation": 0.10316871106624603,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 73,
+      "reward": 2.49656343460083,
+      "rotation": 0.10194935649633408,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 74,
+      "reward": 1.4133859872817993,
+      "rotation": 0.046569548547267914,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 75,
+      "reward": 1.9495816230773926,
+      "rotation": 0.07093359529972076,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 76,
+      "reward": 2.1473138332366943,
+      "rotation": 0.07888273894786835,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 77,
+      "reward": 0.3196831941604614,
+      "rotation": -0.007642495911568403,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 78,
+      "reward": -0.13215017318725586,
+      "rotation": -0.02680710144340992,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 79,
+      "reward": 0.9263297319412231,
+      "rotation": 0.03657235577702522,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 80,
+      "reward": 1.5643895864486694,
+      "rotation": 0.0634986013174057,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 81,
+      "reward": 1.4140228033065796,
+      "rotation": 0.05736624076962471,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 82,
+      "reward": 2.500544309616089,
+      "rotation": 0.19550465047359467,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 83,
+      "reward": 2.5608279705047607,
+      "rotation": 0.17415712773799896,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 84,
+      "reward": -0.06098712980747223,
+      "rotation": -0.02684381976723671,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 85,
+      "reward": 1.9727054834365845,
+      "rotation": 0.0853702574968338,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 86,
+      "reward": 0.9645042419433594,
+      "rotation": 0.04248949512839317,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 87,
+      "reward": -0.0622628889977932,
+      "rotation": -0.021909892559051514,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 88,
+      "reward": 0.1397041231393814,
+      "rotation": -0.019600259140133858,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 89,
+      "reward": 2.5103700160980225,
+      "rotation": 0.1572452336549759,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 90,
+      "reward": 2.591099977493286,
+      "rotation": 0.18293234705924988,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 91,
+      "reward": 0.570030689239502,
+      "rotation": 0.0013666804879903793,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 92,
+      "reward": 2.257739305496216,
+      "rotation": 0.09282655268907547,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 93,
+      "reward": 2.365441083908081,
+      "rotation": 0.0990644171833992,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 94,
+      "reward": 1.9787852764129639,
+      "rotation": 0.08090703934431076,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 95,
+      "reward": 1.305503249168396,
+      "rotation": 0.04362739995121956,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 96,
+      "reward": 0.8348706960678101,
+      "rotation": 0.01633940264582634,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 97,
+      "reward": 0.8672441244125366,
+      "rotation": 0.015026106499135494,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 98,
+      "reward": 1.1680889129638672,
+      "rotation": 0.028004998341202736,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 99,
+      "reward": 1.6404577493667603,
+      "rotation": 0.06198043376207352,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 100,
+      "reward": 1.0222063064575195,
+      "rotation": 0.0320129469037056,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 101,
+      "reward": 1.7935435771942139,
+      "rotation": 0.07162226736545563,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 102,
+      "reward": -1.681981086730957,
+      "rotation": -0.10669491440057755,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 103,
+      "reward": -0.4601665735244751,
+      "rotation": -0.05359245464205742,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 104,
+      "reward": 0.9986618161201477,
+      "rotation": 0.013109310530126095,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 105,
+      "reward": 1.2966487407684326,
+      "rotation": 0.03527257218956947,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 106,
+      "reward": 1.1790391206741333,
+      "rotation": 0.03343043476343155,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 107,
+      "reward": 1.662451982498169,
+      "rotation": 0.06323206424713135,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 108,
+      "reward": 1.1492198705673218,
+      "rotation": 0.04430214688181877,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 109,
+      "reward": 2.2960116863250732,
+      "rotation": 0.17530730366706848,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 110,
+      "reward": 2.492847442626953,
+      "rotation": 0.10032240301370621,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 111,
+      "reward": 1.3576661348342896,
+      "rotation": 0.03834155201911926,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 112,
+      "reward": 1.4080642461776733,
+      "rotation": 0.04630177095532417,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 113,
+      "reward": 2.550342082977295,
+      "rotation": 0.12441475689411163,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 114,
+      "reward": 1.981029748916626,
+      "rotation": 0.076544851064682,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 115,
+      "reward": 0.18867966532707214,
+      "rotation": -0.003852058434858918,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 116,
+      "reward": 1.2612311840057373,
+      "rotation": 0.04404246434569359,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 117,
+      "reward": 0.9586222171783447,
+      "rotation": 0.024466993287205696,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 118,
+      "reward": 1.6770750284194946,
+      "rotation": 0.058643635362386703,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 119,
+      "reward": 2.194451332092285,
+      "rotation": 0.0899217426776886,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 120,
+      "reward": 2.346811056137085,
+      "rotation": 0.11487748473882675,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 121,
+      "reward": 2.3456709384918213,
+      "rotation": 0.12322548776865005,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 122,
+      "reward": 1.586729645729065,
+      "rotation": 0.06690394878387451,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 123,
+      "reward": 1.1159496307373047,
+      "rotation": 0.03663107752799988,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 124,
+      "reward": 0.5637931823730469,
+      "rotation": 0.002412137109786272,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 125,
+      "reward": -1.6946005821228027,
+      "rotation": -0.11154019087553024,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 126,
+      "reward": 0.11322655528783798,
+      "rotation": -0.021509360522031784,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 127,
+      "reward": 1.7414958477020264,
+      "rotation": 0.06329822540283203,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 128,
+      "reward": 2.4671220779418945,
+      "rotation": 0.19118481874465942,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 129,
+      "reward": 2.4449450969696045,
+      "rotation": 0.17709065973758698,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 130,
+      "reward": 1.6933844089508057,
+      "rotation": 0.07154803723096848,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 131,
+      "reward": -1.348470687866211,
+      "rotation": -0.08401398360729218,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 132,
+      "reward": -0.1521548181772232,
+      "rotation": -0.027835143730044365,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 133,
+      "reward": 0.1828656941652298,
+      "rotation": -0.020673420280218124,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 134,
+      "reward": 1.1098442077636719,
+      "rotation": 0.024300185963511467,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 135,
+      "reward": 0.9096102118492126,
+      "rotation": 0.019220227375626564,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 136,
+      "reward": 2.444586753845215,
+      "rotation": 0.10928124189376831,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 137,
+      "reward": 0.3257770836353302,
+      "rotation": 0.009046001359820366,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 138,
+      "reward": 2.22244930267334,
+      "rotation": 0.12087121605873108,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 139,
+      "reward": -0.16160060465335846,
+      "rotation": -0.02419252134859562,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 140,
+      "reward": 1.005287766456604,
+      "rotation": 0.03243041783571243,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 141,
+      "reward": 1.946171760559082,
+      "rotation": 0.0702882930636406,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 142,
+      "reward": 2.376011848449707,
+      "rotation": 0.14729006588459015,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 143,
+      "reward": 1.4476637840270996,
+      "rotation": 0.05842017009854317,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 144,
+      "reward": 0.6997547149658203,
+      "rotation": 0.026082515716552734,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 145,
+      "reward": 2.346435308456421,
+      "rotation": 0.1508738249540329,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 146,
+      "reward": 1.085914969444275,
+      "rotation": 0.027011727914214134,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 147,
+      "reward": 1.2821331024169922,
+      "rotation": 0.0375356525182724,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 148,
+      "reward": 1.4865074157714844,
+      "rotation": 0.046149227768182755,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 149,
+      "reward": 2.400029420852661,
+      "rotation": 0.09447931498289108,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 150,
+      "reward": 2.482121229171753,
+      "rotation": 0.13291387259960175,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 151,
+      "reward": 2.4641776084899902,
+      "rotation": 0.13414455950260162,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 152,
+      "reward": 2.469088315963745,
+      "rotation": 0.10997236520051956,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 153,
+      "reward": 2.510207414627075,
+      "rotation": 0.11646527796983719,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 154,
+      "reward": 1.5836708545684814,
+      "rotation": 0.05751272663474083,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 155,
+      "reward": 1.1071635484695435,
+      "rotation": 0.025375545024871826,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 156,
+      "reward": 2.5680696964263916,
+      "rotation": 0.11993739008903503,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 157,
+      "reward": 2.503560781478882,
+      "rotation": 0.15330339968204498,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 158,
+      "reward": 2.136507511138916,
+      "rotation": 0.08563225716352463,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 159,
+      "reward": 1.376046061515808,
+      "rotation": 0.05666520074009895,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 160,
+      "reward": 1.5885804891586304,
+      "rotation": 0.05901156738400459,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 161,
+      "reward": 2.219957113265991,
+      "rotation": 0.08689874410629272,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 162,
+      "reward": 2.5775506496429443,
+      "rotation": 0.15367542207241058,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 163,
+      "reward": 1.2829118967056274,
+      "rotation": 0.03875134885311127,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 164,
+      "reward": 2.4193334579467773,
+      "rotation": 0.09298278391361237,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 165,
+      "reward": 2.3392066955566406,
+      "rotation": 0.09632117301225662,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 166,
+      "reward": 0.8224045038223267,
+      "rotation": 0.023012470453977585,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 167,
+      "reward": 0.3204858899116516,
+      "rotation": -0.012486422434449196,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 168,
+      "reward": 1.3803863525390625,
+      "rotation": 0.03981351479887962,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 169,
+      "reward": 1.6022427082061768,
+      "rotation": 0.053001768887043,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 170,
+      "reward": 0.9012919664382935,
+      "rotation": 0.021063661202788353,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 171,
+      "reward": 0.9867918491363525,
+      "rotation": 0.024426059797406197,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 172,
+      "reward": 1.8125699758529663,
+      "rotation": 0.056489985436201096,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 173,
+      "reward": 2.3590891361236572,
+      "rotation": 0.09570910781621933,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 174,
+      "reward": 2.522059917449951,
+      "rotation": 0.16587920486927032,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 175,
+      "reward": 1.2886193990707397,
+      "rotation": 0.04603065550327301,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 176,
+      "reward": 0.9321726560592651,
+      "rotation": 0.023391950875520706,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 177,
+      "reward": 1.8692495822906494,
+      "rotation": 0.06341942399740219,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 178,
+      "reward": 2.4114372730255127,
+      "rotation": 0.13622842729091644,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 179,
+      "reward": 2.423229694366455,
+      "rotation": 0.13440898060798645,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 180,
+      "reward": 1.3150503635406494,
+      "rotation": 0.04517196863889694,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 181,
+      "reward": 2.3477766513824463,
+      "rotation": 0.11298839002847672,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 182,
+      "reward": 1.4709969758987427,
+      "rotation": 0.0497468076646328,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 183,
+      "reward": 2.6132588386535645,
+      "rotation": 0.10524048656225204,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 184,
+      "reward": 1.7082836627960205,
+      "rotation": 0.05105913430452347,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 185,
+      "reward": 2.6189897060394287,
+      "rotation": 0.20740611851215363,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 186,
+      "reward": 2.452786445617676,
+      "rotation": 0.10440274327993393,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 187,
+      "reward": 1.995347023010254,
+      "rotation": 0.07993079721927643,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 188,
+      "reward": 2.13529372215271,
+      "rotation": 0.08894965052604675,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 189,
+      "reward": 0.6030582189559937,
+      "rotation": 0.004001719411462545,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 190,
+      "reward": 1.3083220720291138,
+      "rotation": 0.0416654534637928,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 191,
+      "reward": 1.2017878293991089,
+      "rotation": 0.0363464280962944,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 192,
+      "reward": 0.5339489579200745,
+      "rotation": -0.003626124234870076,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 193,
+      "reward": 1.593334674835205,
+      "rotation": 0.04988173022866249,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 194,
+      "reward": 1.7099463939666748,
+      "rotation": 0.058238737285137177,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 195,
+      "reward": 0.9434500932693481,
+      "rotation": 0.023268170654773712,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 196,
+      "reward": 2.502196788787842,
+      "rotation": 0.09698396176099777,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 197,
+      "reward": 0.7333427667617798,
+      "rotation": 0.009572966024279594,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 198,
+      "reward": 1.2011325359344482,
+      "rotation": 0.027377797290682793,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 199,
+      "reward": 1.6389774084091187,
+      "rotation": 0.05066889896988869,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 200,
+      "reward": 2.0948643684387207,
+      "rotation": 0.08203765004873276,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 201,
+      "reward": 2.122737407684326,
+      "rotation": 0.08187928050756454,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 202,
+      "reward": 2.3760733604431152,
+      "rotation": 0.12467533349990845,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 203,
+      "reward": 2.481525182723999,
+      "rotation": 0.19188518822193146,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 204,
+      "reward": 2.3379979133605957,
+      "rotation": 0.0904315933585167,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 205,
+      "reward": 1.4484468698501587,
+      "rotation": 0.04696333780884743,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 206,
+      "reward": 2.491447925567627,
+      "rotation": 0.09505647420883179,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 207,
+      "reward": 2.361443519592285,
+      "rotation": 0.09908844530582428,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 208,
+      "reward": 2.268082857131958,
+      "rotation": 0.09640085697174072,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 209,
+      "reward": 2.2145538330078125,
+      "rotation": 0.09341870248317719,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 210,
+      "reward": 0.01976446807384491,
+      "rotation": -0.02258782461285591,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 211,
+      "reward": 1.2055660486221313,
+      "rotation": 0.030005278065800667,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 212,
+      "reward": 2.495978832244873,
+      "rotation": 0.11272041499614716,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 213,
+      "reward": 1.9655802249908447,
+      "rotation": 0.07023394107818604,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 214,
+      "reward": 2.18762469291687,
+      "rotation": 0.08876031637191772,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 215,
+      "reward": 2.344681978225708,
+      "rotation": 0.0866113007068634,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 216,
+      "reward": 1.5929332971572876,
+      "rotation": 0.049293164163827896,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 217,
+      "reward": 0.948195219039917,
+      "rotation": 0.024671439081430435,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 218,
+      "reward": 1.0799640417099,
+      "rotation": 0.026122022420167923,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 219,
+      "reward": 2.5126631259918213,
+      "rotation": 0.3292774260044098,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 220,
+      "reward": 0.2273496687412262,
+      "rotation": -0.01774214394390583,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 221,
+      "reward": 0.860529899597168,
+      "rotation": 0.015494823455810547,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 222,
+      "reward": 2.437812328338623,
+      "rotation": 0.09396037459373474,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 223,
+      "reward": 0.870611846446991,
+      "rotation": 0.013889574445784092,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 224,
+      "reward": 1.9783560037612915,
+      "rotation": 0.085591159760952,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 225,
+      "reward": 2.346181631088257,
+      "rotation": 0.09673215448856354,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 226,
+      "reward": 2.233642578125,
+      "rotation": 0.08370846509933472,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 227,
+      "reward": 1.5112175941467285,
+      "rotation": 0.04178721830248833,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 228,
+      "reward": 1.2060317993164062,
+      "rotation": 0.03348842263221741,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 229,
+      "reward": 0.8932803869247437,
+      "rotation": 0.017424296587705612,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 230,
+      "reward": 1.8468595743179321,
+      "rotation": 0.07094252109527588,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 231,
+      "reward": 1.363663911819458,
+      "rotation": 0.04042079672217369,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 232,
+      "reward": 2.639598846435547,
+      "rotation": 0.11235414445400238,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 233,
+      "reward": 1.8596628904342651,
+      "rotation": 0.0651114210486412,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 234,
+      "reward": 0.815900444984436,
+      "rotation": 0.012826387770473957,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 235,
+      "reward": 0.9563965797424316,
+      "rotation": 0.01683887280523777,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 236,
+      "reward": 0.3263359069824219,
+      "rotation": -0.007456048391759396,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 237,
+      "reward": 0.9811934232711792,
+      "rotation": 0.022769756615161896,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 238,
+      "reward": 0.12752854824066162,
+      "rotation": -0.015325482934713364,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 239,
+      "reward": 0.3976075351238251,
+      "rotation": -0.0032384542282670736,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 240,
+      "reward": 1.3378788232803345,
+      "rotation": 0.03560680150985718,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 241,
+      "reward": 1.7612357139587402,
+      "rotation": 0.06759697198867798,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 242,
+      "reward": 2.1707229614257812,
+      "rotation": 0.09083385765552521,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 243,
+      "reward": 2.44228458404541,
+      "rotation": 0.10689961165189743,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 244,
+      "reward": -0.21291899681091309,
+      "rotation": -0.0336715467274189,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 245,
+      "reward": -0.605935275554657,
+      "rotation": -0.05223908647894859,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 246,
+      "reward": 0.8141289353370667,
+      "rotation": 0.022959159687161446,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 247,
+      "reward": 2.365947961807251,
+      "rotation": 0.09407232701778412,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 248,
+      "reward": 2.237187623977661,
+      "rotation": 0.08713316172361374,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 249,
+      "reward": 1.7308790683746338,
+      "rotation": 0.06684620678424835,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 250,
+      "reward": 2.111276865005493,
+      "rotation": 0.07945085316896439,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 251,
+      "reward": 0.20369894802570343,
+      "rotation": -0.01428903080523014,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 252,
+      "reward": 0.7796834707260132,
+      "rotation": 0.014914347790181637,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 253,
+      "reward": 1.1674602031707764,
+      "rotation": 0.04976470395922661,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 254,
+      "reward": 2.2457175254821777,
+      "rotation": 0.1932467222213745,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 255,
+      "reward": 0.11570125073194504,
+      "rotation": -0.012201344594359398,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 256,
+      "reward": 1.9646376371383667,
+      "rotation": 0.07960493862628937,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 257,
+      "reward": 2.5297045707702637,
+      "rotation": 0.145843505859375,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 258,
+      "reward": 2.450542449951172,
+      "rotation": 0.25595322251319885,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 259,
+      "reward": 0.9401724338531494,
+      "rotation": 0.0318421870470047,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 260,
+      "reward": 1.9905673265457153,
+      "rotation": 0.08319023251533508,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 261,
+      "reward": 0.7879763841629028,
+      "rotation": 0.03339025378227234,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 262,
+      "reward": 1.8792908191680908,
+      "rotation": 0.07620461285114288,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 263,
+      "reward": 1.0918388366699219,
+      "rotation": 0.031106187030673027,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 264,
+      "reward": 1.953431487083435,
+      "rotation": 0.07959652692079544,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 265,
+      "reward": 1.5148426294326782,
+      "rotation": 0.05355740338563919,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 266,
+      "reward": 0.3336792290210724,
+      "rotation": -0.0037621876690536737,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 267,
+      "reward": 2.434415817260742,
+      "rotation": 0.13838334381580353,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 268,
+      "reward": 2.116966962814331,
+      "rotation": 0.10347513109445572,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 269,
+      "reward": 2.0972554683685303,
+      "rotation": 0.09222117811441422,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 270,
+      "reward": 2.4040050506591797,
+      "rotation": 0.14328114688396454,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 271,
+      "reward": 1.6721632480621338,
+      "rotation": 0.057418931275606155,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 272,
+      "reward": 2.091256618499756,
+      "rotation": 0.0739327073097229,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 273,
+      "reward": 2.507492780685425,
+      "rotation": 0.0950259119272232,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 274,
+      "reward": 1.7827270030975342,
+      "rotation": 0.06464572995901108,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 275,
+      "reward": 1.761900544166565,
+      "rotation": 0.06544152647256851,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 276,
+      "reward": 1.2412868738174438,
+      "rotation": 0.0452033169567585,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 277,
+      "reward": 1.0272655487060547,
+      "rotation": 0.02998063713312149,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 278,
+      "reward": 1.5283432006835938,
+      "rotation": 0.04368491470813751,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 279,
+      "reward": 1.5530794858932495,
+      "rotation": 0.04607303813099861,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 280,
+      "reward": 2.538750648498535,
+      "rotation": 0.10230083018541336,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 281,
+      "reward": 2.3477163314819336,
+      "rotation": 0.11872506886720657,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 282,
+      "reward": 1.6234577894210815,
+      "rotation": 0.06967499852180481,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 283,
+      "reward": -0.47464269399642944,
+      "rotation": -0.04620826244354248,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 284,
+      "reward": -0.018190473318099976,
+      "rotation": -0.029941501095891,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 285,
+      "reward": 1.80997633934021,
+      "rotation": 0.06187012791633606,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 286,
+      "reward": 0.7887616157531738,
+      "rotation": 0.015301059931516647,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 287,
+      "reward": 1.6237660646438599,
+      "rotation": 0.05954813212156296,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 288,
+      "reward": 1.7507214546203613,
+      "rotation": 0.06350723654031754,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 289,
+      "reward": 1.3725566864013672,
+      "rotation": 0.045410867780447006,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 290,
+      "reward": 1.4242184162139893,
+      "rotation": 0.04528005048632622,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 291,
+      "reward": 0.08359479159116745,
+      "rotation": -0.02298060990869999,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 292,
+      "reward": 0.41207820177078247,
+      "rotation": -0.006619818974286318,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 293,
+      "reward": 0.23913848400115967,
+      "rotation": -0.014345347881317139,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 294,
+      "reward": 2.2427587509155273,
+      "rotation": 0.08310329169034958,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 295,
+      "reward": 1.566277265548706,
+      "rotation": 0.054903119802474976,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 296,
+      "reward": 1.5119953155517578,
+      "rotation": 0.04976384714245796,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 297,
+      "reward": 0.9046381711959839,
+      "rotation": 0.03081682324409485,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 298,
+      "reward": 2.4940428733825684,
+      "rotation": 0.16660381853580475,
+      "failure": false,
+      "timeout": false
+    },
+    {
+      "step": 299,
+      "reward": 2.580035924911499,
+      "rotation": 0.20114250481128693,
+      "failure": false,
+      "timeout": false
+    }
+  ]
+}

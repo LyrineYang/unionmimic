@@ -1,0 +1,24 @@
+[
+  {
+    "clip": "02_continuous_single_axis/clip_001",
+    "source_sha256": "041b5bb58400f0ca1ab4d0ecf54a6e9e39211b49fc7cc01f3489eebb378db4ab",
+    "video": "/home/junqiy/projects/unionmimic/work/demos/wuji-mesh-showcase-20261109-v1/02_continuous_single_axis.mp4",
+    "duration_s": 19.18,
+    "fps": 25,
+    "playback_speed": 1,
+    "policy": false,
+    "physics": false,
+    "mesh_xml_sha256": "c11ab34b0fd0c1d520d108ffdefe45bfc05711bb2e97946a6bda96888cf02847"
+  },
+  {
+    "clip": "03_continuous_multi_axis/clip_001",
+    "source_sha256": "85067746200234089cc3ab0d23866ac85656157240f0d675a7181265c9d70e7b",
+    "video": "/home/junqiy/projects/unionmimic/work/demos/wuji-mesh-showcase-20261109-v1/03_continuous_multi_axis.mp4",
+    "duration_s": 19.38,
+    "fps": 25,
+    "playback_speed": 1,
+    "policy": false,
+    "physics": false,
+    "mesh_xml_sha256": "c11ab34b0fd0c1d520d108ffdefe45bfc05711bb2e97946a6bda96888cf02847"
+  }
+]

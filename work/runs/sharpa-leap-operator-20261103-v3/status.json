@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "phase": "operator_check",
+  "pid": 41008,
+  "gpu": 2,
+  "updated_unix": 1793721058.868576,
+  "started_unix": 1793720938.58186,
+  "deadline_unix": 1793721838.58186,
+  "updates": 0,
+  "actor_updates": 0
+}

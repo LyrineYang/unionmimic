@@ -1,0 +1,1024 @@
+{
+  "checked_unix": 1793671756.1746507,
+  "groups": [
+    {
+      "family": "sm-baseline-12h-20261102-v1",
+      "arm": "sm-seed92001",
+      "status": {
+        "status": "completed",
+        "phase": "finished",
+        "pid": 52688,
+        "started_unix": 1793619331.9851978,
+        "deadline_unix": 1793662531.9851978,
+        "ended_unix": 1793661452.528451,
+        "best": {
+          "mean_return": 305.5851004123688,
+          "mean_rotation": 1.2858239377383143,
+          "failures": 10,
+          "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-12/evaluation.json",
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/checkpoints/segment-12.pt"
+        },
+        "locked_test_pending": false,
+        "final_report": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/locked-test/evaluation.json"
+      },
+      "learner": {
+        "status": "stopped",
+        "phase": "user_signal",
+        "pid": 33522,
+        "gpu": 0,
+        "arm": "sm",
+        "updated_unix": 1793660733.205704,
+        "started_unix": 1793619339.5465202,
+        "deadline_unix": 1793660731.9851978,
+        "counts": {
+          "model": 84550,
+          "actor": 8435,
+          "critic": 168700,
+          "cycles": 8435
+        },
+        "frames": 4327168,
+        "partial_cycle_preserved": true
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619331.9851978,
+        "deadline_unix": 1793662531.9851978,
+        "training_deadline_unix": 1793660731.9851978,
+        "gpu": 0,
+        "arm": "sm-seed92001",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "best": {
+        "mean_return": 305.5851004123688,
+        "mean_rotation": 1.2858239377383143,
+        "failures": 10,
+        "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-12/evaluation.json",
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/checkpoints/segment-12.pt"
+      },
+      "development": [
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-00/evaluation.json",
+          "return_mean": -35.519658885896206,
+          "rotation": 0.141495033272804,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.30030781051543765
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-01/evaluation.json",
+          "return_mean": -3.9279701709747314,
+          "rotation": 0.07803630256239558,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.2881799587643447
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-02/evaluation.json",
+          "return_mean": -6.827836632728577,
+          "rotation": 0.03162758111284347,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.3139398664352505
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-03/evaluation.json",
+          "return_mean": 6.940433323383331,
+          "rotation": 0.08549233924713917,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.3863746752342783
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-04/evaluation.json",
+          "return_mean": 13.946112751960754,
+          "rotation": 0.046850143331539584,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.3766289451868958
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-05/evaluation.json",
+          "return_mean": 13.195880055427551,
+          "rotation": 0.0868954487159499,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.35195829151221514
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-06/evaluation.json",
+          "return_mean": 12.43897020816803,
+          "rotation": 0.09376822567173804,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.36633726655873
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-07/evaluation.json",
+          "return_mean": 6.08404803276062,
+          "rotation": 0.038994461687252624,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.35101073756749357
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-08/evaluation.json",
+          "return_mean": 18.627074360847473,
+          "rotation": 0.08894082139158854,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.39444977834228945
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-09/evaluation.json",
+          "return_mean": 9.15358853340149,
+          "rotation": 0.027115258300000278,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.3276392339610332
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-10/evaluation.json",
+          "return_mean": 22.82822060585022,
+          "rotation": 0.03359846329476568,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.3470043881457101
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-11/evaluation.json",
+          "return_mean": 248.99363911151886,
+          "rotation": 0.5126089526747819,
+          "failures": 23,
+          "episodes": 32,
+          "axis_deviation": 0.31108744113203946
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-12/evaluation.json",
+          "return_mean": 305.5851004123688,
+          "rotation": 1.2858239377383143,
+          "failures": 10,
+          "episodes": 32,
+          "axis_deviation": 0.2931833956912898
+        }
+      ],
+      "final": {
+        "mean_return": 330.6163823091984,
+        "mean_rotation": 1.356520241307444,
+        "failures": 48,
+        "episodes": 200,
+        "mean_axis_deviation": 0.2519153268876276
+      }
+    },
+    {
+      "family": "sm-baseline-12h-20261102-v1",
+      "arm": "ppo-seed92001",
+      "status": {
+        "status": "completed",
+        "phase": "finished",
+        "pid": 52698,
+        "started_unix": 1793619332.01499,
+        "deadline_unix": 1793662532.01499,
+        "ended_unix": 1793661532.188829,
+        "best": {
+          "mean_return": 780.7209241390228,
+          "mean_rotation": 58.38255568407476,
+          "failures": 2,
+          "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-12/evaluation.json",
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/checkpoints/segment-12.pt"
+        },
+        "locked_test_pending": false,
+        "final_report": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/locked-test/evaluation.json"
+      },
+      "learner": {
+        "status": "stopped",
+        "phase": "user_signal",
+        "pid": 31200,
+        "gpu": 2,
+        "arm": "ppo",
+        "updated_unix": 1793660732.3746808,
+        "started_unix": 1793619339.693361,
+        "deadline_unix": 1793660732.01499,
+        "counts": {
+          "model": 0,
+          "actor": 95407,
+          "critic": 95407,
+          "cycles": 5962
+        },
+        "frames": 12220416,
+        "partial_cycle_preserved": true
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619332.01499,
+        "deadline_unix": 1793662532.01499,
+        "training_deadline_unix": 1793660732.01499,
+        "gpu": 2,
+        "arm": "ppo-seed92001",
+        "algorithm": "ppo",
+        "seed": 92001,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "best": {
+        "mean_return": 780.7209241390228,
+        "mean_rotation": 58.38255568407476,
+        "failures": 2,
+        "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-12/evaluation.json",
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/checkpoints/segment-12.pt"
+      },
+      "development": [
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-00/evaluation.json",
+          "return_mean": 507.2329275608063,
+          "rotation": 36.89339924417436,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.2609988599982535
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-01/evaluation.json",
+          "return_mean": 518.905600309372,
+          "rotation": 37.89129835925996,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.2736676191672489
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-02/evaluation.json",
+          "return_mean": 589.3209686279297,
+          "rotation": 41.82001483999193,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.25446911783761983
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-03/evaluation.json",
+          "return_mean": 656.7623703479767,
+          "rotation": 46.371941393241286,
+          "failures": 1,
+          "episodes": 32,
+          "axis_deviation": 0.25401847633013286
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-04/evaluation.json",
+          "return_mean": 696.8912842273712,
+          "rotation": 48.187335556373,
+          "failures": 1,
+          "episodes": 32,
+          "axis_deviation": 0.2661749096998728
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-05/evaluation.json",
+          "return_mean": 702.257847070694,
+          "rotation": 48.502191131934524,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.26686069955636005
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-06/evaluation.json",
+          "return_mean": 711.433975070715,
+          "rotation": 49.449783286079764,
+          "failures": 1,
+          "episodes": 32,
+          "axis_deviation": 0.26285810319774117
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-07/evaluation.json",
+          "return_mean": 726.7290189266205,
+          "rotation": 56.43823625706136,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.2647752936697569
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-08/evaluation.json",
+          "return_mean": 738.3808414936066,
+          "rotation": 56.6291519459337,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.27971765705584295
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-09/evaluation.json",
+          "return_mean": 727.7241790294647,
+          "rotation": 56.31033361516893,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.2640441164506009
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-10/evaluation.json",
+          "return_mean": 769.5759174823761,
+          "rotation": 58.612050062045455,
+          "failures": 1,
+          "episodes": 32,
+          "axis_deviation": 0.2654524592750044
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-11/evaluation.json",
+          "return_mean": 772.1935741901398,
+          "rotation": 59.161187713965774,
+          "failures": 1,
+          "episodes": 32,
+          "axis_deviation": 0.2693329323008357
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-12/evaluation.json",
+          "return_mean": 780.7209241390228,
+          "rotation": 58.38255568407476,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.2808619128324332
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-13/evaluation.json",
+          "return_mean": 721.3247471451759,
+          "rotation": 54.94381723366678,
+          "failures": 4,
+          "episodes": 32,
+          "axis_deviation": 0.27775223484203526
+        }
+      ],
+      "final": {
+        "mean_return": 762.3760439294576,
+        "mean_rotation": 56.54216778106056,
+        "failures": 7,
+        "episodes": 200,
+        "mean_axis_deviation": 0.22527361083411862
+      }
+    },
+    {
+      "family": "sm-candidate-12h-20261102-v1",
+      "arm": "sm-detach",
+      "status": {
+        "status": "running",
+        "phase": "train",
+        "pid": 6648,
+        "segment": 12,
+        "started_unix": 1793634565.71221,
+        "deadline_unix": 1793677765.71221,
+        "training_deadline_unix": 1793675965.71221,
+        "updated_unix": 1793670968.984826
+      },
+      "learner": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 14415,
+        "gpu": 1,
+        "arm": "sm",
+        "updated_unix": 1793671756.1195195,
+        "started_unix": 1793634573.178068,
+        "deadline_unix": 1793675965.71221,
+        "counts": {
+          "model": 73780,
+          "actor": 7358,
+          "critic": 147160,
+          "cycles": 7358
+        },
+        "frames": 3775488
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-candidate-20261102.plan.json",
+        "started_unix": 1793634565.71221,
+        "deadline_unix": 1793677765.71221,
+        "training_deadline_unix": 1793675965.71221,
+        "gpu": 1,
+        "arm": "sm-detach",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "a42a076ae75188b6eb1c182dbc68aa453e50e23eb7fb35afe3e459bde280febd"
+      },
+      "best": {
+        "mean_return": 678.9262826442719,
+        "mean_rotation": 35.27453556098044,
+        "failures": 2,
+        "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-11/evaluation.json",
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach/checkpoints/segment-11.pt"
+      },
+      "development": [
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-00/evaluation.json",
+          "return_mean": -46.95866610854864,
+          "rotation": -0.016653810198477004,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.4373600152740673
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-01/evaluation.json",
+          "return_mean": -54.39675509929657,
+          "rotation": 0.04307064648310188,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.4233793477604808
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-02/evaluation.json",
+          "return_mean": -56.77231390029192,
+          "rotation": 0.5560318924835883,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.24909973420255888
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-03/evaluation.json",
+          "return_mean": 2.0031943917274475,
+          "rotation": 0.7787905274890363,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.33200136601564967
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-04/evaluation.json",
+          "return_mean": 363.1866286993027,
+          "rotation": 18.160437973216176,
+          "failures": 16,
+          "episodes": 32,
+          "axis_deviation": 0.3422422988869237
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-05/evaluation.json",
+          "return_mean": 620.8948203325272,
+          "rotation": 33.25923344353214,
+          "failures": 4,
+          "episodes": 32,
+          "axis_deviation": 0.2947925336814983
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-06/evaluation.json",
+          "return_mean": 436.74551486968994,
+          "rotation": 21.692301189526916,
+          "failures": 12,
+          "episodes": 32,
+          "axis_deviation": 0.27867115846009816
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-07/evaluation.json",
+          "return_mean": 548.5373834967613,
+          "rotation": 29.03324070945382,
+          "failures": 5,
+          "episodes": 32,
+          "axis_deviation": 0.2179403486860137
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-08/evaluation.json",
+          "return_mean": 600.2331812977791,
+          "rotation": 31.939872912829742,
+          "failures": 7,
+          "episodes": 32,
+          "axis_deviation": 0.20596658412732907
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-09/evaluation.json",
+          "return_mean": 546.8197090625763,
+          "rotation": 24.62884596962249,
+          "failures": 5,
+          "episodes": 32,
+          "axis_deviation": 0.25053487173110667
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-10/evaluation.json",
+          "return_mean": 661.995527267456,
+          "rotation": 30.0124890555162,
+          "failures": 4,
+          "episodes": 32,
+          "axis_deviation": 0.24452789028222724
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-11/evaluation.json",
+          "return_mean": 678.9262826442719,
+          "rotation": 35.27453556098044,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.25078062084438413
+        }
+      ],
+      "final": null
+    },
+    {
+      "family": "sm-candidate-12h-20261102-v1",
+      "arm": "sm-detach-warm",
+      "status": {
+        "status": "running",
+        "phase": "train",
+        "pid": 6653,
+        "segment": 11,
+        "started_unix": 1793634565.5371234,
+        "deadline_unix": 1793677765.5371234,
+        "training_deadline_unix": 1793675965.5371234,
+        "updated_unix": 1793669023.193593
+      },
+      "learner": {
+        "status": "running",
+        "phase": "update",
+        "pid": 1427,
+        "gpu": 3,
+        "arm": "sm",
+        "updated_unix": 1793671753.859777,
+        "started_unix": 1793634573.2803805,
+        "deadline_unix": 1793675965.5371234,
+        "counts": {
+          "model": 74850,
+          "actor": 7185,
+          "critic": 143700,
+          "cycles": 7185
+        },
+        "frames": 3841024
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-candidate-20261102.plan.json",
+        "started_unix": 1793634565.5371234,
+        "deadline_unix": 1793677765.5371234,
+        "training_deadline_unix": 1793675965.5371234,
+        "gpu": 3,
+        "arm": "sm-detach-warm",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "a42a076ae75188b6eb1c182dbc68aa453e50e23eb7fb35afe3e459bde280febd"
+      },
+      "best": {
+        "mean_return": 810.1551575660706,
+        "mean_rotation": 54.13433939777315,
+        "failures": 1,
+        "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-07/evaluation.json",
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/checkpoints/segment-07.pt"
+      },
+      "development": [
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-00/evaluation.json",
+          "return_mean": -54.455285266041756,
+          "rotation": 0.5299540066916961,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.35440554977804484
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-01/evaluation.json",
+          "return_mean": -58.388044252991676,
+          "rotation": 0.841730703948997,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.33425772026468176
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-02/evaluation.json",
+          "return_mean": -13.180060520768166,
+          "rotation": 0.2739816110697575,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.35684550559354883
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-03/evaluation.json",
+          "return_mean": -2.3869345858693123,
+          "rotation": 0.10810150231191074,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.3853887359057588
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-04/evaluation.json",
+          "return_mean": 0.7527895420789719,
+          "rotation": 0.08681220827565994,
+          "failures": 32,
+          "episodes": 32,
+          "axis_deviation": 0.41849869238447573
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-05/evaluation.json",
+          "return_mean": 153.9131921827793,
+          "rotation": 14.993021752685308,
+          "failures": 4,
+          "episodes": 32,
+          "axis_deviation": 0.47255189989494134
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-06/evaluation.json",
+          "return_mean": 727.2681486606598,
+          "rotation": 47.803708320483565,
+          "failures": 4,
+          "episodes": 32,
+          "axis_deviation": 0.28433539408704495
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-07/evaluation.json",
+          "return_mean": 810.1551575660706,
+          "rotation": 54.13433939777315,
+          "failures": 1,
+          "episodes": 32,
+          "axis_deviation": 0.27196263560808326
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-08/evaluation.json",
+          "return_mean": 734.5705711841583,
+          "rotation": 49.740176470950246,
+          "failures": 1,
+          "episodes": 32,
+          "axis_deviation": 0.28461427950715446
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-09/evaluation.json",
+          "return_mean": 768.2887934446335,
+          "rotation": 51.017334731295705,
+          "failures": 1,
+          "episodes": 32,
+          "axis_deviation": 0.2932857328270334
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-10/evaluation.json",
+          "return_mean": 741.9778432846069,
+          "rotation": 43.32959755323827,
+          "failures": 2,
+          "episodes": 32,
+          "axis_deviation": 0.2718148522016845
+        }
+      ],
+      "final": null
+    },
+    {
+      "family": "sm-factorial-20261103-v1",
+      "arm": "a00",
+      "status": {
+        "status": "stopped",
+        "phase": "finished",
+        "pid": 42852,
+        "started_unix": 1793667580.169673,
+        "deadline_unix": 1793699980.169673,
+        "ended_unix": 1793671705.7790787,
+        "best": null,
+        "locked_test_pending": true,
+        "final_report": null
+      },
+      "learner": {
+        "status": "segment_complete",
+        "phase": "finished",
+        "pid": 42919,
+        "gpu": 0,
+        "arm": "sm",
+        "updated_unix": 1793671642.6608045,
+        "started_unix": 1793667585.5266094,
+        "deadline_unix": 1793698180.169673,
+        "counts": {
+          "model": 9000,
+          "actor": 600,
+          "critic": 12000,
+          "cycles": 600
+        },
+        "frames": 468992
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/sm-factorial-20261103.plan.json",
+        "started_unix": 1793667580.169673,
+        "deadline_unix": 1793699980.169673,
+        "training_deadline_unix": 1793698180.169673,
+        "gpu": 0,
+        "arm": "a00",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "faf24c8a9331afeb9d1ba38e4f39d8529f1cbd917ddd935689575b68337375bf"
+      },
+      "best": null,
+      "development": [],
+      "final": null
+    },
+    {
+      "family": "sm-factorial-20261103-v1",
+      "arm": "b10",
+      "status": {
+        "status": "stopped",
+        "phase": "finished",
+        "pid": 42857,
+        "started_unix": 1793667580.185504,
+        "deadline_unix": 1793699980.185504,
+        "ended_unix": 1793671706.043978,
+        "best": null,
+        "locked_test_pending": true,
+        "final_report": null
+      },
+      "learner": {
+        "status": "segment_complete",
+        "phase": "finished",
+        "pid": 42920,
+        "gpu": 2,
+        "arm": "sm",
+        "updated_unix": 1793671667.095198,
+        "started_unix": 1793667586.5611691,
+        "deadline_unix": 1793698180.185504,
+        "counts": {
+          "model": 9000,
+          "actor": 600,
+          "critic": 12000,
+          "cycles": 600
+        },
+        "frames": 468992
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/sm-factorial-20261103.plan.json",
+        "started_unix": 1793667580.185504,
+        "deadline_unix": 1793699980.185504,
+        "training_deadline_unix": 1793698180.185504,
+        "gpu": 2,
+        "arm": "b10",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "faf24c8a9331afeb9d1ba38e4f39d8529f1cbd917ddd935689575b68337375bf"
+      },
+      "best": null,
+      "development": [],
+      "final": null
+    }
+  ],
+  "source_checks": {
+    "config/online-sm-candidate-20261102.plan.json": {
+      "total": 35,
+      "mismatches": []
+    },
+    "config/sm-factorial-20261103.plan.json": {
+      "total": 52,
+      "mismatches": []
+    }
+  },
+  "pilot_acceptance": {
+    "passed": true,
+    "unix": 1793667577.7802815,
+    "source_sha256": {
+      "unionmimic/online/learner.py": "1b626430413d98cf1554565386641ee63a102c84a2cf06075c4d0ee4dac187e4",
+      "unionmimic/online/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+      "unionmimic/online/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+      "unionmimic/online/task.py": "c61eb144788e3b9f3338adb4938f256d8f9ae9b341a431692c54d33debefc45b",
+      "unionmimic/online/simulator.py": "43a9a491031be0152af689e91d0a5e553e957fb0e143a7facb4512f16b2dec08",
+      "unionmimic/online/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+      "unionmimic/online/worker.py": "49fb1a3ffb77839b54c33fa81088e5c8618ad5fc47d2c1d5276e62c918a60aef",
+      "scripts/train_online.py": "d3b5ccfa8288503b1e6ae60b56bb99bddd09e1841e9498f75340e1242570d3a8",
+      "scripts/evaluate_online.py": "683676c256c06d5013651c7696454df1a1c3695e94c07d68b7cbad22afbcfd85",
+      "scripts/online_long_lane.py": "f28baa06ceae043972f54f103a9b3a1ed541166c9b23b0b7eb7b52424a67736a",
+      "scripts/launch_online_long.py": "ee25bfb10f9a2279f0046f21c7aa1660ae07a2d21daeecd4b856e12fa1fb90f2",
+      "scripts/finalize_online_long.py": "8477914373387ede7524ff88878608fd87f3e83aefb3aa3a3a252dc345e79b9d",
+      "scripts/env.sh": "ad13fc90dbe5e0e5a5b9cb1aa1b84cd040028a14ba5657576ff4cde4c09b0baf",
+      "scripts/check_runtime.py": "593f0813889bc44e8b14ac9435b5c178b9caaa02fccf641ad89ce0a7604e90e4",
+      "config/runtime-lock.json": "678c1dd8d51e1a93d06b205e4330d4599d8d8ffedad70e2e9a81bf5d2171651c",
+      "config/wandb.env": "fda86669eff0f47c7702f7ed824a367acabe03f4ea8ca088dd6aa398de6956f7",
+      "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_rotation.py": "5632e38e80f684dabf95ab15716301ca81cf6bcb1672508d74cb87264c6c1bdf",
+      "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_camera_rotation.py": "f0d1bc6e01049b6b9325057f21b13096f79734d2f2fc2838edca0eefdc378097",
+      "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/base/vec_task.py": "911ddb4434a2f3cd98925d539d475802f8f0736f47174e3b8a5630f68147357f",
+      "work/upstreams/WM-Craftnet/isaacgymenvs/utils/spin_reward_utils.py": "e83c424a4b3d8add3224e1cfac9dc5a88938c38623a1630b54eefc631c6d90d4",
+      "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/task/WMCraftnetRotation.yaml": "1baec80813b3a6fd8a5275f966d0d5d3febe4127844ad88ff21089705d6f9f30",
+      "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/train/WMCraftnetPPO.yaml": "b81488e09bc4e1603390020c33f9e47e20fc1daf2947912510c1546cc4792637",
+      "work/upstreams/WM-Craftnet/rl_games/common/common_losses.py": "9134b3cea449fd2ab566cf5ed6fcc8951434de228020fd5162cf6beb5cdaf5c2",
+      "work/upstreams/WM-Craftnet/rl_games/common/schedulers.py": "3fd0d4b2b9472d495458d258bff82bf5fb6bd6c18d91fc20df1b2c9c23d3a5cc",
+      "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py": "c7cc0a4962feb00002e62d37b969a075beadeded5a61f124d4bce85120f9e239",
+      "unionmimic/online_candidate/learner.py": "7bcfddb29c63df0cb97ae2af4bc808faa601d96aba52aac4f4f0e3f14c4f2d99",
+      "unionmimic/online_candidate/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+      "unionmimic/online_candidate/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+      "unionmimic/online_candidate/task.py": "c93f6d85db003addda2c7b99bac0b3a8435b9048e05384a693cda403c8e2c0fb",
+      "unionmimic/online_candidate/simulator.py": "43a9a491031be0152af689e91d0a5e553e957fb0e143a7facb4512f16b2dec08",
+      "unionmimic/online_candidate/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+      "unionmimic/online_candidate/worker.py": "89f76d786a7db84f7c22fd6adec08a0c1d794267b7c5b75a94bf951e07ac0233",
+      "scripts/train_online_candidate.py": "4761f905b37cefe5c3b6fd10c67318d6969c9b8e20cb285e62c32e34b58ecd6a",
+      "scripts/online_candidate_lane.py": "3cf4870b1b09449c2c4f1f9b1360184790f96a8e10c94f1d955255195958d3fa",
+      "scripts/launch_online_candidate.py": "8078e2dc655ab51e3797b2275ee1cf791605b9a7b767bffdb876d3769a0c3642",
+      "unionmimic/online_baseline/learner.py": "f04158c5e25522beeac4a9ff470f00747ff189dc7c62b2d1bbd97495b971306e",
+      "unionmimic/online_baseline/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+      "unionmimic/online_baseline/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+      "unionmimic/online_baseline/task.py": "c93f6d85db003addda2c7b99bac0b3a8435b9048e05384a693cda403c8e2c0fb",
+      "unionmimic/online_baseline/curriculum.py": "a77d8a2d6e5c9b38a05077bf566c5f67449835f85de24903b938d0e197242e48",
+      "unionmimic/online_baseline/simulator.py": "12b60a239087888fed9f05883dfcf137654e36b5e0df83635e774e8e6c62c6fd",
+      "unionmimic/online_baseline/core.py": "750f8b6eca2c632d1e84a5099cd51b793d7be8ee53eda1b073413738e7902233",
+      "unionmimic/online_baseline/worker.py": "e8f2ab502c45f1f5e7ebbf948019f103ccfcfc7484573313f241826f2c3f69c8",
+      "scripts/train_online_baseline.py": "02c752a56e7210bfc8e65c9e790154c94004580e51a6776f4660c8a952bd57b9",
+      "scripts/online_baseline_lane.py": "1d9f235c3789c147f9f48bff087ca252be4a4995e173c6eb05fd13185ab5b4a5",
+      "scripts/launch_online_baseline.py": "f1d5674e9f1a138d73ba66c6673e5434f4e27a7685b8494e4d4675bc2521047f",
+      "scripts/wait_online_baseline.py": "ae03d29b75c76a8f8fbb1d0dc3adc4dcf3437443931851e80e4b8841ed5c4387",
+      "scripts/complete_baseline_preflight.py": "a77d802a30b4f2fcce0632b166b9ad4d0659176dae03d0f003a7bc01c7d00bf5",
+      "unionmimic/common.py": "12115b32b321ed3e8c1fba2bace4a338f903a7e7afe27b88043dd070c444553d",
+      "work/analysis/sm-factorial-20261103/pilot_driver.py": "c7978d492af953f3b39c92fee11da30edde9c4c4a5383952e482d7065dfa6165",
+      "tests/test_online_baseline.py": "15c9c980343c0b8fb9a9c4c5f96869fc74692c54c654e6ae14b6edd5e74f5d3a",
+      "tests/test_online_baseline_coordinator.py": "527da1884b5052af1a309e710a58e248aef5e6660526859e88e166f8cc124f2e"
+    },
+    "pilots": [
+      {
+        "arm": "a00",
+        "gpu": 0,
+        "seconds": 322.5839295387268,
+        "counts": {
+          "model": 320,
+          "actor": 12,
+          "critic": 240,
+          "cycles": 12
+        },
+        "frames": 24576,
+        "parity": {
+          "parity_rows": 1024,
+          "max_reward_error": 1.9073486328125e-06,
+          "max_action_error": 0.0,
+          "max_target_error": 0.0,
+          "reset_frame_terminations": 0
+        },
+        "curriculum_resume": {
+          "kind": "resume",
+          "unix": 1793667134.136238,
+          "cycles": 10,
+          "frames": 23552,
+          "replay_steps": 368,
+          "new_simulator_episodes": true,
+          "curriculum_restored": true,
+          "curriculum_angle": 1.0,
+          "curriculum_count": 175
+        },
+        "finite_checkpoint": true,
+        "actor_updated": true,
+        "initial_actor_digest": "84c5a28dd7ff428218527a3c36475e0e532d4142343955347da22f90c5cb80a5",
+        "mean_cycle_seconds": 4.775211493174235,
+        "physical_evaluation": {
+          "mean_return": -12.823474645614624,
+          "mean_rotation": -0.029521714488510042,
+          "failures": 8
+        },
+        "run": "/home/junqiy/projects/unionmimic/work/runs/sm-factorial-pilot-20261103-a00",
+        "passed": true
+      },
+      {
+        "arm": "b10",
+        "gpu": 2,
+        "seconds": 327.30511260032654,
+        "counts": {
+          "model": 320,
+          "actor": 12,
+          "critic": 240,
+          "cycles": 12
+        },
+        "frames": 24576,
+        "parity": {
+          "parity_rows": 1024,
+          "max_reward_error": 2.9802322387695312e-06,
+          "max_action_error": 0.0,
+          "max_target_error": 0.0,
+          "reset_frame_terminations": 0
+        },
+        "curriculum_resume": {
+          "kind": "resume",
+          "unix": 1793667130.6404474,
+          "cycles": 10,
+          "frames": 23552,
+          "replay_steps": 368,
+          "new_simulator_episodes": true,
+          "curriculum_restored": true,
+          "curriculum_angle": 1.0,
+          "curriculum_count": 181
+        },
+        "finite_checkpoint": true,
+        "actor_updated": true,
+        "initial_actor_digest": "84c5a28dd7ff428218527a3c36475e0e532d4142343955347da22f90c5cb80a5",
+        "mean_cycle_seconds": 4.710305313269298,
+        "physical_evaluation": {
+          "mean_return": -39.68779802322388,
+          "mean_rotation": 0.04993082783767022,
+          "failures": 8
+        },
+        "run": "/home/junqiy/projects/unionmimic/work/runs/sm-factorial-pilot-20261103-b10",
+        "passed": true
+      },
+      {
+        "arm": "c01",
+        "gpu": 0,
+        "seconds": 314.28486609458923,
+        "counts": {
+          "model": 320,
+          "actor": 12,
+          "critic": 240,
+          "cycles": 12
+        },
+        "frames": 24576,
+        "parity": {
+          "parity_rows": 1024,
+          "max_reward_error": 2.0265579223632812e-06,
+          "max_action_error": 0.0,
+          "max_target_error": 0.0,
+          "reset_frame_terminations": 0
+        },
+        "curriculum_resume": {
+          "kind": "resume",
+          "unix": 1793667461.7708044,
+          "cycles": 10,
+          "frames": 23552,
+          "replay_steps": 368,
+          "new_simulator_episodes": true,
+          "curriculum_restored": true,
+          "curriculum_angle": 1.0,
+          "curriculum_count": 166
+        },
+        "finite_checkpoint": true,
+        "actor_updated": true,
+        "initial_actor_digest": "84c5a28dd7ff428218527a3c36475e0e532d4142343955347da22f90c5cb80a5",
+        "mean_cycle_seconds": 4.626272877057393,
+        "physical_evaluation": {
+          "mean_return": -2.5833561420440674,
+          "mean_rotation": 0.008143748331349343,
+          "failures": 8
+        },
+        "run": "/home/junqiy/projects/unionmimic/work/runs/sm-factorial-pilot-20261103-c01",
+        "passed": true
+      },
+      {
+        "arm": "d11",
+        "gpu": 2,
+        "seconds": 329.5956358909607,
+        "counts": {
+          "model": 320,
+          "actor": 12,
+          "critic": 240,
+          "cycles": 12
+        },
+        "frames": 24576,
+        "parity": {
+          "parity_rows": 1024,
+          "max_reward_error": 3.2186508178710938e-06,
+          "max_action_error": 0.0,
+          "max_target_error": 0.0,
+          "reset_frame_terminations": 0
+        },
+        "curriculum_resume": {
+          "kind": "resume",
+          "unix": 1793667465.0434837,
+          "cycles": 10,
+          "frames": 23552,
+          "replay_steps": 368,
+          "new_simulator_episodes": true,
+          "curriculum_restored": true,
+          "curriculum_angle": 1.0,
+          "curriculum_count": 185
+        },
+        "finite_checkpoint": true,
+        "actor_updated": true,
+        "initial_actor_digest": "84c5a28dd7ff428218527a3c36475e0e532d4142343955347da22f90c5cb80a5",
+        "mean_cycle_seconds": 4.437191486358643,
+        "physical_evaluation": {
+          "mean_return": -12.305019855499268,
+          "mean_rotation": 0.08434901434156927,
+          "failures": 8
+        },
+        "run": "/home/junqiy/projects/unionmimic/work/runs/sm-factorial-pilot-20261103-d11",
+        "passed": true
+      }
+    ],
+    "total_pilot_gpu_hours": 0.3593804289235009,
+    "learning_benefit_proven": false,
+    "authorization": "User 2026-11-03 explicitly authorized reviewed baseline changes and experiments on available GPUs; stop conversation once detached tasks run."
+  },
+  "authorization": {
+    "approved": false,
+    "plan_sha256": "a2549b76f5d45b1aa5338d077df389631400225aa8fb8ad436606875f4b052f9",
+    "unix": 1793667090.8550723,
+    "basis": "User 2026-11-03 explicitly authorized reviewed baseline changes and experiments on available GPUs; stop conversation once detached tasks run.",
+    "scope": "Four bounded pilots and four 9-hour factorial arms; preserve predecessor processes and stop automatically at original per-lane deadlines.",
+    "revoked_unix": 1793671705.0208192,
+    "reason": "Latest user instruction: report results and obtain explicit formal confirmation before long training or resuming the new factorial experiment."
+  },
+  "stopped_checkpoint_checks": [
+    {
+      "arm": "a00",
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-factorial-20261103-v1/a00/learner/last.pt",
+      "counts": {
+        "model": 9000,
+        "actor": 600,
+        "critic": 12000,
+        "cycles": 600
+      },
+      "finite": true,
+      "curriculum": {
+        "gravity_curriculum_current_max_angle_deg": 1.0,
+        "gravity_curriculum_upgrade_count": 0,
+        "gravity_curriculum_full_run_ratio": 0.00244140625,
+        "gravity_curriculum_outcome_write_idx": 1586,
+        "gravity_curriculum_outcome_count": 2048,
+        "action_conservative_scale": 1.0
+      },
+      "gpu_hours": 1.1460026127099991
+    },
+    {
+      "arm": "b10",
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-factorial-20261103-v1/b10/learner/last.pt",
+      "counts": {
+        "model": 9000,
+        "actor": 600,
+        "critic": 12000,
+        "cycles": 600
+      },
+      "finite": true,
+      "curriculum": {
+        "gravity_curriculum_current_max_angle_deg": 1.0,
+        "gravity_curriculum_upgrade_count": 0,
+        "gravity_curriculum_full_run_ratio": 0.0,
+        "gravity_curriculum_outcome_write_idx": 74,
+        "gravity_curriculum_outcome_count": 2048,
+        "action_conservative_scale": 1.0
+      },
+      "gpu_hours": 1.1460717983378303
+    }
+  ],
+  "new_formal_consumed_gpu_hours": 2.2920744110478295,
+  "new_pilots_consumed_gpu_hours": 0.3593804289235009,
+  "new_total_consumed_gpu_hours": 2.6514548399713305
+}

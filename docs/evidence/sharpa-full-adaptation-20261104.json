@@ -1,0 +1,105 @@
+{
+  "checked_unix": 1793763702.4604108,
+  "scope": "adaptation-first per latest user direction",
+  "long_training_stopped": [
+    {
+      "run": "sharpa-leap-12h-20261103-v1",
+      "status": {
+        "status": "stopped",
+        "phase": "long_training",
+        "pid": 44726,
+        "gpu": 2,
+        "updated_unix": 1793762930.1700063,
+        "started_unix": 1793721214.4259481,
+        "deadline_unix": 1793764414.4259481,
+        "updates": 4842,
+        "actor_updates": 4542,
+        "error": "InterruptedError('Stop requested; no automatic resume')"
+      },
+      "source_hashes_match": true,
+      "process_exited": true,
+      "checkpoint_stop_record": "/home/junqiy/projects/unionmimic/work/runs/sharpa-leap-12h-20261103-v1/user-stop-20261104.json"
+    },
+    {
+      "run": "sharpa-paired-ppo-12h-20261104-v1",
+      "status": {
+        "status": "stopped",
+        "pid": 36059,
+        "gpu": 1,
+        "unix": 1793762930.280209,
+        "error": "InterruptedError('User stop; no automatic resume')"
+      },
+      "source_hashes_match": true,
+      "process_exited": true,
+      "checkpoint_stop_record": "/home/junqiy/projects/unionmimic/work/runs/sharpa-paired-ppo-12h-20261104-v1/user-stop-20261104.json"
+    }
+  ],
+  "four_gpu_checks": [
+    {
+      "gpu": 0,
+      "passed": false,
+      "survival": 0.1538461595773697,
+      "acceptable_grasps": 0.1538461595773697,
+      "fk_error_m": 2.5200731670338428e-06,
+      "interface": {
+        "passed": true,
+        "valid_transitions": 1074,
+        "command_error": 0.0,
+        "target_error": 0.0,
+        "reward_error": 0.0
+      }
+    },
+    {
+      "gpu": 1,
+      "passed": false,
+      "survival": 0.11538462340831757,
+      "acceptable_grasps": 0.11538462340831757,
+      "fk_error_m": 1.86474869678932e-06,
+      "interface": {
+        "passed": true,
+        "valid_transitions": 472,
+        "command_error": 0.0,
+        "target_error": 0.0,
+        "reward_error": 0.0
+      }
+    },
+    {
+      "gpu": 2,
+      "passed": false,
+      "survival": 0.1538461595773697,
+      "acceptable_grasps": 0.1538461595773697,
+      "fk_error_m": 2.1407886379165575e-06,
+      "interface": {
+        "passed": true,
+        "valid_transitions": 957,
+        "command_error": 0.0,
+        "target_error": 0.0,
+        "reward_error": 0.0
+      }
+    },
+    {
+      "gpu": 3,
+      "passed": false,
+      "survival": 0.13461539149284363,
+      "acceptable_grasps": 0.13461539149284363,
+      "fk_error_m": 2.0299278276070254e-06,
+      "interface": {
+        "passed": true,
+        "valid_transitions": 494,
+        "command_error": 0.0,
+        "target_error": 0.0,
+        "reward_error": 0.0
+      }
+    }
+  ],
+  "complete_sharpa_adaptation_passed": false,
+  "multiaction_learning_started": false,
+  "wsm_connected": false,
+  "pending": [
+    "collision-valid reset grasps",
+    "reference pen geometry/inertia and reset velocities",
+    "full retargeted reference command and penalties",
+    "SM/PPO replay/learner and imagined observation integration",
+    "full-scale update/recollection pilots"
+  ]
+}

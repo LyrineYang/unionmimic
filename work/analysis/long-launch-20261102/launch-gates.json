@@ -1,0 +1,23 @@
+{
+  "ppo_ready": true,
+  "dynamics_ready": true,
+  "sm_ready": false,
+  "code_review_passed": true,
+  "tests": 33,
+  "decision": "The full action-direction grid did not establish useful model ranking or gradients: 404 eligible comparisons, 49.5% sign agreement, cluster95CI44.2-54.5%. Do not spend long actor training on this unaccepted SM path. Run two real PPO baselines and two RSSM coverage/fitting seeds, retaining unchanged prediction and physical gates.",
+  "baseline_prediction_score": 2.6717044178424207,
+  "evidence_sha256": {
+    "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/ppo-recheck/result.json": "bc64f32ce9f964466da5be6c30235e081b9886b235c1d24b5b4edce43d1c19a3",
+    "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/dynamics-anchor-recheck/result.json": "411779dacd99c7f4e4960bf1743f4c0c39557d319123bbaa1e0b634644fb0afb",
+    "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/action-direction-full.json": "495c882b80f775d6abfd3ee64b934b60a4a5bd04c30fbc68bcf9be9477060dba",
+    "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/final-regression.log": "0fb4c6a83c17d2da008135aabbe25bae4ee15a2451cd571fb856793ec87f52ee",
+    "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/sm-500-acceptance.json": "1b966888c048d4ab058e88bf0d73b085d635ab661950e2de2e8ab5399dfcc438"
+  },
+  "scope": "PPO headroom and RSSM action coverage/model adaptation; not a PPO-versus-SM efficiency claim",
+  "known_limits": [
+    "RSSM32-episode stability is not a proof of improvement",
+    "Stronger representation penalty did not demonstrate improved actor behavior",
+    "Action-direction acceptance must be rerun on a selected adapted model before SM policy updates",
+    "No locked final test has been opened"
+  ]
+}

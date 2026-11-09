@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "full_recipe_short_training": false,
+  "operator_check_only": true,
+  "model_updates": 10,
+  "actor_updates": 1,
+  "critic_optimizer_steps": 20,
+  "parity": {
+    "reward": 7.659196853637695e-06,
+    "action": 0.0,
+    "target": 0.0
+  },
+  "used_actor_updates": 1,
+  "frozen_model_unchanged": true,
+  "model": {
+    "wm": 530.7807006835938,
+    "term": 0.42006027698516846,
+    "aux": 1.262856364250183,
+    "wm_twist_deg": 7.478952407836914,
+    "wm_pos_mm": 9.403848648071289
+  },
+  "actor": {
+    "J": -3.6111183166503906,
+    "imag_r": -16.423202514648438,
+    "v": 254.7726287841797,
+    "gn": 2.311539649963379,
+    "surv": 0.02398744970560074,
+    "finite": true
+  },
+  "seconds": 120.17696046829224
+}

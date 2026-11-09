@@ -1,0 +1,214 @@
+{
+  "checked_unix": 1793634712.9179926,
+  "status": "four_processes_running_candidates_started_before_midnight",
+  "source_checks": {
+    "config/online-sm-long-20261102-12h.plan.json": true,
+    "config/online-sm-candidate-20261102.plan.json": true
+  },
+  "runs": [
+    {
+      "run": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001",
+      "status": {
+        "status": "running",
+        "phase": "update",
+        "pid": 4598,
+        "gpu": 0,
+        "arm": "sm",
+        "updated_unix": 1793634709.3934395,
+        "started_unix": 1793619339.5465202,
+        "deadline_unix": 1793660731.9851978,
+        "counts": {
+          "model": 30770,
+          "actor": 3057,
+          "critic": 61140,
+          "cycles": 3057
+        },
+        "frames": 1573888
+      },
+      "lane_status": {
+        "status": "running",
+        "phase": "train",
+        "pid": 52688,
+        "segment": 5,
+        "started_unix": 1793619331.9851978,
+        "deadline_unix": 1793662531.9851978,
+        "training_deadline_unix": 1793660731.9851978,
+        "updated_unix": 1793634389.4980237
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619331.9851978,
+        "deadline_unix": 1793662531.9851978,
+        "training_deadline_unix": 1793660731.9851978,
+        "gpu": 0,
+        "arm": "sm-seed92001",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "latest_event": {
+        "kind": "physical_episodes",
+        "unix": 1793634707.9920323,
+        "episodes": 5,
+        "mean_return": 14.566590881347656,
+        "mean_rotation": 0.07502184491604566,
+        "mean_axis_deviation": 0.2914347798335357,
+        "mean_offaxis": 0.9349576950073242,
+        "failure_rate": 1.0
+      }
+    },
+    {
+      "run": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001",
+      "status": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 574,
+        "gpu": 2,
+        "arm": "ppo",
+        "updated_unix": 1793634711.7938704,
+        "started_unix": 1793619339.693361,
+        "deadline_unix": 1793660732.01499,
+        "counts": {
+          "model": 0,
+          "actor": 35312,
+          "critic": 35312,
+          "cycles": 2207
+        },
+        "frames": 4528128
+      },
+      "lane_status": {
+        "status": "running",
+        "phase": "train",
+        "pid": 52698,
+        "segment": 5,
+        "started_unix": 1793619332.01499,
+        "deadline_unix": 1793662532.01499,
+        "training_deadline_unix": 1793660732.01499,
+        "updated_unix": 1793634001.179002
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619332.01499,
+        "deadline_unix": 1793662532.01499,
+        "training_deadline_unix": 1793660732.01499,
+        "gpu": 2,
+        "arm": "ppo-seed92001",
+        "algorithm": "ppo",
+        "seed": 92001,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "latest_event": {
+        "kind": "physical_episodes",
+        "unix": 1793634711.7816854,
+        "episodes": 1,
+        "mean_return": 342.2813720703125,
+        "mean_rotation": 25.094181060791016,
+        "mean_axis_deviation": 0.33462199758976063,
+        "mean_offaxis": 31.038074493408203,
+        "failure_rate": 1.0
+      }
+    },
+    {
+      "run": "work/runs/sm-candidate-12h-20261102-v1/sm-detach",
+      "status": {
+        "status": "running",
+        "phase": "update",
+        "pid": 6688,
+        "gpu": 1,
+        "arm": "sm",
+        "updated_unix": 1793634711.2274363,
+        "started_unix": 1793634573.178068,
+        "deadline_unix": 1793675965.71221,
+        "counts": {
+          "model": 240,
+          "actor": 4,
+          "critic": 80,
+          "cycles": 4
+        },
+        "frames": 10752
+      },
+      "lane_status": {
+        "status": "running",
+        "phase": "train",
+        "pid": 6648,
+        "segment": 0,
+        "started_unix": 1793634565.71221,
+        "deadline_unix": 1793677765.71221,
+        "training_deadline_unix": 1793675965.71221,
+        "updated_unix": 1793634565.717267
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-candidate-20261102.plan.json",
+        "started_unix": 1793634565.71221,
+        "deadline_unix": 1793677765.71221,
+        "training_deadline_unix": 1793675965.71221,
+        "gpu": 1,
+        "arm": "sm-detach",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "a42a076ae75188b6eb1c182dbc68aa453e50e23eb7fb35afe3e459bde280febd"
+      },
+      "latest_event": {
+        "kind": "physical_episodes",
+        "unix": 1793634709.6015356,
+        "episodes": 2,
+        "mean_return": -160.9676742553711,
+        "mean_rotation": -0.10514972917735577,
+        "mean_axis_deviation": 0.10947227614131273,
+        "mean_offaxis": 2.5407142639160156,
+        "failure_rate": 1.0
+      }
+    },
+    {
+      "run": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm",
+      "status": {
+        "status": "running",
+        "phase": "warmup",
+        "pid": 6684,
+        "gpu": 3,
+        "arm": "sm",
+        "updated_unix": 1793634710.8073308,
+        "started_unix": 1793634573.2803805,
+        "deadline_unix": 1793675965.5371234,
+        "counts": {
+          "model": 175,
+          "actor": 0,
+          "critic": 0,
+          "cycles": 0
+        },
+        "frames": 17408
+      },
+      "lane_status": {
+        "status": "running",
+        "phase": "train",
+        "pid": 6653,
+        "segment": 0,
+        "started_unix": 1793634565.5371234,
+        "deadline_unix": 1793677765.5371234,
+        "training_deadline_unix": 1793675965.5371234,
+        "updated_unix": 1793634565.5422812
+      },
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-candidate-20261102.plan.json",
+        "started_unix": 1793634565.5371234,
+        "deadline_unix": 1793677765.5371234,
+        "training_deadline_unix": 1793675965.5371234,
+        "gpu": 3,
+        "arm": "sm-detach-warm",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "a42a076ae75188b6eb1c182dbc68aa453e50e23eb7fb35afe3e459bde280febd"
+      },
+      "latest_event": {
+        "kind": "warmup",
+        "unix": 1793634710.8018918,
+        "updates": 175,
+        "model_loss": 0.30311548709869385,
+        "terminal_loss": 0.011710455641150475,
+        "model_grad": 0.19256511330604553
+      }
+    }
+  ],
+  "gpu": "0, 4033 MiB, 24 %\n1, 4049 MiB, 5 %\n2, 3990 MiB, 55 %\n3, 4029 MiB, 63 %\n",
+  "no_performance_claim": true
+}

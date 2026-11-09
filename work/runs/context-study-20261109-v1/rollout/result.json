@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "scope": "short mechanism control; not reproduction or established benefit",
+  "updates": 400,
+  "actor_updates": 100,
+  "model_updates": 4000,
+  "critic_updates": 2000,
+  "frames": 273152,
+  "parity": {
+    "reward": 7.62939453125e-06,
+    "action": 0.0,
+    "target": 0.0
+  },
+  "prior_unchanged": true,
+  "initial": {
+    "actor": "56da38b5a8fdfb6aa5bdda72dac3b9a68558c7c874437896da3726ca3ca8f8d9",
+    "critic": "df88c018daa616ff0826a7de424890c65f133cc8d44aae5f3ae145ae5acd2599",
+    "model": "6a62c690cf1b9ff73d3ad7d96fb79ba5b8f1389d809189dd728f0bbf11780d4c",
+    "prior": "15ce4ddd118784a4417ece7127cedc47f992c3916efa03a564a0fdcc12e03c38"
+  },
+  "final": {
+    "actor": "a4dfd4532ffa14bb95da54e668cd9820bc70edd374e91f9cf115053a8c6cd750",
+    "critic": "f9f3675c783f4a0496ec01be4e78427c2b8063090da5f29c7ba5be70119d0876",
+    "model": "c25a2f26f1ff78990e01031231761acdb823c85281bfda1be6c270b48c36ee72"
+  },
+  "totals_seconds": {
+    "fit": 1692.2220652103424,
+    "actor": 202.7195029258728,
+    "collect": 688.7566728591919
+  },
+  "seconds": 2706.4180459976196,
+  "peak_gib": 7.91839599609375
+}

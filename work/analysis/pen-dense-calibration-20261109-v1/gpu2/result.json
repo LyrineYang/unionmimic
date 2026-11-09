@@ -1,0 +1,85 @@
+{
+  "completed": true,
+  "source_manifest_sha256": "72f32de2752090a95edc22fc5e9a1217be13b610fdf86728bc98ceb6c8c7e2e8",
+  "history": [
+    {
+      "iteration": 0,
+      "passed": 256,
+      "nodes": 277,
+      "seconds": 114.8519937992096
+    },
+    {
+      "iteration": 1,
+      "passed": 254,
+      "nodes": 277,
+      "seconds": 151.68779754638672
+    },
+    {
+      "iteration": 2,
+      "passed": 249,
+      "nodes": 277,
+      "seconds": 188.10000562667847
+    },
+    {
+      "iteration": 3,
+      "passed": 266,
+      "nodes": 277,
+      "seconds": 222.99053120613098
+    },
+    {
+      "iteration": 4,
+      "passed": 260,
+      "nodes": 277,
+      "seconds": 259.0864200592041
+    },
+    {
+      "iteration": 5,
+      "passed": 261,
+      "nodes": 277,
+      "seconds": 290.20022916793823
+    },
+    {
+      "iteration": 6,
+      "passed": 265,
+      "nodes": 277,
+      "seconds": 327.0597951412201
+    },
+    {
+      "iteration": 7,
+      "passed": 265,
+      "nodes": 277,
+      "seconds": 362.8765244483948
+    },
+    {
+      "iteration": 8,
+      "passed": 264,
+      "nodes": 277,
+      "seconds": 399.6322069168091
+    },
+    {
+      "iteration": 9,
+      "passed": 267,
+      "nodes": 277,
+      "seconds": 435.72590589523315
+    },
+    {
+      "iteration": 10,
+      "passed": 266,
+      "nodes": 277,
+      "seconds": 471.74490690231323
+    },
+    {
+      "iteration": 11,
+      "passed": 263,
+      "nodes": 277,
+      "seconds": 507.1270363330841
+    }
+  ],
+  "initialized_state_only": true,
+  "physical_acceptance_pending": true,
+  "position_bound_m": 0.005,
+  "anchors_per_clip": 64,
+  "lanes": 3,
+  "lane": 2,
+  "source_sha256": "e61fa621b6f34e3f1bdd39366879e76be06fb0f31fbab90d9c89ce4a14499983"
+}

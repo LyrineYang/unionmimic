@@ -1,15 +1,23 @@
 # Roadmap
 
-**Deliver the full WM + SM adaptation, then compare it with PPO.**
+目标由 [MAINLINE.md](MAINLINE.md) 定义。**先完成 SM 训练闭环，再验证先验带来的控制收益。** 下表是计划；完成状态必须有证据，不能从旧路径的测试数推断。
 
-| Stage | Work | Deliverable for the next stage | Evidence state |
+| 阶段 | 解决的问题 | 交付给下一阶段 | 验收 |
 | --- | --- | --- | --- |
-| 01 · Restore | Verify released weights, physics, sensors, RSSM and replay | Reproducible original-policy runtime | Recorded acceptance passed |
-| 02 · Predict | Collect aligned episodes, restore starts, calibrate four-step prediction | Validated data and model checkpoint | Development in progress; acceptance pending |
-| 03 · Learn | Match actor/actions; add imagination, backpropagation and value learning | Updated policy, save/resume, physical evaluation | Integration in progress; acceptance pending |
-| 04 · Compare | Fine-tune PPO and SM from the same weights | Paired quality/cost curves and failure analysis | Results pending |
-| 05 · Present | Package commands, evidence and real evaluation media | Reproducible release and expanded website | Documentation and website foundation available |
+| A · SM 基线 | 原系统只有发布策略/RSSM 微调路径 | 独立物理动力学、随机 actor/critic、当前策略回放、交替训练及联合断点 | 真实短试跑完成多轮采集→拟合→BPTT；新策略用于后续采集；学习曲线、模块更新与恢复证据 |
+| B · 冻结先验 | 策略如何在真实与想象中读取同一类历史上下文 | WSM 与 ψ 接口、预测观测/特征桥接或明确标注的 prior 候选 | 无未来观测泄漏；每步更新完整状态；报告上下文和动作偏差、输入梯度与冻结检查 |
+| C · 主比较 | 增加先验是否改善物理控制精度 | SM / SM+prior 配对种子结果，精度—成本曲线和最佳 checkpoint | 固定任务及评测，轴偏差下降且旋转/失败满足预定约束；总成本及失败记录完整 |
+| D · 一致性研究 | 上下文漂移是否限制 BPTT | 有/无多步一致性监督；同传感器/容量及预训练来源对照 | 接触分组诊断 + 真实精度，不能只用 latent loss 下降证明有效 |
+| E · 条件化或复用 | 根据 D 的证据选择下一个问题 | 上下文辅助 F、可信视野、WSM 适配或第二物体之一 | 一次只改变一个主要因素，并包含完整计算成本 |
 
-This is documented acceptance, not a live job monitor. A running process or source file does not close a stage. Update [STATUS.md](STATUS.md) with evidence when a stage passes.
+PPO-Sim 是阶段A的方法/成本参考，不代替阶段C的 SM 基线。短试跑先校验实现，不能要求随机策略达到发布策略95%的能力。
 
-The first follow-up is a second object on the same hand. Longer-term body/hand/leg sharing requires additional working tasks and embodiment interfaces. Cross-embodiment and real-robot capability are not claimed here.
+已积累的物理/相机运行、动作对齐、RSSM 恢复、旧 BPTT 数值与断点检查见 [STATUS.md](STATUS.md)。它们是可复用基础。现已完成阶段A的工程子任务，但阶段A尚未完成：SM 150轮、PPO 90轮、13项检查及实际续训；控制收益仍未证实。
+
+本次对话的优先排错建议见 [SM_REPRODUCTION.md](SM_REPRODUCTION.md)。开发集已有一个PPO种子学到控制，两条SM仍全部失败；保留当前四路结果作为原版对照，任何修正另建版本。
+
+## 运行与文档
+
+旧 PPO/RSSM 适配实验已于11月2日17:28按用户授权停止，证据见 [TRAINING.md](TRAINING.md)。T0–T2工程验收已完成。用户随后授权四张空闲卡各最多12小时，SM/PPO各两个配对种子的长训已启动；每卡预留最后30分钟作锁定测试，不在本轮加入WSM。具体见 [当前执行方案](ONLINE_TRAINING_PLAN.md)。阶段B/C另行根据基线结果安排。具体输入、输出、候选参数和资源上限见 [EXPERIMENTS.md](EXPERIMENTS.md)。主线版本与决策保存在 MAINLINE；阶段验收更新 STATUS。
+
+旧方案在 `work/analysis/mainline-20261102/before/` 保留修改前快照；既有实验数据、权重和报告不改写。跨 embodiment、humanoid 和实机工作需另行建立任务接口，不在当前里程碑内。

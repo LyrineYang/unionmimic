@@ -1,0 +1,17 @@
+{
+  "status": "running",
+  "phase": "fit",
+  "updated_unix": 1793600815.6557844,
+  "step": 125,
+  "loss": 4.342372894287109,
+  "grad_norm": 5.659778594970703,
+  "seconds": 647.3198237419128,
+  "reward_loss": 0.9946569800376892,
+  "prop_loss": 0.17813393473625183,
+  "failure_loss": 0.6249290704727173,
+  "kl_loss": 2.54402494430542,
+  "feature_drift": 0.006279845722019672,
+  "horizon": 4,
+  "supervised_transitions": 256,
+  "includes_early_failure": false
+}

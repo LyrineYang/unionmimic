@@ -1,0 +1,67 @@
+{
+  "shared_task_constants_match_historical_sm": true,
+  "sm_extra_model_parameters": [
+    "force_decay",
+    "force_probability",
+    "force_scale"
+  ],
+  "explanation": "SM additionally saves parameters for predicting randomized external forces; both algorithms use the same simulator randomization.",
+  "ppo_operator": "work/runs/sharpa-paired-ppo-operator-20261109-v1",
+  "same_actor_observation_dim": 730,
+  "same_critic_features_dim": 279,
+  "tests_passed": 9,
+  "learning_parameters_changed": false,
+  "operator": {
+    "passed": true,
+    "learning_gain_verified": false,
+    "iterations": 2,
+    "optimizer_steps": 40,
+    "recollected_policy_iterations": 1,
+    "reward_max_error": 5.245208740234375e-06,
+    "seconds": 173.0884473323822,
+    "peak_allocated_gib": 2.358933448791504
+  },
+  "evaluation": {
+    "passed": true,
+    "episodes": 512,
+    "seed": 20261105,
+    "protocol": "First completed valid policy episode per env, no survivor filtering",
+    "mean_return": -8.042141914367676,
+    "mean_rotation_rad": 0.032985273748636246,
+    "failure_rate": 1.0,
+    "mean_axis_deviation_rad": 0.3356887698173523,
+    "reward_max_error": 3.814697265625e-06,
+    "seconds": 89.61938333511353,
+    "checkpoint_sha256": "7501e11e6e5c1018ff21de62d944c07b075b22344b45a7f932efacdddf934e31"
+  },
+  "launch": {
+    "started_unix": 1794238704.6705592,
+    "deadline_unix": 1794245904.6705592,
+    "recipe": {
+      "envs": 4096,
+      "rollout": 32,
+      "epochs": 5,
+      "minibatches": 4,
+      "lr": 0.001,
+      "clip": 0.2,
+      "entropy": 0.003,
+      "gamma": 0.99,
+      "lam": 0.95,
+      "desired_kl": 0.01,
+      "max_grad": 1.0,
+      "initial_std": 0.7,
+      "min_std": 0.05,
+      "max_std": 1.0
+    },
+    "from_scratch": true,
+    "sources": {
+      "scripts/pilot_sharpa_ppo.py": "449962399b882b52d018bd570cfb428b739c7d53cf94b83bdb83b43d138e4cae",
+      "unionmimic/ppo_plan.py": "5d4fc68186fe3c5a6b4c0a4f01e6bd4df7b698d22957d7b983415f670f1f0346",
+      "unionmimic/leap_sharpa/paired_ppo.py": "77b1c35de3fa97169e456f36befd323bd5a169e96741bd38cafe7d1f0e00b7a2",
+      "unionmimic/leap_sharpa/model.py": "bf34474bb20fb49ebe8c9387a01726e74cce2742f73f32d989cc5c8b4cd13a16",
+      "unionmimic/online_baseline/simulator.py": "96c445d1bed3efa6ef0ca1dfa861214d26807efdffc90f1fcb9cc7a94ce92789",
+      "work/upstreams/WM-Craftnet/rl_games/common/common_losses.py": "9134b3cea449fd2ab566cf5ed6fcc8951434de228020fd5162cf6beb5cdaf5c2",
+      "work/upstreams/sm-reference-audit/src/in_hand_rotation_mjlab/tasks/hand_cube/config/leap_left_custom/rl_cfg.py": "a5343006680a9eee650c2bd3f3bbb5e566e5165f616210478dad8a76d95bf2bd"
+    }
+  }
+}

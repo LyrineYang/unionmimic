@@ -1,0 +1,146 @@
+{
+  "started_unix": 1793634274.560608,
+  "reason": "User requested retaining effective PPO seed and its SM control, reallocating the other two GPUs to candidate experiments before midnight.",
+  "lanes": [
+    {
+      "name": "sm-seed92002",
+      "before": {
+        "status": "running",
+        "phase": "train",
+        "pid": 52693,
+        "segment": 4,
+        "started_unix": 1793619331.9727345,
+        "deadline_unix": 1793662531.9727345,
+        "training_deadline_unix": 1793660731.9727345,
+        "updated_unix": 1793631395.6254818
+      },
+      "worker_before": {
+        "status": "segment_complete",
+        "phase": "finished",
+        "pid": 37894,
+        "gpu": 1,
+        "arm": "sm",
+        "updated_unix": 1793634243.4736466,
+        "started_unix": 1793619339.5354843,
+        "deadline_unix": 1793660731.9727345,
+        "counts": {
+          "model": 30200,
+          "actor": 3000,
+          "critic": 60000,
+          "cycles": 3000
+        },
+        "frames": 1544192
+      },
+      "best_sha256": "11f7a0f5e4f2b777817214a1743427d21e8162cc9351381126f6c7941b3dcddb",
+      "coordinator_pid": 52693,
+      "worker_pid": 37894,
+      "after": {
+        "status": "stopped",
+        "phase": "finished",
+        "pid": 52693,
+        "started_unix": 1793619331.9727345,
+        "deadline_unix": 1793662531.9727345,
+        "ended_unix": 1793634276.2072735,
+        "best": {
+          "mean_return": 15.710206031799316,
+          "mean_rotation": 0.12774218530284998,
+          "failures": 32,
+          "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92002/development-03/evaluation.json",
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92002/checkpoints/segment-03.pt"
+        },
+        "locked_test_pending": true,
+        "final_report": null
+      },
+      "worker_after": {
+        "status": "segment_complete",
+        "phase": "finished",
+        "pid": 37894,
+        "gpu": 1,
+        "arm": "sm",
+        "updated_unix": 1793634243.4736466,
+        "started_unix": 1793619339.5354843,
+        "deadline_unix": 1793660731.9727345,
+        "counts": {
+          "model": 30200,
+          "actor": 3000,
+          "critic": 60000,
+          "cycles": 3000
+        },
+        "frames": 1544192
+      },
+      "exited": true,
+      "best_preserved": true
+    },
+    {
+      "name": "ppo-seed92002",
+      "before": {
+        "status": "running",
+        "phase": "train",
+        "pid": 52705,
+        "segment": 4,
+        "started_unix": 1793619332.015506,
+        "deadline_unix": 1793662532.015506,
+        "training_deadline_unix": 1793660732.015506,
+        "updated_unix": 1793632015.303761
+      },
+      "worker_before": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 42584,
+        "gpu": 3,
+        "arm": "ppo",
+        "updated_unix": 1793634269.7061567,
+        "started_unix": 1793619339.5702145,
+        "deadline_unix": 1793660732.015506,
+        "counts": {
+          "model": 0,
+          "actor": 31792,
+          "critic": 31792,
+          "cycles": 1987
+        },
+        "frames": 4077568
+      },
+      "best_sha256": "5fb9b830ea094bd523fdef5ef739baa3a00ae1bc78a60f3854b67763602b7571",
+      "coordinator_pid": 52705,
+      "worker_pid": 42584,
+      "after": {
+        "status": "stopped",
+        "phase": "finished",
+        "pid": 52705,
+        "started_unix": 1793619332.015506,
+        "deadline_unix": 1793662532.015506,
+        "ended_unix": 1793634280.0892715,
+        "best": {
+          "mean_return": 6.267302937805653,
+          "mean_rotation": 0.9317523380741477,
+          "failures": 32,
+          "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92002/development-00/evaluation.json",
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92002/checkpoints/segment-00.pt"
+        },
+        "locked_test_pending": true,
+        "final_report": null
+      },
+      "worker_after": {
+        "status": "stopped",
+        "phase": "user_signal",
+        "pid": 42584,
+        "gpu": 3,
+        "arm": "ppo",
+        "updated_unix": 1793634275.9950104,
+        "started_unix": 1793619339.5702145,
+        "deadline_unix": 1793660732.015506,
+        "counts": {
+          "model": 0,
+          "actor": 31792,
+          "critic": 31792,
+          "cycles": 1987
+        },
+        "frames": 4079488,
+        "partial_cycle_preserved": true
+      },
+      "exited": true,
+      "best_preserved": true
+    }
+  ],
+  "ended_unix": 1793634281.6002831
+}

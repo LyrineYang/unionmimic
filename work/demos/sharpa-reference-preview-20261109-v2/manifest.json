@@ -1,0 +1,28 @@
+[
+  {
+    "clip": "02_continuous_single_axis/clip_001",
+    "sha256": "1686f0e8923f4146f5ddfa38cc4710971eff369d1d3891bc75191297e9d2215c",
+    "mesh_xml_sha256": "366bdc38b230f1674efe40f377b185346181e9052d0d0a748641f0fd55d4383b",
+    "frames": 960,
+    "frame_dt": 0.02,
+    "video_fps": 25,
+    "policy": false,
+    "physics": false,
+    "contact_verified": false,
+    "selection": "first clip in each pre-existing reference group",
+    "preview_only_asset_fix": "insert missing whitespace before thumb IP actuator kp attribute; upstream file unchanged"
+  },
+  {
+    "clip": "03_continuous_multi_axis/clip_001",
+    "sha256": "c3b6cb4120e1500f88b1a8012c827ed80ec75bcbc2b7dfda7205e1fb5ce35129",
+    "mesh_xml_sha256": "366bdc38b230f1674efe40f377b185346181e9052d0d0a748641f0fd55d4383b",
+    "frames": 970,
+    "frame_dt": 0.02,
+    "video_fps": 25,
+    "policy": false,
+    "physics": false,
+    "contact_verified": false,
+    "selection": "first clip in each pre-existing reference group",
+    "preview_only_asset_fix": "insert missing whitespace before thumb IP actuator kp attribute; upstream file unchanged"
+  }
+]

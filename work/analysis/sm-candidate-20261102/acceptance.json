@@ -1,0 +1,109 @@
+{
+  "checked_unix": 1793634549.8895133,
+  "passed": true,
+  "numerical_tests": 3,
+  "coordinator_tests": 1,
+  "probes": [
+    {
+      "run": "work/runs/sm-detach-probe-20261102",
+      "status": {
+        "status": "segment_complete",
+        "phase": "finished",
+        "pid": 4764,
+        "gpu": 1,
+        "arm": "sm",
+        "updated_unix": 1793634457.5911233,
+        "started_unix": 1793634316.5927918,
+        "deadline_unix": 1793634676.5927918,
+        "counts": {
+          "model": 18,
+          "actor": 5,
+          "critic": 20,
+          "cycles": 5
+        },
+        "frames": 480
+      },
+      "acceptance": {
+        "counts": {
+          "model": 18,
+          "actor": 5,
+          "critic": 20,
+          "cycles": 5
+        },
+        "frames": 480,
+        "initial_actor_digest": "84c5a28dd7ff428218527a3c36475e0e532d4142343955347da22f90c5cb80a5",
+        "final_actor_digest": "b5b9abea320e8f01048442daf1dc4bb13c5ebedb193841e70278e1d81f9ac920",
+        "initial_critic_digest": "7ba81fe157703a5d2b7b1f148527edf09f990d2627c5938e05902ad8de37b07d",
+        "final_critic_digest": "0c0c6776b488f80fbcea764251a5a6086fd77a321c5a5d93e8d711f24331faa4",
+        "original_actor_loaded": false,
+        "independent_model": true,
+        "replay_steps": 60,
+        "parity": {
+          "parity_rows": 64,
+          "max_reward_error": 2.682209014892578e-07,
+          "max_action_error": 0.0,
+          "max_target_error": 0.0,
+          "reset_frame_terminations": 0
+        },
+        "complete_episodes": 0,
+        "resume_semantics": "Exact learner/replay/RNG restoration; fresh simulator episodes, no cross-reset transition.",
+        "seconds": 43.56508708000183,
+        "cuda_peak_allocated": 99003392
+      },
+      "finite_tensors": 230,
+      "checkpoint_sha256": "e1f55f56deda0f47416a714c91a98af5d180f215df887fbf3178746b616ee1c5",
+      "resume_verified": true
+    },
+    {
+      "run": "work/runs/sm-detach-warm-probe-20261102",
+      "status": {
+        "status": "segment_complete",
+        "phase": "finished",
+        "pid": 4814,
+        "gpu": 3,
+        "arm": "sm",
+        "updated_unix": 1793634462.9925556,
+        "started_unix": 1793634321.6551733,
+        "deadline_unix": 1793634681.6551733,
+        "counts": {
+          "model": 30,
+          "actor": 5,
+          "critic": 20,
+          "cycles": 5
+        },
+        "frames": 640
+      },
+      "acceptance": {
+        "counts": {
+          "model": 30,
+          "actor": 5,
+          "critic": 20,
+          "cycles": 5
+        },
+        "frames": 640,
+        "initial_actor_digest": "84c5a28dd7ff428218527a3c36475e0e532d4142343955347da22f90c5cb80a5",
+        "final_actor_digest": "3c2fb8ea903181250ebfd40d4ca87fe30af930e60e1197513054abfec8e3fc17",
+        "initial_critic_digest": "7ba81fe157703a5d2b7b1f148527edf09f990d2627c5938e05902ad8de37b07d",
+        "final_critic_digest": "03260be2ff6d5b95e3ad9ea500c777459e86a008a6ae42dc3070c84df310f651",
+        "original_actor_loaded": false,
+        "independent_model": true,
+        "replay_steps": 80,
+        "parity": {
+          "parity_rows": 64,
+          "max_reward_error": 2.384185791015625e-07,
+          "max_action_error": 0.0,
+          "max_target_error": 0.0,
+          "reset_frame_terminations": 0
+        },
+        "complete_episodes": 0,
+        "resume_semantics": "Exact learner/replay/RNG restoration; fresh simulator episodes, no cross-reset transition.",
+        "seconds": 43.51473808288574,
+        "cuda_peak_allocated": 99003392
+      },
+      "finite_tensors": 230,
+      "checkpoint_sha256": "7c8fcc6acaf502aa336c26537a04e0497c17e99317951ed8e5f6e84fc5d00506",
+      "resume_verified": true
+    }
+  ],
+  "performance_proven": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "running",
+  "phase": "update",
+  "updated_unix": 1793600447.8865032,
+  "epoch": 8,
+  "physical_frames": 139264,
+  "actor_steps": 136,
+  "critic_steps_total": 136,
+  "actor_loss": -0.025178706273436546,
+  "critic_loss": 0.003732086857780814,
+  "actor_grad_norm": 11.853860855102539,
+  "mean_kl": 0.09999738922342657,
+  "actor_lr": 2.0000000000000005e-05,
+  "backward_batches": 20,
+  "critic_steps": 20,
+  "sample_seconds": 52.82468363083899,
+  "seconds": 381.6077773468569,
+  "frozen_modules_unchanged": true,
+  "actor_changed": true
+}

@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "started_unix": 1793597025.9677444,
+  "deadline_unix": 1793601525.9677444,
+  "gpu": 1,
+  "optimizer_steps": 0,
+  "job": "amp-05-d7-s1",
+  "completed_jobs": 51,
+  "updated_unix": 1793600145.538728,
+  "seconds": 3119.5709846019745
+}

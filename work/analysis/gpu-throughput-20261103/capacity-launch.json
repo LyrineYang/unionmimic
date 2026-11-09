@@ -1,0 +1,26 @@
+{
+  "started_unix": 1793709385.8513603,
+  "session": "unionmimic-capacity-probe",
+  "jobs": [
+    {
+      "gpu": 1,
+      "envs": 64,
+      "batch": 256,
+      "run": "/home/junqiy/projects/unionmimic/work/runs/sm-capacity-pilots-20261103-v1/n64-b256"
+    },
+    {
+      "gpu": 2,
+      "envs": 256,
+      "batch": 1024,
+      "run": "/home/junqiy/projects/unionmimic/work/runs/sm-capacity-pilots-20261103-v1/n256-b1024"
+    },
+    {
+      "gpu": 3,
+      "envs": 512,
+      "batch": 2048,
+      "run": "/home/junqiy/projects/unionmimic/work/runs/sm-capacity-pilots-20261103-v1/n512-b2048"
+    }
+  ],
+  "minutes_max_each": 8,
+  "long_training": false
+}

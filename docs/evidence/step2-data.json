@@ -1,0 +1,22 @@
+{
+  "episodes": 99,
+  "transitions": 24659,
+  "failures": 60,
+  "falls": 2,
+  "timeouts": 39,
+  "sources": [
+    {
+      "path": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/data",
+      "sha256": "e668629cd89bef195f34c8fbf196dce50822724ab4fbd24d97a3a66ea1c6f60a"
+    },
+    {
+      "path": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/data-release",
+      "sha256": "9b32e6d99fc82daca08773dafbe934d46f023e3eb93f1be08d65a0e648c7af05"
+    }
+  ],
+  "valid_failures": 12,
+  "max_action_alignment_error": 0.0,
+  "max_target_alignment_error": 0.0,
+  "parameters_unchanged": true,
+  "terminal_observations_preserved": true
+}

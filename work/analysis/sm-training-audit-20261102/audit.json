@@ -1,0 +1,688 @@
+{
+  "captured_started_shanghai": "2026-11-02T16:38:27+08:00",
+  "captured_completed_shanghai": "2026-11-02T16:38:27+08:00",
+  "report_scope": "Completed first run, completed pilots, and a non-final snapshot of the active adaptation run.",
+  "first_run": {
+    "totals": {
+      "sm_updates": 117875,
+      "calibration_updates": 232000,
+      "evaluations": 235,
+      "eval_episodes": 1880,
+      "failures": 0,
+      "new_transitions": 1876649,
+      "new_episodes": 4012,
+      "calibration_passes": 232
+    },
+    "lanes": [
+      {
+        "gpu": 0,
+        "baseline": 1051.6298828125,
+        "best": 1078.01416015625,
+        "last10": 1048.738037109375,
+        "last10_change_percent": -0.27498702256263385,
+        "actor_lr": 7.5e-07,
+        "anchor": 22.5
+      },
+      {
+        "gpu": 1,
+        "baseline": 1056.564697265625,
+        "best": 1079.02587890625,
+        "last10": 1037.8526611328125,
+        "last10_change_percent": -1.771026060329195,
+        "actor_lr": 3e-06,
+        "anchor": 10.0
+      },
+      {
+        "gpu": 2,
+        "baseline": 1029.6248779296875,
+        "best": 1080.6925048828125,
+        "last10": 1035.1218139648438,
+        "last10_change_percent": 0.5338775463748835,
+        "actor_lr": 3e-06,
+        "anchor": 10.0
+      },
+      {
+        "gpu": 3,
+        "baseline": 1069.9884033203125,
+        "best": 1075.662353515625,
+        "last10": 1036.9455261230469,
+        "last10_change_percent": -3.088152833687663,
+        "actor_lr": 3e-06,
+        "anchor": 10.0
+      }
+    ],
+    "new_seed_probe_percent": 0.7241591593203811
+  },
+  "baseline": {
+    "mean_return": 1076.146234512329,
+    "episodes": 32,
+    "rotation_radians": 57.517592549324036,
+    "failures": 0,
+    "checkpoint_sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05",
+    "seeds": [
+      71001,
+      71002,
+      71003,
+      71004
+    ],
+    "returns": [
+      1053.5299072265625,
+      1135.3746337890625,
+      1063.77490234375,
+      1004.8399658203125,
+      1032.0306396484375,
+      1099.7467041015625,
+      901.364501953125,
+      1127.0140380859375,
+      1065.0574951171875,
+      1038.221435546875,
+      990.3864135742188,
+      998.5807495117188,
+      988.6116943359375,
+      1139.8922119140625,
+      1030.3101806640625,
+      1191.500732421875,
+      1108.786865234375,
+      1174.4525146484375,
+      1039.933349609375,
+      1147.4132080078125,
+      1026.9364013671875,
+      1060.1212158203125,
+      1106.1722412109375,
+      1195.2003173828125,
+      1146.3359375,
+      1094.8760986328125,
+      1071.0791015625,
+      1022.3964233398438,
+      972.58544921875,
+      1083.251220703125,
+      1153.9163818359375,
+      1172.986572265625
+    ]
+  },
+  "pilots": [
+    {
+      "name": "初次 PPO（动作路径修正前）",
+      "mean_return": 1069.1587371826172,
+      "rotation": 56.66189384460449,
+      "change_percent": -0.6493074180460634,
+      "failures": 0
+    },
+    {
+      "name": "初次 RSSM，250 更新",
+      "mean_return": 1051.53271484375,
+      "rotation": 56.172274589538574,
+      "change_percent": -2.287190985687282,
+      "failures": 0
+    },
+    {
+      "name": "修正 PPO，16 epochs",
+      "mean_return": 1065.262502670288,
+      "rotation": 56.71891462802887,
+      "change_percent": -1.0113617920126883,
+      "failures": 0
+    },
+    {
+      "name": "RSSM 固定参照重测，250 更新",
+      "mean_return": 1045.9354839324951,
+      "rotation": 55.682286739349365,
+      "change_percent": -2.8073090450875804,
+      "failures": 0
+    },
+    {
+      "name": "SM，500 更新",
+      "mean_return": 1072.7788391113281,
+      "rotation": 57.08276176452637,
+      "change_percent": -0.31291243634067323,
+      "failures": 0
+    }
+  ],
+  "active_run": [
+    {
+      "gpu": 0,
+      "arm": "ppo",
+      "status": {
+        "status": "running",
+        "cycle": 4,
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu0/cycle-0003/ppo/last.pt",
+        "cache": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/prepared-v2/cache.pt",
+        "checkpoint_sha256": "cbb5334635fe6aba504e16894478545b101020f261b4f50f96e966836f88d49c",
+        "cache_sha256": "8ca08d522d44bdc60355974e74dbbc6e99276551a4792e6319c7f6dbf880893e",
+        "manifest_sha256": "0fb38ac9c6d4d2c73d322d7d4f78d0b2216ac1580fdc4fcb15f8016093726b51",
+        "started_unix": 1793604535.163305,
+        "training_deadline_unix": 1793633335.163305,
+        "deadline_unix": 1793642695.163305,
+        "next_dev_index": 1,
+        "physical_frames": 868352,
+        "sm_updates": 0,
+        "recent": [],
+        "regressions": 0,
+        "pid": 529,
+        "gpu": 0,
+        "arm": "ppo",
+        "updated_unix": 1793608703.413149,
+        "phase": "dev-004-71002",
+        "log": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu0/cycle-0004/dev-004-71002.log",
+        "dynamics_updates": 0,
+        "child_pid": 45849
+      },
+      "development": [
+        {
+          "path": "work/runs/adaptation-20261102-v1/gpu0/dev-003/summary.json",
+          "mean_return": 1073.2921695709229,
+          "episodes": 32,
+          "rotation_radians": 57.08680081367493,
+          "failures": 0,
+          "checkpoint_sha256": "cbb5334635fe6aba504e16894478545b101020f261b4f50f96e966836f88d49c",
+          "seeds": [
+            71001,
+            71002,
+            71003,
+            71004
+          ],
+          "returns": [
+            1062.2171630859375,
+            1087.831787109375,
+            1000.8106079101562,
+            878.0847778320312,
+            985.1660766601562,
+            1032.5003662109375,
+            994.0502319335938,
+            1109.91259765625,
+            1105.8214111328125,
+            1042.89501953125,
+            1071.32958984375,
+            1014.5912475585938,
+            1026.67578125,
+            1167.9979248046875,
+            1026.935546875,
+            1189.25390625,
+            1144.1063232421875,
+            1188.2095947265625,
+            1087.4158935546875,
+            1146.55224609375,
+            1016.9462280273438,
+            1023.22509765625,
+            1125.8819580078125,
+            1131.506103515625,
+            1144.908203125,
+            1082.765625,
+            1050.797607421875,
+            985.6610107421875,
+            1022.7439575195312,
+            1074.10302734375,
+            1151.2445068359375,
+            1173.2080078125
+          ],
+          "change_percent": -0.26521162736768966
+        }
+      ],
+      "predictions": []
+    },
+    {
+      "gpu": 1,
+      "arm": "dynamics",
+      "status": {
+        "status": "running",
+        "cycle": 2,
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu1/cycle-0001/dynamics/last.pt",
+        "cache": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu1/cycle-0001/prepared/cache.pt",
+        "checkpoint_sha256": "798ad968cf4aeeeb01f3ba8d693d2ba334afe3c52b5fc89bccbf4cb39d5eccaa",
+        "cache_sha256": "dc1eb653e0592489141b679b01641d874271f5312b18f5bea2b7428503e6c0c8",
+        "manifest_sha256": "0fb38ac9c6d4d2c73d322d7d4f78d0b2216ac1580fdc4fcb15f8016093726b51",
+        "started_unix": 1793604535.1899261,
+        "training_deadline_unix": 1793633335.1899261,
+        "deadline_unix": 1793639815.1899261,
+        "next_dev_index": 1,
+        "physical_frames": 7968,
+        "sm_updates": 0,
+        "recent": [
+          "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu1/cycle-0001/data",
+          "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu1/cycle-0002/data"
+        ],
+        "regressions": 0,
+        "pid": 543,
+        "gpu": 1,
+        "arm": "dynamics",
+        "updated_unix": 1793608706.5074391,
+        "phase": "dev-002-71001",
+        "log": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu1/cycle-0002/dev-002-71001.log",
+        "dynamics_updates": 250,
+        "child_pid": 46531
+      },
+      "development": [
+        {
+          "path": "work/runs/adaptation-20261102-v1/gpu1/dev-001/summary.json",
+          "mean_return": 1060.579828262329,
+          "episodes": 32,
+          "rotation_radians": 56.77419185638428,
+          "failures": 0,
+          "checkpoint_sha256": "798ad968cf4aeeeb01f3ba8d693d2ba334afe3c52b5fc89bccbf4cb39d5eccaa",
+          "seeds": [
+            71001,
+            71002,
+            71003,
+            71004
+          ],
+          "returns": [
+            1048.7138671875,
+            961.9784545898438,
+            926.462890625,
+            1043.6468505859375,
+            1045.0462646484375,
+            1071.093017578125,
+            1026.4775390625,
+            1097.471435546875,
+            1097.5302734375,
+            1012.4456787109375,
+            980.3267211914062,
+            1103.2088623046875,
+            905.1216430664062,
+            1141.7091064453125,
+            1045.2271728515625,
+            1187.8531494140625,
+            1165.4794921875,
+            1152.6937255859375,
+            1047.641357421875,
+            1104.4473876953125,
+            1007.6888427734375,
+            1084.338134765625,
+            1068.861572265625,
+            1190.1282958984375,
+            1129.90380859375,
+            1018.902099609375,
+            952.3147583007812,
+            1010.2777099609375,
+            961.0903930664062,
+            1041.0238037109375,
+            1144.71826171875,
+            1164.73193359375
+          ],
+          "change_percent": -1.446495443721374
+        }
+      ],
+      "predictions": [
+        {
+          "path": "work/runs/adaptation-20261102-v1/gpu1/cycle-0001/prediction.json",
+          "passed": true,
+          "horizons": {
+            "1": {
+              "reward_rmse": 2.4129905700683594,
+              "reward_mean_baseline_rmse": 2.7550668716430664,
+              "reward_persistence_rmse": 2.4348700046539307,
+              "joint_rmse": 0.09275644272565842,
+              "joint_persistence_rmse": 0.17021675407886505,
+              "contact_brier": 0.13376469910144806,
+              "contact_persistence_brier": 0.2718292772769928,
+              "failure": {
+                "positives": 12,
+                "prevalence": 0.0024390243902439024,
+                "average_precision": 0.051238624210518974,
+                "threshold": 0.01606135666370392,
+                "recall": 0.75,
+                "false_positive_rate": 0.08027709861450692,
+                "brier": 0.0023830884601920843,
+                "baseline_brier": 0.0024330786935693707
+              }
+            },
+            "4": {
+              "reward_rmse": 2.4271252155303955,
+              "reward_mean_baseline_rmse": 2.7687346935272217,
+              "reward_persistence_rmse": 2.5201077461242676,
+              "joint_rmse": 0.10300666838884354,
+              "joint_persistence_rmse": 0.4814995229244232,
+              "contact_brier": 0.13540059328079224,
+              "contact_persistence_brier": 0.40530863404273987,
+              "failure": {
+                "positives": 12,
+                "prevalence": 0.0024691358024691358,
+                "average_precision": 0.06844155235531658,
+                "threshold": 0.027357719838619232,
+                "recall": 0.75,
+                "false_positive_rate": 0.05363036303630363,
+                "brier": 0.0024028632324188948,
+                "baseline_brier": 0.002463039844454896
+              }
+            }
+          }
+        },
+        {
+          "path": "work/runs/adaptation-20261102-v1/gpu1/cycle-0002/prediction.json",
+          "passed": true,
+          "horizons": {
+            "1": {
+              "reward_rmse": 2.4116220474243164,
+              "reward_mean_baseline_rmse": 2.7550668716430664,
+              "reward_persistence_rmse": 2.4348700046539307,
+              "joint_rmse": 0.09328195452690125,
+              "joint_persistence_rmse": 0.17021675407886505,
+              "contact_brier": 0.13385561108589172,
+              "contact_persistence_brier": 0.2718292772769928,
+              "failure": {
+                "positives": 12,
+                "prevalence": 0.0024390243902439024,
+                "average_precision": 0.0825327268263939,
+                "threshold": 0.014901828393340111,
+                "recall": 0.75,
+                "false_positive_rate": 0.06214343928280359,
+                "brier": 0.002344698179513216,
+                "baseline_brier": 0.0024330786935693707
+              }
+            },
+            "4": {
+              "reward_rmse": 2.4255423545837402,
+              "reward_mean_baseline_rmse": 2.7687346935272217,
+              "reward_persistence_rmse": 2.5201077461242676,
+              "joint_rmse": 0.1031883955001831,
+              "joint_persistence_rmse": 0.4814995229244232,
+              "contact_brier": 0.1355718970298767,
+              "contact_persistence_brier": 0.40530863404273987,
+              "failure": {
+                "positives": 12,
+                "prevalence": 0.0024691358024691358,
+                "average_precision": 0.23197067861808615,
+                "threshold": 0.036733441054821014,
+                "recall": 0.75,
+                "false_positive_rate": 0.02372112211221122,
+                "brier": 0.002342010149732232,
+                "baseline_brier": 0.002463039844454896
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "gpu": 2,
+      "arm": "ppo",
+      "status": {
+        "status": "running",
+        "cycle": 4,
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu2/cycle-0003/ppo/last.pt",
+        "cache": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/prepared-v2/cache.pt",
+        "checkpoint_sha256": "5a2aee0098c942690afa2a4bd0536c7e531171ca0c54473d457b835e09dcbd5c",
+        "cache_sha256": "8ca08d522d44bdc60355974e74dbbc6e99276551a4792e6319c7f6dbf880893e",
+        "manifest_sha256": "0fb38ac9c6d4d2c73d322d7d4f78d0b2216ac1580fdc4fcb15f8016093726b51",
+        "started_unix": 1793604535.2244956,
+        "training_deadline_unix": 1793633335.2244956,
+        "deadline_unix": 1793639815.2244956,
+        "next_dev_index": 1,
+        "physical_frames": 860160,
+        "sm_updates": 0,
+        "recent": [],
+        "regressions": 0,
+        "pid": 556,
+        "gpu": 2,
+        "arm": "ppo",
+        "updated_unix": 1793608702.864448,
+        "phase": "dev-004-71002",
+        "log": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu2/cycle-0004/dev-004-71002.log",
+        "dynamics_updates": 0,
+        "child_pid": 46155
+      },
+      "development": [
+        {
+          "path": "work/runs/adaptation-20261102-v1/gpu2/dev-003/summary.json",
+          "mean_return": 1071.6034469604492,
+          "episodes": 32,
+          "rotation_radians": 56.68409609794617,
+          "failures": 0,
+          "checkpoint_sha256": "5a2aee0098c942690afa2a4bd0536c7e531171ca0c54473d457b835e09dcbd5c",
+          "seeds": [
+            71001,
+            71002,
+            71003,
+            71004
+          ],
+          "returns": [
+            1065.5482177734375,
+            1032.73486328125,
+            1019.8286743164062,
+            930.8026123046875,
+            1021.3310546875,
+            1082.1964111328125,
+            1010.6753540039062,
+            1114.4698486328125,
+            1090.9842529296875,
+            1019.7207641601562,
+            1023.5880126953125,
+            1012.8780517578125,
+            999.6311645507812,
+            1162.8209228515625,
+            1019.1907348632812,
+            1192.172119140625,
+            1107.1541748046875,
+            1143.4658203125,
+            1039.1871337890625,
+            1148.455322265625,
+            1017.6162109375,
+            1086.3538818359375,
+            1097.7152099609375,
+            1191.9566650390625,
+            1110.2540283203125,
+            1050.7900390625,
+            1105.9283447265625,
+            1044.408203125,
+            962.4176635742188,
+            1057.4561767578125,
+            1151.2601318359375,
+            1178.3182373046875
+          ],
+          "change_percent": -0.42213478114696557
+        }
+      ],
+      "predictions": []
+    },
+    {
+      "gpu": 3,
+      "arm": "dynamics",
+      "status": {
+        "status": "running",
+        "cycle": 2,
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/cycle-0001/dynamics/last.pt",
+        "cache": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/cycle-0001/prepared/cache.pt",
+        "checkpoint_sha256": "aad9c494fd2ca6d3902f4327b3d4f5894021a6c827dd969d35f56f791d846391",
+        "cache_sha256": "48c3e2f2917b8f8565c9304f1cc9a09767e38617de775f458a052b8131d504dd",
+        "manifest_sha256": "0fb38ac9c6d4d2c73d322d7d4f78d0b2216ac1580fdc4fcb15f8016093726b51",
+        "started_unix": 1793604535.2365203,
+        "training_deadline_unix": 1793633335.2365203,
+        "deadline_unix": 1793639815.2365203,
+        "next_dev_index": 1,
+        "physical_frames": 7968,
+        "sm_updates": 0,
+        "recent": [
+          "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/cycle-0001/data"
+        ],
+        "regressions": 0,
+        "pid": 563,
+        "gpu": 3,
+        "arm": "dynamics",
+        "updated_unix": 1793608704.5459635,
+        "phase": "prepare",
+        "log": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/cycle-0002/prepare.log",
+        "dynamics_updates": 250,
+        "child_pid": 45010
+      },
+      "development": [
+        {
+          "path": "work/runs/adaptation-20261102-v1/gpu3/dev-001/summary.json",
+          "mean_return": 1065.2530937194824,
+          "episodes": 32,
+          "rotation_radians": 57.385669469833374,
+          "failures": 0,
+          "checkpoint_sha256": "aad9c494fd2ca6d3902f4327b3d4f5894021a6c827dd969d35f56f791d846391",
+          "seeds": [
+            71001,
+            71002,
+            71003,
+            71004
+          ],
+          "returns": [
+            1049.9365234375,
+            841.4716796875,
+            1053.8167724609375,
+            1005.9796752929688,
+            970.534423828125,
+            1115.2283935546875,
+            1052.9490966796875,
+            1117.52978515625,
+            1150.7181396484375,
+            1025.46923828125,
+            1031.2410888671875,
+            1069.5172119140625,
+            942.82763671875,
+            1134.685546875,
+            1019.5974731445312,
+            1186.046875,
+            1143.4654541015625,
+            1141.0673828125,
+            1032.98291015625,
+            1142.0335693359375,
+            1015.8258056640625,
+            1066.574951171875,
+            1106.9359130859375,
+            1191.3880615234375,
+            1126.24169921875,
+            1085.2457275390625,
+            874.4230346679688,
+            1075.2054443359375,
+            933.1718139648438,
+            1080.692138671875,
+            1137.882568359375,
+            1167.4129638671875
+          ],
+          "change_percent": -1.0122361109949907
+        }
+      ],
+      "predictions": [
+        {
+          "path": "work/runs/adaptation-20261102-v1/gpu3/cycle-0001/prediction.json",
+          "passed": true,
+          "horizons": {
+            "1": {
+              "reward_rmse": 2.4167072772979736,
+              "reward_mean_baseline_rmse": 2.7550668716430664,
+              "reward_persistence_rmse": 2.4348700046539307,
+              "joint_rmse": 0.09271203726530075,
+              "joint_persistence_rmse": 0.17021675407886505,
+              "contact_brier": 0.13341617584228516,
+              "contact_persistence_brier": 0.2718292772769928,
+              "failure": {
+                "positives": 12,
+                "prevalence": 0.0024390243902439024,
+                "average_precision": 0.055630069347932326,
+                "threshold": 0.014848944544792176,
+                "recall": 0.75,
+                "false_positive_rate": 0.07885085574572127,
+                "brier": 0.0023770960979163647,
+                "baseline_brier": 0.0024330786935693707
+              }
+            },
+            "4": {
+              "reward_rmse": 2.4309113025665283,
+              "reward_mean_baseline_rmse": 2.7687346935272217,
+              "reward_persistence_rmse": 2.5201077461242676,
+              "joint_rmse": 0.10306566953659058,
+              "joint_persistence_rmse": 0.4814995229244232,
+              "contact_brier": 0.13497258722782135,
+              "contact_persistence_brier": 0.40530863404273987,
+              "failure": {
+                "positives": 12,
+                "prevalence": 0.0024691358024691358,
+                "average_precision": 0.07199877082494101,
+                "threshold": 0.028432347998023032,
+                "recall": 0.75,
+                "false_positive_rate": 0.04744224422442244,
+                "brier": 0.002397103002294898,
+                "baseline_brier": 0.002463039844454896
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "action_direction": {
+    "completed_full_grid": true,
+    "starts": 64,
+    "comparisons": 1536,
+    "summary": {
+      "count": 404,
+      "sign_agreement": 0.49504950495049505,
+      "rank_correlation": 0.04807762827564808,
+      "model_rank_correlation": 0.06283347937771444,
+      "model_sign_agreement": 0.5123762376237624
+    },
+    "cluster_bootstrap_95ci": {
+      "sign_agreement": [
+        0.4415756813901425,
+        0.5452318410232982
+      ],
+      "rank_correlation": [
+        -0.09132358439917793,
+        0.16667573447821477
+      ],
+      "model_sign_agreement": [
+        0.4530102763997165,
+        0.5684277787119556
+      ],
+      "model_rank_correlation": [
+        -0.07069750830553924,
+        0.18359475463034897
+      ]
+    },
+    "numeric_direction_gate_passed": false,
+    "optimizer_steps": 0,
+    "checkpoint_sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05",
+    "gpu": 2,
+    "started_unix": 1793604343.2915006,
+    "completed_unix": 1793604379.528728,
+    "seconds": 36.23722791671753,
+    "limitations": [
+      "Cluster intervals describe these sampled starts, not independent training seeds.",
+      "Sensed contact counts are not labeled slip/early-failure regimes; coverage must be reviewed separately.",
+      "Same exposed simulator state does not guarantee identical hidden contact solver state."
+    ]
+  },
+  "mean_phase_costs": {
+    "prepare_seconds": {
+      "mean_seconds": 279.3351119031503,
+      "approximate_share_percent": 39.87151582296045
+    },
+    "collect_seconds": {
+      "mean_seconds": 165.80966620189133,
+      "approximate_share_percent": 23.667209913305364
+    },
+    "evaluate_seconds": {
+      "mean_seconds": 123.53601522207786,
+      "approximate_share_percent": 17.633186719972137
+    },
+    "sm_seconds": {
+      "mean_seconds": 73.21762795097514,
+      "approximate_share_percent": 10.450880275942902
+    },
+    "calibrate_seconds": {
+      "mean_seconds": 45.07431502097524,
+      "approximate_share_percent": 6.43378217769855
+    },
+    "merge_seconds": {
+      "mean_seconds": 13.615405730614633,
+      "approximate_share_percent": 1.9434250901205998
+    }
+  },
+  "mean_cycle_seconds": 700.5881420296845,
+  "final_lane2_gradient_ratios": {
+    "bootstrap_gradient_norm": 7.468988007308843,
+    "anchor_gradient_norm": 7.94766635240469
+  },
+  "limitations": [
+    "Active training results are a timestamped snapshot, not its final result.",
+    "Historical checkpoints were repeatedly selected on the same small development evaluation.",
+    "Pilot conditions and update budgets differ; no optimizer ranking follows from their returns.",
+    "Action-response intervals cluster by start, not by independent training seed.",
+    "The direction audit excludes the critic and anchor and does not test the actual policy parameter update.",
+    "The recorded direction checkpoint is the original calibrated model, not a later adapted RSSM.",
+    "Mean phase shares are ratios of recorded mean stage durations, not measured GPU utilization.",
+    "No training, checkpoint loading, GPU work, or controller mutation is performed by this audit."
+  ]
+}

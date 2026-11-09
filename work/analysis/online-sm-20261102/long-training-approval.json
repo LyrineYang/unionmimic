@@ -1,0 +1,6 @@
+{
+  "approved": true,
+  "plan_sha256": "201d204db2d2914ed774f1d305f7df2030d87ebe79318ed3fcc9e68ef92a8b7e",
+  "reason": "Latest user instruction authorizes all four idle GPUs for tasks up to 12 hours and supersedes the previous cumulative cap.",
+  "user_instruction": "gpu\u9884\u7b97\u4e0d\u662f\u786c\u6027\u4e0a\u9650, \u53ea\u8981\u5361\u662f\u7a7a\u95f2\u7684\u5c31\u53ef\u4ee5\u542f\u52a8\u6700\u957f12\u5c0f\u65f6\u7684\u8bad\u7ec3\u4efb\u52a1, \u6240\u4ee5\u628a4\u5f20\u5361\u7528\u6ee1 \u8c03\u6574\u957f\u8bad\u8ba1\u5212"
+}

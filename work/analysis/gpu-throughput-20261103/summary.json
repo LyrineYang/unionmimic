@@ -1,0 +1,108 @@
+{
+  "checked_unix": 1793709443.9907203,
+  "learning": [
+    {
+      "batch": 256,
+      "baseline_seconds_median": 2.143401281442493,
+      "fast_seconds_median": 1.9702959875576198,
+      "fast_samples_per_second_median": 129.92971696467686,
+      "peak_reserved_gib_max": 0.294921875
+    },
+    {
+      "batch": 512,
+      "baseline_seconds_median": 2.190655435435474,
+      "fast_seconds_median": 2.0539766401052475,
+      "fast_samples_per_second_median": 249.27255257088254,
+      "peak_reserved_gib_max": 0.44921875
+    },
+    {
+      "batch": 1024,
+      "baseline_seconds_median": 2.23244892898947,
+      "fast_seconds_median": 2.1077541364356875,
+      "fast_samples_per_second_median": 485.8251644718073,
+      "peak_reserved_gib_max": 0.716796875
+    },
+    {
+      "batch": 2048,
+      "baseline_seconds_median": 2.165803545154631,
+      "fast_seconds_median": 2.0825508255511522,
+      "fast_samples_per_second_median": 983.4093722336845,
+      "peak_reserved_gib_max": 1.3984375
+    }
+  ],
+  "collection": [
+    {
+      "status": "completed",
+      "gpu": 1,
+      "envs": 64,
+      "started_unix": 1793708991.665501,
+      "co_resident": true,
+      "training": false,
+      "ended_unix": 1793709036.5713952,
+      "seconds": 44.90589451789856,
+      "measured_vector_steps": 96,
+      "median_step_seconds": 0.19521721825003624,
+      "mean_step_seconds": 0.20150125012150966,
+      "valid_transitions_per_second": 317.61589549149994,
+      "torch_peak_allocated_gib": 0.1489105224609375,
+      "parity": {
+        "parity_rows": 7168,
+        "max_reward_error": 5.0067901611328125e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "process_gpu_memory_mib": 3886
+    },
+    {
+      "status": "completed",
+      "gpu": 2,
+      "envs": 256,
+      "started_unix": 1793708990.8145056,
+      "co_resident": true,
+      "training": false,
+      "ended_unix": 1793709044.290769,
+      "seconds": 53.476263761520386,
+      "measured_vector_steps": 96,
+      "median_step_seconds": 0.24574700742959976,
+      "mean_step_seconds": 0.26407429394506227,
+      "valid_transitions_per_second": 969.3847118136729,
+      "torch_peak_allocated_gib": 0.15264034271240234,
+      "parity": {
+        "parity_rows": 28671,
+        "max_reward_error": 4.947185516357422e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "process_gpu_memory_mib": 4020
+    },
+    {
+      "status": "completed",
+      "gpu": 3,
+      "envs": 512,
+      "started_unix": 1793708991.6142218,
+      "co_resident": true,
+      "training": false,
+      "ended_unix": 1793709051.5604343,
+      "seconds": 59.946213245391846,
+      "measured_vector_steps": 96,
+      "median_step_seconds": 0.29642202192917466,
+      "mean_step_seconds": 0.3058748423839764,
+      "valid_transitions_per_second": 1673.785088076338,
+      "torch_peak_allocated_gib": 0.15764713287353516,
+      "parity": {
+        "parity_rows": 57341,
+        "max_reward_error": 5.4836273193359375e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "process_gpu_memory_mib": 4156
+    }
+  ],
+  "all_full_update_differences_zero": true,
+  "learning_probe_gpu_hours": 0.03829672588242425,
+  "collection_probe_gpu_hours": 0.04398010320133633,
+  "measurement_limitation": "Short co-resident microbenchmarks on different GPUs/horizons; not policy-learning speed or isolated GPU-hours."
+}

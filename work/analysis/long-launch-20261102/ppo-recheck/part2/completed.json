@@ -1,0 +1,20 @@
+{
+  "epoch": 16,
+  "physical_frames": 278528,
+  "actor_steps": 272,
+  "critic_steps_total": 272,
+  "actor_loss": -0.006926228292286396,
+  "critic_loss": 0.004012398421764374,
+  "actor_grad_norm": 7.907593727111816,
+  "mean_kl": 0.10328627969138324,
+  "actor_lr": 2.0000000000000005e-05,
+  "backward_batches": 20,
+  "critic_steps": 20,
+  "sample_seconds": 50.99655409436673,
+  "seconds": 369.7018690770492,
+  "frozen_modules_unchanged": true,
+  "actor_changed": true,
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/ppo-recheck/part2/last.pt",
+  "restored_epoch": 8,
+  "simulator_resume": "fresh rollout; no exact PhysX state claim"
+}

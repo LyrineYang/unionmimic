@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "started_unix": 1793597026.0015724,
+  "deadline_unix": 1793601526.0015724,
+  "gpu": 3,
+  "optimizer_steps": 0,
+  "job": "amp-05-d6-s1",
+  "completed_jobs": 48,
+  "updated_unix": 1793601527.3837516,
+  "error": "TimeoutExpired(['/home/junqiy/projects/unionmimic/.venv/bin/python', '/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/probe.py', '--checkpoint', '/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt', '--tape', '/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/probe-gpu3/replay-tape.pt', '--gpu', '3', '--envs', '16', '--seed', '64004', '--warmup', '256', '--output', '/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/probe-gpu3/amp-05-d6-s1', '--amplitude', '0.05', '--direction', '6', '--sign', '1'], 76.92211916018277)",
+  "seconds": 4501.382180452347
+}

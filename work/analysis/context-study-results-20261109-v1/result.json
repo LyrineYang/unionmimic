@@ -1,0 +1,251 @@
+{
+  "rows": [
+    {
+      "arm": "none",
+      "training": {
+        "passed": true,
+        "scope": "short mechanism control; not reproduction or established benefit",
+        "updates": 400,
+        "actor_updates": 100,
+        "model_updates": 4000,
+        "critic_updates": 2000,
+        "frames": 273152,
+        "parity": {
+          "reward": 8.165836334228516e-06,
+          "action": 0.0,
+          "target": 0.0
+        },
+        "prior_unchanged": true,
+        "initial": {
+          "actor": "56da38b5a8fdfb6aa5bdda72dac3b9a68558c7c874437896da3726ca3ca8f8d9",
+          "critic": "df88c018daa616ff0826a7de424890c65f133cc8d44aae5f3ae145ae5acd2599",
+          "model": "6a62c690cf1b9ff73d3ad7d96fb79ba5b8f1389d809189dd728f0bbf11780d4c",
+          "prior": "15ce4ddd118784a4417ece7127cedc47f992c3916efa03a564a0fdcc12e03c38"
+        },
+        "final": {
+          "actor": "f358dc12357ad41ea2b75f7b0a25bcbc91ba9de570f86cb290c3b4d8b83d0312",
+          "critic": "51049dc9dfc492c5900490e3e4feccbbbb40cb9cce7649a662137aaeff765478",
+          "model": "6adfc4daf0ad7c2a4eccc95f4207cc4804d373f4667aaea12f23e8f92797018a"
+        },
+        "totals_seconds": {
+          "fit": 1690.8552494049072,
+          "actor": 181.91093158721924,
+          "collect": 690.6514077186584
+        },
+        "seconds": 2686.945250272751,
+        "peak_gib": 4.961458683013916
+      },
+      "evaluation": {
+        "initial": {
+          "mean_return": 4.580848217010498,
+          "mean_rotation_rad": 0.005020638927817345,
+          "failure_rate": 1.0,
+          "mean_axis_deviation_rad": 0.2904447913169861,
+          "mean_offaxis_rad": 0.21362942457199097,
+          "mean_steps": 62.921875,
+          "seconds": 88.8080186843872,
+          "checkpoint_sha256": "16ef01c254691ef81d8343c7ea486c48fc340ba2ec4fe12a05ad4d53fe9ad872",
+          "episode_bootstrap_return95": [
+            3.4711774490773677,
+            5.777887938916679
+          ]
+        },
+        "clean": {
+          "mean_return": 21.00540542602539,
+          "mean_rotation_rad": 0.004391833208501339,
+          "failure_rate": 1.0,
+          "mean_axis_deviation_rad": 0.2657935917377472,
+          "mean_offaxis_rad": 0.2403574287891388,
+          "mean_steps": 60.640625,
+          "seconds": 88.09016013145447,
+          "checkpoint_sha256": "080f8e7494a3f27e094f3372113e8709e7584dc545fd3fa2b48d42b6d6d87653",
+          "episode_bootstrap_return95": [
+            19.527670435607433,
+            22.932188613712785
+          ]
+        },
+        "pulse": {
+          "mean_return": 32.628761291503906,
+          "mean_rotation_rad": 0.024604298174381256,
+          "failure_rate": 1.0,
+          "mean_axis_deviation_rad": 0.26283395290374756,
+          "mean_offaxis_rad": 0.5580501556396484,
+          "mean_steps": 78.1875,
+          "seconds": 97.36158895492554,
+          "checkpoint_sha256": "080f8e7494a3f27e094f3372113e8709e7584dc545fd3fa2b48d42b6d6d87653",
+          "episode_bootstrap_return95": [
+            27.603603192418813,
+            37.737120171636334
+          ]
+        }
+      }
+    },
+    {
+      "arm": "fixed",
+      "training": {
+        "passed": true,
+        "scope": "short mechanism control; not reproduction or established benefit",
+        "updates": 400,
+        "actor_updates": 100,
+        "model_updates": 4000,
+        "critic_updates": 2000,
+        "frames": 273152,
+        "parity": {
+          "reward": 7.748603820800781e-06,
+          "action": 0.0,
+          "target": 0.0
+        },
+        "prior_unchanged": true,
+        "initial": {
+          "actor": "56da38b5a8fdfb6aa5bdda72dac3b9a68558c7c874437896da3726ca3ca8f8d9",
+          "critic": "df88c018daa616ff0826a7de424890c65f133cc8d44aae5f3ae145ae5acd2599",
+          "model": "6a62c690cf1b9ff73d3ad7d96fb79ba5b8f1389d809189dd728f0bbf11780d4c",
+          "prior": "15ce4ddd118784a4417ece7127cedc47f992c3916efa03a564a0fdcc12e03c38"
+        },
+        "final": {
+          "actor": "864fa48c060b5e453d104949f538945f51470864a380350dded4f312da889f1e",
+          "critic": "25fb091783400f642c9e0527d00b213b865190bfe69a286820a54aa05b279a3d",
+          "model": "fa6c3efce88c9b12258b043718beca574e265e70ffa1af6ea438a6aa70fb5a5c"
+        },
+        "totals_seconds": {
+          "fit": 1711.7255761623383,
+          "actor": 190.4481384754181,
+          "collect": 692.9683229923248
+        },
+        "seconds": 2718.7133691310883,
+        "peak_gib": 4.961458683013916
+      },
+      "evaluation": {
+        "initial": {
+          "mean_return": 4.766706466674805,
+          "mean_rotation_rad": 0.0084935761988163,
+          "failure_rate": 1.0,
+          "mean_axis_deviation_rad": 0.28817224502563477,
+          "mean_offaxis_rad": 0.21730245649814606,
+          "mean_steps": 64.8046875,
+          "seconds": 108.41019129753113,
+          "checkpoint_sha256": "5bc64e481e3adc5cf0268776140923f1f9a24bda1359ace84258835d9459a9c7",
+          "episode_bootstrap_return95": [
+            3.443208160996437,
+            6.169911710917945
+          ]
+        },
+        "clean": {
+          "mean_return": 21.385522842407227,
+          "mean_rotation_rad": 0.030960701406002045,
+          "failure_rate": 1.0,
+          "mean_axis_deviation_rad": 0.3025081753730774,
+          "mean_offaxis_rad": 0.27865248918533325,
+          "mean_steps": 61.8828125,
+          "seconds": 79.66720938682556,
+          "checkpoint_sha256": "307d03000be22cd6b646d3bce7eae0ecc396708e0453b66fa1d6ff3274f7b838",
+          "episode_bootstrap_return95": [
+            19.433210092037918,
+            23.59029954075813
+          ]
+        },
+        "pulse": {
+          "mean_return": 35.008949279785156,
+          "mean_rotation_rad": 0.07431046664714813,
+          "failure_rate": 1.0,
+          "mean_axis_deviation_rad": 0.2997279167175293,
+          "mean_offaxis_rad": 0.6529333591461182,
+          "mean_steps": 83.484375,
+          "seconds": 99.84124517440796,
+          "checkpoint_sha256": "307d03000be22cd6b646d3bce7eae0ecc396708e0453b66fa1d6ff3274f7b838",
+          "episode_bootstrap_return95": [
+            30.29655664488673,
+            40.07407774031162
+          ]
+        }
+      }
+    },
+    {
+      "arm": "rollout",
+      "training": {
+        "passed": true,
+        "scope": "short mechanism control; not reproduction or established benefit",
+        "updates": 400,
+        "actor_updates": 100,
+        "model_updates": 4000,
+        "critic_updates": 2000,
+        "frames": 273152,
+        "parity": {
+          "reward": 7.62939453125e-06,
+          "action": 0.0,
+          "target": 0.0
+        },
+        "prior_unchanged": true,
+        "initial": {
+          "actor": "56da38b5a8fdfb6aa5bdda72dac3b9a68558c7c874437896da3726ca3ca8f8d9",
+          "critic": "df88c018daa616ff0826a7de424890c65f133cc8d44aae5f3ae145ae5acd2599",
+          "model": "6a62c690cf1b9ff73d3ad7d96fb79ba5b8f1389d809189dd728f0bbf11780d4c",
+          "prior": "15ce4ddd118784a4417ece7127cedc47f992c3916efa03a564a0fdcc12e03c38"
+        },
+        "final": {
+          "actor": "a4dfd4532ffa14bb95da54e668cd9820bc70edd374e91f9cf115053a8c6cd750",
+          "critic": "f9f3675c783f4a0496ec01be4e78427c2b8063090da5f29c7ba5be70119d0876",
+          "model": "c25a2f26f1ff78990e01031231761acdb823c85281bfda1be6c270b48c36ee72"
+        },
+        "totals_seconds": {
+          "fit": 1692.2220652103424,
+          "actor": 202.7195029258728,
+          "collect": 688.7566728591919
+        },
+        "seconds": 2706.4180459976196,
+        "peak_gib": 7.91839599609375
+      },
+      "evaluation": {
+        "initial": {
+          "mean_return": 4.623956680297852,
+          "mean_rotation_rad": 0.009958948940038681,
+          "failure_rate": 1.0,
+          "mean_axis_deviation_rad": 0.28987133502960205,
+          "mean_offaxis_rad": 0.2098465859889984,
+          "mean_steps": 61.875,
+          "seconds": 84.70413136482239,
+          "checkpoint_sha256": "6c18cf76fafe6bb1797094c1344d0bacba34198f9bb36ea502a5c1445f9acada",
+          "episode_bootstrap_return95": [
+            3.3915031880140303,
+            5.893950923532247
+          ]
+        },
+        "clean": {
+          "mean_return": 20.485429763793945,
+          "mean_rotation_rad": 0.027470596134662628,
+          "failure_rate": 1.0,
+          "mean_axis_deviation_rad": 0.2885262370109558,
+          "mean_offaxis_rad": 0.213158518075943,
+          "mean_steps": 61.0390625,
+          "seconds": 99.33621716499329,
+          "checkpoint_sha256": "3ca52c253ead6200a8154e929b1c92a85c8307219e3a33a4efbbd9149e5da9a5",
+          "episode_bootstrap_return95": [
+            19.291352664679287,
+            21.986437736451624
+          ]
+        },
+        "pulse": {
+          "mean_return": 1.546417236328125,
+          "mean_rotation_rad": 0.07177041471004486,
+          "failure_rate": 1.0,
+          "mean_axis_deviation_rad": 0.2816648483276367,
+          "mean_offaxis_rad": 0.5928296446800232,
+          "mean_steps": 85.46875,
+          "seconds": 126.5010335445404,
+          "checkpoint_sha256": "3ca52c253ead6200a8154e929b1c92a85c8307219e3a33a4efbbd9149e5da9a5",
+          "episode_bootstrap_return95": [
+            -66.56863379627467,
+            37.91816257163881
+          ]
+        }
+      }
+    }
+  ],
+  "scope": "10Hz diagnostic with 256 camera environments. Fresh learners, 300 warmup + 100 policy updates.",
+  "limits": [
+    "One training seed and one evaluation seed; environment CIs are not independent training-seed confidence.",
+    "All arms include a shadow frozen observer; total timing cannot compare to camera-free SM.",
+    "Fixed/rollout priors have extra effective input capacity. No attribution to pretraining without more controls.",
+    "100 actor updates are an early-learning screen, not a converged baseline or long-training result."
+  ]
+}

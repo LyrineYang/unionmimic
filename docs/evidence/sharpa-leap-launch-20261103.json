@@ -1,0 +1,73 @@
+{
+  "checked_unix": 1793721229.9801006,
+  "run": "work/runs/sharpa-leap-12h-20261103-v1",
+  "pid": 44726,
+  "gpu": 2,
+  "started_shanghai": "2026-11-03T23:53:34.425948+08:00",
+  "deadline_shanghai": "2026-11-04T11:53:34.425948+08:00",
+  "operator": {
+    "passed": true,
+    "full_recipe_short_training": false,
+    "operator_check_only": true,
+    "model_updates": 10,
+    "actor_updates": 1,
+    "critic_optimizer_steps": 20,
+    "parity": {
+      "reward": 7.659196853637695e-06,
+      "action": 0.0,
+      "target": 0.0
+    },
+    "used_actor_updates": 1,
+    "frozen_model_unchanged": true,
+    "model": {
+      "wm": 530.7807006835938,
+      "term": 0.42006027698516846,
+      "aux": 1.262856364250183,
+      "wm_twist_deg": 7.478952407836914,
+      "wm_pos_mm": 9.403848648071289
+    },
+    "actor": {
+      "J": -3.6111183166503906,
+      "imag_r": -16.423202514648438,
+      "v": 254.7726287841797,
+      "gn": 2.311539649963379,
+      "surv": 0.02398744970560074,
+      "finite": true
+    },
+    "seconds": 120.17696046829224
+  },
+  "evaluation": {
+    "passed": true,
+    "episodes": 512,
+    "seed": 20261105,
+    "protocol": "First completed valid policy episode per env, no survivor filtering",
+    "mean_return": 4.538784027099609,
+    "mean_rotation_rad": 0.015631970018148422,
+    "failure_rate": 1.0,
+    "mean_axis_deviation_rad": 0.2919110059738159,
+    "reward_max_error": 3.814697265625e-06,
+    "seconds": 80.59541940689087,
+    "checkpoint_sha256": "54ad6751570ec351c640a3c594da76c169165b38f71c98bbafd46751971c7e43"
+  },
+  "source_files_verified": 26,
+  "sources_match": true,
+  "full_short_trial_completed": false,
+  "user_requested_abbreviated_gate": true,
+  "independent_learning_gain_verified": false,
+  "tmux": {
+    "socket": "unionmimic",
+    "session": "unionmimic-sharpa-leap",
+    "window": "baseline"
+  },
+  "promotion_request": {
+    "action": "promote",
+    "explicit_user_request": true,
+    "requested_unix": 1793721329.7648683,
+    "preserve_model_optimizer_replay_rng": true,
+    "minimum_model_warmup": 300,
+    "minimum_current_policy_recollection": 1,
+    "independent_evaluation_required": true,
+    "deadline_unix": 1793764414.4259481
+  },
+  "updated_unix": 1793721364.1453795
+}

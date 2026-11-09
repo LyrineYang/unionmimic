@@ -12,4 +12,5 @@ __pycache__/
 *.hdf5
 core
 core.*
+!unionmimic/**/core.py
 config/network.local.env

@@ -1,62 +1,53 @@
 # Research insights
 
-**Can a world model built for sensing also provide useful gradients for control?**
+主线与已接受的范围见 [MAINLINE.md](MAINLINE.md)。本文讨论待检验机制，不把方案当作结果。
 
-UnionMimic starts from an existing visuotactile RSSM and policy. Its immediate goal is a working short-horizon policy-training loop and a measured comparison with PPO. The ideas below guide the implementation; they are hypotheses, not reported findings.
+## 核心判断
 
-## One model, two operations
+**有研究 insight，但“给策略拼一个历史特征”本身不足以构成独特方法。** 更具体的问题是：在接触丰富、部分可观测的操作中，如何让 SM 在想象里使用与真实执行一致的历史上下文，使 BPTT 改善可部署策略的控制精度？
 
-`observe` uses an action and new sensor evidence to update a belief about the present. `imagine` uses an action and the current belief to predict a future without new evidence. The RSSM's posterior and prior provide a practical boundary for this reuse.
+同样的瞬时关节/接触观测可能来自不同的接触过程。历史可能帮助区分接触正在建立、滑移正在加剧或扰动刚刚发生；这是待验证的解释，不能仅凭 latent 可视化认定 WSM 已编码这些信息。
 
-The adaptation does not require translating two independently trained latent spaces. The actor still produces actions; the shared RSSM supplies state estimates and differentiable predictions.
+WM-Craftnet 的循环上下文思想已经成立于其自身 PPO 系统；SuperMimic 提供在线模型拟合与 BPTT 学习循环。本项目首先验证这两者在同一灵巧手任务上的协作，再研究真实/想象上下文之间的误差。[WM-Craftnet](https://arxiv.org/html/2609.07002v1) · [SuperMimic](https://arxiv.org/pdf/2610.28480)
 
-**Build:** explicit observation and imagination paths restored from the same checkpoint. **Validate:** four-step prior predictions, followed by actor updates evaluated in the original simulator.
+## 新颖性边界
 
-## Reconstruction is not a control objective
+历史推断得到的潜在信息辅助策略并非空白方向，例如 [RMA](https://arxiv.org/abs/2107.04034) 使用适配模块支持控制。更直接相关的 [DALI（NeurIPS 2025）](https://proceedings.neurips.cc/paper_files/paper/2025/file/696996164c52a52b8a162e62574fc9f9-Paper-Conference.pdf) 已研究从交互历史推断上下文，并条件化 Dreamer 的模型和策略。
 
-A state estimator receives corrective observations at every step. An imagined rollout does not. Low reconstruction error can therefore coexist with poor predictions of reward, contact changes, and drops.
+因此，目前不能声称“上下文增强 imagined rollout”是首次提出。可能形成项目贡献的部分是：**复用独立的视触觉先验、与 SM 的物理动力学接口对齐、验证接触切换时的上下文误差如何影响 BPTT 与控制精度。** 是否有算法新颖性，还取决于具体机制、后续相关工作核查和实验；工程主线不依赖该结论。
 
-Prediction accuracy also does not establish gradient quality. Near a contact switch, a smooth learned approximation may point toward an action that improves predicted return but hurts physical return.
+## 优先扩展：真实—想象上下文一致性（H2）
 
-**Measure:** one- and four-step prior errors, reward calibration, failure recall and false-positive rate, and the gap between imagined and simulator returns. A later diagnostic can compare predicted improvement directions with paired simulator action perturbations, using repeated trials and common random seeds. Do not assume contact dynamics are smooth.
+问题：真实执行时 WSM 不断接收观测修正；想象时输入预测观测，误差可能改变策略理解的接触状态。即使物理位置误差不大，策略仍可能给出不同动作。
 
-**If it fails:** recalibrate heads, refresh on-policy data, or shorten the horizon before spending more time on actor optimization.
+最小实验：固定 WSM 权重，在同一真实起点和同一记录动作序列上，分别计算真实观测更新的上下文与想象上下文。按稳定接触、接触变化、失稳前阶段报告：
 
-## Interfaces are part of the method
+- WSM 确定性状态/随机状态分布的偏差；
+- 在相同观测历史和目标下，只替换上下文造成的动作偏差；
+- 想象与物理的收益变化排序，以及最终物理精度与失败率。
 
-The actor's command is not the action received by the RSSM. Noise, clipping, smoothing, and accumulated joint targets sit between them. The actor also uses a four-frame observation history alongside the model feature.
+下一步为观测特征桥接器增加多步一致性监督。未来真实观测只作为监督目标，不能进入 actor 想象的前向过程。WSM 保持冻结，目标特征停止梯度；若另加可学习投影，需检查常数输出/特征塌缩，不能只凭 latent MSE 下降验收。
 
-Ignoring these details trains against the wrong control system. Recording a reset observation as the outcome of a terminal action creates an equally misleading model.
+对照“无一致性损失”时保持相同数据、模型容量与辅助更新预算，同时分别报告模块损失和端到端成本。不要同时微调 WSM、改变 reward、延长视野，以免无法解释结果。
 
-**Build:** episode-aware transition records, full recurrent-state restoration, a task-matched action adapter, and differentiable actor inference that preserves the released normalization statistics. These are concrete engineering contributions, not a claim of a new algorithm.
+## 第二扩展：上下文辅助动力学（H3）
 
-## Short imagination is a starting constraint
+比较 `F(s,u,ξ)` 与 `F(s,u,ξ,ψ(h))`，保留 SM 的物理预测与 BPTT 路径。先在固定离线序列上测多步物理误差、接触事件误差和动作响应，再检查在线策略结果。
 
-Start with H = 4, approximately 0.4 seconds at the task's roughly 10 Hz control rate. Physical duration matters more than copying a step count from another robot.
+这才直接检验“更完整上下文提高世界模型展开未来的能力”。如果基线已拥有充分物理状态与真实随机化上下文，h 可能不提供新增信息；应如实接受无收益。部署可见状态、隐藏摩擦/接触等设置可作为单独实验，但双方须处于相同信息条件，不能偷偷削弱原基线。
 
-Compare shorter diagnostic horizons first; test H = 8 only when prior predictions are usable. Adaptive truncation is a later experiment, triggered by measured error growth near contact changes. Predictive variance alone is not calibrated uncertainty.
+## 第三扩展：按可信程度选择想象长度
 
-## Count the whole loop
+若 H2/H3 显示误差集中在接触切换附近，可比较固定视野和基于已校准误差的截断。判断依据是预留数据上的物理误差、动作响应与策略表现，不能直接把预测方差当成可靠置信度。
 
-Saving simulator interactions may still increase total cost if model fitting and imagination are expensive. Count collection, calibration, model updates, actor/critic updates, and evaluation separately, and report their total.
+要交付的是同等精度下成本下降，或同等成本下精度提高；单独把 H 从4改到32不算收益。不同控制频率下以实际物理时长比较。
 
-Compare PPO and SM fine-tuning from the same released checkpoint, on the same object and perturbation distribution, with paired seeds. Frozen replay is a capability reference, not a training-efficiency baseline.
+## 其他扩展的触发条件
 
-## Directions after the first loop
-
-| Direction | Trigger | Smallest useful experiment |
+| 方向 | 何时值得做 | 最小可解释对照 |
 | --- | --- | --- |
-| Cross-object reuse | The single-object loop works | Frozen model vs fine-tuning vs training from scratch on a second object; count all adaptation cost |
-| Richer touch | Binary contact misses a recurring failure | Add a supported continuous signal with matched data; verify simulator fidelity |
-| Adaptive horizon | Prediction error varies across contact regimes | Fixed horizon vs truncation calibrated on held-out episodes |
-| Shared body/hand/leg dynamics | Multiple working tasks and embodiments exist | Define physical targets and embodiment-specific interfaces before sharing latent dynamics |
+| 在线适配 WSM | 冻结先验有效，但新策略分布下状态估计明显退化 | 冻结 vs 仅辅助损失微调；保留旧权重、重算状态缓存 |
+| 跨物体复用 | 单物体闭环与精度比较成立 | 第二物体：预训练 vs 从头表征；核算全部适配成本 |
+| 分离静态属性与动态接触上下文 | H2 发现不同时间尺度的误差 | 同容量单一状态 vs 属性/接触分支，分别测缓变与突变情形 |
 
-Matching token counts or latent dimensions does not make dynamics interchangeable. Cross-embodiment experiments and real-robot deployment are outside the first milestone.
-
-## Source-plan corrections
-
-A detached policy feature does not imply a permanently frozen world model: WM-Craftnet's training procedure includes model updates from replay. [WM-Craftnet training details](https://arxiv.org/html/2609.07002v1)
-
-SuperMimic motivates policy gradients through short learned-model rollouts. Porting the mechanism requires a rollout objective, reward and failure handling, and value learning; removing `detach` alone is insufficient. [SuperMimic](https://arxiv.org/abs/2610.28480)
-
-The design above adapts those ideas to this hand and sensor stack. Upstream humanoid speedups are not forecasts for UnionMimic.
+这些是有序备选，不在第一轮同时实施。核心证据链保持为：**信息是否有用 → 想象中是否保真 → 是否改善真实控制 → 增益是否值得额外成本。**

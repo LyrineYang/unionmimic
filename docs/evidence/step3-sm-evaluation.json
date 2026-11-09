@@ -1,0 +1,31 @@
+{
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/sm-resume/last.pt",
+  "checkpoint_sha256": "643c222f20835640dfd4418d866b818515b26d36ab02588347d0f7ba437d8506",
+  "seed": 123,
+  "episodes": 8,
+  "mean_return": 1019.414794921875,
+  "returns": [
+    990.6204833984375,
+    1058.6337890625,
+    1147.20556640625,
+    962.3678588867188,
+    1141.1439208984375,
+    785.5244750976562,
+    926.0635986328125,
+    1143.75830078125
+  ],
+  "lengths": [
+    499,
+    499,
+    499,
+    499,
+    499,
+    499,
+    499,
+    499
+  ],
+  "failures": 0,
+  "falls": 0,
+  "timeouts": 8,
+  "failure_rate": 0.0
+}

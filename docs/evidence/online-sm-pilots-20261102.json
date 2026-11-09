@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "checked_unix": 1793619281.8760867,
+  "status": "engineering_passed_performance_unproven",
+  "long_training_launched": false,
+  "acceptance": {
+    "numerical_tests": 13,
+    "reference_td_lambda_parity": true,
+    "frozen_model_input_gradients": true,
+    "real_resume": true,
+    "first_frame_failure_test": {
+      "passed": true,
+      "first_frame_failures_counted": 16,
+      "reset_edges_excluded": true,
+      "parity": {
+        "parity_rows": 38,
+        "max_reward_error": 1.1920928955078125e-07,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 16
+      },
+      "temporary_test_override_restored": true
+    },
+    "candidate_v2_sm_update": {
+      "counts": {
+        "model": 6,
+        "actor": 2,
+        "critic": 8,
+        "cycles": 2
+      },
+      "frames": 112,
+      "initial_actor_digest": "84c5a28dd7ff428218527a3c36475e0e532d4142343955347da22f90c5cb80a5",
+      "final_actor_digest": "5ce5eeb404ed72d4059763ed5cf260bc2edc6e24097c3af35360fdafb9b1daa6",
+      "initial_critic_digest": "7ba81fe157703a5d2b7b1f148527edf09f990d2627c5938e05902ad8de37b07d",
+      "final_critic_digest": "d1cc052dbe884793a7697de7f204cfd99c0c8ff249eaefb80be4033ba38c1cb6",
+      "original_actor_loaded": false,
+      "independent_model": true,
+      "replay_steps": 28,
+      "parity": {
+        "parity_rows": 112,
+        "max_reward_error": 5.662441253662109e-07,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "complete_episodes": 0,
+      "resume_semantics": "Exact learner/replay/RNG restoration; fresh simulator episodes, no cross-reset transition.",
+      "seconds": 48.66104483604431,
+      "cuda_peak_allocated": 104997888
+    }
+  },
+  "lanes": [
+    {
+      "arm": "sm",
+      "run": "work/runs/online-sm-20261102-pilot-v1",
+      "counts": {
+        "model": 1700,
+        "actor": 150,
+        "critic": 3000,
+        "cycles": 150
+      },
+      "frames": 84992,
+      "parity": {
+        "parity_rows": 60746,
+        "max_reward_error": 4.76837158203125e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0
+      },
+      "median_cycle_seconds": 4.861008882522583,
+      "torch_peak_mib": 258.73486328125,
+      "training_episodes": 912,
+      "initial_actor_digest": "93d11ba1e07152816d607782c5a0b8e4864d654de6e513ff840c092eccb04559",
+      "initial_critic_digest": "994c7ce7de5e4a6145e8fbf0392c1af1124df085555460893d2679df9c9d7298",
+      "checkpoint_verification": {
+        "run": "online-sm-20261102-pilot-v1",
+        "checkpoint_sha256": "6ca3afc58997ef52aba4e673f729f65327e51440edf537086d5d636126cbb560",
+        "finite_tensors": 229,
+        "counts": {
+          "model": 1700,
+          "actor": 150,
+          "critic": 3000,
+          "cycles": 150
+        },
+        "replay_steps": 1328,
+        "frames": 84992,
+        "source_snapshot_verified": true,
+        "resume_verified": true
+      },
+      "latest_prediction": {
+        "kind": "cycle",
+        "unix": 1793616038.5186422,
+        "cycle": 150,
+        "frames": 84992,
+        "model_updates": 1700,
+        "actor_updates": 150,
+        "critic_updates": 3000,
+        "seconds": 4.964280605316162,
+        "collected_actor_version": 149,
+        "model_loss": 0.08449898287653923,
+        "terminal_loss": 0.03261907938867807,
+        "model_grad": 0.6589680910110474,
+        "actor_objective": -0.2680729925632477,
+        "actor_grad": 1.6971378326416016,
+        "critic_loss": 0.0167032890021801,
+        "imagined_reward": -0.02193477191030979,
+        "survival": 0.8845964670181274,
+        "heldout_model_h1_mse": 0.09508465230464935,
+        "heldout_model_hk_mse": 0.11213790625333786,
+        "heldout_reward_hk_rmse": 0.04407336562871933,
+        "heldout_joint_hk_rmse": 0.04434080794453621
+      }
+    },
+    {
+      "arm": "ppo",
+      "run": "work/runs/online-ppo-20261102-pilot-v2",
+      "counts": {
+        "model": 0,
+        "actor": 1440,
+        "critic": 1440,
+        "cycles": 90
+      },
+      "frames": 192512,
+      "parity": {
+        "parity_rows": 121119,
+        "max_reward_error": 5.0067901611328125e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0
+      },
+      "median_cycle_seconds": 6.958559632301331,
+      "torch_peak_mib": 221.95654296875,
+      "training_episodes": 2129,
+      "initial_actor_digest": "93d11ba1e07152816d607782c5a0b8e4864d654de6e513ff840c092eccb04559",
+      "initial_critic_digest": "994c7ce7de5e4a6145e8fbf0392c1af1124df085555460893d2679df9c9d7298",
+      "checkpoint_verification": {
+        "run": "online-ppo-20261102-pilot-v2",
+        "checkpoint_sha256": "5d336e1735a9201937bf4c10cbfa88603bcc4ec564cb37f83d9bf03467fbb828",
+        "finite_tensors": 160,
+        "counts": {
+          "model": 0,
+          "actor": 1440,
+          "critic": 1440,
+          "cycles": 90
+        },
+        "replay_steps": 3008,
+        "frames": 192512,
+        "source_snapshot_verified": true,
+        "resume_verified": true
+      },
+      "latest_prediction": null
+    }
+  ],
+  "evaluation": {
+    "initial": {
+      "mean_return": 4.15816068649292,
+      "mean_rotation": -0.04763991515210364,
+      "mean_axis_deviation": 0.3765005944747565,
+      "mean_offaxis": 0.45616218354552984,
+      "failures": 16,
+      "seconds": 38.89231753349304,
+      "checkpoint_sha256": "96d301224d954689b35a5b6095d1c16140448cb1c1be4861aee2dfb2cc62b0f7",
+      "episodes": 16,
+      "source": "work/runs/online-study-20261102/eval-initial-v2/evaluation.json",
+      "mean_duration_seconds": 6.82011375,
+      "mean_offaxis_radians_per_second": 0.06860302618186899,
+      "initial_frame_failures": 0
+    },
+    "sm": {
+      "mean_return": -4.806028604507446,
+      "mean_rotation": -0.05530530304531567,
+      "mean_axis_deviation": 0.40148462039964206,
+      "mean_offaxis": 0.6435050116851926,
+      "failures": 16,
+      "seconds": 37.91037678718567,
+      "checkpoint_sha256": "6ca3afc58997ef52aba4e673f729f65327e51440edf537086d5d636126cbb560",
+      "episodes": 16,
+      "source": "work/runs/online-study-20261102/eval-sm-v2/evaluation.json",
+      "mean_duration_seconds": 6.40753125,
+      "mean_offaxis_radians_per_second": 0.09863163064805555,
+      "initial_frame_failures": 0
+    },
+    "ppo": {
+      "mean_return": -13.835166968405247,
+      "mean_rotation": 0.6134126572869718,
+      "mean_axis_deviation": 0.7045328105349191,
+      "mean_offaxis": 1.78013426810503,
+      "failures": 16,
+      "seconds": 30.31494140625,
+      "checkpoint_sha256": "5d336e1735a9201937bf4c10cbfa88603bcc4ec564cb37f83d9bf03467fbb828",
+      "episodes": 16,
+      "source": "work/runs/online-study-20261102/eval-ppo-v2/evaluation.json",
+      "mean_duration_seconds": 2.28170625,
+      "mean_offaxis_radians_per_second": 1.086091869914027,
+      "initial_frame_failures": 0
+    }
+  },
+  "budget": {
+    "original_gpu_hours": 48,
+    "prior_gpu_hours": 14.000967852804397,
+    "this_task_gpu_hours": 0.9428926546043822,
+    "consumed_gpu_hours": 14.943860507408779,
+    "remaining_gpu_hours": 33.05613949259122,
+    "consumed_per_gpu_hours": {
+      "0": 3.625081415242619,
+      "1": 4.329634035891956,
+      "2": 3.6618668085336687,
+      "3": 3.3272782477405336
+    },
+    "charges": [
+      {
+        "run": "work/runs/online-sm-20261102-probe01",
+        "gpu": 1,
+        "gpu_hours": 0.025099624991416932,
+        "status": "failed"
+      },
+      {
+        "run": "work/runs/online-sm-20261102-probe02",
+        "gpu": 1,
+        "gpu_hours": 0.0163246089220047,
+        "status": "segment_complete"
+      },
+      {
+        "run": "work/runs/online-ppo-20261102-pilot-v1",
+        "gpu": 3,
+        "gpu_hours": 0.014911024305555555,
+        "status": "failed"
+      },
+      {
+        "run": "work/runs/online-sm-20261102-pilot-v1",
+        "gpu": 1,
+        "gpu_hours": 0.3478166564967897,
+        "status": "segment_complete"
+      },
+      {
+        "run": "work/runs/online-ppo-20261102-pilot-v2",
+        "gpu": 0,
+        "gpu_hours": 0.3204070211119122,
+        "status": "segment_complete"
+      },
+      {
+        "run": "work/runs/online-sm-20261102-probe-v2",
+        "gpu": 2,
+        "gpu_hours": 0.016295055084758335,
+        "status": "segment_complete"
+      },
+      {
+        "run": "work/runs/online-study-20261102/boundary-check",
+        "gpu": 1,
+        "gpu_hours": 0.007357793781492445,
+        "status": "completed"
+      },
+      {
+        "run": "work/runs/online-study-20261102/eval-initial",
+        "gpu": 2,
+        "gpu_hours": 0.017947544720437792,
+        "status": "completed"
+      },
+      {
+        "run": "work/runs/online-study-20261102/eval-initial-v2",
+        "gpu": 1,
+        "gpu_hours": 0.01798566381136576,
+        "status": "completed"
+      },
+      {
+        "run": "work/runs/online-study-20261102/eval-ppo",
+        "gpu": 2,
+        "gpu_hours": 0.03564785553349389,
+        "status": "completed"
+      },
+      {
+        "run": "work/runs/online-study-20261102/eval-ppo-v2",
+        "gpu": 1,
+        "gpu_hours": 0.0156724794043435,
+        "status": "completed"
+      },
+      {
+        "run": "work/runs/online-study-20261102/eval-sm",
+        "gpu": 1,
+        "gpu_hours": 0.018484495414627922,
+        "status": "completed"
+      },
+      {
+        "run": "work/runs/online-study-20261102/eval-sm-v2",
+        "gpu": 1,
+        "gpu_hours": 0.017805504269070096,
+        "status": "completed"
+      },
+      {
+        "run": "work/runs/online-study-20261102/reference-94001",
+        "gpu": 1,
+        "gpu_hours": 0.03550806548860338,
+        "status": "completed"
+      },
+      {
+        "run": "work/runs/online-study-20261102/reference-94002",
+        "gpu": 1,
+        "gpu_hours": 0.03562926126850976,
+        "status": "completed"
+      }
+    ],
+    "accounting": "Conservative occupied time, including gaps during pilot resume; all probes, failed starts, evaluation and cleanup counted. Network-only checks did not allocate GPUs."
+  },
+  "wandb": [
+    {
+      "id": "online-sm-20261102-pilot-v1",
+      "state": "finished",
+      "url": "https://wandb.ai/lyrine-huazhong-university-of-science-and-technology/unionmimic/runs/online-sm-20261102-pilot-v1",
+      "cycle": 150,
+      "frames": 84992
+    },
+    {
+      "id": "online-ppo-20261102-pilot-v2",
+      "state": "finished",
+      "url": "https://wandb.ai/lyrine-huazhong-university-of-science-and-technology/unionmimic/runs/online-ppo-20261102-pilot-v2",
+      "cycle": 90,
+      "frames": 192512
+    }
+  ],
+  "limitations": [
+    "Single training seed and 16 evaluation episodes per policy. All evaluations failed; no control benefit demonstrated.",
+    "Training episode curves include exploration; held-out model curves use changing replay distributions.",
+    "Cross-process resume preserves learner/replay/RNG but starts new simulator episodes; PhysX contact cache is not serialized.",
+    "Post-pilot candidate adds deadline/signal, reset-frame accounting and tracking identity fixes. Boundary and two-cycle physical checks passed; final orchestration/identity changes passed CPU tests."
+  ],
+  "ability_reference": {
+    "mean_return": 1070.5099620819092,
+    "mean_rotation": 56.41175186634064,
+    "failures": 0,
+    "episodes": 32,
+    "seeds": [
+      94001,
+      94002
+    ],
+    "checkpoint_sha256": "3215205fe1fad48e97f5745ab90bb2377d53012c1a0d2634edf186699ccab7f7",
+    "role": "evaluation_only"
+  }
+}

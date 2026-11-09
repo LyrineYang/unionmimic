@@ -1,0 +1,16 @@
+{
+  "validated": true,
+  "requires_user_confirmation": true,
+  "commands": [
+    [
+      "sm-detach",
+      1,
+      "source scripts/env.sh && python scripts/check_runtime.py && export WANDB_MODE=online && exec /home/junqiy/projects/unionmimic/.venv/bin/python /home/junqiy/projects/unionmimic/scripts/online_candidate_lane.py --plan /home/junqiy/projects/unionmimic/config/online-sm-candidate-20261102.plan.json --approval /home/junqiy/projects/unionmimic/work/analysis/sm-candidate-20261102/launch-approval.json --arm sm-detach --run /home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach"
+    ],
+    [
+      "sm-detach-warm",
+      3,
+      "source scripts/env.sh && python scripts/check_runtime.py && export WANDB_MODE=online && exec /home/junqiy/projects/unionmimic/.venv/bin/python /home/junqiy/projects/unionmimic/scripts/online_candidate_lane.py --plan /home/junqiy/projects/unionmimic/config/online-sm-candidate-20261102.plan.json --approval /home/junqiy/projects/unionmimic/work/analysis/sm-candidate-20261102/launch-approval.json --arm sm-detach-warm --run /home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm"
+    ]
+  ]
+}

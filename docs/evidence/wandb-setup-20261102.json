@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "python": "/home/junqiy/projects/unionmimic/.venv/bin/python",
+  "wandb": "0.17.9",
+  "mode": "offline",
+  "run_id": "9zkqzvv1",
+  "logged_steps": 3,
+  "data_file": "/home/junqiy/projects/unionmimic/work/logs/wandb-setup-20261102/wandb/offline-run-20261102_092547-9zkqzvv1/run-9zkqzvv1.wandb",
+  "data_bytes": 1301,
+  "cloud_sync": "not tested; awaiting user account",
+  "training": false,
+  "project": "unionmimic",
+  "preexisting_packages_unchanged": true,
+  "added_packages": {},
+  "pip_check": "passed",
+  "cli_check": "passed",
+  "training_integration": "not changed",
+  "online_sync": "awaiting_verification"
+}

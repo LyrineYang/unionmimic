@@ -1,0 +1,9 @@
+{
+  "approved": false,
+  "plan_sha256": "a2549b76f5d45b1aa5338d077df389631400225aa8fb8ad436606875f4b052f9",
+  "unix": 1793667090.8550723,
+  "basis": "User 2026-11-03 explicitly authorized reviewed baseline changes and experiments on available GPUs; stop conversation once detached tasks run.",
+  "scope": "Four bounded pilots and four 9-hour factorial arms; preserve predecessor processes and stop automatically at original per-lane deadlines.",
+  "revoked_unix": 1793671705.0208192,
+  "reason": "Latest user instruction: report results and obtain explicit formal confirmation before long training or resuming the new factorial experiment."
+}

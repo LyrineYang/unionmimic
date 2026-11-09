@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "pid": 51517,
+  "gpu": 0,
+  "mode": "none",
+  "updates": 400,
+  "actor_updates": 100,
+  "updated_unix": 1794232104.9500027,
+  "started_unix": 1794229418.0033793,
+  "deadline_unix": 1794234818.0033793
+}

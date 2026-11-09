@@ -1,0 +1,22 @@
+{
+  "step": 250,
+  "loss": 3.599351167678833,
+  "grad_norm": 4.573741912841797,
+  "seconds": 667.0580902099609,
+  "reward_loss": 1.051316738128662,
+  "prop_loss": 0.21154873073101044,
+  "failure_loss": 0.5965903997421265,
+  "kl_loss": 1.7390494346618652,
+  "feature_drift": 0.008459942415356636,
+  "horizon": 4,
+  "supervised_transitions": 256,
+  "includes_early_failure": false,
+  "restored_step": 125,
+  "actor_unchanged": true,
+  "encoder_unchanged": true,
+  "image_decoder_unchanged": true,
+  "dynamics_changed": true,
+  "source_checkpoint": "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/dynamics-anchor-recheck/part1/last.pt",
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/dynamics-anchor-recheck/part2/last.pt",
+  "anchor_checkpoint_sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05"
+}

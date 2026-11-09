@@ -1,0 +1,50 @@
+{
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt",
+  "checkpoint_sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05",
+  "seed": 123,
+  "gpu": 0,
+  "episodes": 8,
+  "lengths": [
+    499,
+    499,
+    499,
+    499,
+    499,
+    499,
+    499,
+    499
+  ],
+  "failures": 0,
+  "mean_return": 1041.69921875,
+  "returns": [
+    1006.0342407226562,
+    954.1281127929688,
+    1160.7423095703125,
+    1097.082763671875,
+    1184.085693359375,
+    943.74462890625,
+    847.2972412109375,
+    1140.4783935546875
+  ],
+  "mean_components": {
+    "spin": 849.262939453125,
+    "linear_velocity": -1.2997405529022217,
+    "contact": 0.0,
+    "finger_distance": -18.63783073425293,
+    "torque": -0.06289392709732056,
+    "work": -0.4316138029098511,
+    "action": -8.470834732055664,
+    "control_error": -200.02015686035156,
+    "hand_pose": 493.6971435546875,
+    "object_drift": -49.24705505371094,
+    "off_axis": -0.7520331144332886,
+    "no_spin": 0.0,
+    "extra_contact_and_drop": -22.338871002197266,
+    "total": 1041.69921875,
+    "rotation_radians": 55.08530807495117
+  },
+  "component_sum_max_error": 0.0006103515625,
+  "action_conservative_scale": 1.0,
+  "control_dt": 0.01667,
+  "control_frequency_inv": 6
+}

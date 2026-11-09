@@ -1,0 +1,438 @@
+{
+  "checked_unix": 1793713045.69255,
+  "complete": false,
+  "engineering_passed": false,
+  "arms": {
+    "S0": {
+      "status": "completed",
+      "cycles": 777,
+      "gpu": 1,
+      "actual_gpu_hours": 1.145614698463016,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S0/segment-0.pt",
+          "checkpoint_sha256": "a8603f9dad0bc73a8c30a4c8d1093bc01a1df14176d93ec41826c9c5a77dff2c",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 711.9371464252472,
+          "mean_rotation": 54.1797397788614,
+          "mean_axis_deviation": 0.26710135977430993,
+          "mean_offaxis": 38.99264481663704,
+          "failures": 1,
+          "seconds": 165.604083776474
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S0/segment-1.pt",
+          "checkpoint_sha256": "c780a006d5f00a91386de2d197ffcc94e22f58cd8506ed3a4b9fec201a00e8ea",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 840.9195148944855,
+          "mean_rotation": 64.54053706489503,
+          "mean_axis_deviation": 0.28455172784357186,
+          "mean_offaxis": 35.987439662218094,
+          "failures": 1,
+          "seconds": 173.96096658706665
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 776.4283306598663,
+      "mean_rotation": 59.36013842187822,
+      "mean_axis_deviation": 0.2758265438089409,
+      "failure_rate": 0.03125,
+      "parity": {
+        "parity_rows": 197751,
+        "max_reward_error": 6.198883056640625e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 2
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S0/learner/last.pt",
+      "checkpoint_sha256": "c780a006d5f00a91386de2d197ffcc94e22f58cd8506ed3a4b9fec201a00e8ea",
+      "median_cycle_seconds": 4.619071006774902
+    },
+    "S1": {
+      "status": "completed",
+      "cycles": 882,
+      "gpu": 2,
+      "actual_gpu_hours": 1.1428348248534732,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S1/segment-0.pt",
+          "checkpoint_sha256": "87a7f113b98f7e3bfb52b93cc6d73b87b1f52445c17a33ba914cf230392ce5f3",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 786.8352823853493,
+          "mean_rotation": 50.12397922761738,
+          "mean_axis_deviation": 0.2995053266013619,
+          "mean_offaxis": 40.89530120417476,
+          "failures": 3,
+          "seconds": 164.25298380851746
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S1/segment-1.pt",
+          "checkpoint_sha256": "8159f5b7fa83cf5a8557e9de9065f05f9a7181b1868e504da931e1d1f2e15bb5",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 844.9824631214142,
+          "mean_rotation": 44.40696160495281,
+          "mean_axis_deviation": 0.24927411047390188,
+          "mean_offaxis": 32.973963072523475,
+          "failures": 1,
+          "seconds": 166.9192657470703
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 815.9088727533817,
+      "mean_rotation": 47.2654704162851,
+      "mean_axis_deviation": 0.2743897185376319,
+      "failure_rate": 0.0625,
+      "parity": {
+        "parity_rows": 71231,
+        "max_reward_error": 5.9604644775390625e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S1/learner/last.pt",
+      "checkpoint_sha256": "8159f5b7fa83cf5a8557e9de9065f05f9a7181b1868e504da931e1d1f2e15bb5",
+      "median_cycle_seconds": 4.0901641845703125
+    },
+    "S2": {
+      "status": "running",
+      "phase": "update",
+      "pid": 51997,
+      "gpu": 1,
+      "arm": "sm",
+      "updated_unix": 1793713042.0164573,
+      "started_unix": 1793712150.3326206,
+      "deadline_unix": 1793716942.3368506,
+      "counts": {
+        "model": 52710,
+        "actor": 4971,
+        "critic": 99420,
+        "cycles": 4971
+      },
+      "frames": 2707456
+    },
+    "S3": {
+      "status": "completed",
+      "cycles": 957,
+      "gpu": 3,
+      "actual_gpu_hours": 1.1412229867776236,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S3/segment-0.pt",
+          "checkpoint_sha256": "69b2a601985c394e9f53266363ee3edbaa8869e3d5103492562bed874ae12aac",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 808.8768036365509,
+          "mean_rotation": 50.402029221877456,
+          "mean_axis_deviation": 0.27754364159691286,
+          "mean_offaxis": 43.40026614069939,
+          "failures": 1,
+          "seconds": 162.4414083957672
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S3/segment-1.pt",
+          "checkpoint_sha256": "43da42c1b630a3dbfbb2fd9fb5a0449752def0ab3114c75ca4c533de931686df",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 915.3239521980286,
+          "mean_rotation": 50.18102259002626,
+          "mean_axis_deviation": 0.29583561145158177,
+          "mean_offaxis": 43.4288646876812,
+          "failures": 1,
+          "seconds": 167.39925861358643
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 862.1003779172897,
+      "mean_rotation": 50.29152590595186,
+      "mean_axis_deviation": 0.28668962652424734,
+      "failure_rate": 0.03125,
+      "parity": {
+        "parity_rows": 76989,
+        "max_reward_error": 5.245208740234375e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S3/learner/last.pt",
+      "checkpoint_sha256": "43da42c1b630a3dbfbb2fd9fb5a0449752def0ab3114c75ca4c533de931686df",
+      "median_cycle_seconds": 3.7484829425811768
+    },
+    "S4": {
+      "status": "completed",
+      "cycles": 710,
+      "gpu": 2,
+      "actual_gpu_hours": 1.145993724597825,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S4/segment-0.pt",
+          "checkpoint_sha256": "ea56ff49eae87de27b1e729039747a211a4153b82495640ad4ca58d8737da620",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 706.6830713450909,
+          "mean_rotation": 51.565369388088584,
+          "mean_axis_deviation": 0.3415144804560225,
+          "mean_offaxis": 41.37759908288717,
+          "failures": 4,
+          "seconds": 164.98188090324402
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S4/segment-1.pt",
+          "checkpoint_sha256": "86e6c2e49df35beb0cea29ec2baf1d845bc6eb647f73d898fbdf728861e52a65",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 741.8585259914398,
+          "mean_rotation": 56.43468360975385,
+          "mean_axis_deviation": 0.2450792098859228,
+          "mean_offaxis": 37.56790116429329,
+          "failures": 1,
+          "seconds": 169.27378344535828
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 724.2707986682653,
+      "mean_rotation": 54.000026498921216,
+      "mean_axis_deviation": 0.29329684517097265,
+      "failure_rate": 0.078125,
+      "parity": {
+        "parity_rows": 184491,
+        "max_reward_error": 5.9604644775390625e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S4/learner/last.pt",
+      "checkpoint_sha256": "86e6c2e49df35beb0cea29ec2baf1d845bc6eb647f73d898fbdf728861e52a65",
+      "median_cycle_seconds": 5.020334243774414
+    },
+    "S5": {
+      "status": "running",
+      "phase": "collect",
+      "pid": 52302,
+      "gpu": 2,
+      "arm": "sm",
+      "updated_unix": 1793713044.5325,
+      "started_unix": 1793712161.8563645,
+      "deadline_unix": 1793716953.5222087,
+      "counts": {
+        "model": 53230,
+        "actor": 5023,
+        "critic": 100460,
+        "cycles": 5023
+      },
+      "frames": 2655040
+    },
+    "S6": {
+      "status": "completed",
+      "cycles": 773,
+      "gpu": 3,
+      "actual_gpu_hours": 1.142512976527214,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S6/segment-0.pt",
+          "checkpoint_sha256": "2c141eabfef6351d612c0f9dd5b77a8e5b0701fff71b761fc517674f5f8b18be",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 776.5192489624023,
+          "mean_rotation": 46.822461880743504,
+          "mean_axis_deviation": 0.2810892916262594,
+          "mean_offaxis": 37.939037546515465,
+          "failures": 2,
+          "seconds": 164.40401244163513
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S6/segment-1.pt",
+          "checkpoint_sha256": "57769f318257ab8994f5642aa00ea88bbbb91e8ff3ea32994466f8023f42ad72",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 749.6220944821835,
+          "mean_rotation": 57.73632632382214,
+          "mean_axis_deviation": 0.30985072024272386,
+          "mean_offaxis": 39.48225463926792,
+          "failures": 3,
+          "seconds": 165.87486624717712
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 763.0706717222929,
+      "mean_rotation": 52.27939410228282,
+      "mean_axis_deviation": 0.29547000593449163,
+      "failure_rate": 0.078125,
+      "parity": {
+        "parity_rows": 197734,
+        "max_reward_error": 6.198883056640625e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 2
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S6/learner/last.pt",
+      "checkpoint_sha256": "57769f318257ab8994f5642aa00ea88bbbb91e8ff3ea32994466f8023f42ad72",
+      "median_cycle_seconds": 4.625015020370483
+    },
+    "S7": {
+      "status": "completed",
+      "cycles": 869,
+      "gpu": 1,
+      "actual_gpu_hours": 1.1401258787843915,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S7/segment-0.pt",
+          "checkpoint_sha256": "4c816d3eb17bea66ce222346164b67415f1d2f2954881f1e4a99359651f19aea",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 812.6116604804993,
+          "mean_rotation": 50.98446960467845,
+          "mean_axis_deviation": 0.2710844060043558,
+          "mean_offaxis": 36.05573486723006,
+          "failures": 2,
+          "seconds": 159.55713844299316
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S7/segment-1.pt",
+          "checkpoint_sha256": "81631babb14488fa73eab7588f182f9d67690248575a2011119c766b336cafd2",
+          "episodes_per_seed": 16,
+          "seeds": [
+            94001,
+            94002
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 841.9197125434875,
+          "mean_rotation": 53.515172025188804,
+          "mean_axis_deviation": 0.2915390612692437,
+          "mean_offaxis": 39.62897693365812,
+          "failures": 2,
+          "seconds": 163.17181396484375
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 827.2656865119934,
+      "mean_rotation": 52.24982081493363,
+      "mean_axis_deviation": 0.28131173363679973,
+      "failure_rate": 0.0625,
+      "parity": {
+        "parity_rows": 69306,
+        "max_reward_error": 5.4836273193359375e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-20261103-v1/S7/learner/last.pt",
+      "checkpoint_sha256": "81631babb14488fa73eab7588f182f9d67690248575a2011119c766b336cafd2",
+      "median_cycle_seconds": 4.1307103633880615
+    }
+  },
+  "ranking": [],
+  "selection": "mean of two fixed development checkpoints; joint gate first, then return",
+  "repeated_development_seeds_not_independent": true,
+  "source_sha256": {
+    "config/runtime-lock.json": "678c1dd8d51e1a93d06b205e4330d4599d8d8ffedad70e2e9a81bf5d2171651c",
+    "config/wandb.env": "fda86669eff0f47c7702f7ed824a367acabe03f4ea8ca088dd6aa398de6956f7",
+    "scripts/check_runtime.py": "593f0813889bc44e8b14ac9435b5c178b9caaa02fccf641ad89ce0a7604e90e4",
+    "scripts/complete_baseline_preflight.py": "a77d802a30b4f2fcce0632b166b9ad4d0659176dae03d0f003a7bc01c7d00bf5",
+    "scripts/env.sh": "ad13fc90dbe5e0e5a5b9cb1aa1b84cd040028a14ba5657576ff4cde4c09b0baf",
+    "scripts/evaluate_online.py": "683676c256c06d5013651c7696454df1a1c3695e94c07d68b7cbad22afbcfd85",
+    "scripts/finalize_online_long.py": "8477914373387ede7524ff88878608fd87f3e83aefb3aa3a3a252dc345e79b9d",
+    "scripts/launch_online_baseline.py": "f1d5674e9f1a138d73ba66c6673e5434f4e27a7685b8494e4d4675bc2521047f",
+    "scripts/launch_online_candidate.py": "8078e2dc655ab51e3797b2275ee1cf791605b9a7b767bffdb876d3769a0c3642",
+    "scripts/launch_online_long.py": "ee25bfb10f9a2279f0046f21c7aa1660ae07a2d21daeecd4b856e12fa1fb90f2",
+    "scripts/launch_screening.py": "65bef870d4f97c37ad9c2cce461530f543367e24bc13b62ba8dd7061b1c408ee",
+    "scripts/online_baseline_lane.py": "1d9f235c3789c147f9f48bff087ca252be4a4995e173c6eb05fd13185ab5b4a5",
+    "scripts/online_candidate_lane.py": "3cf4870b1b09449c2c4f1f9b1360184790f96a8e10c94f1d955255195958d3fa",
+    "scripts/online_long_lane.py": "f28baa06ceae043972f54f103a9b3a1ed541166c9b23b0b7eb7b52424a67736a",
+    "scripts/screening_lane.py": "f12fea292ea0e3fe7feee287eca85336cd3667f977069694892fae6eada2265b",
+    "scripts/screening_summary.py": "db417dd9211b3cc7cfdd146e56b764539f2f684e282aef91a6deacf2d242f7e0",
+    "scripts/train_online.py": "d3b5ccfa8288503b1e6ae60b56bb99bddd09e1841e9498f75340e1242570d3a8",
+    "scripts/train_online_baseline.py": "02c752a56e7210bfc8e65c9e790154c94004580e51a6776f4660c8a952bd57b9",
+    "scripts/train_online_candidate.py": "4761f905b37cefe5c3b6fd10c67318d6969c9b8e20cb285e62c32e34b58ecd6a",
+    "scripts/train_online_screen.py": "b2a591baba6d9fc720333d01891a0f50ed3231af99ae3a1992efac53396df942",
+    "scripts/wait_online_baseline.py": "ae03d29b75c76a8f8fbb1d0dc3adc4dcf3437443931851e80e4b8841ed5c4387",
+    "tests/test_online_baseline.py": "15c9c980343c0b8fb9a9c4c5f96869fc74692c54c654e6ae14b6edd5e74f5d3a",
+    "tests/test_online_baseline_coordinator.py": "527da1884b5052af1a309e710a58e248aef5e6660526859e88e166f8cc124f2e",
+    "tests/test_online_screen.py": "95c8abbe8fc908473559d72b3aca9e6466e3c1102b8d028c2cf649a6da54794e",
+    "unionmimic/common.py": "12115b32b321ed3e8c1fba2bace4a338f903a7e7afe27b88043dd070c444553d",
+    "unionmimic/online/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+    "unionmimic/online/learner.py": "1b626430413d98cf1554565386641ee63a102c84a2cf06075c4d0ee4dac187e4",
+    "unionmimic/online/simulator.py": "43a9a491031be0152af689e91d0a5e553e957fb0e143a7facb4512f16b2dec08",
+    "unionmimic/online/task.py": "c61eb144788e3b9f3338adb4938f256d8f9ae9b341a431692c54d33debefc45b",
+    "unionmimic/online/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online/worker.py": "49fb1a3ffb77839b54c33fa81088e5c8618ad5fc47d2c1d5276e62c918a60aef",
+    "unionmimic/online_baseline/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online_baseline/core.py": "750f8b6eca2c632d1e84a5099cd51b793d7be8ee53eda1b073413738e7902233",
+    "unionmimic/online_baseline/curriculum.py": "a77d8a2d6e5c9b38a05077bf566c5f67449835f85de24903b938d0e197242e48",
+    "unionmimic/online_baseline/learner.py": "f04158c5e25522beeac4a9ff470f00747ff189dc7c62b2d1bbd97495b971306e",
+    "unionmimic/online_baseline/simulator.py": "12b60a239087888fed9f05883dfcf137654e36b5e0df83635e774e8e6c62c6fd",
+    "unionmimic/online_baseline/task.py": "c93f6d85db003addda2c7b99bac0b3a8435b9048e05384a693cda403c8e2c0fb",
+    "unionmimic/online_baseline/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online_baseline/worker.py": "e8f2ab502c45f1f5e7ebbf948019f103ccfcfc7484573313f241826f2c3f69c8",
+    "unionmimic/online_candidate/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online_candidate/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+    "unionmimic/online_candidate/learner.py": "7bcfddb29c63df0cb97ae2af4bc808faa601d96aba52aac4f4f0e3f14c4f2d99",
+    "unionmimic/online_candidate/simulator.py": "43a9a491031be0152af689e91d0a5e553e957fb0e143a7facb4512f16b2dec08",
+    "unionmimic/online_candidate/task.py": "c93f6d85db003addda2c7b99bac0b3a8435b9048e05384a693cda403c8e2c0fb",
+    "unionmimic/online_candidate/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online_candidate/worker.py": "89f76d786a7db84f7c22fd6adec08a0c1d794267b7c5b75a94bf951e07ac0233",
+    "unionmimic/online_screen/__init__.py": "0463a1476962911e55b6bbded044366703449f3dd591cc496ce0c7194911c4f1",
+    "unionmimic/online_screen/branch.py": "9d1d61b18a1322ccdf129cfe2cbc8f0bdb03df722874be502e0667a0b520971b",
+    "unionmimic/online_screen/worker.py": "cde26c13fe920ac36a725d564bb7ed7b7dc1ed8997c7112d502cc31851eeeed6",
+    "work/analysis/sm-factorial-20261103/pilot_driver.py": "c7978d492af953f3b39c92fee11da30edde9c4c4a5383952e482d7065dfa6165",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/task/WMCraftnetRotation.yaml": "1baec80813b3a6fd8a5275f966d0d5d3febe4127844ad88ff21089705d6f9f30",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/train/WMCraftnetPPO.yaml": "b81488e09bc4e1603390020c33f9e47e20fc1daf2947912510c1546cc4792637",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/base/vec_task.py": "911ddb4434a2f3cd98925d539d475802f8f0736f47174e3b8a5630f68147357f",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_camera_rotation.py": "f0d1bc6e01049b6b9325057f21b13096f79734d2f2fc2838edca0eefdc378097",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_rotation.py": "5632e38e80f684dabf95ab15716301ca81cf6bcb1672508d74cb87264c6c1bdf",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/utils/spin_reward_utils.py": "e83c424a4b3d8add3224e1cfac9dc5a88938c38623a1630b54eefc631c6d90d4",
+    "work/upstreams/WM-Craftnet/rl_games/common/common_losses.py": "9134b3cea449fd2ab566cf5ed6fcc8951434de228020fd5162cf6beb5cdaf5c2",
+    "work/upstreams/WM-Craftnet/rl_games/common/schedulers.py": "3fd0d4b2b9472d495458d258bff82bf5fb6bd6c18d91fc20df1b2c9c23d3a5cc",
+    "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py": "c7cc0a4962feb00002e62d37b969a075beadeded5a61f124d4bce85120f9e239"
+  },
+  "actual_gpu_hours": 6.858305090003543,
+  "long_training_launched": false
+}

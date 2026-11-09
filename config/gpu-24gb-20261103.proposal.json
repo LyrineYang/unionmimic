@@ -1,0 +1,108 @@
+{
+  "status": "on_hold_pending_reference_validation",
+  "created_unix": 1793710860.2763708,
+  "target_device_gib": 24,
+  "target_band_gib": [
+    22,
+    26
+  ],
+  "capacity_probe_abort_peak_gib": 28,
+  "primary": {
+    "processes_per_gpu": 2,
+    "envs_per_process": 2048,
+    "batch_per_process": 8192,
+    "replay_vector_steps": 512,
+    "estimated_device_peak_gib": [
+      22,
+      28
+    ]
+  },
+  "fallback": {
+    "processes_per_gpu": 2,
+    "envs_per_process": 1536,
+    "batch_per_process": 6144
+  },
+  "alternatives": [
+    {
+      "processes_per_gpu": 1,
+      "envs_per_process": 4096,
+      "batch_per_process": 16384,
+      "purpose": "one_policy_training"
+    },
+    {
+      "processes_per_gpu": 4,
+      "envs_per_process": 512,
+      "batch_per_process": 2048,
+      "purpose": "multiple_useful_configuration_screening"
+    }
+  ],
+  "large_scale_measured": false,
+  "model_horizon": 8,
+  "policy_horizon": "preserve_selected_8_or_16",
+  "learning_rate_scaling": "none_without_ablation",
+  "preserve_existing_screening": true,
+  "formal_long_training_requires_confirmation": true,
+  "capacity_probe_plan": [
+    {
+      "concurrent_processes": 1,
+      "envs_each": 2048,
+      "batch_each": 8192,
+      "minutes_max": 15
+    },
+    {
+      "concurrent_processes": 2,
+      "envs_each": 2048,
+      "batch_each": 8192,
+      "minutes_max": 20,
+      "requires_prior_stage_pass": true
+    }
+  ],
+  "implemented_density_optimization": [
+    "grouped_finite_checks"
+  ],
+  "not_implemented_density_candidates": [
+    "tensor_graph_compilation",
+    "cached_valid_replay_indices",
+    "asynchronous_collector_learner"
+  ],
+  "approval": {
+    "capacity_probes_scheduled": false,
+    "long_training": false
+  },
+  "cpu_thread_candidate": {
+    "pytorch_threads_per_process": 1,
+    "physx_threads_per_process": 2,
+    "physical_cores_available_on_host": 28,
+    "requires_simulator_override_and_revalidation": true
+  },
+  "density_metrics": [
+    "valid_real_transitions_per_second",
+    "model_samples_per_second",
+    "actor_updates_per_hour",
+    "stage_cuda_activity",
+    "physical_gpu_hour",
+    "development_control_gain"
+  ],
+  "workload_priority": "single_object_multiple_actions",
+  "multi_object_expansion": "deferred_by_user",
+  "new_actions_implemented": false,
+  "efficiency_acceptance": {
+    "training": "wall_clock_and_gpu_hours_to_matched_per_action_success",
+    "iteration": "time_from_configuration_submission_to_comparable_development_result",
+    "diagnostics": [
+      "valid_samples_per_second",
+      "actor_updates_per_hour",
+      "stage_timing",
+      "peak_device_memory"
+    ],
+    "final_test_used_for_tuning": false
+  },
+  "iteration_candidates_not_implemented": [
+    "immutable_lightweight_policy_export",
+    "separate_batched_evaluation",
+    "versioned_reference_preprocessing_cache"
+  ],
+  "latest_review": "docs/REFERENCE_BASELINE_AUDIT_20261103.md",
+  "primary_is_not_approved_training_recipe": true,
+  "reference_recipe_capacity_must_be_measured_first": true
+}

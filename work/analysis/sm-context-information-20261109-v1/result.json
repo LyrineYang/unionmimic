@@ -1,0 +1,132 @@
+{
+  "results": [
+    {
+      "variant": "history_only",
+      "validation_brier": 0.18508927524089813,
+      "validation_bce": 0.6892572045326233,
+      "train_prevalence_baseline_brier": 0.18832162022590637,
+      "per_sensor_brier": [
+        0.18565496802330017,
+        0.2213658094406128,
+        0.1332717090845108,
+        0.22989507019519806,
+        0.15525883436203003
+      ],
+      "episode_brier": {
+        "2": 0.1890256255865097,
+        "9": 0.18880274891853333,
+        "12": 0.16712087392807007,
+        "15": 0.19540785253047943
+      },
+      "parameters": 204805,
+      "optimizer_steps": 600
+    },
+    {
+      "variant": "history_plus_current_encoder",
+      "validation_brier": 0.19381920993328094,
+      "validation_bce": 0.7559691667556763,
+      "train_prevalence_baseline_brier": 0.18832162022590637,
+      "per_sensor_brier": [
+        0.2044922113418579,
+        0.2153785526752472,
+        0.14553678035736084,
+        0.2315351366996765,
+        0.1721532940864563
+      ],
+      "episode_brier": {
+        "2": 0.19590190052986145,
+        "9": 0.18892823159694672,
+        "12": 0.18426576256752014,
+        "15": 0.20618093013763428
+      },
+      "parameters": 204805,
+      "optimizer_steps": 600
+    },
+    {
+      "variant": "history_plus_wsm",
+      "validation_brier": 0.19497425854206085,
+      "validation_bce": 0.7999187707901001,
+      "train_prevalence_baseline_brier": 0.18832162022590637,
+      "per_sensor_brier": [
+        0.20535482466220856,
+        0.22600162029266357,
+        0.14087754487991333,
+        0.2357264757156372,
+        0.16691076755523682
+      ],
+      "episode_brier": {
+        "2": 0.19969983398914337,
+        "9": 0.18859152495861053,
+        "12": 0.1933937668800354,
+        "15": 0.1982118785381317
+      },
+      "parameters": 204805,
+      "optimizer_steps": 600
+    },
+    {
+      "variant": "history_plus_shuffled_wsm",
+      "validation_brier": 0.2057773917913437,
+      "validation_bce": 0.8297810554504395,
+      "train_prevalence_baseline_brier": 0.18832162022590637,
+      "per_sensor_brier": [
+        0.20606830716133118,
+        0.2530136704444885,
+        0.1425674706697464,
+        0.2641790509223938,
+        0.16305840015411377
+      ],
+      "episode_brier": {
+        "2": 0.22130848467350006,
+        "9": 0.1995440274477005,
+        "12": 0.1871313899755478,
+        "15": 0.21512563526630402
+      },
+      "parameters": 204805,
+      "optimizer_steps": 600
+    }
+  ],
+  "episodes": {
+    "train": [
+      "000000",
+      "000001",
+      "000003",
+      "000004",
+      "000005",
+      "000006",
+      "000007",
+      "000008",
+      "000010",
+      "000011",
+      "000013",
+      "000014"
+    ],
+    "valid": [
+      "000002",
+      "000009",
+      "000012",
+      "000015"
+    ]
+  },
+  "rows": {
+    "train": 2916,
+    "valid": 972
+  },
+  "horizon_steps": 4,
+  "history_frames": 10,
+  "projected_context_dim": 64,
+  "contact_slice": [
+    44,
+    49
+  ],
+  "state_model_sha256": "ca882bd78b163afe3a77523e59ae217bdcfbbd7479709f3e9e4c42fcb0c0983a:e5174e3602f7a6377bb45dc4cd7747ef2a62e261f206e1af845a1497efad44ba",
+  "source": "/home/junqiy/projects/unionmimic/work/analysis/sm-context-trajectories-20261109-v1",
+  "source_sha256": "4ead9afef28fcb4e19439631293318f9cca3822370c1f29881420e8e1c9683be",
+  "seconds": 12.805521011352539,
+  "limits": [
+    "historical 10Hz released-policy/stress trajectories, not random-policy 50Hz pen data",
+    "future noisy tactile sensor bits, not ground-truth contacts or policy recovery",
+    "encoder context is a modality control, not equal information history",
+    "same MLP capacity, but history-only extra inputs are zero; fixed random projection is lossy",
+    "single probe seed and small episode holdout; no policy benefit or causal attribution established"
+  ]
+}

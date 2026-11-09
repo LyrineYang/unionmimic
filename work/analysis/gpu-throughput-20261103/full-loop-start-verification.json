@@ -1,0 +1,101 @@
+{
+  "checked_unix": 1793709582.0660613,
+  "pinned_sources_unchanged": 61,
+  "main": {
+    "gpu1": {
+      "status": "running",
+      "phase": "train",
+      "arm": "S7",
+      "gpu": 1,
+      "pid": 19014,
+      "segment": 0,
+      "started_unix": 1793703911.9110384,
+      "updated_unix": 1793708037.8215985,
+      "deadline_unix": 1793712837.300211,
+      "completed": [
+        "S0"
+      ]
+    },
+    "gpu2": {
+      "status": "running",
+      "phase": "train",
+      "arm": "S4",
+      "gpu": 2,
+      "pid": 19019,
+      "segment": 0,
+      "started_unix": 1793703911.9343472,
+      "updated_unix": 1793708027.8695076,
+      "deadline_unix": 1793712827.3384798,
+      "completed": [
+        "S1"
+      ]
+    },
+    "gpu3": {
+      "status": "running",
+      "phase": "train",
+      "arm": "S3",
+      "gpu": 3,
+      "pid": 19024,
+      "segment": 0,
+      "started_unix": 1793703911.9647396,
+      "updated_unix": 1793708026.776571,
+      "deadline_unix": 1793712826.240445,
+      "completed": [
+        "S6"
+      ]
+    }
+  },
+  "capacity": {
+    "n256-b1024": {
+      "status": "running",
+      "phase": "collect",
+      "pid": 22467,
+      "gpu": 2,
+      "arm": "sm",
+      "updated_unix": 1793709581.413196,
+      "started_unix": 1793709393.7378404,
+      "deadline_unix": 1793709866.0210664,
+      "counts": {
+        "model": 180,
+        "actor": 14,
+        "critic": 280,
+        "cycles": 14
+      },
+      "frames": 61440
+    },
+    "n512-b2048": {
+      "status": "running",
+      "phase": "update",
+      "pid": 22468,
+      "gpu": 3,
+      "arm": "sm",
+      "updated_unix": 1793709579.7459128,
+      "started_unix": 1793709393.1942146,
+      "deadline_unix": 1793709866.0384996,
+      "counts": {
+        "model": 150,
+        "actor": 11,
+        "critic": 220,
+        "cycles": 11
+      },
+      "frames": 114688
+    },
+    "n64-b256": {
+      "status": "running",
+      "phase": "update",
+      "pid": 22466,
+      "gpu": 1,
+      "arm": "sm",
+      "updated_unix": 1793709578.7080853,
+      "started_unix": 1793709393.821304,
+      "deadline_unix": 1793709866.0035863,
+      "counts": {
+        "model": 210,
+        "actor": 17,
+        "critic": 340,
+        "cycles": 17
+      },
+      "frames": 17408
+    }
+  }
+}

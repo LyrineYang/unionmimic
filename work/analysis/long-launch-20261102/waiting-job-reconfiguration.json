@@ -1,0 +1,9 @@
+{
+  "checked_unix": 1793599461.3127723,
+  "optimizer_steps": 0,
+  "reason": "Replace the waiting four-step check with a two-segment 250-update trial; correct conditional-parameter Adam counter assertion",
+  "original_status": {
+    "status": "waiting_for_probe",
+    "created_unix": 1793598663.503107
+  }
+}

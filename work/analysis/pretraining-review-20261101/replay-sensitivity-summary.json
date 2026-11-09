@@ -1,0 +1,138 @@
+{
+  "status": "inconclusive_small_pilot_not_a_BPTT_gate_pass",
+  "states": 4,
+  "directions": 2,
+  "amplitude": 0.03,
+  "null_return_ranges": [
+    0.1265408992767334,
+    0.007190704345703125,
+    0.0054700374603271484,
+    0.09999942779541016
+  ],
+  "start_latent_max_errors": {
+    "replay-d0-s-1": {
+      "deter": 0.16549429297447205,
+      "stoch": 1.0,
+      "logit": 0.4689967632293701
+    },
+    "replay-null-1": {
+      "deter": 0.13401256501674652,
+      "stoch": 1.0,
+      "logit": 0.7875070571899414
+    },
+    "replay-d1-s1": {
+      "deter": 0.13685375452041626,
+      "stoch": 1.0,
+      "logit": 1.2129735946655273
+    },
+    "replay-d0-s1": {
+      "deter": 0.1490132063627243,
+      "stoch": 1.0,
+      "logit": 0.6868442296981812
+    },
+    "replay-d1-s-1": {
+      "deter": 0.16296854615211487,
+      "stoch": 1.0,
+      "logit": 0.5660340785980225
+    },
+    "replay-null-2": {
+      "deter": 0.208082377910614,
+      "stoch": 1.0,
+      "logit": 0.6891489028930664
+    },
+    "replay-record": {
+      "deter": 0.0,
+      "stoch": 0.0,
+      "logit": 0.0
+    }
+  },
+  "comparisons": [
+    {
+      "direction": 0,
+      "lane": 0,
+      "physical_delta": -0.25133681297302246,
+      "model_delta": 0.09452009201049805,
+      "gradient_projection": -0.004746585041284561,
+      "null_range": 0.1265408992767334,
+      "above_noise": false,
+      "latent_start_exact": false
+    },
+    {
+      "direction": 0,
+      "lane": 1,
+      "physical_delta": 0.019205093383789062,
+      "model_delta": 0.0726475715637207,
+      "gradient_projection": 0.00864007383584976,
+      "null_range": 0.007190704345703125,
+      "above_noise": false,
+      "latent_start_exact": false
+    },
+    {
+      "direction": 0,
+      "lane": 2,
+      "physical_delta": -0.07823944091796875,
+      "model_delta": 0.09324836730957031,
+      "gradient_projection": -0.006062672138214111,
+      "null_range": 0.0054700374603271484,
+      "above_noise": true,
+      "latent_start_exact": false
+    },
+    {
+      "direction": 0,
+      "lane": 3,
+      "physical_delta": -0.30784130096435547,
+      "model_delta": 0.03331565856933594,
+      "gradient_projection": 0.0025191599875688552,
+      "null_range": 0.09999942779541016,
+      "above_noise": true,
+      "latent_start_exact": false
+    },
+    {
+      "direction": 1,
+      "lane": 0,
+      "physical_delta": -0.18569016456604004,
+      "model_delta": -0.05629444122314453,
+      "gradient_projection": -0.012407248020172118,
+      "null_range": 0.1265408992767334,
+      "above_noise": false,
+      "latent_start_exact": false
+    },
+    {
+      "direction": 1,
+      "lane": 1,
+      "physical_delta": -0.34657859802246094,
+      "model_delta": 0.1990041732788086,
+      "gradient_projection": -0.014871029555797576,
+      "null_range": 0.007190704345703125,
+      "above_noise": true,
+      "latent_start_exact": false
+    },
+    {
+      "direction": 1,
+      "lane": 2,
+      "physical_delta": -0.1191256046295166,
+      "model_delta": -0.2357311248779297,
+      "gradient_projection": -0.011202256679534912,
+      "null_range": 0.0054700374603271484,
+      "above_noise": true,
+      "latent_start_exact": false
+    },
+    {
+      "direction": 1,
+      "lane": 3,
+      "physical_delta": 0.2842264175415039,
+      "model_delta": 0.025544166564941406,
+      "gradient_projection": 0.0028544698655605313,
+      "null_range": 0.09999942779541016,
+      "above_noise": false,
+      "latent_start_exact": false
+    }
+  ],
+  "eligible": 0,
+  "limitations": [
+    "Only four physical starts; repeated directions are not independent evidence.",
+    "Exposed root/DOF starts replay exactly, but unperturbed returns are not identical.",
+    "No contact/slip stratification or locked-test sampling in this pilot."
+  ],
+  "optimizer_steps": 0
+}

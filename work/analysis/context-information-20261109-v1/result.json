@@ -1,0 +1,167 @@
+{
+  "results": [
+    {
+      "variant": "history_only",
+      "validation_brier": 0.19117316603660583,
+      "validation_bce": 0.6150214076042175,
+      "train_prevalence_baseline_brier": 0.21599435806274414,
+      "per_sensor_brier": [
+        0.1683233380317688,
+        0.2368549406528473,
+        0.20306959748268127,
+        0.20568189024925232,
+        0.1419360190629959
+      ],
+      "episode_brier": {
+        "3": 0.2659883201122284,
+        "13": 0.15462349355220795,
+        "18": 0.19771039485931396,
+        "24": 0.1679142862558365,
+        "26": 0.17407609522342682,
+        "27": 0.1561826765537262,
+        "32": 0.1677430272102356,
+        "35": 0.2499355673789978
+      },
+      "parameters": 204805,
+      "optimizer_steps": 600
+    },
+    {
+      "variant": "history_plus_current_encoder",
+      "validation_brier": 0.1936967670917511,
+      "validation_bce": 0.6341378092765808,
+      "train_prevalence_baseline_brier": 0.21599435806274414,
+      "per_sensor_brier": [
+        0.16734188795089722,
+        0.2447604387998581,
+        0.20072680711746216,
+        0.2107018232345581,
+        0.1449529379606247
+      ],
+      "episode_brier": {
+        "3": 0.27079305052757263,
+        "13": 0.160737082362175,
+        "18": 0.19852036237716675,
+        "24": 0.16737045347690582,
+        "26": 0.17724455893039703,
+        "27": 0.16467617452144623,
+        "32": 0.16640110313892365,
+        "35": 0.24736478924751282
+      },
+      "parameters": 204805,
+      "optimizer_steps": 600
+    },
+    {
+      "variant": "history_plus_wsm",
+      "validation_brier": 0.19566379487514496,
+      "validation_bce": 0.6391941905021667,
+      "train_prevalence_baseline_brier": 0.21599435806274414,
+      "per_sensor_brier": [
+        0.1702779084444046,
+        0.24373939633369446,
+        0.20575135946273804,
+        0.21488137543201447,
+        0.14366887509822845
+      ],
+      "episode_brier": {
+        "3": 0.26356327533721924,
+        "13": 0.16592416167259216,
+        "18": 0.2119981348514557,
+        "24": 0.17173056304454803,
+        "26": 0.17566297948360443,
+        "27": 0.16366027295589447,
+        "32": 0.17021851241588593,
+        "35": 0.25451749563217163
+      },
+      "parameters": 204805,
+      "optimizer_steps": 600
+    },
+    {
+      "variant": "history_plus_shuffled_wsm",
+      "validation_brier": 0.19898158311843872,
+      "validation_bce": 0.6534844636917114,
+      "train_prevalence_baseline_brier": 0.21599435806274414,
+      "per_sensor_brier": [
+        0.17735989391803741,
+        0.24634063243865967,
+        0.20918795466423035,
+        0.21553194522857666,
+        0.14648744463920593
+      ],
+      "episode_brier": {
+        "3": 0.2709181606769562,
+        "13": 0.15653294324874878,
+        "18": 0.20443542301654816,
+        "24": 0.17844337224960327,
+        "26": 0.18514181673526764,
+        "27": 0.1656959354877472,
+        "32": 0.17614823579788208,
+        "35": 0.25853171944618225
+      },
+      "parameters": 204805,
+      "optimizer_steps": 600
+    }
+  ],
+  "episodes": {
+    "train": [
+      "000000",
+      "000001",
+      "000002",
+      "000004",
+      "000005",
+      "000006",
+      "000007",
+      "000008",
+      "000009",
+      "000010",
+      "000011",
+      "000012",
+      "000014",
+      "000015",
+      "000017",
+      "000019",
+      "000020",
+      "000021",
+      "000022",
+      "000023",
+      "000025",
+      "000028",
+      "000029",
+      "000030",
+      "000031",
+      "000033",
+      "000034"
+    ],
+    "valid": [
+      "000003",
+      "000013",
+      "000018",
+      "000024",
+      "000026",
+      "000027",
+      "000032",
+      "000035"
+    ]
+  },
+  "rows": {
+    "train": 5890,
+    "valid": 1766
+  },
+  "horizon_steps": 4,
+  "history_frames": 10,
+  "projected_context_dim": 64,
+  "contact_slice": [
+    44,
+    49
+  ],
+  "state_model_sha256": "ca882bd78b163afe3a77523e59ae217bdcfbbd7479709f3e9e4c42fcb0c0983a:e5174e3602f7a6377bb45dc4cd7747ef2a62e261f206e1af845a1497efad44ba",
+  "source": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/data",
+  "source_sha256": "e668629cd89bef195f34c8fbf196dce50822724ab4fbd24d97a3a66ea1c6f60a",
+  "seconds": 13.759387969970703,
+  "limits": [
+    "historical 10Hz released-policy/stress trajectories, not random-policy 50Hz pen data",
+    "future noisy tactile sensor bits, not ground-truth contacts or policy recovery",
+    "encoder context is a modality control, not equal information history",
+    "same MLP capacity, but history-only extra inputs are zero; fixed random projection is lossy",
+    "single probe seed and small episode holdout; no policy benefit or causal attribution established"
+  ]
+}

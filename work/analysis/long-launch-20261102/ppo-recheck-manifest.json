@@ -1,0 +1,29 @@
+{
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt",
+  "immutable_inputs": [
+    {
+      "path": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt",
+      "sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05"
+    }
+  ],
+  "source_sha256": {
+    "unionmimic/ppo.py": "506bd8491b4e4ede7ad8f296bc9fdba55d5dcb2e34371b1dd0a3677eec66933a",
+    "unionmimic/sm.py": "309b2148cdb78ed290975183e491cbf3423c22e6ca143bc54136b279eea26b49",
+    "unionmimic/common.py": "12115b32b321ed3e8c1fba2bace4a338f903a7e7afe27b88043dd070c444553d",
+    "unionmimic/runtime.py": "533a619e871d550e23ff506df7960c63dfe5ce14dadc08d2f81595881ed2c36a",
+    "unionmimic/collect.py": "073cf8fc43955e208cb66a4b6a3d780131dc7aab7c3915b8e815c7ec302fa53d",
+    "unionmimic/models.py": "7c7c2bd9822aefe6a77eecabf60419771d708029271dd5085a139a37d56e5f10",
+    "unionmimic/simulation_worker.py": "1716a7baef482a6392186a0cfd4b7b17069e28cb2721980ae0f9cec1268e64c3",
+    "unionmimic/review_gate.py": "91bacbd0aac947baab38a41d18860281238e585ed4c6e0a345e534c50d4ccdf5",
+    "scripts/train_ppo_segment.py": "aa6acbc64d511de22382643df16442a4dc6de8dde11d55c160e25b5b9c364279",
+    "scripts/diagnose_reward.py": "80a9871b7f27b21704cb5fa2d5e925b31ea9f142676014ceeca6631164a5cbdd",
+    "work/upstreams/WM-Craftnet/rl_games/common/a2c_common.py": "5e5db24723e5071d8420996ab5954c91ebd47c378a2ef2c30a09e21d992f81b7",
+    "work/upstreams/WM-Craftnet/rl_games/algos_torch/a2c_continuous.py": "325d2fcac8f9bd2fc65b31139a13ec0bcb1c279c692825ba07060cedea6aa768"
+  },
+  "ppo": {
+    "envs": 256,
+    "batch_frames": 16384,
+    "actor_lr": 2e-05
+  },
+  "reason": "Correct upstream action clipping; actual two-segment GPU optimizer resume and 32-episode stability check"
+}

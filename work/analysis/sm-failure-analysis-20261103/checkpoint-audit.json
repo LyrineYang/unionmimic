@@ -1,0 +1,367 @@
+{
+  "scope": "CPU read of project-generated immutable checkpoints; no fitting or parameter updates; no CUDA",
+  "checkpoints": [
+    {
+      "label": "original",
+      "checkpoint": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/checkpoints/segment-03.pt",
+      "counts": {
+        "model": 24200,
+        "actor": 2400,
+        "critic": 48000,
+        "cycles": 2400
+      },
+      "frames": 1236992,
+      "config": {
+        "envs": 64,
+        "batch": 256,
+        "model_horizon": 8,
+        "horizon": 8,
+        "model_updates": 10,
+        "actor_lr": 0.0002,
+        "model_lr": 0.0002,
+        "critic_lr": 0.0002,
+        "ppo_lr": 0.0001,
+        "gamma": 0.99,
+        "lambda": 0.95,
+        "critic_epochs": 5,
+        "ppo_batch": 512,
+        "collect_steps": 8,
+        "ppo_steps": 32,
+        "warmup_steps": 128,
+        "warmup_updates": 200,
+        "replay_steps": 512,
+        "exploration": 0.1,
+        "deadline_unix": 1793660731.9851978,
+        "launch_authorization": {
+          "approval_path": "/home/junqiy/projects/unionmimic/work/analysis/online-sm-20261102/long-training-approval.json",
+          "plan_sha256": "201d204db2d2914ed774f1d305f7df2030d87ebe79318ed3fcc9e68ef92a8b7e"
+        }
+      },
+      "task_constants": {
+        "control_dt": 0.10001999884843826,
+        "relative_scale": 0.2,
+        "spin_coef": 1.0,
+        "max_spin": 2.0,
+        "vel_coef": -0.1,
+        "contact_coef": 0.0,
+        "finger_coef": 0.1,
+        "axis_coef": 0.001,
+        "torque_coef": -0.003,
+        "work_coef": -0.003,
+        "action_coef": -0.002,
+        "control_coef": -1.0,
+        "pose_coef": 1.5,
+        "position_coef": 100.0,
+        "tip_coef": 0.9,
+        "palm_coef": 0.0,
+        "thumb_penalty": 0.1,
+        "stall_steps": 60.0,
+        "stall_speed": 0.5
+      },
+      "normalization_fields": {
+        "q": {
+          "state_std_median": 0.3714466989040375,
+          "delta_std_median": 0.04166266322135925,
+          "loss_divisor_state_over_delta_median": 8.217869758605957
+        },
+        "v": {
+          "state_std_median": 0.3880845904350281,
+          "delta_std_median": 0.3288649022579193,
+          "loss_divisor_state_over_delta_median": 1.2020537853240967
+        },
+        "object_pos": {
+          "state_std_median": 0.009999999776482582,
+          "delta_std_median": 0.0010000000474974513,
+          "loss_divisor_state_over_delta_median": 9.999999046325684
+        },
+        "object_quat": {
+          "state_std_median": 0.05952206626534462,
+          "delta_std_median": 0.009505814872682095,
+          "loss_divisor_state_over_delta_median": 8.10855770111084
+        },
+        "object_linear": {
+          "state_std_median": 0.010430826805531979,
+          "delta_std_median": 0.011743812821805477,
+          "loss_divisor_state_over_delta_median": 0.930050790309906
+        },
+        "object_angular": {
+          "state_std_median": 0.43195030093193054,
+          "delta_std_median": 0.5345349311828613,
+          "loss_divisor_state_over_delta_median": 0.8156886100769043
+        },
+        "tips": {
+          "state_std_median": 0.016712620854377747,
+          "delta_std_median": 0.002610692987218499,
+          "loss_divisor_state_over_delta_median": 6.584587097167969
+        },
+        "force": {
+          "state_std_median": 2.799619197845459,
+          "delta_std_median": 3.983293294906616,
+          "loss_divisor_state_over_delta_median": 0.7249484658241272
+        },
+        "palm": {
+          "state_std_median": 13.415128707885742,
+          "delta_std_median": 9.101627349853516,
+          "loss_divisor_state_over_delta_median": 1.4739264249801636
+        },
+        "thumb": {
+          "state_std_median": 13.658472061157227,
+          "delta_std_median": 9.815217971801758,
+          "loss_divisor_state_over_delta_median": 1.3915607929229736
+        },
+        "torque": {
+          "state_std_median": 0.030739188194274902,
+          "delta_std_median": 0.020209765061736107,
+          "loss_divisor_state_over_delta_median": 1.385735273361206
+        },
+        "fd": {
+          "state_std_median": 0.41114842891693115,
+          "delta_std_median": 0.32790204882621765,
+          "loss_divisor_state_over_delta_median": 1.282336711883545
+        },
+        "external_force": {
+          "state_std_median": 0.14780955016613007,
+          "delta_std_median": 0.10825631022453308,
+          "loss_divisor_state_over_delta_median": 1.4085047245025635
+        }
+      },
+      "fixed_recorded_action_prediction": {
+        "samples": 128,
+        "seed": 15391,
+        "split": "internal heldout episodes, valid 8-step windows, not failure-balanced",
+        "horizons": {
+          "1": {
+            "joint_rmse_rad": 0.006179951597005129,
+            "object_position_rmse_mm": 0.30350033193826675,
+            "object_orientation_geodesic_mean_deg": 0.6576679228448323,
+            "normalized_error_share": {
+              "joint_q": 0.004771046575680953,
+              "joint_v": 0.10573706779678788,
+              "object": 0.23062535145009064,
+              "tips": 0.0014128113142619133,
+              "force": 0.06804527635265238,
+              "palm": 0.0026617875793052124,
+              "thumb": 0.0021479369166359833,
+              "torque": 0.06725595840091216,
+              "fd": 0.10865201697908478,
+              "external_force": 0.4086907466345881
+            },
+            "normalized_state_mse": 0.034889016300439835
+          },
+          "8": {
+            "joint_rmse_rad": 0.018194887787103653,
+            "object_position_rmse_mm": 0.6720077362842858,
+            "object_orientation_geodesic_mean_deg": 1.9386798267993615,
+            "normalized_error_share": {
+              "joint_q": 0.019639773382638327,
+              "joint_v": 0.05356410003513006,
+              "object": 0.10727949902228491,
+              "tips": 0.009981522881485993,
+              "force": 0.05531936369606735,
+              "palm": 0.003229424691423373,
+              "thumb": 0.0026672543979227065,
+              "torque": 0.09468889657207348,
+              "fd": 0.05437909525838005,
+              "external_force": 0.5992510700625937
+            },
+            "normalized_state_mse": 0.04734937101602554
+          }
+        }
+      },
+      "checkpoint_sha256": "d2000cfb60ce0258460b3a4e12c95487a00201e515b30cd56716ee1e9ddbf4e2"
+    },
+    {
+      "label": "candidate",
+      "checkpoint": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/checkpoints/segment-07.pt",
+      "counts": {
+        "model": 51000,
+        "actor": 4800,
+        "critic": 96000,
+        "cycles": 4800
+      },
+      "frames": 2619392,
+      "config": {
+        "envs": 64,
+        "batch": 256,
+        "model_horizon": 8,
+        "horizon": 8,
+        "model_updates": 10,
+        "actor_lr": 0.0002,
+        "model_lr": 0.0002,
+        "critic_lr": 0.0002,
+        "ppo_lr": 0.0001,
+        "gamma": 0.99,
+        "lambda": 0.95,
+        "critic_epochs": 5,
+        "ppo_batch": 512,
+        "collect_steps": 8,
+        "ppo_steps": 32,
+        "warmup_steps": 128,
+        "warmup_updates": 3000,
+        "replay_steps": 512,
+        "exploration": 0.1,
+        "warmup_collect_steps": 8,
+        "deadline_unix": 1793675965.5371234,
+        "launch_authorization": {
+          "approval_path": "/home/junqiy/projects/unionmimic/work/analysis/sm-candidate-20261102/launch-approval.json",
+          "plan_sha256": "3845fa0c745a04c6fb576fd7af2627ccdcf04ba3390ba113f93b80fa7398f23e"
+        }
+      },
+      "task_constants": {
+        "control_dt": 0.10001999884843826,
+        "relative_scale": 0.2,
+        "spin_coef": 1.0,
+        "max_spin": 2.0,
+        "vel_coef": -0.1,
+        "contact_coef": 0.0,
+        "finger_coef": 0.1,
+        "axis_coef": 0.001,
+        "torque_coef": -0.003,
+        "work_coef": -0.003,
+        "action_coef": -0.002,
+        "control_coef": -1.0,
+        "pose_coef": 1.5,
+        "position_coef": 100.0,
+        "tip_coef": 0.9,
+        "palm_coef": 0.0,
+        "thumb_penalty": 0.1,
+        "stall_steps": 60.0,
+        "stall_speed": 0.5
+      },
+      "normalization_fields": {
+        "q": {
+          "state_std_median": 0.3606225848197937,
+          "delta_std_median": 0.04048793762922287,
+          "loss_divisor_state_over_delta_median": 7.74424409866333
+        },
+        "v": {
+          "state_std_median": 0.38454896211624146,
+          "delta_std_median": 0.32764142751693726,
+          "loss_divisor_state_over_delta_median": 1.209592342376709
+        },
+        "object_pos": {
+          "state_std_median": 0.009999999776482582,
+          "delta_std_median": 0.0010000000474974513,
+          "loss_divisor_state_over_delta_median": 9.999999046325684
+        },
+        "object_quat": {
+          "state_std_median": 0.08763008564710617,
+          "delta_std_median": 0.009572493843734264,
+          "loss_divisor_state_over_delta_median": 7.251779556274414
+        },
+        "object_linear": {
+          "state_std_median": 0.010351539589464664,
+          "delta_std_median": 0.011415021494030952,
+          "loss_divisor_state_over_delta_median": 0.9508063197135925
+        },
+        "object_angular": {
+          "state_std_median": 0.39886951446533203,
+          "delta_std_median": 0.5300729274749756,
+          "loss_divisor_state_over_delta_median": 0.7921718955039978
+        },
+        "tips": {
+          "state_std_median": 0.016914159059524536,
+          "delta_std_median": 0.002503087976947427,
+          "loss_divisor_state_over_delta_median": 6.616450786590576
+        },
+        "force": {
+          "state_std_median": 2.619873523712158,
+          "delta_std_median": 3.5830893516540527,
+          "loss_divisor_state_over_delta_median": 0.7475601434707642
+        },
+        "palm": {
+          "state_std_median": 12.064706802368164,
+          "delta_std_median": 8.74691390991211,
+          "loss_divisor_state_over_delta_median": 1.379310131072998
+        },
+        "thumb": {
+          "state_std_median": 11.95020866394043,
+          "delta_std_median": 8.898624420166016,
+          "loss_divisor_state_over_delta_median": 1.3429276943206787
+        },
+        "torque": {
+          "state_std_median": 0.031835880130529404,
+          "delta_std_median": 0.02000853791832924,
+          "loss_divisor_state_over_delta_median": 1.500589370727539
+        },
+        "fd": {
+          "state_std_median": 0.409669429063797,
+          "delta_std_median": 0.322733998298645,
+          "loss_divisor_state_over_delta_median": 1.282850742340088
+        },
+        "external_force": {
+          "state_std_median": 0.1481247991323471,
+          "delta_std_median": 0.11069920659065247,
+          "loss_divisor_state_over_delta_median": 1.3587204217910767
+        }
+      },
+      "fixed_recorded_action_prediction": {
+        "samples": 128,
+        "seed": 15391,
+        "split": "internal heldout episodes, valid 8-step windows, not failure-balanced",
+        "horizons": {
+          "1": {
+            "joint_rmse_rad": 0.017155535519123077,
+            "object_position_rmse_mm": 1.1493744095787406,
+            "object_orientation_geodesic_mean_deg": 5.238688072168549,
+            "normalized_error_share": {
+              "joint_q": 0.0019680808122592044,
+              "joint_v": 0.09367528058728641,
+              "object": 0.4261454456739696,
+              "tips": 0.0008615686556996657,
+              "force": 0.2957327999070307,
+              "palm": 0.001183208651401825,
+              "thumb": 0.001996196488669258,
+              "torque": 0.07934518139849694,
+              "fd": 0.07887958126616065,
+              "external_force": 0.020212656559025703
+            },
+            "normalized_state_mse": 0.5721336007118225
+          },
+          "8": {
+            "joint_rmse_rad": 0.03341401368379593,
+            "object_position_rmse_mm": 2.4220002815127373,
+            "object_orientation_geodesic_mean_deg": 14.76032224924811,
+            "normalized_error_share": {
+              "joint_q": 0.006444193088785084,
+              "joint_v": 0.09262456726640825,
+              "object": 0.4574945272274393,
+              "tips": 0.0026186982236773093,
+              "force": 0.22852088176593852,
+              "palm": 0.0013986211782719487,
+              "thumb": 0.001785328190230544,
+              "torque": 0.09252172042803428,
+              "fd": 0.07611048053920705,
+              "external_force": 0.04048098209200774
+            },
+            "normalized_state_mse": 0.7390244603157043
+          }
+        }
+      },
+      "checkpoint_sha256": "cea5a0dbf5ea1d40d3f65b38234666cd6690cd09cacc44e47deb84a902b2f225"
+    }
+  ],
+  "source_sha256": {
+    "unionmimic/online/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+    "unionmimic/online/task.py": "c61eb144788e3b9f3338adb4938f256d8f9ae9b341a431692c54d33debefc45b",
+    "unionmimic/online/learner.py": "1b626430413d98cf1554565386641ee63a102c84a2cf06075c4d0ee4dac187e4"
+  },
+  "loss_share_verification": "Quaternion sign alignment matches PhysicalModel.error; summed block contributions reproduce its normalized MSE.",
+  "nominal_schedule_calculation": {
+    "replay_rows_before_masks": {
+      "current": 32768,
+      "leap": 4096000,
+      "wuji": 1024000
+    },
+    "new_rows_per_actor_update_before_masks": {
+      "current": 512,
+      "leap": 10240,
+      "wuji": 2560
+    },
+    "nominal_wm_window_step_loss_entries_per_new_row": {
+      "current": 40,
+      "leap": 16
+    },
+    "notes": "Defaults and historical Sharpa configuration; overlapping windows are not independent samples; ratios are not learning-speed measurements."
+  }
+}

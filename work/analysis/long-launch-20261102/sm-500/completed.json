@@ -1,0 +1,21 @@
+{
+  "step": 500,
+  "actor_parity_max_error": 0.0,
+  "input_gradient_norms": [
+    0.6581833362579346,
+    0.012222375720739365
+  ],
+  "actor_changed": true,
+  "world_model_unchanged": true,
+  "failure_head_unchanged": true,
+  "normalization_unchanged": true,
+  "critic_frozen_during_actor_update": true,
+  "horizon": 4,
+  "reward_scale": 0.01,
+  "seconds": 62.23218889441341,
+  "training_mode": "short_horizon_imagination_from_real_episode_starts",
+  "actor_lr": 3e-06,
+  "anchor_coefficient": 10.0,
+  "seed": 51001,
+  "fork_seed": false
+}

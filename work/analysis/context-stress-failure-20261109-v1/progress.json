@@ -1,0 +1,71 @@
+[
+  {
+    "variant": "history",
+    "metrics": [
+      {
+        "target": "failure_within_10",
+        "verified": true,
+        "alpha": 100.0,
+        "brier": 0.005432764836521832,
+        "positive": 10,
+        "total": 1833,
+        "prevalence": 0.005455537370430988,
+        "average_precision": 0.006591709859033744,
+        "auc": 0.5826659352715304,
+        "precision_top5": 0.0,
+        "recall_top5": 0.0
+      },
+      {
+        "target": "fall_within_10",
+        "verified": false,
+        "reason": "No positive/negative inner-label support"
+      }
+    ]
+  },
+  {
+    "variant": "history_wsm",
+    "metrics": [
+      {
+        "target": "failure_within_10",
+        "verified": true,
+        "alpha": 0.1,
+        "brier": 0.006456219120040907,
+        "positive": 10,
+        "total": 1833,
+        "prevalence": 0.005455537370430988,
+        "average_precision": 0.003746428029609077,
+        "auc": 0.24322545255074055,
+        "precision_top5": 0.0,
+        "recall_top5": 0.0
+      },
+      {
+        "target": "fall_within_10",
+        "verified": false,
+        "reason": "No positive/negative inner-label support"
+      }
+    ]
+  },
+  {
+    "variant": "history_shuffled",
+    "metrics": [
+      {
+        "target": "failure_within_10",
+        "verified": true,
+        "alpha": 0.001,
+        "brier": 0.006157123890263352,
+        "positive": 10,
+        "total": 1833,
+        "prevalence": 0.005455537370430988,
+        "average_precision": 0.004615848245603378,
+        "auc": 0.3905101481075151,
+        "precision_top5": 0.0,
+        "recall_top5": 0.0
+      },
+      {
+        "target": "fall_within_10",
+        "verified": false,
+        "reason": "No positive/negative inner-label support"
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+ "policy": "/home/junqiy/projects/unionmimic/work/upstreams/sm-reference-audit/ckpts/yaw/wm_gear_yaw.pt",
+ "envs": 512,
+ "seconds": 60.0,
+ "yaw_rate": 0.3347136378288269,
+ "yaw_rate_windows": [
+  0.33955952525138855,
+  0.3330717086791992,
+  0.33331799507141113,
+  0.33290529251098633
+ ],
+ "drops_per_env_min": 0.0,
+ "share_dropped": 0.0,
+ "reward_per_s": 0.2911748893956731,
+ "reward_terms_per_s": {
+  "rotate_finite_diff": 0.3041508585837437,
+  "object_linvel_penalty": -0.007354036560670163,
+  "pose_diff_penalty": -0.0021172790640897787,
+  "torque_penalty": -0.00219749033160042,
+  "work_penalty": -0.0013071635900026497,
+  "object_fallen": 0.0
+ },
+ "eval_seconds": 719.8554694652557
+}

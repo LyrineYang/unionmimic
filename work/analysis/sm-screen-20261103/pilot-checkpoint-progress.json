@@ -1,0 +1,73 @@
+{
+  "checked_unix": 1793703525.16191,
+  "completed": [
+    {
+      "arm": "S0",
+      "finite": true,
+      "steps": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "counts": {
+        "model": 51040,
+        "actor": 4804,
+        "critic": 96080,
+        "cycles": 4804
+      },
+      "frame_delta": 2048
+    },
+    {
+      "arm": "S1",
+      "finite": true,
+      "steps": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "counts": {
+        "model": 51040,
+        "actor": 4804,
+        "critic": 96080,
+        "cycles": 4804
+      },
+      "frame_delta": 640
+    },
+    {
+      "arm": "S6",
+      "finite": true,
+      "steps": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "counts": {
+        "model": 51040,
+        "actor": 4804,
+        "critic": 96080,
+        "cycles": 4804
+      },
+      "frame_delta": 2048
+    },
+    {
+      "arm": "S7",
+      "finite": true,
+      "steps": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "counts": {
+        "model": 51040,
+        "actor": 4804,
+        "critic": 96080,
+        "cycles": 4804
+      },
+      "frame_delta": 640
+    }
+  ]
+}

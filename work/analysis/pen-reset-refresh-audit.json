@@ -1,0 +1,20 @@
+[
+  {
+    "repeat": 0,
+    "after_refresh_q_error": 0.0,
+    "after_refresh_obj_error": 4.246830940246582e-07,
+    "after_refresh_qd_error": 0.0
+  },
+  {
+    "repeat": 1,
+    "after_refresh_q_error": 0.0,
+    "after_refresh_obj_error": 2.980232238769531e-07,
+    "after_refresh_qd_error": 0.0
+  },
+  {
+    "repeat": 2,
+    "after_refresh_q_error": 0.0,
+    "after_refresh_obj_error": 4.6938657760620117e-07,
+    "after_refresh_qd_error": 0.0
+  }
+]

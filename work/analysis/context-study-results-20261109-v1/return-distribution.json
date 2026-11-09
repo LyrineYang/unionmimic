@@ -1,0 +1,53 @@
+{
+  "rows": [
+    {
+      "arm": "none",
+      "median": 15.007986068725586,
+      "min": -0.37432098388671875,
+      "worst_env": 47,
+      "mean": 32.62876158952713,
+      "worst_row": {
+        "return": -0.37432098388671875,
+        "rotation": -0.029423700645565987,
+        "offaxis": 0.48739585280418396,
+        "tilt": 15.456110000610352,
+        "steps": 59.0,
+        "failed": 1.0,
+        "initial_reset_failure": 0.0
+      }
+    },
+    {
+      "arm": "fixed",
+      "median": 16.8281192779541,
+      "min": -2.192615509033203,
+      "worst_env": 47,
+      "mean": 35.00895246863365,
+      "worst_row": {
+        "return": -2.192615509033203,
+        "rotation": 0.03355145454406738,
+        "offaxis": 0.4698950946331024,
+        "tilt": 18.50935935974121,
+        "steps": 59.0,
+        "failed": 1.0,
+        "initial_reset_failure": 0.0
+      }
+    },
+    {
+      "arm": "rollout",
+      "median": 17.627023696899414,
+      "min": -4152.46826171875,
+      "worst_env": 37,
+      "mean": 1.5464189052581787,
+      "worst_row": {
+        "return": -4152.46826171875,
+        "rotation": 0.3119004964828491,
+        "offaxis": 1.3274660110473633,
+        "tilt": 58.155330657958984,
+        "steps": 181.0,
+        "failed": 1.0,
+        "initial_reset_failure": 0.0
+      }
+    }
+  ],
+  "interpretation": "Preserve all episodes. Rollout pulse mean is heavily influenced by one negative outlier; cause not recorded by this evaluation."
+}

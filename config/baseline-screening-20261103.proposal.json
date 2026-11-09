@@ -1,0 +1,83 @@
+{
+  "status": "proposal_not_authorized",
+  "created_unix": 1793672440.0047748,
+  "requires_formal_confirmation_before_long_training": true,
+  "screening_entry_implemented": false,
+  "screening_gpu_hours_max": 12,
+  "arms": [
+    {
+      "id": "S0",
+      "failure_fraction": 0,
+      "critic_norm_source": "mixed",
+      "utd": 0.125,
+      "horizon": 8,
+      "hours_max": 1.5
+    },
+    {
+      "id": "S1",
+      "failure_fraction": 0,
+      "critic_norm_source": "mixed",
+      "utd": 0.4,
+      "horizon": 16,
+      "hours_max": 1.5
+    },
+    {
+      "id": "S2",
+      "failure_fraction": 0,
+      "critic_norm_source": "real",
+      "utd": 0.125,
+      "horizon": 16,
+      "hours_max": 1.5
+    },
+    {
+      "id": "S3",
+      "failure_fraction": 0,
+      "critic_norm_source": "real",
+      "utd": 0.4,
+      "horizon": 8,
+      "hours_max": 1.5
+    },
+    {
+      "id": "S4",
+      "failure_fraction": 0.25,
+      "critic_norm_source": "mixed",
+      "utd": 0.125,
+      "horizon": 16,
+      "hours_max": 1.5
+    },
+    {
+      "id": "S5",
+      "failure_fraction": 0.25,
+      "critic_norm_source": "mixed",
+      "utd": 0.4,
+      "horizon": 8,
+      "hours_max": 1.5
+    },
+    {
+      "id": "S6",
+      "failure_fraction": 0.25,
+      "critic_norm_source": "real",
+      "utd": 0.125,
+      "horizon": 8,
+      "hours_max": 1.5
+    },
+    {
+      "id": "S7",
+      "failure_fraction": 0.25,
+      "critic_norm_source": "real",
+      "utd": 0.4,
+      "horizon": 16,
+      "hours_max": 1.5
+    }
+  ],
+  "design": "2^(4-1) resolution IV; H=F*N*U in +/-1 coding",
+  "alias_pairs": [
+    "F*N = U*H",
+    "F*U = N*H",
+    "F*H = N*U"
+  ],
+  "confirmation_gpu_hours_recommended": 18,
+  "confirmation_gpu_hours_optional_two_seed_pairs": 36,
+  "checkpoint_policy": "Shared learned SM checkpoint only for local screening; fresh actor/critic/F for formal confirmation",
+  "current_factorial_authorization_revoked": true
+}

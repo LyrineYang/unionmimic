@@ -1,0 +1,55 @@
+{
+  "checkpoint": "work/runs/four-gpu-20261101/gpu2/best-policy.pt",
+  "sha256": "052053f6593e72a08af9db000cea5985b358a12631e2a7b26e5d88f4f5e752ad",
+  "cache": "work/runs/four-gpu-20261101/gpu2/cycle-055/prepared/cache.pt",
+  "batch": 64,
+  "anchor_coef": 10.0,
+  "sm_step": 5000,
+  "measurements": [
+    {
+      "seed": 711,
+      "reward_4step": 0.0869988203048706,
+      "bootstrap": 2.1511197090148926,
+      "weighted_anchor_loss": 0.0013062919024378061,
+      "reward_gradient_norm": 0.05869594216346741,
+      "bootstrap_gradient_norm": 0.20386309921741486,
+      "anchor_gradient_norm": 0.26124924421310425,
+      "total_gradient_norm": 0.10638369619846344,
+      "cosine_reward_bootstrap": 0.41081130504608154,
+      "cosine_reward_total_descent": 0.2479536533355713,
+      "saturation_fraction": 0.21590909734368324,
+      "bootstrap_share_of_objective": 0.9611285328865051,
+      "history_policy_obs_rmse": 0.0
+    },
+    {
+      "seed": 712,
+      "reward_4step": 0.08545950055122375,
+      "bootstrap": 2.152313232421875,
+      "weighted_anchor_loss": 0.0011756569147109985,
+      "reward_gradient_norm": 0.06591543555259705,
+      "bootstrap_gradient_norm": 0.18781976401805878,
+      "anchor_gradient_norm": 0.2675417363643646,
+      "total_gradient_norm": 0.13493123650550842,
+      "cosine_reward_bootstrap": 0.43770602345466614,
+      "cosine_reward_total_descent": 0.1826907992362976,
+      "saturation_fraction": 0.21413352712988853,
+      "bootstrap_share_of_objective": 0.9618104696273804,
+      "history_policy_obs_rmse": 0.0
+    },
+    {
+      "seed": 713,
+      "reward_4step": 0.08509905636310577,
+      "bootstrap": 2.156116008758545,
+      "weighted_anchor_loss": 0.001348185003735125,
+      "reward_gradient_norm": 0.05545653775334358,
+      "bootstrap_gradient_norm": 0.18284234404563904,
+      "anchor_gradient_norm": 0.247000589966774,
+      "total_gradient_norm": 0.11284900456666946,
+      "cosine_reward_bootstrap": 0.48446884751319885,
+      "cosine_reward_total_descent": 0.27648237347602844,
+      "saturation_fraction": 0.22123580053448677,
+      "bootstrap_share_of_objective": 0.9620299935340881,
+      "history_policy_obs_rmse": 0.0
+    }
+  ]
+}

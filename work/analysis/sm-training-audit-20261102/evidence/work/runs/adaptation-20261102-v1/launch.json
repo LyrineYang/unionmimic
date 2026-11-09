@@ -1,0 +1,239 @@
+{
+  "started_unix": 1793604526.3458688,
+  "experiment": "ppo_headroom_and_rssm_action_coverage",
+  "reason": "The full action-direction grid did not establish useful model ranking or gradients: 404 eligible comparisons, 49.5% sign agreement, cluster95CI44.2-54.5%. Do not spend long actor training on this unaccepted SM path. Run two real PPO baselines and two RSSM coverage/fitting seeds, retaining unchanged prediction and physical gates.",
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt",
+  "dataset": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset",
+  "cache": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/prepared-v2/cache.pt",
+  "prior_gpu_hours": 6.0589600057734385,
+  "baseline": {
+    "mean_return": 1076.146234512329,
+    "episodes": 32,
+    "rotation_radians": 57.517592549324036,
+    "failures": 0,
+    "checkpoint_sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05",
+    "seeds": [
+      71001,
+      71002,
+      71003,
+      71004
+    ],
+    "returns": [
+      1053.5299072265625,
+      1135.3746337890625,
+      1063.77490234375,
+      1004.8399658203125,
+      1032.0306396484375,
+      1099.7467041015625,
+      901.364501953125,
+      1127.0140380859375,
+      1065.0574951171875,
+      1038.221435546875,
+      990.3864135742188,
+      998.5807495117188,
+      988.6116943359375,
+      1139.8922119140625,
+      1030.3101806640625,
+      1191.500732421875,
+      1108.786865234375,
+      1174.4525146484375,
+      1039.933349609375,
+      1147.4132080078125,
+      1026.9364013671875,
+      1060.1212158203125,
+      1106.1722412109375,
+      1195.2003173828125,
+      1146.3359375,
+      1094.8760986328125,
+      1071.0791015625,
+      1022.3964233398438,
+      972.58544921875,
+      1083.251220703125,
+      1153.9163818359375,
+      1172.986572265625
+    ]
+  },
+  "baseline_prediction_score": 2.6717044178424207,
+  "ppo": {
+    "envs": 256,
+    "batch_frames": 16384,
+    "actor_lr": 2e-05
+  },
+  "sm": {
+    "actor_lr": 3e-06,
+    "anchor_coefficient": 10.0,
+    "horizon": 4,
+    "batch": 128
+  },
+  "dynamics": {
+    "lr": 1e-05,
+    "batch": 8,
+    "length": 32,
+    "horizon": 4,
+    "feature_drift_coefficient": 0.1,
+    "probe_noise": 0.5
+  },
+  "lanes": [
+    {
+      "gpu": 0,
+      "arm": "ppo",
+      "seed": 51001,
+      "train_hours": 8.0,
+      "total_hours": 10.6,
+      "prior_card_hours": 1.3183369765679043
+    },
+    {
+      "gpu": 1,
+      "arm": "dynamics",
+      "seed": 63001,
+      "train_hours": 8.0,
+      "total_hours": 9.8,
+      "prior_card_hours": 1.8069139462709427
+    },
+    {
+      "gpu": 2,
+      "arm": "ppo",
+      "seed": 51002,
+      "train_hours": 8.0,
+      "total_hours": 9.8,
+      "prior_card_hours": 1.60637907034821
+    },
+    {
+      "gpu": 3,
+      "arm": "dynamics",
+      "seed": 63002,
+      "train_hours": 8.0,
+      "total_hours": 9.8,
+      "prior_card_hours": 1.3273300125863818
+    }
+  ],
+  "development_hours": [
+    0.5,
+    1,
+    2,
+    4,
+    6,
+    7.7
+  ],
+  "periodic_dev_seeds": [
+    71001,
+    71002,
+    71003,
+    71004
+  ],
+  "full_dev_seeds": [
+    71001,
+    71002,
+    71003,
+    71004,
+    71005,
+    71006,
+    71007,
+    71008,
+    71009,
+    71010,
+    71011,
+    71012,
+    71013,
+    71014,
+    71015,
+    71016
+  ],
+  "test_seeds": [
+    81001,
+    81002,
+    81003,
+    81004,
+    81005,
+    81006,
+    81007,
+    81008,
+    81009,
+    81010,
+    81011,
+    81012,
+    81013,
+    81014,
+    81015,
+    81016,
+    81017,
+    81018,
+    81019,
+    81020,
+    81021,
+    81022,
+    81023,
+    81024,
+    81025
+  ],
+  "engineering_targets": {
+    "return_improvement_fraction": 0.05,
+    "signed_rotation_non_decreasing": true,
+    "failure_noninferiority_margin": 0.02,
+    "model_h4_rmse_reduction_fraction": 0.1
+  },
+  "wandb": "disabled",
+  "recurring_watchdog": false,
+  "socket": "unionmimic",
+  "session": "unionmimic-followup",
+  "tensorboard_port": 6008,
+  "evaluation_note": "Best selected on periodic development; confirm128 development episodes, then locked200. Physical episodes are not additional training seeds.",
+  "implementation_limit": "Full online RSSM+SM alternation is not implemented; failed SM direction checks cannot be bypassed by forward prediction metrics.",
+  "source_sha256": {
+    "scripts/diagnose_reward.py": "80a9871b7f27b21704cb5fa2d5e925b31ea9f142676014ceeca6631164a5cbdd",
+    "scripts/env.sh": "f39055778323382c14087232a749ac9c3c8d704035a1f978325d40634392fe11",
+    "scripts/launch_reviewed_training.py": "4d8fd3a427e2f5019823013ee443b2a75c1bc4aee39b57c674743e98824cd2b9",
+    "scripts/train_comparison.py": "645057689af3bb939ab2e4d07021384d1902d6a57bda3c34aa0cdbb09f42cab3",
+    "scripts/train_dynamics_segment.py": "583c68dae3f1f4650cef5a3105ddcf64addb7fbadc3086328c73c2d096cee86f",
+    "scripts/train_ppo_segment.py": "aa6acbc64d511de22382643df16442a4dc6de8dde11d55c160e25b5b9c364279",
+    "unionmimic/__init__.py": "8f862be59464cd8bde3b3b85f586ffc2d118770e8d80afe9e5f8eaf3b6a5f812",
+    "unionmimic/calibrate.py": "350973f290a83aff1064a1943c15588e13c158e9cb7d5fec8c0f2fc2275b160c",
+    "unionmimic/cli.py": "2cb2de0c687556de6f907d76e2bfad35956cca1bc4ef3b1a7a9d6d5c62c8af00",
+    "unionmimic/collect.py": "073cf8fc43955e208cb66a4b6a3d780131dc7aab7c3915b8e815c7ec302fa53d",
+    "unionmimic/common.py": "12115b32b321ed3e8c1fba2bace4a338f903a7e7afe27b88043dd070c444553d",
+    "unionmimic/comparison.py": "326e0cf52b78b2f27e810b1f0510069b613336c6ad4900035963b8b6b5f71fac",
+    "unionmimic/data_contracts.py": "abde11378f8b98a5c6024be3906a5ec1ca839e75d6a5ef9f31c3b34433bccf2b",
+    "unionmimic/dynamics_fit.py": "749e572fb4196f9b4c9c98c3feea02dc3205a5715682973f94dafa60737e871a",
+    "unionmimic/evaluate.py": "eddb3dc9fdaa62480acc972616f9a1dff32dceca2088fa9415e4953cd3025794",
+    "unionmimic/merge.py": "27e93e1329ccda841f218b7a057856fefc481aee8ef9e1017016d68086400367",
+    "unionmimic/models.py": "7c7c2bd9822aefe6a77eecabf60419771d708029271dd5085a139a37d56e5f10",
+    "unionmimic/night.py": "890c15a10112ec966466dc1febbdba6e1094083d49059e4370a655bdf174065b",
+    "unionmimic/ppo.py": "506bd8491b4e4ede7ad8f296bc9fdba55d5dcb2e34371b1dd0a3677eec66933a",
+    "unionmimic/prepare.py": "e760bd82a04d6eaf2e1057f7bedd12957a6f75df7c15effb6e57364d18bd0597",
+    "unionmimic/recovery.py": "b74511db64d99ffb81fa1ead4517339b04c209529e021a288ce2630ecfea21b6",
+    "unionmimic/retention.py": "e4dc3b80cbbdd4f4be60bdd534edb7fb1483a7b6d85f3d89754d953c35f58167",
+    "unionmimic/review_gate.py": "91bacbd0aac947baab38a41d18860281238e585ed4c6e0a345e534c50d4ccdf5",
+    "unionmimic/runtime.py": "533a619e871d550e23ff506df7960c63dfe5ce14dadc08d2f81595881ed2c36a",
+    "unionmimic/sensitivity.py": "8dd759d17df62a718c4626eb435fbeda4beb7267b3ceaaac02c8f957a0e354b0",
+    "unionmimic/simulation_worker.py": "1716a7baef482a6392186a0cfd4b7b17069e28cb2721980ae0f9cec1268e64c3",
+    "unionmimic/sm.py": "309b2148cdb78ed290975183e491cbf3423c22e6ca143bc54136b279eea26b49",
+    "unionmimic/telemetry.py": "7617877ffba6c5498fdeb5e2c158adf6b7732beaff7d41bb57bdd36ba4936eaf",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/train/WMCraftnetPPO.yaml": "b81488e09bc4e1603390020c33f9e47e20fc1daf2947912510c1546cc4792637",
+    "work/upstreams/WM-Craftnet/rl_games/algos_torch/a2c_continuous.py": "325d2fcac8f9bd2fc65b31139a13ec0bcb1c279c692825ba07060cedea6aa768",
+    "work/upstreams/WM-Craftnet/rl_games/algos_torch/torch_ext.py": "020e9b720d8ac793b5f3df6b87ee8b0a4d98f04bd93f58f0e553f50ce010d8c8",
+    "work/upstreams/WM-Craftnet/rl_games/common/schedulers.py": "3fd0d4b2b9472d495458d258bff82bf5fb6bd6c18d91fc20df1b2c9c23d3a5cc",
+    "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py": "c7cc0a4962feb00002e62d37b969a075beadeded5a61f124d4bce85120f9e239"
+  },
+  "immutable_inputs": [
+    {
+      "path": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt",
+      "sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05"
+    },
+    {
+      "path": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset/episodes.h5",
+      "sha256": "0d9969d48e21882fa7e5b6b5c379661058e806e36af948f7f6e8dc38f5717cba"
+    },
+    {
+      "path": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/prepared-v2/cache.pt",
+      "sha256": "8ca08d522d44bdc60355974e74dbbc6e99276551a4792e6319c7f6dbf880893e"
+    },
+    {
+      "path": "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/launch-gates.json",
+      "sha256": "ef63804740788c9b308adb32351859a7e0ebabccfc86394e85e082028636a65a"
+    },
+    {
+      "path": "/home/junqiy/projects/unionmimic/work/analysis/long-launch-20261102/resource-ledger.json",
+      "sha256": "de8ad010a6de87ba76180c534a8df7d1eb1705162da636c9fba942c8b1638e6d"
+    }
+  ]
+}

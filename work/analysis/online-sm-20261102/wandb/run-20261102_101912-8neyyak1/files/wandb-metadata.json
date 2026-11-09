@@ -1,0 +1,11 @@
+{
+  "os":  "Linux-4.15.0-213-generic-x86_64-with-glibc2.2.5",
+  "python":  "CPython 3.8.20",
+  "startedAt":  "2026-11-02T10:19:12.190787Z",
+  "program":  "<stdin>",
+  "email":  "yangjq@hust.edu.cn",
+  "root":  "/home/junqiy/projects/unionmimic/work/analysis/online-sm-20261102",
+  "host":  "node13",
+  "executable":  "/home/junqiy/projects/unionmimic/.venv/bin/python",
+  "writerId":  "kbx8b6pkaap3rwexg9apazo6j3ia0cob"
+}

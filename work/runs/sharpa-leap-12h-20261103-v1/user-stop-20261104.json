@@ -1,0 +1,34 @@
+{
+  "unix": 1793762930.1373255,
+  "reason": "User reprioritized full Sharpa multi-action adaptation before SM/PPO comparison; stop incomplete-scope long training",
+  "automatic_resume": false,
+  "previous_status": {
+    "status": "running",
+    "phase": "long_training",
+    "pid": 44726,
+    "gpu": 2,
+    "updated_unix": 1793762911.1554546,
+    "started_unix": 1793721214.4259481,
+    "deadline_unix": 1793764414.4259481,
+    "updates": 4840,
+    "actor_updates": 4540,
+    "model_updates": 48400,
+    "critic_optimizer_steps": 90800,
+    "valid_rows": 49682895
+  },
+  "checkpoints": [
+    {
+      "file": "/home/junqiy/projects/unionmimic/work/runs/sharpa-leap-12h-20261103-v1/ckpt/latest.pt",
+      "sha256": "261db7fc19acb1effc10d455b28348a13728190eef9739a4127236596bccb0f0",
+      "mtime": 1793762792.1591685,
+      "updates": 4826
+    },
+    {
+      "file": "/home/junqiy/projects/unionmimic/work/runs/sharpa-leap-12h-20261103-v1/ckpt/best.pt",
+      "sha256": "60588994e0ca0d436eeeed8ccee9f9f0fa628fe55ed983e95d7838c875959321",
+      "mtime": 1793738253.0278568,
+      "updates": 1988
+    }
+  ],
+  "process_cmdline": "python scripts/train_sharpa_leap.py --gpu 2 --run /home/junqiy/projects/unionmimic/work/runs/sharpa-leap-12h-20261103-v1 --hours 12 --continue-after-gate --operator-evidence /home/junqiy/projects/unionmimic/work/runs/sharpa-leap-operator-20261103-v3/operator-acceptance.json "
+}

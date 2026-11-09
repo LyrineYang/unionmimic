@@ -1,0 +1,72 @@
+{
+  "duration_s": 52,
+  "fps": 25,
+  "scenes": [
+    {
+      "kind": "card",
+      "duration": 4,
+      "title": "让先验告诉手：物体在哪里",
+      "subtitle": "UnionMimic / SM 学动作，WM-Craftnet 补充几何信息"
+    },
+    {
+      "kind": "live",
+      "duration": 20,
+      "source": "geometry-live-20261109-v1/geometry-demo.mp4",
+      "title": "真实仿真：SM 控制，冻结先验实时估计物体位置",
+      "label": "历史 SM 策略 · 估计只用于展示 · 未反馈给策略 · 原速"
+    },
+    {
+      "kind": "results",
+      "duration": 8,
+      "title": "先确认先验带来了什么信息"
+    },
+    {
+      "kind": "reference",
+      "duration": 7,
+      "source": "sharpa-reference-preview-20261109-v2/02_continuous_single_axis.mp4",
+      "title": "拓展目标：单轴参考动作",
+      "label": "Sharpa 重定向预览 · 运动学播放 · 接触物理尚未验收"
+    },
+    {
+      "kind": "reference",
+      "duration": 7,
+      "source": "sharpa-reference-preview-20261109-v2/03_continuous_multi_axis.mp4",
+      "title": "拓展目标：多轴参考动作",
+      "label": "Sharpa 重定向预览 · 运动学播放 · 接触物理尚未验收"
+    },
+    {
+      "kind": "end",
+      "duration": 6,
+      "title": "下一问：在想象中，这份信息能可信多久？"
+    }
+  ],
+  "clips": [
+    {
+      "source": "/home/junqiy/projects/unionmimic/work/demos/geometry-live-20261109-v1/geometry-demo.mp4",
+      "start_s": 0,
+      "duration_s": 20,
+      "speed": 1,
+      "sha256": "1a82485fe78b7263077309ecf5b148572438e02fb0dae538ed8482da7b4c6193",
+      "label": "历史 SM 策略 · 估计只用于展示 · 未反馈给策略 · 原速"
+    },
+    {
+      "source": "/home/junqiy/projects/unionmimic/work/demos/sharpa-reference-preview-20261109-v2/02_continuous_single_axis.mp4",
+      "start_s": 0,
+      "duration_s": 7,
+      "speed": 1,
+      "sha256": "3a410801216a1afcede76f683afc7b6b6fca3a06ba92b75a7a07f006641bf3e0",
+      "label": "Sharpa 重定向预览 · 运动学播放 · 接触物理尚未验收"
+    },
+    {
+      "source": "/home/junqiy/projects/unionmimic/work/demos/sharpa-reference-preview-20261109-v2/03_continuous_multi_axis.mp4",
+      "start_s": 0,
+      "duration_s": 7,
+      "speed": 1,
+      "sha256": "92d36bfa1d3adb8d9c92ac3d80b564f0c1eb6b55a3f77bcc2d90b3b027a89f8b",
+      "label": "Sharpa 重定向预览 · 运动学播放 · 接触物理尚未验收"
+    }
+  ],
+  "results": "/home/junqiy/projects/unionmimic/work/analysis/geometry-readout-20261109-v1/result.json",
+  "results_sha256": "4de0663bc4a0743a212d41c6935c74e08d355a928948549e8eff394cf0606c55",
+  "control_benefit_claimed": false
+}

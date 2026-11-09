@@ -1,0 +1,55 @@
+{
+  "checkpoint": "work/analysis/long-launch-20261102/sm-500/last.pt",
+  "sha256": "90aed3c5525fdf24f189f66f2e1e5874009678856d40be5fc476a88cc6f26dde",
+  "cache": "work/runs/step2-20261101/prepared-v2/cache.pt",
+  "batch": 64,
+  "anchor_coef": 10.0,
+  "sm_step": 500,
+  "measurements": [
+    {
+      "seed": 711,
+      "reward_4step": 0.08767705410718918,
+      "bootstrap": 2.130284547805786,
+      "weighted_anchor_loss": 0.0024678141344338655,
+      "reward_gradient_norm": 0.06134044751524925,
+      "bootstrap_gradient_norm": 0.37525874376296997,
+      "anchor_gradient_norm": 0.366688072681427,
+      "total_gradient_norm": 0.2028125822544098,
+      "cosine_reward_bootstrap": 0.332099050283432,
+      "cosine_reward_total_descent": 0.5178325772285461,
+      "saturation_fraction": 0.20596591383218765,
+      "bootstrap_share_of_objective": 0.9604695439338684,
+      "history_policy_obs_rmse": 0.0
+    },
+    {
+      "seed": 712,
+      "reward_4step": 0.08254893124103546,
+      "bootstrap": 2.1198747158050537,
+      "weighted_anchor_loss": 0.0025588092394173145,
+      "reward_gradient_norm": 0.08161114156246185,
+      "bootstrap_gradient_norm": 0.3823348581790924,
+      "anchor_gradient_norm": 0.37589341402053833,
+      "total_gradient_norm": 0.19446469843387604,
+      "cosine_reward_bootstrap": 0.34215086698532104,
+      "cosine_reward_total_descent": 0.4694081246852875,
+      "saturation_fraction": 0.2146662026643753,
+      "bootstrap_share_of_objective": 0.962519109249115,
+      "history_policy_obs_rmse": 0.0
+    },
+    {
+      "seed": 713,
+      "reward_4step": 0.08436933159828186,
+      "bootstrap": 2.107773780822754,
+      "weighted_anchor_loss": 0.0026565170846879482,
+      "reward_gradient_norm": 0.06264473497867584,
+      "bootstrap_gradient_norm": 0.3954809606075287,
+      "anchor_gradient_norm": 0.3780856430530548,
+      "total_gradient_norm": 0.22767670452594757,
+      "cosine_reward_bootstrap": 0.3235139846801758,
+      "cosine_reward_total_descent": 0.5102789402008057,
+      "saturation_fraction": 0.22034801915287971,
+      "bootstrap_share_of_objective": 0.9610899090766907,
+      "history_policy_obs_rmse": 0.0
+    }
+  ]
+}

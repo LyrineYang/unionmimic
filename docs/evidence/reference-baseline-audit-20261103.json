@@ -1,0 +1,164 @@
+{
+  "checked_at": "2026-11-03T21:56:43.570526+08:00",
+  "scope": "targeted_source_and_configuration_review_not_full_correctness_certification",
+  "references": {
+    "leap": {
+      "commit": "0ab03eb2244b4a1a020d94ef38a4823bb9e15ba0",
+      "defaults": {
+        "--envs": 4096,
+        "--replay": 1000,
+        "--horizon": 16,
+        "--starts": 4096,
+        "--wm-steps": 10,
+        "--wm-batch": 2048,
+        "--wm-k": 8,
+        "--wm-hidden": "1024,1024,1024",
+        "--wm-only": 300,
+        "--utd": 0.4,
+        "--warmup": 64,
+        "--warmup-noise": 0.5
+      },
+      "native_learning_reproduced_here": false
+    },
+    "dex": {
+      "commit": "2becb7380fed86171056f9bf4338b2a6a0c14b01",
+      "defaults": {
+        "num_envs": 1024,
+        "control_hz": 50,
+        "buffer_steps": 1000,
+        "warmup_steps": 64,
+        "utd": 0.4,
+        "wm_only_iters": 500,
+        "wm_window": 8,
+        "wm_batches": 10,
+        "wm_batch": 2048,
+        "wm_hidden": [
+          2048,
+          2048,
+          2048
+        ],
+        "pi_batch": 1024,
+        "horizon": 32,
+        "critic_epochs": 5,
+        "critic_minibatches": 4,
+        "amp": true,
+        "compile": true,
+        "lr_decay_iters": 250000
+      },
+      "cloned_this_review": true,
+      "dependencies_installed": false,
+      "native_learning_reproduced_here": false
+    }
+  },
+  "local_architecture": {
+    "physical_hidden": [
+      512,
+      512,
+      512
+    ],
+    "physical_activation": "ELU",
+    "physical_layer_norm": true,
+    "actor_hidden": [
+      512,
+      256,
+      128
+    ],
+    "critic_hidden": [
+      256,
+      128
+    ],
+    "critic_activation": "ELU",
+    "critic_layer_norm": true,
+    "model_batch_and_actor_starts_share_config_field": "batch"
+  },
+  "active_plan_training_config": {
+    "envs": 64,
+    "batch": 256,
+    "model_horizon": 8,
+    "horizon": 8,
+    "model_updates": 10,
+    "actor_lr": 0.0002,
+    "model_lr": 0.0002,
+    "critic_lr": 0.0002,
+    "ppo_lr": 0.0001,
+    "gamma": 0.99,
+    "lambda": 0.95,
+    "critic_epochs": 5,
+    "ppo_batch": 512,
+    "collect_steps": 8,
+    "ppo_steps": 32,
+    "warmup_steps": 128,
+    "warmup_updates": 3000,
+    "replay_steps": 512,
+    "exploration": 0.1,
+    "warmup_collect_steps": 8,
+    "failure_fraction": 0.0,
+    "critic_norm_source": "mixed"
+  },
+  "active_source_integrity": {
+    "count": 60,
+    "all_match": true,
+    "mismatches": []
+  },
+  "source_sha256": {
+    "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py": "c7cc0a4962feb00002e62d37b969a075beadeded5a61f124d4bce85120f9e239",
+    "work/upstreams/sm-reference-audit/scripts/wm/train_ftrot.py": "c4a708d616cc35216763a038bb1ae219caa6af062b9e54096145e2bc3e735575",
+    "work/upstreams/sm-reference-audit/src/in_hand_rotation_mjlab/world_model/model.py": "f511b2d9db231bed5e2c603220edc2cb39b068f4c12fc14acf1a20053811928b",
+    "work/upstreams/sm-reference-audit/src/in_hand_rotation_mjlab/world_model/policy.py": "3f6d87c3b64b6b092411102494654a96f98fea3e9b83a7161a91484068ac3f46",
+    "work/upstreams/sm-reference-audit/pyproject.toml": "5eebf532102cbeb67db7bd4d25879710921097878ebacbe6e5d53332a4d0923d",
+    "work/upstreams/dex-supermimic/src/dex_supermimic/rl/dex_supermimic/config.py": "bf1d805eb57671cdcd40b6ef747e188bbc43625d52774a61178f55d2b0cfcf0b",
+    "work/upstreams/dex-supermimic/src/dex_supermimic/rl/dex_supermimic/networks.py": "921457e4ee52525e4a7ca8d44fc77f56093ff92792dfc4b2ea5cf12396458b51",
+    "work/upstreams/dex-supermimic/src/dex_supermimic/rl/dex_supermimic/runner.py": "4d2a4a07c3aa1d55fb2b92ab25dc3032c7e97b3cb0479713ef6d8d0df583571f",
+    "work/upstreams/dex-supermimic/src/dex_supermimic/rl/dex_supermimic/state.py": "0e986cd3f33fc95fb47f9c30af91aff3526ceb25b19e983ca92affa7b72bdc13",
+    "work/upstreams/dex-supermimic/pyproject.toml": "8658fa7d1d6295e30d4abf7b12cc10723898f91cb218191642319d6b271c9789",
+    "unionmimic/online_baseline/core.py": "750f8b6eca2c632d1e84a5099cd51b793d7be8ee53eda1b073413738e7902233",
+    "unionmimic/online_baseline/task.py": "c93f6d85db003addda2c7b99bac0b3a8435b9048e05384a693cda403c8e2c0fb",
+    "unionmimic/online_baseline/learner.py": "f04158c5e25522beeac4a9ff470f00747ff189dc7c62b2d1bbd97495b971306e",
+    "unionmimic/online_screen/worker.py": "cde26c13fe920ac36a725d564bb7ed7b7dc1ed8997c7112d502cc31851eeeed6",
+    "config/sm-screen-20261103.plan.json": "7363543382283a610edef41fd047f1bb9a5e508fd99793f8a0d0f04295040bae"
+  },
+  "hardware_query": {
+    "gpu": "Tesla V100-SXM2-32GB",
+    "capability": [
+      7,
+      0
+    ],
+    "torch": "2.1.0+cu118",
+    "native_bf16_supported": false
+  },
+  "status_snapshot": {
+    "S2": {
+      "status": "running",
+      "phase": "initialize",
+      "pid": 38494,
+      "gpu": 1,
+      "arm": "sm",
+      "updated_unix": 1793714197.6976066,
+      "started_unix": 1793712150.3326206,
+      "deadline_unix": 1793716942.3368506,
+      "counts": {},
+      "frames": 0
+    },
+    "S5": {
+      "status": "segment_complete",
+      "phase": "finished",
+      "pid": 52302,
+      "gpu": 2,
+      "arm": "sm",
+      "updated_unix": 1793714008.6062505,
+      "started_unix": 1793712161.8563645,
+      "deadline_unix": 1793716953.5222087,
+      "counts": {
+        "model": 55790,
+        "actor": 5279,
+        "critic": 105580,
+        "cycles": 5279
+      },
+      "frames": 2696000
+    }
+  },
+  "training_source_modified": false,
+  "new_training_launched": false,
+  "former_four_action_resource_recipe": "on_hold_pending_reference_validation",
+  "recommended_basis": "pinned_LEAP_yaw_then_explicit_Sharpa_adapter; Dex_as_separate_reference_motion_implementation"
+}

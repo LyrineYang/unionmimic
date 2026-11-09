@@ -1,0 +1,154 @@
+{
+  "checked_unix": 1794224223.7193985,
+  "operator_checks": {
+    "sm": {
+      "acceptance": {
+        "passed": true,
+        "operator_only": true,
+        "full_adaptation_accepted": false,
+        "learning_gain_verified": false,
+        "parity": {
+          "reward": 1.9371509552001953e-07,
+          "action": 0.0,
+          "target": 0.0
+        },
+        "valid_rows": 278214,
+        "used_actor_updates": 2,
+        "critic_dim": 465,
+        "seconds": 105.18763852119446,
+        "peak_allocated_gib": 17.001824378967285,
+        "model_optimizer_steps": 20,
+        "actor_updates": 2,
+        "critic_optimizer_steps": 40
+      },
+      "checkpoint_sha256": "a0c996ee2f47abd074d278998822bbb4d83390a4591a56244ef133668733beb3"
+    },
+    "ppo": {
+      "acceptance": {
+        "passed": true,
+        "operator_only": true,
+        "full_adaptation_accepted": false,
+        "learning_gain_verified": false,
+        "parity": {
+          "reward": 2.2910535335540771e-07,
+          "action": 0.0,
+          "target": 0.0
+        },
+        "valid_rows": 519428,
+        "used_actor_updates": 2,
+        "critic_dim": 465,
+        "seconds": 140.2894208431244,
+        "peak_allocated_gib": 4.317434310913086,
+        "actor_updates": 2,
+        "critic_updates": 2,
+        "optimizer_steps": 40
+      },
+      "checkpoint_sha256": "f8c1f45af69dd5b96613d12a7481ae4e69116dd01ee29ce6bd463917860060c3"
+    }
+  },
+  "heldout_first_frame_physics": [
+    {
+      "passed": true,
+      "one_second_survival": 0.9903846383094788,
+      "acceptable_grasp_fraction": 0.951923131942749,
+      "fk_max_error_m": 4.552413429337321e-06,
+      "four_task_interface": {
+        "passed": true,
+        "valid_transitions": 8079,
+        "command_error": 0.0,
+        "target_error": 0.0,
+        "reward_error": 0.0
+      }
+    },
+    {
+      "passed": true,
+      "one_second_survival": 0.9951923489570618,
+      "acceptable_grasp_fraction": 0.9134615659713745,
+      "fk_max_error_m": 4.8071087803691626e-06,
+      "four_task_interface": {
+        "passed": true,
+        "valid_transitions": 8071,
+        "command_error": 0.0,
+        "target_error": 0.0,
+        "reward_error": 0.0
+      }
+    },
+    {
+      "passed": true,
+      "one_second_survival": 0.9903846383094788,
+      "acceptable_grasp_fraction": 0.9375000596046448,
+      "fk_max_error_m": 4.496633664530236e-06,
+      "four_task_interface": {
+        "passed": true,
+        "valid_transitions": 8072,
+        "command_error": 0.0,
+        "target_error": 0.0,
+        "reward_error": 0.0
+      }
+    },
+    {
+      "passed": true,
+      "one_second_survival": 0.9951923489570618,
+      "acceptable_grasp_fraction": 0.9615384936332703,
+      "fk_max_error_m": 4.798023837793153e-06,
+      "four_task_interface": {
+        "passed": true,
+        "valid_transitions": 8069,
+        "command_error": 0.0,
+        "target_error": 0.0,
+        "reward_error": 0.0
+      }
+    }
+  ],
+  "whole_duration_previous_candidate": {
+    "reset_contract_passed": true,
+    "physical_first_step_passed": false,
+    "acceptable": 308,
+    "n": 416,
+    "errors": {
+      "q": 0.0,
+      "qd": 0.0,
+      "pose": 1.1920928955078125e-07,
+      "v": 2.9802322387695312e-08,
+      "w": 1.9073486328125e-06
+    }
+  },
+  "phase_calibration": [
+    {
+      "iteration": 5,
+      "passed": 89,
+      "nodes": 104,
+      "seconds": 122.40936756134033
+    },
+    {
+      "iteration": 5,
+      "passed": 76,
+      "nodes": 104,
+      "seconds": 127.63417387008667
+    },
+    {
+      "iteration": 5,
+      "passed": 92,
+      "nodes": 104,
+      "seconds": 123.47807788848877
+    },
+    {
+      "iteration": 5,
+      "passed": 85,
+      "nodes": 104,
+      "seconds": 126.22103261947632
+    }
+  ],
+  "new_candidate": {
+    "path": "/home/junqiy/projects/unionmimic/work/motions/sharpa-pen-phase-calibrated-20261109-v1",
+    "manifest_sha256": "72f32de2752090a95edc22fc5e9a1217be13b610fdf86728bc98ceb6c8c7e2e8",
+    "clips": 13,
+    "hashes_and_finite_arrays_verified": true,
+    "object_orientations_and_timestamps_unchanged": true,
+    "gpu_acceptance_pending": true
+  },
+  "offline_tests": 21,
+  "long_training_started": false,
+  "authorization_window_expired": true,
+  "new_window_required": true
+}

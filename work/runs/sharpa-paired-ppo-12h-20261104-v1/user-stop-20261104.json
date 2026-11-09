@@ -1,0 +1,42 @@
+{
+  "unix": 1793762930.2589595,
+  "reason": "User reprioritized full Sharpa multi-action adaptation before SM/PPO comparison; stop incomplete-scope long training",
+  "automatic_resume": false,
+  "previous_status": {
+    "status": "running",
+    "pid": 36059,
+    "gpu": 1,
+    "unix": 1793762914.9394035,
+    "policy_loss": -0.011701257899403572,
+    "value_loss": 38.828731536865234,
+    "kl": 0.013509097509086132,
+    "actor_grad": 0.41654467582702637,
+    "critic_grad": 8.96214485168457,
+    "lr": 0.0002962962962962964,
+    "std": 0.7387014031410217,
+    "optimizer_steps": 720,
+    "valid_rows": 130224,
+    "kind": "update",
+    "iteration": 36,
+    "elapsed": 1404.1631219387054,
+    "evaluation_seconds": 125.39028477668762,
+    "environment_transitions": 4980736,
+    "valid_training_transitions": 4697086,
+    "reward_mean": -0.2610190808773041
+  },
+  "checkpoints": [
+    {
+      "file": "/home/junqiy/projects/unionmimic/work/runs/sharpa-paired-ppo-12h-20261104-v1/latest.pt",
+      "sha256": "4b8b39555164c331e7e230ce4d125149e82bd74c49c1b49a4bb22d8c99c083a4",
+      "mtime": 1793762914.9743316,
+      "updates": 36
+    },
+    {
+      "file": "/home/junqiy/projects/unionmimic/work/runs/sharpa-paired-ppo-12h-20261104-v1/best.pt",
+      "sha256": "0f27826bfb974a2ad2852f7e471d515ac47f342174a96d4e889b641690daa28c",
+      "mtime": 1793762551.8567135,
+      "updates": 25
+    }
+  ],
+  "process_cmdline": "python scripts/pilot_sharpa_ppo.py --gpu 1 --run /home/junqiy/projects/unionmimic/work/runs/sharpa-paired-ppo-12h-20261104-v1 --approved-plan /home/junqiy/projects/unionmimic/config/sharpa-paired-ppo-20261104.approved.json "
+}

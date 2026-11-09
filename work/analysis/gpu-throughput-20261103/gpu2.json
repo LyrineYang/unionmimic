@@ -1,0 +1,174 @@
+{
+  "started_unix": 1793704321.7343657,
+  "gpu": 2,
+  "horizon": 16,
+  "parent_sha256": "cea5a0dbf5ea1d40d3f65b38234666cd6690cd09cacc44e47deb84a902b2f225",
+  "co_resident_with_live_training": true,
+  "allocator_cap_gib": 8,
+  "settings": [
+    {
+      "kind": "baseline",
+      "batch": 256,
+      "timing": [
+        {
+          "model": 1.6431834530085325,
+          "actor_critic": 0.7446202645078301,
+          "total": 2.3878037175163627
+        },
+        {
+          "model": 1.6607259036973119,
+          "actor_critic": 0.6614341149106622,
+          "total": 2.322160018607974
+        }
+      ],
+      "mean_seconds": 2.3549818680621684,
+      "peak_allocated_gib": 0.26412010192871094,
+      "peak_reserved_gib": 0.294921875,
+      "actor_start_samples_per_second": 108.7057201891127
+    },
+    {
+      "kind": "fast",
+      "batch": 256,
+      "timing": [
+        {
+          "model": 1.49952242244035,
+          "actor_critic": 0.5231856815516949,
+          "total": 2.022708103992045
+        },
+        {
+          "model": 1.2397388983517885,
+          "actor_critic": 0.6781449727714062,
+          "total": 1.9178838711231947
+        }
+      ],
+      "mean_seconds": 1.9702959875576198,
+      "peak_allocated_gib": 0.26412010192871094,
+      "peak_reserved_gib": 0.294921875,
+      "actor_start_samples_per_second": 129.92971696467686
+    },
+    {
+      "kind": "baseline",
+      "batch": 512,
+      "timing": [
+        {
+          "model": 1.728774351067841,
+          "actor_critic": 0.6676592826843262,
+          "total": 2.3964336337521672
+        },
+        {
+          "model": 1.6718728626146913,
+          "actor_critic": 0.6140676960349083,
+          "total": 2.2859405586495996
+        }
+      ],
+      "mean_seconds": 2.3411870962008834,
+      "peak_allocated_gib": 0.3966493606567383,
+      "peak_reserved_gib": 0.44921875,
+      "actor_start_samples_per_second": 218.69247478377025
+    },
+    {
+      "kind": "fast",
+      "batch": 512,
+      "timing": [
+        {
+          "model": 1.6139827510342002,
+          "actor_critic": 0.6625078544020653,
+          "total": 2.2764906054362655
+        },
+        {
+          "model": 1.7203969592228532,
+          "actor_critic": 0.510520301759243,
+          "total": 2.230917260982096
+        }
+      ],
+      "mean_seconds": 2.253703933209181,
+      "peak_allocated_gib": 0.3966493606567383,
+      "peak_reserved_gib": 0.44921875,
+      "actor_start_samples_per_second": 227.18157094882167
+    },
+    {
+      "kind": "baseline",
+      "batch": 1024,
+      "timing": [
+        {
+          "model": 1.5885206805542111,
+          "actor_critic": 0.6856619501486421,
+          "total": 2.274182630702853
+        },
+        {
+          "model": 1.7046339884400368,
+          "actor_critic": 0.6595349088311195,
+          "total": 2.3641688972711563
+        }
+      ],
+      "mean_seconds": 2.3191757639870048,
+      "peak_allocated_gib": 0.6738333702087402,
+      "peak_reserved_gib": 0.716796875,
+      "actor_start_samples_per_second": 441.5361767318546
+    },
+    {
+      "kind": "fast",
+      "batch": 1024,
+      "timing": [
+        {
+          "model": 1.4151578964665532,
+          "actor_critic": 0.6203547324985266,
+          "total": 2.03551262896508
+        },
+        {
+          "model": 1.6468852078542113,
+          "actor_critic": 0.6052261907607317,
+          "total": 2.252111398614943
+        }
+      ],
+      "mean_seconds": 2.1438120137900114,
+      "peak_allocated_gib": 0.6738333702087402,
+      "peak_reserved_gib": 0.716796875,
+      "actor_start_samples_per_second": 477.6538210501426
+    },
+    {
+      "kind": "baseline",
+      "batch": 2048,
+      "timing": [
+        {
+          "model": 1.7144536199048162,
+          "actor_critic": 0.6484512332826853,
+          "total": 2.3629048531875014
+        },
+        {
+          "model": 1.7794158859178424,
+          "actor_critic": 0.6973463334143162,
+          "total": 2.4767622193321586
+        }
+      ],
+      "mean_seconds": 2.41983353625983,
+      "peak_allocated_gib": 1.2067475318908691,
+      "peak_reserved_gib": 1.3984375,
+      "actor_start_samples_per_second": 846.3392085909564
+    },
+    {
+      "kind": "fast",
+      "batch": 2048,
+      "timing": [
+        {
+          "model": 1.5911721969023347,
+          "actor_critic": 0.6288088895380497,
+          "total": 2.2199810864403844
+        },
+        {
+          "model": 1.6055078897625208,
+          "actor_critic": 0.6472459323704243,
+          "total": 2.252753822132945
+        }
+      ],
+      "mean_seconds": 2.2363674542866647,
+      "peak_allocated_gib": 1.2067475318908691,
+      "peak_reserved_gib": 1.3984375,
+      "actor_start_samples_per_second": 915.7707943184371
+    }
+  ],
+  "status": "completed",
+  "full_update_max_abs_difference": 0.0,
+  "ended_unix": 1793704371.5941172,
+  "seconds": 49.85975193977356
+}

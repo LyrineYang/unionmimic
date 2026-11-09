@@ -1,0 +1,151 @@
+{
+  "recorded_at": "2026-11-01T04:35:11.702438+08:00",
+  "classification": "Native simulator shutdown SIGSEGV after committed stage outputs; exact native library not identified",
+  "simulation_exit_probe": {
+    "exit_code": 0,
+    "report": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/repairs/20261101-shutdown/evaluation-probe.json",
+    "log": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/repairs/20261101-shutdown/evaluation-probe.log"
+  },
+  "tests_passed": 11,
+  "workers": [
+    {
+      "status": "running",
+      "pid": 20529,
+      "cycle": 9,
+      "phase": "collect",
+      "attempted_updates": {
+        "sm": 4500,
+        "calibrate": 8000
+      },
+      "resume_count": 1,
+      "started_unix": 1793472280.6110337,
+      "deadline_unix": 1793515480.6110337,
+      "gpu": 0,
+      "previous_failure": {
+        "cycle": 9,
+        "phase": "evaluate",
+        "error": "evaluate exited with code -11; see /home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu0/cycle-009/evaluate.log"
+      },
+      "reused_stages": [
+        {
+          "phase": "evaluate",
+          "output": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu0/cycle-009/evaluation.json",
+          "episodes": 8,
+          "checkpoint_sha256": "496a429ba45443f9deeb276a0a237987279d80b8b2f8ae4d8550ec8d0e85856e"
+        },
+        {
+          "phase": "sm",
+          "output": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu0/cycle-009/sm",
+          "step": 4500
+        }
+      ]
+    },
+    {
+      "status": "running",
+      "pid": 20539,
+      "cycle": 5,
+      "phase": "collect",
+      "attempted_updates": {
+        "sm": 2500,
+        "calibrate": 4000
+      },
+      "resume_count": 1,
+      "started_unix": 1793472280.577673,
+      "deadline_unix": 1793515480.577673,
+      "gpu": 1,
+      "previous_failure": {
+        "cycle": 5,
+        "phase": "evaluate",
+        "error": "evaluate exited with code -11; see /home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu1/cycle-005/evaluate.log"
+      },
+      "reused_stages": [
+        {
+          "phase": "evaluate",
+          "output": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu1/cycle-005/evaluation.json",
+          "episodes": 8,
+          "checkpoint_sha256": "10886ba07d0e0441e0e8ba61bdf7f679c4bf870b6609c0960cefe29df990e989"
+        },
+        {
+          "phase": "sm",
+          "output": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu1/cycle-005/sm",
+          "step": 2500
+        }
+      ]
+    },
+    {
+      "status": "running",
+      "pid": 20555,
+      "cycle": 4,
+      "phase": "prepare",
+      "attempted_updates": {
+        "sm": 2000,
+        "calibrate": 3000
+      },
+      "resume_count": 1,
+      "started_unix": 1793472280.6093159,
+      "deadline_unix": 1793515480.6093159,
+      "gpu": 2,
+      "previous_failure": {
+        "cycle": 4,
+        "phase": "collect",
+        "error": "collect exited with code -11; see /home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu2/cycle-004/collect.log"
+      },
+      "reused_stages": [
+        {
+          "phase": "collect",
+          "output": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu2/cycle-004/data",
+          "episodes": 17,
+          "transitions": 8040,
+          "failures": 1,
+          "falls": 0,
+          "timeouts": 16
+        },
+        {
+          "phase": "evaluate",
+          "output": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu2/cycle-004/evaluation.json",
+          "episodes": 8,
+          "checkpoint_sha256": "6980d5a6ea7267b9e4a5e0e2e1b800d5c4a41639aed4e5440075dfacd1e609cf"
+        },
+        {
+          "phase": "sm",
+          "output": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu2/cycle-004/sm",
+          "step": 2000
+        }
+      ]
+    },
+    {
+      "status": "running",
+      "pid": 26619,
+      "cycle": 10,
+      "phase": "collect",
+      "attempted_updates": {
+        "sm": 5000,
+        "calibrate": 9000
+      },
+      "resume_count": null,
+      "started_unix": 1793472280.5711653,
+      "deadline_unix": null,
+      "gpu": 3
+    }
+  ],
+  "deadline_preserved": true,
+  "source_hashes": {
+    "unionmimic/simulation_worker.py": "1716a7baef482a6392186a0cfd4b7b17069e28cb2721980ae0f9cec1268e64c3",
+    "unionmimic/cli.py": "364dd95dbe42469fa8d817f532be02b4377caace15ee7c53d5fef517b9f1f72a",
+    "unionmimic/__init__.py": "8f862be59464cd8bde3b3b85f586ffc2d118770e8d80afe9e5f8eaf3b6a5f812",
+    "unionmimic/night.py": "890c15a10112ec966466dc1febbdba6e1094083d49059e4370a655bdf174065b",
+    "unionmimic/telemetry.py": "7617877ffba6c5498fdeb5e2c158adf6b7732beaff7d41bb57bdd36ba4936eaf",
+    "unionmimic/collect.py": "f2b73c270b41a977d9a612ddf45e9bc879cf5d3a12821b5bf35469c2dba4aa3a",
+    "unionmimic/sm.py": "eb1e407b8a5570c55e18f7d76cd01efdd97c150b52fa35b775a0ccb7da393f00",
+    "unionmimic/common.py": "12115b32b321ed3e8c1fba2bace4a338f903a7e7afe27b88043dd070c444553d",
+    "unionmimic/calibrate.py": "350973f290a83aff1064a1943c15588e13c158e9cb7d5fec8c0f2fc2275b160c",
+    "unionmimic/merge.py": "27e93e1329ccda841f218b7a057856fefc481aee8ef9e1017016d68086400367",
+    "unionmimic/data_contracts.py": "abde11378f8b98a5c6024be3906a5ec1ca839e75d6a5ef9f31c3b34433bccf2b",
+    "unionmimic/models.py": "7c7c2bd9822aefe6a77eecabf60419771d708029271dd5085a139a37d56e5f10",
+    "unionmimic/recovery.py": "032afa9a6e80c077499f49368bc0289be52815d46795e1d83c4b0db083d49e1c",
+    "unionmimic/retention.py": "e4dc3b80cbbdd4f4be60bdd534edb7fb1483a7b6d85f3d89754d953c35f58167",
+    "unionmimic/evaluate.py": "eddb3dc9fdaa62480acc972616f9a1dff32dceca2088fa9415e4953cd3025794",
+    "unionmimic/runtime.py": "662f85682fbcfcaba989fb4670c939702f1428b4032825a67cd6067a6b1d8a9b",
+    "unionmimic/prepare.py": "45f2b579faea03fd09ccc91e0068325e1f12723f3e796e6182829f101f599603"
+  }
+}

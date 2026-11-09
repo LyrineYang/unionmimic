@@ -1,0 +1,74 @@
+[
+  {
+    "iteration": 0,
+    "passed": 259,
+    "nodes": 278,
+    "seconds": 114.17952609062195
+  },
+  {
+    "iteration": 1,
+    "passed": 261,
+    "nodes": 278,
+    "seconds": 150.9489459991455
+  },
+  {
+    "iteration": 2,
+    "passed": 251,
+    "nodes": 278,
+    "seconds": 187.6265754699707
+  },
+  {
+    "iteration": 3,
+    "passed": 266,
+    "nodes": 278,
+    "seconds": 223.89013814926147
+  },
+  {
+    "iteration": 4,
+    "passed": 261,
+    "nodes": 278,
+    "seconds": 259.74004197120667
+  },
+  {
+    "iteration": 5,
+    "passed": 255,
+    "nodes": 278,
+    "seconds": 295.75136137008667
+  },
+  {
+    "iteration": 6,
+    "passed": 265,
+    "nodes": 278,
+    "seconds": 330.8807454109192
+  },
+  {
+    "iteration": 7,
+    "passed": 269,
+    "nodes": 278,
+    "seconds": 366.05133152008057
+  },
+  {
+    "iteration": 8,
+    "passed": 267,
+    "nodes": 278,
+    "seconds": 401.4746091365814
+  },
+  {
+    "iteration": 9,
+    "passed": 268,
+    "nodes": 278,
+    "seconds": 436.25221943855286
+  },
+  {
+    "iteration": 10,
+    "passed": 270,
+    "nodes": 278,
+    "seconds": 471.5888583660126
+  },
+  {
+    "iteration": 11,
+    "passed": 268,
+    "nodes": 278,
+    "seconds": 506.107892036438
+  }
+]

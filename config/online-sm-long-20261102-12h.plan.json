@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "status": "authorized_pending_launch",
+  "run_root": "work/runs/sm-baseline-12h-20261102-v1",
+  "tmux_session": "unionmimic-sm-baseline-12h",
+  "objective": "Test from-scratch learning and cost of SM versus PPO-Sim on the fixed Sharpa hand task; WSM context is the next stage.",
+  "seeds": [
+    92001,
+    92002
+  ],
+  "arms": {
+    "sm-seed92001": {
+      "algorithm": "sm",
+      "seed": 92001,
+      "gpu": 0,
+      "hours": 12,
+      "cycles_per_segment": 600
+    },
+    "sm-seed92002": {
+      "algorithm": "sm",
+      "seed": 92002,
+      "gpu": 1,
+      "hours": 12,
+      "cycles_per_segment": 600
+    },
+    "ppo-seed92001": {
+      "algorithm": "ppo",
+      "seed": 92001,
+      "gpu": 2,
+      "hours": 12,
+      "cycles_per_segment": 420
+    },
+    "ppo-seed92002": {
+      "algorithm": "ppo",
+      "seed": 92002,
+      "gpu": 3,
+      "hours": 12,
+      "cycles_per_segment": 420
+    }
+  },
+  "training_config": {
+    "envs": 64,
+    "batch": 256,
+    "model_horizon": 8,
+    "horizon": 8,
+    "model_updates": 10,
+    "actor_lr": 0.0002,
+    "model_lr": 0.0002,
+    "critic_lr": 0.0002,
+    "ppo_lr": 0.0001,
+    "gamma": 0.99,
+    "lambda": 0.95,
+    "critic_epochs": 5,
+    "ppo_batch": 512,
+    "collect_steps": 8,
+    "ppo_steps": 32,
+    "warmup_steps": 128,
+    "warmup_updates": 200,
+    "replay_steps": 512,
+    "exploration": 0.1
+  },
+  "acceptance": {
+    "engineering_passed": true,
+    "evidence": "docs/evidence/online-sm-pilots-20261102.json",
+    "performance_proven": false,
+    "code_review": "docs/SM_BASELINE_REVIEW.md",
+    "post_pilot_changes": "Absolute deadline, stop/failed telemetry, reset-frame accounting, distinct tracking identities and four-lane orchestration. Numerical, boundary, two-cycle physical and mocked orchestration checks passed."
+  },
+  "development": {
+    "envs": 16,
+    "batches": 2,
+    "seed": 94001,
+    "reserve_seconds": 360,
+    "interval": "Approximately every 50 minutes, at completed segment boundaries; charged inside the 11.5-hour training/development window."
+  },
+  "locked_test": {
+    "seed": 95001,
+    "episodes_each": 200,
+    "envs": 20,
+    "batches": 10,
+    "reserve_seconds": 1800,
+    "selection": "highest mean development return; report precision and failures separately",
+    "execution": "each lane uses its own GPU within the original 12-hour deadline"
+  },
+  "ability_reference": {
+    "mean_return": 1070.5099620819092,
+    "mean_rotation": 56.41175186634064,
+    "failures": 0,
+    "episodes": 32,
+    "seeds": [
+      94001,
+      94002
+    ],
+    "checkpoint_sha256": "3215205fe1fad48e97f5745ab90bb2377d53012c1a0d2634edf186699ccab7f7",
+    "role": "evaluation_only"
+  },
+  "capability_milestones": [
+    {
+      "fraction": 0.5,
+      "mean_return_min": 535.2549810409546,
+      "mean_rotation_min": 28.20587593317032,
+      "failure_rate_max": 0.05
+    },
+    {
+      "fraction": 0.8,
+      "mean_return_min": 856.4079696655274,
+      "mean_rotation_min": 45.129401493072514,
+      "failure_rate_max": 0.05
+    }
+  ],
+  "budget": {
+    "authorization": "user_all_idle_gpus_up_to_12h_20261102",
+    "prior_consumed_gpu_hours": 14.943860507408779,
+    "training_gpu_hours": 46,
+    "final_evaluation_gpu_hours": 2,
+    "total_new_gpu_hours_max": 48,
+    "hours_each_max": 12,
+    "legacy_48_gpu_hour_cap_superseded": true,
+    "resource_ledger": "work/analysis/online-sm-20261102/resource-ledger.json",
+    "projected_cumulative_per_gpu_hours": {
+      "0": 15.625081415242619,
+      "1": 16.329634035891957,
+      "2": 15.661866808533668,
+      "3": 15.327278247740534
+    },
+    "cleanup_must_be_accounted": true
+  },
+  "source_sha256": {
+    "unionmimic/online/learner.py": "1b626430413d98cf1554565386641ee63a102c84a2cf06075c4d0ee4dac187e4",
+    "unionmimic/online/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online/task.py": "c61eb144788e3b9f3338adb4938f256d8f9ae9b341a431692c54d33debefc45b",
+    "unionmimic/online/simulator.py": "43a9a491031be0152af689e91d0a5e553e957fb0e143a7facb4512f16b2dec08",
+    "unionmimic/online/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+    "unionmimic/online/worker.py": "49fb1a3ffb77839b54c33fa81088e5c8618ad5fc47d2c1d5276e62c918a60aef",
+    "scripts/train_online.py": "d3b5ccfa8288503b1e6ae60b56bb99bddd09e1841e9498f75340e1242570d3a8",
+    "scripts/evaluate_online.py": "683676c256c06d5013651c7696454df1a1c3695e94c07d68b7cbad22afbcfd85",
+    "scripts/online_long_lane.py": "f28baa06ceae043972f54f103a9b3a1ed541166c9b23b0b7eb7b52424a67736a",
+    "scripts/launch_online_long.py": "ee25bfb10f9a2279f0046f21c7aa1660ae07a2d21daeecd4b856e12fa1fb90f2",
+    "scripts/finalize_online_long.py": "8477914373387ede7524ff88878608fd87f3e83aefb3aa3a3a252dc345e79b9d",
+    "scripts/env.sh": "ad13fc90dbe5e0e5a5b9cb1aa1b84cd040028a14ba5657576ff4cde4c09b0baf",
+    "scripts/check_runtime.py": "593f0813889bc44e8b14ac9435b5c178b9caaa02fccf641ad89ce0a7604e90e4",
+    "config/runtime-lock.json": "678c1dd8d51e1a93d06b205e4330d4599d8d8ffedad70e2e9a81bf5d2171651c",
+    "config/wandb.env": "fda86669eff0f47c7702f7ed824a367acabe03f4ea8ca088dd6aa398de6956f7",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_rotation.py": "5632e38e80f684dabf95ab15716301ca81cf6bcb1672508d74cb87264c6c1bdf",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_camera_rotation.py": "f0d1bc6e01049b6b9325057f21b13096f79734d2f2fc2838edca0eefdc378097",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/base/vec_task.py": "911ddb4434a2f3cd98925d539d475802f8f0736f47174e3b8a5630f68147357f",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/utils/spin_reward_utils.py": "e83c424a4b3d8add3224e1cfac9dc5a88938c38623a1630b54eefc631c6d90d4",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/task/WMCraftnetRotation.yaml": "1baec80813b3a6fd8a5275f966d0d5d3febe4127844ad88ff21089705d6f9f30",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/train/WMCraftnetPPO.yaml": "b81488e09bc4e1603390020c33f9e47e20fc1daf2947912510c1546cc4792637",
+    "work/upstreams/WM-Craftnet/rl_games/common/common_losses.py": "9134b3cea449fd2ab566cf5ed6fcc8951434de228020fd5162cf6beb5cdaf5c2",
+    "work/upstreams/WM-Craftnet/rl_games/common/schedulers.py": "3fd0d4b2b9472d495458d258bff82bf5fb6bd6c18d91fc20df1b2c9c23d3a5cc",
+    "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py": "c7cc0a4962feb00002e62d37b969a075beadeded5a61f124d4bce85120f9e239"
+  },
+  "wandb": true,
+  "recurring_watchdog": false,
+  "launch_approved": true,
+  "interpretive_limits": [
+    "Two paired training seeds, still exploratory rather than a paper-scale superiority result.",
+    "Both joint return/rotation milestones and failure constraint must hold; no precision claim from reward alone.",
+    "Long jobs start fresh, not from pilot checkpoints. No teacher actor or released-policy replay."
+  ]
+}

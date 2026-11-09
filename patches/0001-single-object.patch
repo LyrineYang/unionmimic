@@ -1,0 +1,15 @@
+diff --git a/isaacgymenvs/tasks/wm_craftnet_rotation.py b/isaacgymenvs/tasks/wm_craftnet_rotation.py
+--- a/isaacgymenvs/tasks/wm_craftnet_rotation.py
++++ b/isaacgymenvs/tasks/wm_craftnet_rotation.py
+@@ -358,6 +358,11 @@
+                 f"Available sets: {', '.join(sorted(self.object_sets))}"
+             )
+         self.used_training_objects = self.object_sets[str(self.object_set_id)]
++        single_object = self.cfg["env"].get("singleObject")
++        if single_object is not None:
++            if single_object not in self.used_training_objects:
++                raise ValueError(f"Object {single_object!r} is not in the selected set")
++            self.used_training_objects = [single_object]
+ 
+         self.num_training_objects = len(self.used_training_objects)
+         cam_policy_cfg = self.cfg["env"].get("cameraPolicy", {})

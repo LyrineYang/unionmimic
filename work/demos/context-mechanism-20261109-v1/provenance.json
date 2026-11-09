@@ -1,0 +1,16 @@
+{
+  "source": "/home/junqiy/projects/unionmimic/work/analysis/sm-context-trajectories-20261109-v1",
+  "source_sha256": "4ead9afef28fcb4e19439631293318f9cca3822370c1f29881420e8e1c9683be",
+  "episode": "000002",
+  "start": 30,
+  "end": 179,
+  "video_fps": 10,
+  "control_dt": 0.10002,
+  "horizon_steps": 4,
+  "weights_frozen": true,
+  "policy_training": false,
+  "future_inputs": "recorded executed actions only",
+  "future_observation_use": "offline labels only",
+  "purpose": "Mechanism visualization, not a policy-benefit result",
+  "source_script_sha256": "38d38eb518ed2282e74e0f9c64af4477b7a2ad4f743dc2a012ba966803460018"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Wuji pen_tracking.xml geometry, fixed 220 mm recorded-motion length; see contract.json. -->
+<robot name="sharpa_tracking_pen"><link name="pen">
+<inertial><mass value="0.03"/><inertia ixx="1.2064099460317314e-06" ixy="0" ixz="0" iyy="0.0001514589340735412" iyz="0" izz="0.0001514589340735412"/></inertial>
+<visual><origin rpy="0 1.5707963267948966 0"/><geometry><cylinder radius="0.00745" length="0.14800000000000002"/></geometry><material name="shaft"><color rgba=".9 .9 .9 1"/></material></visual>
+<visual><origin xyz="-0.092 0 0"/><geometry><box size=".036 .018 .018"/></geometry><material name="cap-1"><color rgba=".05 .05 .05 1"/></material></visual>
+<visual><origin xyz="0.092 0 0"/><geometry><box size=".036 .018 .018"/></geometry><material name="cap1"><color rgba=".9 .3 .05 1"/></material></visual>
+<collision><origin rpy="0 1.5707963267948966 0"/><geometry><cylinder radius="0.00745" length="0.14800000000000002"/></geometry></collision>
+<collision><origin xyz="-0.092 0 0"/><geometry><box size=".036 .018 .018"/></geometry></collision>
+<collision><origin xyz="0.092 0 0"/><geometry><box size=".036 .018 .018"/></geometry></collision>
+</link></robot>

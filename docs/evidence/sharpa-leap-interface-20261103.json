@@ -1,0 +1,92 @@
+{
+  "checked_unix": 1793719147.1325052,
+  "interface": {
+    "interface_passed": true,
+    "full_sm_loop_passed": false,
+    "learning_gain_verified": false,
+    "envs": 4096,
+    "vector_steps": 80,
+    "recorded_vector_steps": 64,
+    "valid_rows": 327096,
+    "failures": 566,
+    "timeouts": 16,
+    "incoming_reset_rows": 584,
+    "max_error": {
+      "action": 0.0,
+      "target": 0.0,
+      "reward": 5.364418029785156e-06,
+      "position": 4.470348358154297e-08,
+      "velocity": 5.7220458984375e-06,
+      "quat_sign": 2.384185791015625e-07
+    },
+    "control_dt": 0.10001999884843826,
+    "actor_history_frames": 10,
+    "observation_dim": 730,
+    "actor_hidden": [
+      512,
+      512,
+      256
+    ],
+    "actor_weights_updated": false,
+    "elapsed_seconds": 116.13928532600403,
+    "physics_seconds": 76.53493094444275,
+    "torch_peak_allocated_gib": 0.12573623657226562,
+    "limitations": [
+      "Contact/reward prediction heads not implemented",
+      "No F fitting/BPTT/critic updates in this interface check",
+      "No online cross-runtime transport or resumable learner"
+    ],
+    "sources_unchanged": true
+  },
+  "model_interface": {
+    "physical_model_interface_passed": true,
+    "full_sm_loop_passed": false,
+    "source_commit": "0ab03eb2244b4a1a020d94ef38a4823bb9e15ba0",
+    "nj": 22,
+    "hidden": [
+      1024,
+      1024,
+      1024
+    ],
+    "batch": 2048,
+    "window": 8,
+    "replay_capacity": 1000,
+    "envs": 4096,
+    "physical_model_updates": 10,
+    "actor_updates": 0,
+    "critic_updates": 0,
+    "losses": [
+      860.6846923828125,
+      851.800048828125,
+      827.1032104492188,
+      774.8573608398438,
+      743.5958251953125,
+      698.91650390625,
+      650.786376953125,
+      612.7626342773438,
+      562.0139770507812,
+      533.0530395507812
+    ],
+    "max_target_error": 0.0,
+    "input_gradient_abs_max": 0.0014404399553313851,
+    "cross_reset_windows": false,
+    "seconds": 12.020718097686768,
+    "peak_allocated_gib": 6.700887680053711,
+    "limitations": [
+      "Physical-model loss only; termination/contact/reward supervision not integrated",
+      "No online transport, imagined observation or policy BPTT acceptance"
+    ],
+    "dataset_sha256": "342d1e29e066ff1803a89f0e010ecc7950e8bd64ca88b587c0ee9675bece24f6"
+  },
+  "cpu_contract_tests": {
+    "passed": 3
+  },
+  "full_sharpa_training_ready": false,
+  "long_training_started": false,
+  "sources": {
+    "unionmimic/sharpa_leap.py": "62b057da9cecade7867f6bf2bbac2d2fd58282804f8511de3bee268a98a64174",
+    "scripts/check_sharpa_leap_physics.py": "8e6d47829d64fb4f9c8fa958c75bf42d50265f7c7970d3c9b9ca123de7dfc1c8",
+    "scripts/check_sharpa_leap_model.py": "e03076e25b504db8f552b8105f2baa8a4615e7575b08f9522d1219979adb8630",
+    "tests/test_sharpa_leap.py": "ce08677e27528d0d6cc7143a854496f58995359dbc94a7893192fc4aa16ae892"
+  }
+}

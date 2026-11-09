@@ -1,0 +1,30 @@
+[
+  {
+    "repo": "CuboiLeo/SuperMimic-Reproduced",
+    "path": "src/supermimic/world_model/wm_trainer.py",
+    "blob_sha": "d4bad7634a4031ae0e36939cb45eb09060ec2d51",
+    "url": "https://github.com/CuboiLeo/SuperMimic-Reproduced/blob/main/src/supermimic/world_model/wm_trainer.py",
+    "local_file": "work/analysis/sm-reproduction-20261102/references/CuboiLeo-wm_trainer.py"
+  },
+  {
+    "repo": "CuboiLeo/SuperMimic-Reproduced",
+    "path": "src/supermimic/imagination/policy_trainer.py",
+    "blob_sha": "b4bdb04c82056c75239adc2c82314f45a2ff3de4",
+    "url": "https://github.com/CuboiLeo/SuperMimic-Reproduced/blob/main/src/supermimic/imagination/policy_trainer.py",
+    "local_file": "work/analysis/sm-reproduction-20261102/references/CuboiLeo-policy_trainer.py"
+  },
+  {
+    "repo": "YHFone/supermimic-mjlab",
+    "path": "src/supermimic/algo/trainer.py",
+    "blob_sha": "cbd4d46f3ef542dd0cc7f552b816d9c3ecaab2a6",
+    "url": "https://github.com/YHFone/supermimic-mjlab/blob/main/src/supermimic/algo/trainer.py",
+    "local_file": "work/analysis/sm-reproduction-20261102/references/YHFone-trainer.py"
+  },
+  {
+    "repo": "YHFone/supermimic-mjlab",
+    "path": "src/supermimic/algo/config.py",
+    "blob_sha": "5b2c185a76ea63b7433ff4619a808170cf8ef582",
+    "url": "https://github.com/YHFone/supermimic-mjlab/blob/main/src/supermimic/algo/config.py",
+    "local_file": "work/analysis/sm-reproduction-20261102/references/YHFone-config.py"
+  }
+]

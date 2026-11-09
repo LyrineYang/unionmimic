@@ -1,0 +1,109 @@
+{
+  "captured_unix": 1793523485.0199378,
+  "lanes": [
+    {
+      "gpu": 0,
+      "active_dataset_episodes": 154,
+      "active_dataset_transitions": 48878,
+      "train_starts": 20000,
+      "valid_starts": 9330,
+      "positive_validation_source_episodes": [
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000018",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000037",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000049",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000052",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000054",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000058",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000069",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000071",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000075",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000086",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000088",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000089"
+      ],
+      "excluded_failure_episodes": [
+        {
+          "episode": "000151",
+          "transitions": 3,
+          "source": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu0/cycle-061/data:000016"
+        }
+      ],
+      "positive_train_labels": 106
+    },
+    {
+      "gpu": 1,
+      "active_dataset_episodes": 149,
+      "active_dataset_transitions": 48598,
+      "train_starts": 20000,
+      "valid_starts": 9330,
+      "positive_validation_source_episodes": [
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000018",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000037",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000049",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000052",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000054",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000058",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000069",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000071",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000075",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000086",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000088",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000089"
+      ],
+      "excluded_failure_episodes": [],
+      "positive_train_labels": 97
+    },
+    {
+      "gpu": 2,
+      "active_dataset_episodes": 154,
+      "active_dataset_transitions": 48892,
+      "train_starts": 20000,
+      "valid_starts": 9330,
+      "positive_validation_source_episodes": [
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000018",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000037",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000049",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000052",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000054",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000058",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000069",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000071",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000075",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000086",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000088",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000089"
+      ],
+      "excluded_failure_episodes": [
+        {
+          "episode": "000151",
+          "transitions": 8,
+          "source": "/home/junqiy/projects/unionmimic/work/runs/four-gpu-20261101/gpu2/cycle-055/data:000016"
+        }
+      ],
+      "positive_train_labels": 106
+    },
+    {
+      "gpu": 3,
+      "active_dataset_episodes": 149,
+      "active_dataset_transitions": 48633,
+      "train_starts": 20000,
+      "valid_starts": 9330,
+      "positive_validation_source_episodes": [
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000018",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000037",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000049",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000052",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000054",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000058",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000069",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000071",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000075",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000086",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000088",
+        "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/dataset:000089"
+      ],
+      "excluded_failure_episodes": [],
+      "positive_train_labels": 102
+    }
+  ]
+}

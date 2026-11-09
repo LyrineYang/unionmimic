@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "returncode": 1,
+  "no_output_directory": true,
+  "optimizer_steps": 0,
+  "manifest_sha256": "cc645b9067eb33314af4395bcb31e811c3327b03414250347d2a76b1b8d167da",
+  "error": "PermissionError: User review required before any parameter update"
+}

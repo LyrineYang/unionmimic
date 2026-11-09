@@ -1,0 +1,8 @@
+{
+  "approved": true,
+  "arms": [
+    "dynamics"
+  ],
+  "manifest_sha256": "d23886bdf2c09d4f157db4a232906c14fd9eeee08a3977e7bef1d45bcccda609",
+  "authorization": "User authorized verification and plan optimization; GPU resume check and 250-update fixed-anchor trial before gated long training"
+}

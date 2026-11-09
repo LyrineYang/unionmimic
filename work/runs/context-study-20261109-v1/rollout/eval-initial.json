@@ -1,0 +1,1798 @@
+{
+  "passed": true,
+  "mode": "rollout",
+  "episodes": 128,
+  "seed": 20261213,
+  "pulse": false,
+  "checkpoint_sha256": "6c18cf76fafe6bb1797094c1344d0bacba34198f9bb36ea502a5c1445f9acada",
+  "protocol": "Every initial environment, first valid episode; reset-frame failure counts. Pulse is command noise .3 at steps40:50, not force.",
+  "mean_return": 4.623956680297852,
+  "mean_rotation_rad": 0.009958948940038681,
+  "failure_rate": 1.0,
+  "mean_axis_deviation_rad": 0.28987133502960205,
+  "mean_offaxis_rad": 0.2098465859889984,
+  "mean_steps": 61.875,
+  "reward_max_error": 3.814697265625e-06,
+  "seconds": 84.70413136482239,
+  "rows": [
+    {
+      "return": 6.8423614501953125,
+      "rotation": 0.016416363418102264,
+      "offaxis": 0.1242150291800499,
+      "tilt": 15.874957084655762,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.2821006774902344,
+      "rotation": -0.04137106612324715,
+      "offaxis": 0.2284894585609436,
+      "tilt": 15.976839065551758,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 11.896873474121094,
+      "rotation": 0.006782080512493849,
+      "offaxis": 0.2593545913696289,
+      "tilt": 14.731216430664062,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -8.886550903320312,
+      "rotation": 0.06104098632931709,
+      "offaxis": 0.19298134744167328,
+      "tilt": 14.284927368164062,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 0.25644683837890625,
+      "rotation": -0.006366668734699488,
+      "offaxis": 0.1829109489917755,
+      "tilt": 18.65871810913086,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.959018707275391,
+      "rotation": 0.01743452623486519,
+      "offaxis": 0.1602899134159088,
+      "tilt": 14.173286437988281,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 13.004371643066406,
+      "rotation": -0.08070757240056992,
+      "offaxis": 0.1329267919063568,
+      "tilt": 17.590930938720703,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.858802795410156,
+      "rotation": 0.13346050679683685,
+      "offaxis": 0.3331843912601471,
+      "tilt": 38.6861457824707,
+      "steps": 113.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.3154754638671875,
+      "rotation": -0.00842526275664568,
+      "offaxis": 0.25108301639556885,
+      "tilt": 17.094493865966797,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.6231460571289062,
+      "rotation": -0.003318918403238058,
+      "offaxis": 0.17809826135635376,
+      "tilt": 16.73040008544922,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.283157348632812,
+      "rotation": 0.02734302170574665,
+      "offaxis": 0.19185811281204224,
+      "tilt": 18.570905685424805,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 4.0520782470703125,
+      "rotation": -0.008358952589333057,
+      "offaxis": 0.12375690042972565,
+      "tilt": 16.723730087280273,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -3.866832733154297,
+      "rotation": 0.031122103333473206,
+      "offaxis": 0.20119838416576385,
+      "tilt": 15.427889823913574,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 10.237430572509766,
+      "rotation": 0.035257015377283096,
+      "offaxis": 0.19060611724853516,
+      "tilt": 16.622928619384766,
+      "steps": 61.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -0.098907470703125,
+      "rotation": 0.0032966425642371178,
+      "offaxis": 0.13495869934558868,
+      "tilt": 18.65977668762207,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 5.431682586669922,
+      "rotation": -0.0976196900010109,
+      "offaxis": 0.3256065547466278,
+      "tilt": 20.06987190246582,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 13.275764465332031,
+      "rotation": 0.026298604905605316,
+      "offaxis": 0.17151634395122528,
+      "tilt": 18.3541259765625,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.931312561035156,
+      "rotation": -0.04222845286130905,
+      "offaxis": 0.15038329362869263,
+      "tilt": 19.569969177246094,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.815166473388672,
+      "rotation": -0.03357246518135071,
+      "offaxis": 0.16546189785003662,
+      "tilt": 16.95942497253418,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -0.5663375854492188,
+      "rotation": 0.1469019204378128,
+      "offaxis": 0.19831852614879608,
+      "tilt": 14.825882911682129,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 9.759838104248047,
+      "rotation": -0.006159145850688219,
+      "offaxis": 0.19105197489261627,
+      "tilt": 17.464494705200195,
+      "steps": 61.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -1.5494956970214844,
+      "rotation": 0.01131662167608738,
+      "offaxis": 0.2237575501203537,
+      "tilt": 18.23713493347168,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -1.4774818420410156,
+      "rotation": -0.0707148015499115,
+      "offaxis": 0.35110482573509216,
+      "tilt": 16.963178634643555,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -0.19298553466796875,
+      "rotation": -0.0548136904835701,
+      "offaxis": 0.20579496026039124,
+      "tilt": 13.374551773071289,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 10.753494262695312,
+      "rotation": 0.014728509820997715,
+      "offaxis": 0.21545962989330292,
+      "tilt": 12.15958023071289,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 10.22304916381836,
+      "rotation": -0.0873035192489624,
+      "offaxis": 0.45845839381217957,
+      "tilt": 10.051262855529785,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 9.117130279541016,
+      "rotation": -0.021521873772144318,
+      "offaxis": 0.26064470410346985,
+      "tilt": 14.794856071472168,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -2.4682540893554688,
+      "rotation": -0.032200757414102554,
+      "offaxis": 0.21714738011360168,
+      "tilt": 18.21880531311035,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -4.0328826904296875,
+      "rotation": 0.043133847415447235,
+      "offaxis": 0.3773413896560669,
+      "tilt": 18.465883255004883,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -0.5812873840332031,
+      "rotation": -0.09382887184619904,
+      "offaxis": 0.15634989738464355,
+      "tilt": 15.224559783935547,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.6233253479003906,
+      "rotation": -0.07359347492456436,
+      "offaxis": 0.14335356652736664,
+      "tilt": 17.219114303588867,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -6.1802978515625,
+      "rotation": -0.017061816528439522,
+      "offaxis": 0.14951227605342865,
+      "tilt": 14.890694618225098,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.562381744384766,
+      "rotation": 2.2427411749958992e-05,
+      "offaxis": 0.23917236924171448,
+      "tilt": 17.845500946044922,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 5.283145904541016,
+      "rotation": -0.03505735471844673,
+      "offaxis": 0.15974442660808563,
+      "tilt": 17.477039337158203,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.8214492797851562,
+      "rotation": -0.0072044022381305695,
+      "offaxis": 0.16327813267707825,
+      "tilt": 16.370105743408203,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -5.516574859619141,
+      "rotation": -0.0377226397395134,
+      "offaxis": 0.14686192572116852,
+      "tilt": 16.006269454956055,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.517215728759766,
+      "rotation": 0.034779127687215805,
+      "offaxis": 0.19123144447803497,
+      "tilt": 15.269201278686523,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 14.557926177978516,
+      "rotation": 0.3923286497592926,
+      "offaxis": 0.5835411548614502,
+      "tilt": 37.52983474731445,
+      "steps": 122.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -4.735218048095703,
+      "rotation": -0.020574146881699562,
+      "offaxis": 0.19424712657928467,
+      "tilt": 16.684925079345703,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 13.167678833007812,
+      "rotation": 0.03658707067370415,
+      "offaxis": 0.16061516106128693,
+      "tilt": 19.40934181213379,
+      "steps": 61.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 5.988468170166016,
+      "rotation": 0.0010861894115805626,
+      "offaxis": 0.10611741244792938,
+      "tilt": 17.799104690551758,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 47.2996711730957,
+      "rotation": 0.3161684572696686,
+      "offaxis": 0.43309134244918823,
+      "tilt": 37.22169876098633,
+      "steps": 125.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -6.8917236328125,
+      "rotation": 0.014126158319413662,
+      "offaxis": 0.12967848777770996,
+      "tilt": 16.533803939819336,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -3.6724090576171875,
+      "rotation": -0.01680658385157585,
+      "offaxis": 0.1900726854801178,
+      "tilt": 12.080873489379883,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 2.2716293334960938,
+      "rotation": -0.008584924042224884,
+      "offaxis": 0.16802500188350677,
+      "tilt": 19.9158992767334,
+      "steps": 61.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 6.683403015136719,
+      "rotation": 0.008482583798468113,
+      "offaxis": 0.1507796049118042,
+      "tilt": 16.874462127685547,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 6.583034515380859,
+      "rotation": -0.015552481636404991,
+      "offaxis": 0.16105729341506958,
+      "tilt": 18.75296974182129,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -10.447257995605469,
+      "rotation": -0.015599071979522705,
+      "offaxis": 0.2891709506511688,
+      "tilt": 15.964447975158691,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 5.925651550292969,
+      "rotation": 0.02473570592701435,
+      "offaxis": 0.2372070699930191,
+      "tilt": 16.353384017944336,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 11.18362045288086,
+      "rotation": 0.016191914677619934,
+      "offaxis": 0.1096331924200058,
+      "tilt": 20.726301193237305,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 11.09121322631836,
+      "rotation": 0.05793945863842964,
+      "offaxis": 0.15692070126533508,
+      "tilt": 14.714192390441895,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 6.411842346191406,
+      "rotation": -0.030622918158769608,
+      "offaxis": 0.16161733865737915,
+      "tilt": 18.41818618774414,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.1806755065917969,
+      "rotation": 0.0335705429315567,
+      "offaxis": 0.20383724570274353,
+      "tilt": 14.417474746704102,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.8489990234375,
+      "rotation": 0.024747656658291817,
+      "offaxis": 0.18973290920257568,
+      "tilt": 18.692087173461914,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.248291015625,
+      "rotation": 0.002498202258720994,
+      "offaxis": 0.20305867493152618,
+      "tilt": 14.236680030822754,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -6.523014068603516,
+      "rotation": -0.027034102007746696,
+      "offaxis": 0.16965343058109283,
+      "tilt": 20.360071182250977,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 6.090553283691406,
+      "rotation": -0.047328319400548935,
+      "offaxis": 0.10136431455612183,
+      "tilt": 16.448875427246094,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -2.3959007263183594,
+      "rotation": -0.06733241677284241,
+      "offaxis": 0.9192177653312683,
+      "tilt": 15.557287216186523,
+      "steps": 78.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 4.611164093017578,
+      "rotation": 0.02465987205505371,
+      "offaxis": 0.3555067479610443,
+      "tilt": 8.677655220031738,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.168277740478516,
+      "rotation": 0.04450516775250435,
+      "offaxis": 0.15644289553165436,
+      "tilt": 19.34079360961914,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -0.12249374389648438,
+      "rotation": 0.022134561091661453,
+      "offaxis": 0.30641883611679077,
+      "tilt": 19.55360221862793,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 0.10869598388671875,
+      "rotation": 0.020784910768270493,
+      "offaxis": 0.12386566400527954,
+      "tilt": 17.78957748413086,
+      "steps": 61.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 2.3016281127929688,
+      "rotation": 0.011334951035678387,
+      "offaxis": 0.1549176424741745,
+      "tilt": 20.51741600036621,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 9.20559310913086,
+      "rotation": 0.04235527664422989,
+      "offaxis": 0.25689879059791565,
+      "tilt": 18.773605346679688,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.2658195495605469,
+      "rotation": 0.021111393347382545,
+      "offaxis": 0.14802612364292145,
+      "tilt": 16.060684204101562,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.956947326660156,
+      "rotation": -0.045710884034633636,
+      "offaxis": 0.1468448042869568,
+      "tilt": 17.570653915405273,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.420345306396484,
+      "rotation": 0.06443841010332108,
+      "offaxis": 0.13247442245483398,
+      "tilt": 18.485694885253906,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.488067626953125,
+      "rotation": 0.007216700352728367,
+      "offaxis": 0.20730678737163544,
+      "tilt": 19.259475708007812,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 0.8682670593261719,
+      "rotation": -0.06499474495649338,
+      "offaxis": 0.10490396618843079,
+      "tilt": 17.58425521850586,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 4.254283905029297,
+      "rotation": -0.007021155208349228,
+      "offaxis": 0.12042193114757538,
+      "tilt": 15.939654350280762,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.480049133300781,
+      "rotation": 0.134445458650589,
+      "offaxis": 0.150283083319664,
+      "tilt": 16.23615074157715,
+      "steps": 61.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.108642578125,
+      "rotation": -0.034272871911525726,
+      "offaxis": 0.15854422748088837,
+      "tilt": 15.653510093688965,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.3516845703125,
+      "rotation": 0.05149419978260994,
+      "offaxis": 0.17707893252372742,
+      "tilt": 17.821107864379883,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 15.162437438964844,
+      "rotation": -0.01128954067826271,
+      "offaxis": 0.10250994563102722,
+      "tilt": 16.874826431274414,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -0.5118141174316406,
+      "rotation": -0.015645340085029602,
+      "offaxis": 0.18016807734966278,
+      "tilt": 22.72774314880371,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 11.434959411621094,
+      "rotation": 0.0530155785381794,
+      "offaxis": 0.2844217121601105,
+      "tilt": 19.066415786743164,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -0.7623138427734375,
+      "rotation": -0.023096313700079918,
+      "offaxis": 0.18949924409389496,
+      "tilt": 22.021013259887695,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 13.295791625976562,
+      "rotation": 0.03874015808105469,
+      "offaxis": 0.12527593970298767,
+      "tilt": 16.090065002441406,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -10.222904205322266,
+      "rotation": -0.023785917088389397,
+      "offaxis": 0.16955088078975677,
+      "tilt": 18.1297607421875,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 4.466335296630859,
+      "rotation": 0.0007147178985178471,
+      "offaxis": 0.15095573663711548,
+      "tilt": 15.327820777893066,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 9.60470199584961,
+      "rotation": -0.02225615829229355,
+      "offaxis": 0.17417925596237183,
+      "tilt": 17.52872657775879,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.2983436584472656,
+      "rotation": -0.025224629789590836,
+      "offaxis": 0.13837207853794098,
+      "tilt": 20.671173095703125,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 13.739280700683594,
+      "rotation": -0.006626744754612446,
+      "offaxis": 0.336742639541626,
+      "tilt": 36.23854446411133,
+      "steps": 118.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 5.630409240722656,
+      "rotation": 0.032404784113168716,
+      "offaxis": 0.22420714795589447,
+      "tilt": 22.837875366210938,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.625411987304688,
+      "rotation": -0.04360200837254524,
+      "offaxis": 0.17134585976600647,
+      "tilt": 13.686762809753418,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 10.524768829345703,
+      "rotation": -0.0020233832765370607,
+      "offaxis": 0.13212347030639648,
+      "tilt": 17.788097381591797,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -1.0148468017578125,
+      "rotation": -0.013306794688105583,
+      "offaxis": 0.2583237588405609,
+      "tilt": 17.617435455322266,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 9.043991088867188,
+      "rotation": 0.0425674207508564,
+      "offaxis": 0.19356174767017365,
+      "tilt": 14.768831253051758,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.9587287902832031,
+      "rotation": 0.06108134239912033,
+      "offaxis": 0.3283706307411194,
+      "tilt": 13.525238037109375,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 10.781013488769531,
+      "rotation": -0.012771598994731903,
+      "offaxis": 0.1293664276599884,
+      "tilt": 16.68886947631836,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.376972198486328,
+      "rotation": 0.024979261681437492,
+      "offaxis": 0.12071036547422409,
+      "tilt": 19.325302124023438,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 0.5378875732421875,
+      "rotation": -0.04421227425336838,
+      "offaxis": 0.1530691385269165,
+      "tilt": 22.497085571289062,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 10.69015884399414,
+      "rotation": -0.028949037194252014,
+      "offaxis": 0.11627861857414246,
+      "tilt": 17.035764694213867,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.449287414550781,
+      "rotation": -0.004025552421808243,
+      "offaxis": 0.09641274064779282,
+      "tilt": 16.23830223083496,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.5691871643066406,
+      "rotation": 0.08682432025671005,
+      "offaxis": 0.3184703290462494,
+      "tilt": 18.448486328125,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.322021484375,
+      "rotation": -0.023961203172802925,
+      "offaxis": 0.2237827479839325,
+      "tilt": 19.70456886291504,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 5.7437591552734375,
+      "rotation": 0.09958654642105103,
+      "offaxis": 0.49147993326187134,
+      "tilt": 16.969039916992188,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 0.4778404235839844,
+      "rotation": 0.03288926184177399,
+      "offaxis": 0.2553877830505371,
+      "tilt": 11.409488677978516,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 4.475456237792969,
+      "rotation": -0.07496064156293869,
+      "offaxis": 0.174129918217659,
+      "tilt": 18.1148624420166,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 5.6032257080078125,
+      "rotation": 0.017194990068674088,
+      "offaxis": 0.1688641458749771,
+      "tilt": 17.449886322021484,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 2.1989517211914062,
+      "rotation": 0.04121332988142967,
+      "offaxis": 0.11250065267086029,
+      "tilt": 15.702446937561035,
+      "steps": 61.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.691379547119141,
+      "rotation": -0.029705816879868507,
+      "offaxis": 0.3106171488761902,
+      "tilt": 12.385049819946289,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -0.6417617797851562,
+      "rotation": -0.007210889365524054,
+      "offaxis": 0.21886056661605835,
+      "tilt": 14.71362590789795,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.7188873291015625,
+      "rotation": 0.03917325660586357,
+      "offaxis": 0.3145478069782257,
+      "tilt": 15.24809741973877,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -6.366279602050781,
+      "rotation": 0.009716563858091831,
+      "offaxis": 0.17791305482387543,
+      "tilt": 19.815893173217773,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 5.084907531738281,
+      "rotation": -0.001290951739065349,
+      "offaxis": 0.22667847573757172,
+      "tilt": 19.95137596130371,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 25.54405975341797,
+      "rotation": 0.16699114441871643,
+      "offaxis": 0.35758644342422485,
+      "tilt": 29.760969161987305,
+      "steps": 98.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -5.940402984619141,
+      "rotation": 0.015451793558895588,
+      "offaxis": 0.1375482827425003,
+      "tilt": 18.249164581298828,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.252277374267578,
+      "rotation": 0.049484942108392715,
+      "offaxis": 0.13399560749530792,
+      "tilt": 16.395692825317383,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.650829315185547,
+      "rotation": 0.026429150253534317,
+      "offaxis": 0.15062640607357025,
+      "tilt": 20.317739486694336,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -12.16849136352539,
+      "rotation": 0.026255734264850616,
+      "offaxis": 0.24752463400363922,
+      "tilt": 20.886159896850586,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.9783935546875,
+      "rotation": 0.0355379618704319,
+      "offaxis": 0.23751230537891388,
+      "tilt": 18.81484603881836,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 11.097393035888672,
+      "rotation": -0.02218524180352688,
+      "offaxis": 0.16972412168979645,
+      "tilt": 15.638867378234863,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 0.28466796875,
+      "rotation": 0.02896914817392826,
+      "offaxis": 0.14166320860385895,
+      "tilt": 18.861677169799805,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.620735168457031,
+      "rotation": -0.020769353955984116,
+      "offaxis": 0.14811080694198608,
+      "tilt": 15.912365913391113,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 7.756420135498047,
+      "rotation": 0.0801691934466362,
+      "offaxis": 0.13793812692165375,
+      "tilt": 14.403328895568848,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 5.9777374267578125,
+      "rotation": 0.011141309514641762,
+      "offaxis": 0.31366318464279175,
+      "tilt": 18.728208541870117,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -2.0247268676757812,
+      "rotation": 0.013370131142437458,
+      "offaxis": 0.3288606107234955,
+      "tilt": 21.08408546447754,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.049854278564453,
+      "rotation": 0.044417425990104675,
+      "offaxis": 0.1478239893913269,
+      "tilt": 18.580581665039062,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.4300460815429688,
+      "rotation": -0.016644611954689026,
+      "offaxis": 0.1982903778553009,
+      "tilt": 20.33012580871582,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 1.3201522827148438,
+      "rotation": -0.000644505606032908,
+      "offaxis": 0.20175760984420776,
+      "tilt": 17.409137725830078,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -4.869876861572266,
+      "rotation": 0.07160568237304688,
+      "offaxis": 0.2779500186443329,
+      "tilt": 20.12848472595215,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.3545570373535156,
+      "rotation": -0.038305528461933136,
+      "offaxis": 0.1612015813589096,
+      "tilt": 12.285600662231445,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 8.399337768554688,
+      "rotation": -0.010203160345554352,
+      "offaxis": 0.1325872242450714,
+      "tilt": 17.588178634643555,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.2177467346191406,
+      "rotation": 0.004750152584165335,
+      "offaxis": 0.1305035650730133,
+      "tilt": 13.959783554077148,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": -1.9173851013183594,
+      "rotation": -0.03336850553750992,
+      "offaxis": 0.2535652816295624,
+      "tilt": 19.447298049926758,
+      "steps": 59.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 3.0849990844726562,
+      "rotation": -0.08783996850252151,
+      "offaxis": 0.17404486238956451,
+      "tilt": 15.097546577453613,
+      "steps": 60.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    },
+    {
+      "return": 20.1395263671875,
+      "rotation": 0.04228422790765762,
+      "offaxis": 0.4431707262992859,
+      "tilt": 35.18330764770508,
+      "steps": 83.0,
+      "failed": 1.0,
+      "initial_reset_failure": 0.0
+    }
+  ],
+  "trace": [
+    {
+      "step": 0,
+      "active": 128,
+      "rotation_per_s": 0.03193720430135727
+    },
+    {
+      "step": 1,
+      "active": 128,
+      "rotation_per_s": 0.0031733131036162376
+    },
+    {
+      "step": 2,
+      "active": 128,
+      "rotation_per_s": 4.954735413775779e-05
+    },
+    {
+      "step": 3,
+      "active": 128,
+      "rotation_per_s": -0.00037549695116467774
+    },
+    {
+      "step": 4,
+      "active": 128,
+      "rotation_per_s": -0.000496966065838933
+    },
+    {
+      "step": 5,
+      "active": 128,
+      "rotation_per_s": -0.00021657964680343866
+    },
+    {
+      "step": 6,
+      "active": 128,
+      "rotation_per_s": -0.0008220702293328941
+    },
+    {
+      "step": 7,
+      "active": 128,
+      "rotation_per_s": -0.001064651063643396
+    },
+    {
+      "step": 8,
+      "active": 128,
+      "rotation_per_s": -0.0015466840704903007
+    },
+    {
+      "step": 9,
+      "active": 128,
+      "rotation_per_s": -0.001574163674376905
+    },
+    {
+      "step": 10,
+      "active": 128,
+      "rotation_per_s": -0.002005182672291994
+    },
+    {
+      "step": 11,
+      "active": 128,
+      "rotation_per_s": -0.0016753801610320807
+    },
+    {
+      "step": 12,
+      "active": 128,
+      "rotation_per_s": -0.001172688091173768
+    },
+    {
+      "step": 13,
+      "active": 128,
+      "rotation_per_s": -0.00018164367065764964
+    },
+    {
+      "step": 14,
+      "active": 128,
+      "rotation_per_s": -7.474306767107919e-05
+    },
+    {
+      "step": 15,
+      "active": 128,
+      "rotation_per_s": -0.0005989014753140509
+    },
+    {
+      "step": 16,
+      "active": 128,
+      "rotation_per_s": -0.0005842109094373882
+    },
+    {
+      "step": 17,
+      "active": 128,
+      "rotation_per_s": -0.0012536975555121899
+    },
+    {
+      "step": 18,
+      "active": 128,
+      "rotation_per_s": -0.0005653233965858817
+    },
+    {
+      "step": 19,
+      "active": 128,
+      "rotation_per_s": 0.0003770450421143323
+    },
+    {
+      "step": 20,
+      "active": 128,
+      "rotation_per_s": 0.0007795944693498313
+    },
+    {
+      "step": 21,
+      "active": 128,
+      "rotation_per_s": 0.0004169444437138736
+    },
+    {
+      "step": 22,
+      "active": 128,
+      "rotation_per_s": -0.0012490492081269622
+    },
+    {
+      "step": 23,
+      "active": 128,
+      "rotation_per_s": -0.00022402645845431834
+    },
+    {
+      "step": 24,
+      "active": 128,
+      "rotation_per_s": -0.00015430165512952954
+    },
+    {
+      "step": 25,
+      "active": 128,
+      "rotation_per_s": 0.00044764491030946374
+    },
+    {
+      "step": 26,
+      "active": 128,
+      "rotation_per_s": 0.0009959657909348607
+    },
+    {
+      "step": 27,
+      "active": 128,
+      "rotation_per_s": 0.00019174758926965296
+    },
+    {
+      "step": 28,
+      "active": 128,
+      "rotation_per_s": 0.00013676253729499876
+    },
+    {
+      "step": 29,
+      "active": 128,
+      "rotation_per_s": 0.00011642288154689595
+    },
+    {
+      "step": 30,
+      "active": 128,
+      "rotation_per_s": 0.000407893443480134
+    },
+    {
+      "step": 31,
+      "active": 128,
+      "rotation_per_s": 0.00160240160766989
+    },
+    {
+      "step": 32,
+      "active": 128,
+      "rotation_per_s": -0.0006736923241987824
+    },
+    {
+      "step": 33,
+      "active": 128,
+      "rotation_per_s": -0.0006531711551360786
+    },
+    {
+      "step": 34,
+      "active": 128,
+      "rotation_per_s": -0.0007981828530319035
+    },
+    {
+      "step": 35,
+      "active": 128,
+      "rotation_per_s": -0.0006158946780487895
+    },
+    {
+      "step": 36,
+      "active": 128,
+      "rotation_per_s": -0.00022272765636444092
+    },
+    {
+      "step": 37,
+      "active": 128,
+      "rotation_per_s": 0.000552851299289614
+    },
+    {
+      "step": 38,
+      "active": 128,
+      "rotation_per_s": 0.0006457728450186551
+    },
+    {
+      "step": 39,
+      "active": 128,
+      "rotation_per_s": 0.00029346157680265605
+    },
+    {
+      "step": 40,
+      "active": 128,
+      "rotation_per_s": 0.0007269983761943877
+    },
+    {
+      "step": 41,
+      "active": 128,
+      "rotation_per_s": 0.0016401485772803426
+    },
+    {
+      "step": 42,
+      "active": 128,
+      "rotation_per_s": 0.0016848481027409434
+    },
+    {
+      "step": 43,
+      "active": 128,
+      "rotation_per_s": 0.0023887299466878176
+    },
+    {
+      "step": 44,
+      "active": 128,
+      "rotation_per_s": 0.000892162905074656
+    },
+    {
+      "step": 45,
+      "active": 128,
+      "rotation_per_s": -0.0007305145845748484
+    },
+    {
+      "step": 46,
+      "active": 128,
+      "rotation_per_s": -0.0005292368587106466
+    },
+    {
+      "step": 47,
+      "active": 128,
+      "rotation_per_s": 0.0021056036930531263
+    },
+    {
+      "step": 48,
+      "active": 128,
+      "rotation_per_s": 0.0014805580722168088
+    },
+    {
+      "step": 49,
+      "active": 128,
+      "rotation_per_s": 0.001504104700870812
+    },
+    {
+      "step": 50,
+      "active": 128,
+      "rotation_per_s": 0.0011948379687964916
+    },
+    {
+      "step": 51,
+      "active": 128,
+      "rotation_per_s": 0.0011742146452888846
+    },
+    {
+      "step": 52,
+      "active": 128,
+      "rotation_per_s": 0.0015935783740133047
+    },
+    {
+      "step": 53,
+      "active": 128,
+      "rotation_per_s": 0.001939631998538971
+    },
+    {
+      "step": 54,
+      "active": 128,
+      "rotation_per_s": 0.0017115138471126556
+    },
+    {
+      "step": 55,
+      "active": 128,
+      "rotation_per_s": -0.00022915286535862833
+    },
+    {
+      "step": 56,
+      "active": 128,
+      "rotation_per_s": -0.0009402073919773102
+    },
+    {
+      "step": 57,
+      "active": 128,
+      "rotation_per_s": -0.0022981485817581415
+    },
+    {
+      "step": 58,
+      "active": 44,
+      "rotation_per_s": -0.0002824199618771672
+    },
+    {
+      "step": 59,
+      "active": 14,
+      "rotation_per_s": 0.0057034557685256
+    },
+    {
+      "step": 60,
+      "active": 7,
+      "rotation_per_s": 0.030613886192440987
+    },
+    {
+      "step": 61,
+      "active": 7,
+      "rotation_per_s": 0.07407916337251663
+    },
+    {
+      "step": 62,
+      "active": 7,
+      "rotation_per_s": 0.08035632967948914
+    },
+    {
+      "step": 63,
+      "active": 7,
+      "rotation_per_s": 0.08020780235528946
+    },
+    {
+      "step": 64,
+      "active": 7,
+      "rotation_per_s": 0.07555533200502396
+    },
+    {
+      "step": 65,
+      "active": 7,
+      "rotation_per_s": 0.05851313844323158
+    },
+    {
+      "step": 66,
+      "active": 7,
+      "rotation_per_s": 0.05321314185857773
+    },
+    {
+      "step": 67,
+      "active": 7,
+      "rotation_per_s": 0.033530522137880325
+    },
+    {
+      "step": 68,
+      "active": 7,
+      "rotation_per_s": 0.036082543432712555
+    },
+    {
+      "step": 69,
+      "active": 7,
+      "rotation_per_s": 0.020048221573233604
+    },
+    {
+      "step": 70,
+      "active": 7,
+      "rotation_per_s": 0.021031135693192482
+    },
+    {
+      "step": 71,
+      "active": 7,
+      "rotation_per_s": 0.016503704711794853
+    },
+    {
+      "step": 72,
+      "active": 7,
+      "rotation_per_s": 0.01895439252257347
+    },
+    {
+      "step": 73,
+      "active": 7,
+      "rotation_per_s": 0.01208823174238205
+    },
+    {
+      "step": 74,
+      "active": 7,
+      "rotation_per_s": 0.014610753394663334
+    },
+    {
+      "step": 75,
+      "active": 7,
+      "rotation_per_s": 0.018865808844566345
+    },
+    {
+      "step": 76,
+      "active": 7,
+      "rotation_per_s": 0.02370382472872734
+    },
+    {
+      "step": 77,
+      "active": 6,
+      "rotation_per_s": 0.017771374434232712
+    },
+    {
+      "step": 78,
+      "active": 6,
+      "rotation_per_s": 0.02098562940955162
+    },
+    {
+      "step": 79,
+      "active": 6,
+      "rotation_per_s": 0.017443722113966942
+    },
+    {
+      "step": 80,
+      "active": 6,
+      "rotation_per_s": 0.01657981611788273
+    },
+    {
+      "step": 81,
+      "active": 6,
+      "rotation_per_s": 0.021896133199334145
+    },
+    {
+      "step": 82,
+      "active": 5,
+      "rotation_per_s": 0.02326047420501709
+    },
+    {
+      "step": 83,
+      "active": 5,
+      "rotation_per_s": 0.027810124680399895
+    },
+    {
+      "step": 84,
+      "active": 5,
+      "rotation_per_s": 0.020409472286701202
+    },
+    {
+      "step": 85,
+      "active": 5,
+      "rotation_per_s": 0.019016148522496223
+    },
+    {
+      "step": 86,
+      "active": 5,
+      "rotation_per_s": 0.011279908940196037
+    },
+    {
+      "step": 87,
+      "active": 5,
+      "rotation_per_s": 0.006972912233322859
+    },
+    {
+      "step": 88,
+      "active": 5,
+      "rotation_per_s": 0.009310522116720676
+    },
+    {
+      "step": 89,
+      "active": 5,
+      "rotation_per_s": 0.012230142019689083
+    },
+    {
+      "step": 90,
+      "active": 5,
+      "rotation_per_s": 0.0164599921554327
+    },
+    {
+      "step": 91,
+      "active": 5,
+      "rotation_per_s": 0.016487881541252136
+    },
+    {
+      "step": 92,
+      "active": 5,
+      "rotation_per_s": 0.021893596276640892
+    },
+    {
+      "step": 93,
+      "active": 5,
+      "rotation_per_s": 0.01734226755797863
+    },
+    {
+      "step": 94,
+      "active": 5,
+      "rotation_per_s": 0.016721954569220543
+    },
+    {
+      "step": 95,
+      "active": 5,
+      "rotation_per_s": 0.017346302047371864
+    },
+    {
+      "step": 96,
+      "active": 5,
+      "rotation_per_s": 0.009797956794500351
+    },
+    {
+      "step": 97,
+      "active": 4,
+      "rotation_per_s": 0.014324823394417763
+    },
+    {
+      "step": 98,
+      "active": 4,
+      "rotation_per_s": 0.018775448203086853
+    },
+    {
+      "step": 99,
+      "active": 4,
+      "rotation_per_s": 0.014868956059217453
+    },
+    {
+      "step": 100,
+      "active": 4,
+      "rotation_per_s": 0.015312569215893745
+    },
+    {
+      "step": 101,
+      "active": 4,
+      "rotation_per_s": 0.013910877518355846
+    },
+    {
+      "step": 102,
+      "active": 4,
+      "rotation_per_s": 0.01342092640697956
+    },
+    {
+      "step": 103,
+      "active": 4,
+      "rotation_per_s": 0.000685075530782342
+    },
+    {
+      "step": 104,
+      "active": 4,
+      "rotation_per_s": -0.0054933191277086735
+    },
+    {
+      "step": 105,
+      "active": 4,
+      "rotation_per_s": -0.006968902423977852
+    },
+    {
+      "step": 106,
+      "active": 4,
+      "rotation_per_s": -0.00430237827822566
+    },
+    {
+      "step": 107,
+      "active": 4,
+      "rotation_per_s": -0.005991570185869932
+    },
+    {
+      "step": 108,
+      "active": 4,
+      "rotation_per_s": -0.000733245920855552
+    },
+    {
+      "step": 109,
+      "active": 4,
+      "rotation_per_s": 0.006758982315659523
+    },
+    {
+      "step": 110,
+      "active": 4,
+      "rotation_per_s": 0.01556835975497961
+    },
+    {
+      "step": 111,
+      "active": 4,
+      "rotation_per_s": 0.019408296793699265
+    },
+    {
+      "step": 112,
+      "active": 3,
+      "rotation_per_s": 0.013405315577983856
+    },
+    {
+      "step": 113,
+      "active": 3,
+      "rotation_per_s": 0.010883417911827564
+    },
+    {
+      "step": 114,
+      "active": 3,
+      "rotation_per_s": 0.010106950998306274
+    },
+    {
+      "step": 115,
+      "active": 3,
+      "rotation_per_s": 0.006327671464532614
+    },
+    {
+      "step": 116,
+      "active": 3,
+      "rotation_per_s": 0.013387748040258884
+    },
+    {
+      "step": 117,
+      "active": 2,
+      "rotation_per_s": 0.011364717967808247
+    },
+    {
+      "step": 118,
+      "active": 2,
+      "rotation_per_s": 0.008004667237401009
+    },
+    {
+      "step": 119,
+      "active": 2,
+      "rotation_per_s": 0.016419604420661926
+    },
+    {
+      "step": 120,
+      "active": 2,
+      "rotation_per_s": 0.016316242516040802
+    },
+    {
+      "step": 121,
+      "active": 1,
+      "rotation_per_s": 0.0326828770339489
+    },
+    {
+      "step": 122,
+      "active": 1,
+      "rotation_per_s": 0.006029431242495775
+    },
+    {
+      "step": 123,
+      "active": 1,
+      "rotation_per_s": 0.016643695533275604
+    },
+    {
+      "step": 124,
+      "active": 0,
+      "rotation_per_s": 0.02219942770898342
+    }
+  ]
+}

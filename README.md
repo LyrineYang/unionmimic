@@ -1,9 +1,13 @@
 <p align="center">
+
+当前状态（2026-11-09晚）：已交付[52秒中文Demo](work/demos/unionmimic-geometry-story-20261109-v1/unionmimic-geometry-story.mp4)及[几何先验实测](docs/GEOMETRY_AND_DEMO_BACKUP_20261109.md)。独立测试位置估计4.00→2.18 mm，尚无策略控制收益；新的4096环境SM基线运行中，最多至11月10日02:47:09上海。50Hz转笔物理验收仍未通过，原24小时窗口不变。
+
   <img src="docs/assets/cover.svg" alt="UnionMimic — From sensing to learning. Visuotactile world models for dexterous control." width="100%">
 </p>
 
 <p align="center">
   <a href="#the-idea">The idea</a> ·
+  <a href="docs/MAINLINE.md">Project mainline</a> ·
   <a href="docs/INSIGHTS.md">Research insights</a> ·
   <a href="docs/ARCHITECTURE.md">Architecture</a> ·
   <a href="docs/EXPERIMENTS.md">Experiments</a> ·
@@ -12,32 +16,42 @@
 
 # UnionMimic
 
-**One visuotactile world model. Two capabilities: observe the present, imagine what comes next.**
+[Published results and demos](docs/RESULTS_RELEASE_20261109.md) · [SM/PPO validation](docs/SM_PPO_VALIDATION_20261109.md)
 
-UnionMimic adapts WM-Craftnet's recurrent state-space model (RSSM) for SuperMimic-style policy learning. Depth, touch, and proprioception estimate the state of a dexterous hand; short imagined rollouts are intended to carry gradients back to its policy.
+**SuperMimic learning with a WM-Craftnet recurrent context prior.**
 
-The first task is concrete: **one Sharpa hand, one object, z-axis rotation**, initialized from released weights and compared with PPO fine-tuning from the same starting point.
+**Verified scope:** SM learns sustained z-axis rotation on the Sharpa hand from an untrained actor/critic. At an early checkpoint near two hours: 40.43 rad and 7.03% failures; the last historical development evaluation recorded 1 failure in 512 episodes. A matched PPO speed comparison is now being measured; full pen adaptation and prior control benefit remain unverified. [Evidence and comparison protocol](docs/SM_PPO_VALIDATION_20261109.md).
 
-> **Research preview · November 2026**
-> The original policy and sensing stack passed a single-V100 replay check. Data collection, prediction calibration, and policy-training integration are under active development. Comparative training results are not yet established. [Evidence & status →](docs/STATUS.md)
+UnionMimic keeps two model roles separate: SuperMimic's learned physical dynamics supports imagined rollouts and actor BPTT; WM-Craftnet summarizes depth, touch, proprioception and action history into additional policy context.
+
+The implemented diagnostic task is **one Sharpa hand, one object, z-axis rotation**. The next action scope is two capability tasks and two external reference motions; their training settings are on hold pending [reference-implementation validation and Sharpa adaptation](docs/REFERENCE_BASELINE_AUDIT_20261103.md). Establish a strong SM baseline with an untrained actor and critic through [reference-code review and Sharpa adaptation experiments](docs/SM_REPRODUCTION.md), then compare that tuned baseline against SM with a frozen pretrained WSM context branch. Both arms inherit the baseline improvements. Measure control precision, rotation progress, failures and total learning cost. PPO-Sim provides a learning/cost reference.
+
+> **Research preview · 9 November 2026**
+> A frozen WM-Craftnet encoder and a small geometry readout reduce current-object position error on an independent simulation seed; random-encoder and depth-clamped controls are recorded. This is perception evidence, not improved policy control. Three earlier short context-training arms failed to learn sustained rotation. A new full-recipe SM baseline is running from scratch; the old stopped runs remain closed. Full 50 Hz pen adaptation still fails its physical gate. [Current evidence](docs/GEOMETRY_AND_DEMO_BACKUP_20261109.md) · [Demo labels and sources](docs/DEMOS.md).
 
 ## The idea
 
-A useful state estimate is not automatically a useful training model. A model corrected by sensors at every step can still drift when asked to predict the future on its own.
+A recurrent representation can summarize contact history that a short observation stack misses. The question is whether that context improves an SM-trained policy's precision in physics.
 
-UnionMimic makes that gap explicit. It reuses the **same RSSM** for observation updates and action-conditioned imagination, then checks whether its predictions and gradients improve control in the original physics simulator.
+The context must also evolve during imagination. We therefore test the consistency of context updated from real observations versus predicted observations/features. Adding context to the actor alone is not evidence that the dynamics predictor becomes more accurate.
 
-| Observe | Imagine | Improve |
+| Estimate context | Imagine physics | Measure control |
 | :--- | :--- | :--- |
-| Fuse real depth, touch, and joint history into a recurrent state. | Predict a short future without access to future sensor observations. | Update the actor through model dynamics, then evaluate it in physics. |
+| A pretrained WSM processes sensor and action history. | A separate SM model predicts physical consequences; a defined bridge updates imagined context. | Train actor/critic from scratch and compare precision and total cost in physics. |
 
-This is an engineering adaptation and research program. The intended contribution is a working WM + SM loop with explicit sensor, action, reset, and gradient contracts—and evidence about when it helps.
+The intended contribution is a reproducible SM-plus-context system and evidence about when context consistency helps contact-rich control. Novelty and performance gains are hypotheses, not established results.
 
 ## The pipeline
 
-<img src="docs/assets/pipeline.svg" alt="Target loop: simulator observations update the RSSM posterior; actor and RSSM prior alternate for four imagined steps; predicted reward and terminal value update the actor; the updated policy returns to physics. Gradients pass through the learned model, not the simulator." width="100%">
+```text
+Current policy → simulator → replay → fit SM physical dynamics
+                                    ↓
+Real history → frozen WSM → context → imagined actor/physics loop
+                                    ↓
+                        BPTT actor + critic updates → new policy
+```
 
-*Target architecture. Start with H = 4, approximately 0.4 seconds at the original control rate. Model and critic parameters are fixed during actor updates; gradients through their inputs remain enabled.*
+*Target architecture. Imagined context requires a validated observation/feature update. Model and critic parameters are fixed during actor updates; gradients through their inputs remain enabled. The complete new loop is not yet verified.*
 
 [Read the architecture →](docs/ARCHITECTURE.md)
 
@@ -58,9 +72,13 @@ This verifies the runtime path. It is **not** a full-episode success rate, a tra
 
 | Read | What it answers |
 | :--- | :--- |
+| [Mainline](docs/MAINLINE.md) | What is the accepted goal, scope and sequence? |
 | [Insights](docs/INSIGHTS.md) | What can perception and differentiable control share? |
 | [Architecture](docs/ARCHITECTURE.md) | Where do observations, actions and gradients go? |
-| [Experiment design](docs/EXPERIMENTS.md) | How will PPO and SM be compared fairly? |
+| [Experiment design](docs/EXPERIMENTS.md) | How will SM and SM+prior precision and cost be compared? |
+| [SM reproduction](docs/SM_REPRODUCTION.md) | What counts as successful reproduction, and what is being debugged? |
+| [Current training plan](docs/ONLINE_TRAINING_PLAN.md) | What runs on each GPU, for how long, and how is it evaluated? |
+| [Environment](docs/ENVIRONMENT.md) | How are dependencies, runtime isolation and W&B managed? |
 | [Roadmap](docs/ROADMAP.md) | What does each stage deliver to the next? |
 | [Getting started](docs/GETTING_STARTED.md) | How can the runtime check be reproduced? |
 | [Website foundation](docs/WEBSITE.md) | How does the project page grow into a full website? |
@@ -88,6 +106,8 @@ Open `http://localhost:8080` on that machine. For a remote server, see [port for
 
 <details>
 <summary>Preview the project website</summary>
+
+The image below is a historical layout preview. Current method text follows [MAINLINE.md](docs/MAINLINE.md).
 
 ![UnionMimic website preview](docs/assets/website-preview.png)
 

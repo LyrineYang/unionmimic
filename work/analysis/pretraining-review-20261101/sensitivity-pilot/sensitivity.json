@@ -1,0 +1,195 @@
+{
+  "mode": "read_only_action_sensitivity",
+  "checkpoint_sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05",
+  "gpu": 1,
+  "seed": 62001,
+  "envs": 4,
+  "groups": 1,
+  "rows": [
+    {
+      "group": 0,
+      "lane": 0,
+      "direction": 0,
+      "amplitude": 0.03,
+      "valid_start": true,
+      "complete": true,
+      "real_delta_return": 0.2713289260864258,
+      "model_delta_return": 0.0033431053161621094,
+      "gradient_delta_return": 0.005022692959755659,
+      "real_delta_rotation": 0.008882179856300354,
+      "restore_noise_bound": 0.13970184326171875,
+      "action_mapping_max_error": 7.450580596923828e-09
+    },
+    {
+      "group": 0,
+      "lane": 1,
+      "direction": 0,
+      "amplitude": 0.03,
+      "valid_start": true,
+      "complete": true,
+      "real_delta_return": -0.1696338653564453,
+      "model_delta_return": 0.012269973754882812,
+      "gradient_delta_return": 0.013445085845887661,
+      "real_delta_rotation": -0.001590818166732788,
+      "restore_noise_bound": 1.6527318954467773,
+      "action_mapping_max_error": 5.960464477539063e-08
+    },
+    {
+      "group": 0,
+      "lane": 2,
+      "direction": 0,
+      "amplitude": 0.03,
+      "valid_start": true,
+      "complete": true,
+      "real_delta_return": -0.05720329284667969,
+      "model_delta_return": -0.0024890899658203125,
+      "gradient_delta_return": -0.0019618086516857147,
+      "real_delta_rotation": -0.003723815083503723,
+      "restore_noise_bound": 0.5789737701416016,
+      "action_mapping_max_error": 3.725290298461914e-09
+    },
+    {
+      "group": 0,
+      "lane": 3,
+      "direction": 0,
+      "amplitude": 0.03,
+      "valid_start": true,
+      "complete": true,
+      "real_delta_return": 0.1382298469543457,
+      "model_delta_return": 0.00341033935546875,
+      "gradient_delta_return": 0.0027667481917887926,
+      "real_delta_rotation": 0.006663084030151367,
+      "restore_noise_bound": 0.055014610290527344,
+      "action_mapping_max_error": 2.9802322387695312e-08
+    },
+    {
+      "group": 0,
+      "lane": 0,
+      "direction": 1,
+      "amplitude": 0.03,
+      "valid_start": true,
+      "complete": true,
+      "real_delta_return": 0.23069381713867188,
+      "model_delta_return": -0.01833057403564453,
+      "gradient_delta_return": -0.015851730480790138,
+      "real_delta_rotation": 0.008114174008369446,
+      "restore_noise_bound": 0.13970184326171875,
+      "action_mapping_max_error": 5.960464477539063e-08
+    },
+    {
+      "group": 0,
+      "lane": 1,
+      "direction": 1,
+      "amplitude": 0.03,
+      "valid_start": true,
+      "complete": true,
+      "real_delta_return": -0.17206811904907227,
+      "model_delta_return": -0.02090167999267578,
+      "gradient_delta_return": -0.01790733076632023,
+      "real_delta_rotation": 0.0004731863737106323,
+      "restore_noise_bound": 1.6527318954467773,
+      "action_mapping_max_error": 2.9802322387695312e-08
+    },
+    {
+      "group": 0,
+      "lane": 2,
+      "direction": 1,
+      "amplitude": 0.03,
+      "valid_start": true,
+      "complete": true,
+      "real_delta_return": 0.39840126037597656,
+      "model_delta_return": -0.012183189392089844,
+      "gradient_delta_return": -0.008530882187187672,
+      "real_delta_rotation": 0.0018153190612792969,
+      "restore_noise_bound": 0.5789737701416016,
+      "action_mapping_max_error": 5.960464477539063e-08
+    },
+    {
+      "group": 0,
+      "lane": 3,
+      "direction": 1,
+      "amplitude": 0.03,
+      "valid_start": true,
+      "complete": true,
+      "real_delta_return": 0.15996265411376953,
+      "model_delta_return": 0.0031518936157226562,
+      "gradient_delta_return": 0.003666400210931897,
+      "real_delta_rotation": 0.010213702917098999,
+      "restore_noise_bound": 0.055014610290527344,
+      "action_mapping_max_error": 2.9802322387695312e-08
+    }
+  ],
+  "null_replays": [
+    {
+      "group": 0,
+      "lane": 0,
+      "valid": true,
+      "return_noise_max": 0.06985092163085938,
+      "returns": [
+        4.726069450378418,
+        4.6540398597717285,
+        4.791562080383301
+      ],
+      "joint_restore_max_error": 0.007993459701538086,
+      "h1_reward_error": 0.4779454469680786,
+      "h4_reward_error": 0.420360803604126
+    },
+    {
+      "group": 0,
+      "lane": 1,
+      "valid": true,
+      "return_noise_max": 0.8263659477233887,
+      "returns": [
+        8.185402870178223,
+        8.003232955932617,
+        6.854769229888916
+      ],
+      "joint_restore_max_error": 0.205735445022583,
+      "h1_reward_error": -0.28677523136138916,
+      "h4_reward_error": 0.3487743139266968
+    },
+    {
+      "group": 0,
+      "lane": 2,
+      "valid": true,
+      "return_noise_max": 0.2894868850708008,
+      "returns": [
+        6.180225372314453,
+        5.607847213745117,
+        5.903928756713867
+      ],
+      "joint_restore_max_error": 0.05534195899963379,
+      "h1_reward_error": 1.5723687410354614,
+      "h4_reward_error": 0.32940173149108887
+    },
+    {
+      "group": 0,
+      "lane": 3,
+      "valid": true,
+      "return_noise_max": 0.027507305145263672,
+      "returns": [
+        7.484735488891602,
+        7.486753463745117,
+        7.527005195617676
+      ],
+      "joint_restore_max_error": 0.03608529269695282,
+      "h1_reward_error": 1.815346360206604,
+      "h4_reward_error": 0.33301615715026855
+    }
+  ],
+  "eligible_comparisons": 0,
+  "total_comparisons": 8,
+  "model_rank_correlation": null,
+  "gradient_rank_correlation": null,
+  "model_sign_agreement": null,
+  "gradient_sign_agreement": null,
+  "optimizer_steps": 0,
+  "seconds": 18.44949746131897,
+  "interpretation": "diagnostic_only; repeated directions within a start are dependent; no causal pass from pooled significance",
+  "limitations": [
+    "Contact-solver hidden state cannot be fully restored; null replay noise is measured.",
+    "Only effects above three times measured restoration bound are used in summary.",
+    "Legacy checkpoint has no calibrated rotation head; only physical rotation delta is available.",
+    "Fixed open-loop continuation isolates action response; this is not closed-loop policy improvement."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+ "torque_work": {
+  "n": 245746,
+  "env_mean": -0.0011993646621704102,
+  "ours_mean": -0.0011917495867237449,
+  "mean_abs_diff": 9.113189662457444e-06,
+  "corr": 0.9994525909423828
+ },
+ "rotate_finite_diff": {
+  "n": 245746,
+  "env_mean": 0.00023147332831285894,
+  "ours_mean": 0.00022038705355953425,
+  "max_abs_diff": 0.2866816520690918,
+  "mean_abs_diff": 0.0012298878282308578,
+  "corr": 0.9964332580566406
+ },
+ "object_linvel_penalty": {
+  "n": 245746,
+  "env_mean": -0.004513234365731478,
+  "ours_mean": -0.004516304470598698,
+  "max_abs_diff": 0.05887345224618912,
+  "mean_abs_diff": 0.0018690311117097735,
+  "corr": 0.8017014861106873
+ },
+ "pose_diff_penalty": {
+  "n": 245746,
+  "env_mean": 0.0,
+  "ours_mean": 0.0,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "corr": NaN
+ }
+}

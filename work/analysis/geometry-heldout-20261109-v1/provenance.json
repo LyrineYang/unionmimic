@@ -1,0 +1,16 @@
+{
+  "kind": "diagnostic only; frozen trained SM actor plus passive frozen released WSM",
+  "actor_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sharpa-leap-12h-20261103-v1/ckpt/best.pt",
+  "actor_sha256": "60588994e0ca0d436eeeed8ccee9f9f0fa628fe55ed983e95d7838c875959321",
+  "wsm_checkpoint": "/home/junqiy/projects/unionmimic/work/checkpoints/wm_craftnet_set_z.pth",
+  "wsm_sha256": "3215205fe1fad48e97f5745ab90bb2377d53012c1a0d2634edf186699ccab7f7",
+  "source_sha256": "dd04f419387d165881919781ca50080c291810b855904fe95941676dae149cfc",
+  "seed": 20261217,
+  "prior_conditioned_policy": false,
+  "control_dt": 0.10002,
+  "steps": 700,
+  "envs": 16,
+  "perturbation": "action noise 0.9 after step 30 in half the environments; not an external force",
+  "training_updates": 0,
+  "diagnostic_state_labels_only": true
+}

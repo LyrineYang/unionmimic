@@ -1,0 +1,4 @@
+{
+  "correction": "The generic limits[0] text incorrectly says released-policy/stress. Actual behavior is historical frozen SM plus action noise. Metrics unchanged.",
+  "evidence": "../sm-context-trajectories-20261109-v1/provenance.json"
+}

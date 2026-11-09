@@ -1,0 +1,37 @@
+{
+  "spent": 14.943860507408779,
+  "this_task": 0.9428926546043822,
+  "remaining": 33.05613949259122,
+  "projected": {
+    "0": 15.625081415242619,
+    "1": 16.329634035891957,
+    "2": 15.661866808533668,
+    "3": 15.327278247740534
+  },
+  "reference": {
+    "mean_return": 1070.5099620819092,
+    "mean_rotation": 56.41175186634064,
+    "failures": 0,
+    "episodes": 32,
+    "seeds": [
+      94001,
+      94002
+    ],
+    "checkpoint_sha256": "3215205fe1fad48e97f5745ab90bb2377d53012c1a0d2634edf186699ccab7f7",
+    "role": "evaluation_only"
+  },
+  "milestones": [
+    {
+      "fraction": 0.5,
+      "mean_return_min": 535.2549810409546,
+      "mean_rotation_min": 28.20587593317032,
+      "failure_rate_max": 0.05
+    },
+    {
+      "fraction": 0.8,
+      "mean_return_min": 856.4079696655274,
+      "mean_rotation_min": 45.129401493072514,
+      "failure_rate_max": 0.05
+    }
+  ]
+}

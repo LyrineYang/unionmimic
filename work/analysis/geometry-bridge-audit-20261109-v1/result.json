@@ -1,0 +1,45 @@
+{
+  "rows": [
+    {
+      "horizon": 1,
+      "physical_position_error_mm": 1.299656867980957,
+      "raw_physics_to_real_estimate_mm": 2.1530916690826416,
+      "fixed_error_to_real_estimate_mm": 1.4247589111328125,
+      "ar1_mean_to_real_estimate_mm": 1.403867244720459,
+      "sensor_only_ar1_error_mm": 1.0507481098175049
+    },
+    {
+      "horizon": 4,
+      "physical_position_error_mm": 2.4746429920196533,
+      "raw_physics_to_real_estimate_mm": 2.8946356773376465,
+      "fixed_error_to_real_estimate_mm": 2.557344913482666,
+      "ar1_mean_to_real_estimate_mm": 2.4642343521118164,
+      "sensor_only_ar1_error_mm": 1.5618723630905151
+    },
+    {
+      "horizon": 8,
+      "physical_position_error_mm": 3.101851224899292,
+      "raw_physics_to_real_estimate_mm": 3.4347732067108154,
+      "fixed_error_to_real_estimate_mm": 3.1145377159118652,
+      "ar1_mean_to_real_estimate_mm": 3.0131664276123047,
+      "sensor_only_ar1_error_mm": 1.5698561668395996
+    },
+    {
+      "horizon": 16,
+      "physical_position_error_mm": 4.565866947174072,
+      "raw_physics_to_real_estimate_mm": 4.76209831237793,
+      "fixed_error_to_real_estimate_mm": 4.533815383911133,
+      "ar1_mean_to_real_estimate_mm": 4.427710056304932,
+      "sensor_only_ar1_error_mm": 1.7024067640304565
+    }
+  ],
+  "starts": 512,
+  "weights_unchanged": true,
+  "input_gradient_norm": 0.0012805188307538629,
+  "controller_target_max_error": 0.0,
+  "data_sha256": "0f3aeeed0b72e61de87b21cc4f8cf55c9eb43485a3a502af56de64fa259f13ff",
+  "model_sha256": "60588994e0ca0d436eeeed8ccee9f9f0fa628fe55ed983e95d7838c875959321",
+  "bridge_sha256": "dee63ee063b4dc570cee9c29b7f7f6cc34b218f925ddea4b4934536de133c444",
+  "protocol": "Frozen historical F, complete-episode starts, recorded executed commands and controller scales; no future observations in F/bridge propagation.",
+  "limits": "Sensor-only column substitutes ground-truth positions solely for offline error decomposition. It is not a usable actor input or a control comparison. Historical F/behavior are not the new random-policy baseline. AR1 scores use conditional mean, not stochastic coverage."
+}

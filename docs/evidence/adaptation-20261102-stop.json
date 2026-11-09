@@ -1,0 +1,170 @@
+{
+  "status": "stopped_by_user",
+  "reason": "Research-mainline realignment; no clear control benefit in the available development checks.",
+  "checked_unix": 1793612149.2741265,
+  "run": "work/runs/adaptation-20261102-v1",
+  "baseline_return": 1076.146234512329,
+  "baseline_rotation": 57.517592549324036,
+  "evaluation_limit": "Latest complete development evaluations use 32 episodes each and precede the final saved checkpoints. No final locked-test evaluation was run; these results do not establish convergence or statistical insignificance.",
+  "lanes": [
+    {
+      "gpu": 0,
+      "arm": "ppo",
+      "status": "stopped",
+      "reserved_hours": 1.9863374175628026,
+      "stopped_shanghai": "2026-11-02T17:28:05.978008+08:00",
+      "evaluation_cycle": 4,
+      "evaluated_checkpoint_sha256": "67ff7aa5c67df9e3d7910381000bc73cecd8b4838b0a7aaa6d872f55f1dc139d",
+      "episodes": 32,
+      "mean_return": 1073.5225353240967,
+      "return_delta_pct": -0.24380508002440626,
+      "rotation_radians": 56.53783369064331,
+      "failures": 0,
+      "latest_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu0/cycle-0007/ppo/last.pt",
+      "latest_checkpoint_counters": {
+        "ppo_state": {
+          "epoch": 112,
+          "physical_frames": 2056192,
+          "actor_steps": 2008,
+          "critic_steps": 2008
+        }
+      },
+      "best_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt",
+      "best_prediction_score": null,
+      "latest_prediction": null,
+      "prediction_improvement_pct": null
+    },
+    {
+      "gpu": 1,
+      "arm": "dynamics",
+      "status": "stopped",
+      "reserved_hours": 1.9850359357727898,
+      "stopped_shanghai": "2026-11-02T17:28:01.319295+08:00",
+      "evaluation_cycle": 2,
+      "evaluated_checkpoint_sha256": "9271b50ea8743eae5749fe321a8ac0e1a051516375e9b9d21362f058da6e6692",
+      "episodes": 32,
+      "mean_return": 1064.9547939300537,
+      "return_delta_pct": -1.0399553725472077,
+      "rotation_radians": 57.63865780830383,
+      "failures": 0,
+      "latest_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu1/cycle-0004/dynamics/last.pt",
+      "latest_checkpoint_counters": {
+        "dynamics_state": {
+          "step": 800
+        }
+      },
+      "best_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu1/best-policy.pt",
+      "best_prediction_score": 2.5995774198754775,
+      "latest_prediction": {
+        "kind": "prediction",
+        "cycle": 3,
+        "unix": 1793611004.0587275,
+        "passed": true,
+        "h1_reward_rmse": 2.4098639488220215,
+        "h1_joint_rmse": 0.09380079060792923,
+        "h4_reward_rmse": 2.423323392868042,
+        "h4_joint_rmse": 0.10352099686861038
+      },
+      "prediction_improvement_pct": {
+        "reward_rmse": 0.21165919247291276,
+        "joint_rmse": 0.49343802622497934
+      }
+    },
+    {
+      "gpu": 2,
+      "arm": "ppo",
+      "status": "stopped",
+      "reserved_hours": 1.9855972828467687,
+      "stopped_shanghai": "2026-11-02T17:28:03.374714+08:00",
+      "evaluation_cycle": 4,
+      "evaluated_checkpoint_sha256": "93d7a7f25e0b421a379cd71dcc19f7003abf706786c0b75ffa354de264ba1d12",
+      "episodes": 32,
+      "mean_return": 1058.247049331665,
+      "return_delta_pct": -1.6632669990965798,
+      "rotation_radians": 55.719892382621765,
+      "failures": 0,
+      "latest_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu2/cycle-0007/ppo/last.pt",
+      "latest_checkpoint_counters": {
+        "ppo_state": {
+          "epoch": 112,
+          "physical_frames": 2023424,
+          "actor_steps": 1976,
+          "critic_steps": 1976
+        }
+      },
+      "best_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt",
+      "best_prediction_score": null,
+      "latest_prediction": null,
+      "prediction_improvement_pct": null
+    },
+    {
+      "gpu": 3,
+      "arm": "dynamics",
+      "status": "stopped",
+      "reserved_hours": 1.9850372108485963,
+      "stopped_shanghai": "2026-11-02T17:28:01.370479+08:00",
+      "evaluation_cycle": 2,
+      "evaluated_checkpoint_sha256": "a102401f30a58e294469cb36bd3c03fc4a54bb5bbe942b4a633f25cad4ea1138",
+      "episodes": 32,
+      "mean_return": 1047.9989624023438,
+      "return_delta_pct": -2.615562012605166,
+      "rotation_radians": 56.381017088890076,
+      "failures": 0,
+      "latest_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/cycle-0004/dynamics/last.pt",
+      "latest_checkpoint_counters": {
+        "dynamics_state": {
+          "step": 751
+        }
+      },
+      "best_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/gpu3/best-policy.pt",
+      "best_prediction_score": 2.6010447137014543,
+      "latest_prediction": {
+        "kind": "prediction",
+        "cycle": 3,
+        "unix": 1793611242.3106108,
+        "passed": true,
+        "h1_reward_rmse": 2.40942120552063,
+        "h1_joint_rmse": 0.0939636379480362,
+        "h4_reward_rmse": 2.4237937927246094,
+        "h4_joint_rmse": 0.103331059217453
+      },
+      "prediction_improvement_pct": {
+        "reward_rmse": 0.19228892544990162,
+        "joint_rmse": 0.6760100959282145
+      }
+    }
+  ],
+  "prior_gpu_hours": 6.0589600057734385,
+  "run_gpu_hours": 7.942007847030958,
+  "consumed_gpu_hours": 14.000967852804397,
+  "remaining_of_48_gpu_hours": 33.99903214719561,
+  "checkpoint_count": 9,
+  "checkpoint_finite": true,
+  "original_checkpoint_unchanged": true,
+  "supervisor_states": [
+    "stopped",
+    "stopped",
+    "stopped",
+    "stopped"
+  ],
+  "source_manifest_unchanged": true,
+  "process_evidence": "work/runs/adaptation-20261102-v1/closure/process-verification.json",
+  "checkpoint_evidence": "work/runs/adaptation-20261102-v1/closure/checkpoint-verification.json",
+  "do_not_resume_without_new_user_direction": true,
+  "source_manifest_unchanged_scope": "workspace at initial stop/checkpoint validation",
+  "post_stop_source_check": {
+    "checked_unix": 1793613053.5106125,
+    "source_check_at_stop_unix": 1793611931.5549152,
+    "frozen_launch_snapshot_files": 33,
+    "frozen_launch_snapshot_mismatches": [],
+    "post_stop_workspace_changes": [
+      {
+        "path": "scripts/env.sh",
+        "launch_sha256": "f39055778323382c14087232a749ac9c3c8d704035a1f978325d40634392fe11",
+        "workspace_sha256": "da9aeecb5f102abe7c6191a359a57b77346dd02c0b905c8f3a56c2a8b7c6cbcf",
+        "mtime_unix": 1793612689.6359775
+      }
+    ],
+    "handling": "Preserved separate workspace W&B configuration changes; no training-source edits by this task and no stopped job resumed."
+  }
+}

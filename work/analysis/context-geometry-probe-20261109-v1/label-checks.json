@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "source_sha256": "9bc2e2de63824b85f8110b3364917b3c3fd482341ba71b0c19bb6ad221ec7bd3",
+  "finite": true,
+  "max_abs_position": 0.08878268301486969,
+  "max_orthogonality_error": 3.8743019104003906e-07,
+  "max_unit_error": 5.364418029785156e-07
+}

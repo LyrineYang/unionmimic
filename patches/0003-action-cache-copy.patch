@@ -1,0 +1,9 @@
+diff --git a/isaacgymenvs/utils/world_model.py b/isaacgymenvs/utils/world_model.py
+--- a/isaacgymenvs/utils/world_model.py
++++ b/isaacgymenvs/utils/world_model.py
+@@ -230,3 +230,4 @@
+     def cache_prev_action(self, actions: torch.Tensor) -> None:
+-        self._wm_prev_action = actions.detach().to(self.device, non_blocking=True)
++        # RSSM.obs_step masks reset rows in place; never mutate actuator actions.
++        self._wm_prev_action = actions.detach().to(self.device, non_blocking=True).clone()
+ 

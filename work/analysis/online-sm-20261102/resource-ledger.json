@@ -1,0 +1,106 @@
+{
+  "original_gpu_hours": 48,
+  "prior_gpu_hours": 14.000967852804397,
+  "this_task_gpu_hours": 0.9428926546043822,
+  "consumed_gpu_hours": 14.943860507408779,
+  "remaining_gpu_hours": 33.05613949259122,
+  "consumed_per_gpu_hours": {
+    "0": 3.625081415242619,
+    "1": 4.329634035891956,
+    "2": 3.6618668085336687,
+    "3": 3.3272782477405336
+  },
+  "charges": [
+    {
+      "run": "work/runs/online-sm-20261102-probe01",
+      "gpu": 1,
+      "gpu_hours": 0.025099624991416932,
+      "status": "failed"
+    },
+    {
+      "run": "work/runs/online-sm-20261102-probe02",
+      "gpu": 1,
+      "gpu_hours": 0.0163246089220047,
+      "status": "segment_complete"
+    },
+    {
+      "run": "work/runs/online-ppo-20261102-pilot-v1",
+      "gpu": 3,
+      "gpu_hours": 0.014911024305555555,
+      "status": "failed"
+    },
+    {
+      "run": "work/runs/online-sm-20261102-pilot-v1",
+      "gpu": 1,
+      "gpu_hours": 0.3478166564967897,
+      "status": "segment_complete"
+    },
+    {
+      "run": "work/runs/online-ppo-20261102-pilot-v2",
+      "gpu": 0,
+      "gpu_hours": 0.3204070211119122,
+      "status": "segment_complete"
+    },
+    {
+      "run": "work/runs/online-sm-20261102-probe-v2",
+      "gpu": 2,
+      "gpu_hours": 0.016295055084758335,
+      "status": "segment_complete"
+    },
+    {
+      "run": "work/runs/online-study-20261102/boundary-check",
+      "gpu": 1,
+      "gpu_hours": 0.007357793781492445,
+      "status": "completed"
+    },
+    {
+      "run": "work/runs/online-study-20261102/eval-initial",
+      "gpu": 2,
+      "gpu_hours": 0.017947544720437792,
+      "status": "completed"
+    },
+    {
+      "run": "work/runs/online-study-20261102/eval-initial-v2",
+      "gpu": 1,
+      "gpu_hours": 0.01798566381136576,
+      "status": "completed"
+    },
+    {
+      "run": "work/runs/online-study-20261102/eval-ppo",
+      "gpu": 2,
+      "gpu_hours": 0.03564785553349389,
+      "status": "completed"
+    },
+    {
+      "run": "work/runs/online-study-20261102/eval-ppo-v2",
+      "gpu": 1,
+      "gpu_hours": 0.0156724794043435,
+      "status": "completed"
+    },
+    {
+      "run": "work/runs/online-study-20261102/eval-sm",
+      "gpu": 1,
+      "gpu_hours": 0.018484495414627922,
+      "status": "completed"
+    },
+    {
+      "run": "work/runs/online-study-20261102/eval-sm-v2",
+      "gpu": 1,
+      "gpu_hours": 0.017805504269070096,
+      "status": "completed"
+    },
+    {
+      "run": "work/runs/online-study-20261102/reference-94001",
+      "gpu": 1,
+      "gpu_hours": 0.03550806548860338,
+      "status": "completed"
+    },
+    {
+      "run": "work/runs/online-study-20261102/reference-94002",
+      "gpu": 1,
+      "gpu_hours": 0.03562926126850976,
+      "status": "completed"
+    }
+  ],
+  "accounting": "Conservative occupied time, including gaps during pilot resume; all probes, failed starts, evaluation and cleanup counted. Network-only checks did not allocate GPUs."
+}

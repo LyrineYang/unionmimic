@@ -1,0 +1,78 @@
+[
+  {
+    "lane": "sm-seed92001",
+    "checkpoint": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/checkpoints/segment-03.pt",
+    "sha256": "d2000cfb60ce0258460b3a4e12c95487a00201e515b30cd56716ee1e9ddbf4e2",
+    "cycle": 2400,
+    "sampled_failure_fraction": 0.01171875,
+    "failure_probability_mean": 0.012517079710960388,
+    "failure_brier": 0.009127490222454071,
+    "failure_brier_constant": 0.0115814208984375,
+    "termination_bce_gradient_to_dynamics_norm": 0.2817324995994568,
+    "actor_abs_mean": 0.06551288813352585,
+    "actor_saturation_fraction": 0.0,
+    "prediction_on_fixed_heldout_windows": [
+      {
+        "horizon": 1,
+        "joint_rmse": 0.0061463965103030205,
+        "reward_rmse_raw": 0.12124837376177311,
+        "reward_constant_rmse_raw": 0.25369590148329735
+      },
+      {
+        "horizon": 4,
+        "joint_rmse": 0.014024479314684868,
+        "reward_rmse_raw": 0.14493210474029183,
+        "reward_constant_rmse_raw": 0.2704109763726592
+      },
+      {
+        "horizon": 8,
+        "joint_rmse": 0.018008608371019363,
+        "reward_rmse_raw": 0.14957556268200278,
+        "reward_constant_rmse_raw": 4.382538050413132
+      }
+    ],
+    "imagined_reward_sum": 0.018658384680747986,
+    "critic_bootstrap": 0.009725270792841911,
+    "reward_gradient_norm": 0.2893596887588501,
+    "bootstrap_gradient_norm": 0.1572302132844925,
+    "total_vs_reward_gradient_cosine": 0.8661189079284668
+  },
+  {
+    "lane": "sm-seed92002",
+    "checkpoint": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92002/checkpoints/segment-03.pt",
+    "sha256": "11f7a0f5e4f2b777817214a1743427d21e8162cc9351381126f6c7941b3dcddb",
+    "cycle": 2400,
+    "sampled_failure_fraction": 0.00390625,
+    "failure_probability_mean": 0.014968814328312874,
+    "failure_brier": 0.014549754559993744,
+    "failure_brier_constant": 0.0038909912109375,
+    "termination_bce_gradient_to_dynamics_norm": 0.40886151790618896,
+    "actor_abs_mean": 0.06968016177415848,
+    "actor_saturation_fraction": 0.0,
+    "prediction_on_fixed_heldout_windows": [
+      {
+        "horizon": 1,
+        "joint_rmse": 0.007836516946554184,
+        "reward_rmse_raw": 0.1500499085523188,
+        "reward_constant_rmse_raw": 0.2599836094304919
+      },
+      {
+        "horizon": 4,
+        "joint_rmse": 0.01776251755654812,
+        "reward_rmse_raw": 0.11817411286756396,
+        "reward_constant_rmse_raw": 0.25892124976962805
+      },
+      {
+        "horizon": 8,
+        "joint_rmse": 0.022028610110282898,
+        "reward_rmse_raw": 0.13861204497516155,
+        "reward_constant_rmse_raw": 6.20347335934639
+      }
+    ],
+    "imagined_reward_sum": 0.05125823989510536,
+    "critic_bootstrap": 0.06736457347869873,
+    "reward_gradient_norm": 0.23381546139717102,
+    "bootstrap_gradient_norm": 0.39609992504119873,
+    "total_vs_reward_gradient_cosine": 0.3993068337440491
+  }
+]

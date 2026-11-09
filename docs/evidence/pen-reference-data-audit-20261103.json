@@ -1,0 +1,482 @@
+{
+  "checked_at": "2026-11-03T21:40:16.307183+08:00",
+  "source_release": "v2026.10.22",
+  "archive_sha256": "3a2cc3362a2aec1df6db8ec1b4007174d2ccbf7595c968e33e2b542548d53654",
+  "clips": [
+    {
+      "group": "02_continuous_single_axis",
+      "clip": "clip_001",
+      "sha256": "041b5bb58400f0ca1ab4d0ecf54a6e9e39211b49fc7cc01f3489eebb378db4ab",
+      "frames": 960,
+      "seconds": 19.18,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.03979373723268509,
+      "object_translation_span_m": 0.05779043957591057,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          960,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          960,
+          7
+        ],
+        "reference_qpos": [
+          960,
+          20
+        ],
+        "wrist_pose_w": [
+          960,
+          7
+        ],
+        "link_pos_w": [
+          960,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "02_continuous_single_axis",
+      "clip": "clip_002",
+      "sha256": "a4f27add2002036efea25fe1854f731ce34a53e3eb84d6cdd4c580775423adba",
+      "frames": 658,
+      "seconds": 13.14,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.020533040165901184,
+      "object_translation_span_m": 0.06591026484966278,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          658,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          658,
+          7
+        ],
+        "reference_qpos": [
+          658,
+          20
+        ],
+        "wrist_pose_w": [
+          658,
+          7
+        ],
+        "link_pos_w": [
+          658,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "02_continuous_single_axis",
+      "clip": "clip_003",
+      "sha256": "5f9ef7d6b6a9f7abff1c487db682f84776e219b29976baef78c57a55f4141941",
+      "frames": 969,
+      "seconds": 19.36,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.02103355899453163,
+      "object_translation_span_m": 0.04852011427283287,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          969,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          969,
+          7
+        ],
+        "reference_qpos": [
+          969,
+          20
+        ],
+        "wrist_pose_w": [
+          969,
+          7
+        ],
+        "link_pos_w": [
+          969,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "02_continuous_single_axis",
+      "clip": "clip_004",
+      "sha256": "235b02f5b4549ca278777fd7d13de175861093c938534ebdcbe2b1fab62fbd7a",
+      "frames": 846,
+      "seconds": 16.9,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.015319845639169216,
+      "object_translation_span_m": 0.08071061968803406,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          846,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          846,
+          7
+        ],
+        "reference_qpos": [
+          846,
+          20
+        ],
+        "wrist_pose_w": [
+          846,
+          7
+        ],
+        "link_pos_w": [
+          846,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "03_continuous_multi_axis",
+      "clip": "clip_001",
+      "sha256": "85067746200234089cc3ab0d23866ac85656157240f0d675a7181265c9d70e7b",
+      "frames": 970,
+      "seconds": 19.38,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.024489179253578186,
+      "object_translation_span_m": 0.12334807217121124,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          970,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          970,
+          7
+        ],
+        "reference_qpos": [
+          970,
+          20
+        ],
+        "wrist_pose_w": [
+          970,
+          7
+        ],
+        "link_pos_w": [
+          970,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "03_continuous_multi_axis",
+      "clip": "clip_002",
+      "sha256": "0c88f015909647e6e55ae80f36d2936bdfed164f6893b78115f5265b57c7850f",
+      "frames": 767,
+      "seconds": 15.32,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.019105929881334305,
+      "object_translation_span_m": 0.09576848149299622,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          767,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          767,
+          7
+        ],
+        "reference_qpos": [
+          767,
+          20
+        ],
+        "wrist_pose_w": [
+          767,
+          7
+        ],
+        "link_pos_w": [
+          767,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "03_continuous_multi_axis",
+      "clip": "clip_003",
+      "sha256": "8f0a5e3f2f147b359e0d76d27192d460ed614a64896c2a08b2e8f8f1ff68c719",
+      "frames": 1054,
+      "seconds": 21.06,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.02481960505247116,
+      "object_translation_span_m": 0.08617361634969711,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          1054,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          1054,
+          7
+        ],
+        "reference_qpos": [
+          1054,
+          20
+        ],
+        "wrist_pose_w": [
+          1054,
+          7
+        ],
+        "link_pos_w": [
+          1054,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "03_continuous_multi_axis",
+      "clip": "clip_004",
+      "sha256": "ccb197e479e7c093009da50af196f99c5e9c16eb5a2186146adb0bc155fce128",
+      "frames": 1192,
+      "seconds": 23.82,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.023709839209914207,
+      "object_translation_span_m": 0.10331826657056808,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          1192,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          1192,
+          7
+        ],
+        "reference_qpos": [
+          1192,
+          20
+        ],
+        "wrist_pose_w": [
+          1192,
+          7
+        ],
+        "link_pos_w": [
+          1192,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "03_continuous_multi_axis",
+      "clip": "clip_005",
+      "sha256": "7d7082f5a09b7cd8c47a5b956b615bc589efd104a725b2e8184706110778fb24",
+      "frames": 960,
+      "seconds": 19.18,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.02136707864701748,
+      "object_translation_span_m": 0.1066158339381218,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          960,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          960,
+          7
+        ],
+        "reference_qpos": [
+          960,
+          20
+        ],
+        "wrist_pose_w": [
+          960,
+          7
+        ],
+        "link_pos_w": [
+          960,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "03_continuous_multi_axis",
+      "clip": "clip_006",
+      "sha256": "b458c29ca1b18e1efc78c0966c0a8c9d9d750b46d9818387ba1b0e51c8cf607f",
+      "frames": 973,
+      "seconds": 19.44,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.021142147481441498,
+      "object_translation_span_m": 0.13844114542007446,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          973,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          973,
+          7
+        ],
+        "reference_qpos": [
+          973,
+          20
+        ],
+        "wrist_pose_w": [
+          973,
+          7
+        ],
+        "link_pos_w": [
+          973,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "03_continuous_multi_axis",
+      "clip": "clip_007",
+      "sha256": "43ad6c4375effbee679c115172622327aa33665a8076dd6b091eb1802b1c0169",
+      "frames": 1016,
+      "seconds": 20.3,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.025191884487867355,
+      "object_translation_span_m": 0.10146577656269073,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          1016,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          1016,
+          7
+        ],
+        "reference_qpos": [
+          1016,
+          20
+        ],
+        "wrist_pose_w": [
+          1016,
+          7
+        ],
+        "link_pos_w": [
+          1016,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "03_continuous_multi_axis",
+      "clip": "clip_008",
+      "sha256": "cc645e0bf05fb427d773d9481f5c2e937a8191767472e580610545132b4504b1",
+      "frames": 996,
+      "seconds": 19.900000000000002,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.08214428275823593,
+      "object_translation_span_m": 0.1263154000043869,
+      "object_quaternion_norm_max_error": 5.960464477539063e-08,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          996,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          996,
+          7
+        ],
+        "reference_qpos": [
+          996,
+          20
+        ],
+        "wrist_pose_w": [
+          996,
+          7
+        ],
+        "link_pos_w": [
+          996,
+          21,
+          3
+        ]
+      }
+    },
+    {
+      "group": "03_continuous_multi_axis",
+      "clip": "clip_009",
+      "sha256": "9f7291679f85c94ddf341093363e5d25d9363714f7ef3612b55aa0244807fc80",
+      "frames": 990,
+      "seconds": 19.78,
+      "frame_dt": 0.02,
+      "reference_joints": 20,
+      "wrist_translation_span_m": 0.07963241636753082,
+      "object_translation_span_m": 0.1249287873506546,
+      "object_quaternion_norm_max_error": 1.1920928955078125e-07,
+      "arrays": {
+        "mediapipe_landmarks_w": [
+          990,
+          21,
+          3
+        ],
+        "object_pose_w": [
+          990,
+          7
+        ],
+        "reference_qpos": [
+          990,
+          20
+        ],
+        "wrist_pose_w": [
+          990,
+          7
+        ],
+        "link_pos_w": [
+          990,
+          21,
+          3
+        ]
+      }
+    }
+  ],
+  "all_hashes_valid": true,
+  "all_arrays_finite": true,
+  "sharpa_retargeted": false,
+  "physics_replay_verified": false,
+  "source_recording_independence": "not established by catalog",
+  "total_frames": 12351,
+  "total_seconds": 246.76000000000002
+}

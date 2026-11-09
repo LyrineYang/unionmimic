@@ -1,0 +1,32 @@
+{
+  "run": "work/runs/pen-comparison-24h-20261109-v1",
+  "retarget": "work/motions/sharpa-pen-phase-calibrated-20261109-v1",
+  "maximum_window_hours": 24,
+  "preflight_included_in_window": true,
+  "new_authorization_required": false,
+  "lanes": [
+    {
+      "gpu": 0,
+      "algorithm": "sm",
+      "task_set": "all"
+    },
+    {
+      "gpu": 1,
+      "algorithm": "ppo",
+      "task_set": "all"
+    },
+    {
+      "gpu": 2,
+      "algorithm": "sm",
+      "task_set": "reference"
+    },
+    {
+      "gpu": 3,
+      "algorithm": "ppo",
+      "task_set": "reference"
+    }
+  ],
+  "long_training_promotion": "held-out contact, whole-duration midpoint reset, four full-scale operator/recollection checks and evaluation smoke must all pass",
+  "automatic_retry": false,
+  "wandb": false
+}

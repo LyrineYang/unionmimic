@@ -1,0 +1,29 @@
+{
+  "S0": {
+    "before_seconds": 4.562229871749878,
+    "during_seconds": 5.069917917251587,
+    "samples": 7,
+    "after_seconds": 4.621119737625122,
+    "bench_seconds": 44.35531449317932,
+    "gpu": 1,
+    "slowdown_ratio": 1.1112806806700823
+  },
+  "S1": {
+    "before_seconds": 4.093765616416931,
+    "during_seconds": 4.175660252571106,
+    "samples": 10,
+    "after_seconds": 4.06605863571167,
+    "bench_seconds": 49.85975193977356,
+    "gpu": 2,
+    "slowdown_ratio": 1.0200047203058618
+  },
+  "S6": {
+    "before_seconds": 4.5983991622924805,
+    "during_seconds": 5.01511824131012,
+    "samples": 8,
+    "after_seconds": 4.627807259559631,
+    "bench_seconds": 43.653146743774414,
+    "gpu": 3,
+    "slowdown_ratio": 1.0906226415563909
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt",
+  "immutable_inputs": [
+    {
+      "path": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/calibrated/best.pt",
+      "sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05"
+    }
+  ],
+  "source_sha256": {
+    "unionmimic/dynamics_fit.py": "749e572fb4196f9b4c9c98c3feea02dc3205a5715682973f94dafa60737e871a",
+    "unionmimic/common.py": "12115b32b321ed3e8c1fba2bace4a338f903a7e7afe27b88043dd070c444553d",
+    "unionmimic/runtime.py": "533a619e871d550e23ff506df7960c63dfe5ce14dadc08d2f81595881ed2c36a",
+    "unionmimic/models.py": "7c7c2bd9822aefe6a77eecabf60419771d708029271dd5085a139a37d56e5f10",
+    "unionmimic/review_gate.py": "91bacbd0aac947baab38a41d18860281238e585ed4c6e0a345e534c50d4ccdf5",
+    "scripts/train_dynamics_segment.py": "583c68dae3f1f4650cef5a3105ddcf64addb7fbadc3086328c73c2d096cee86f"
+  },
+  "dynamics": {
+    "lr": 1e-05,
+    "batch": 8,
+    "feature_drift_coefficient": 0.1
+  }
+}

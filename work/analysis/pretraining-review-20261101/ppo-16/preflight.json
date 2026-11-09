@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "mode": "forward_backward_without_optimizer_step",
+  "gpu": 0,
+  "gpu_name": "Tesla V100-SXM2-32GB",
+  "compute_capability": [
+    7,
+    0
+  ],
+  "torch_version": "2.1.0+cu118",
+  "cuda_version": "11.8",
+  "precision": "float32",
+  "envs": 16,
+  "checkpoint_sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05",
+  "policy_parity_max_error": 0.0,
+  "optimizer_steps": 0,
+  "weights_and_normalization_unchanged": true,
+  "startup_seconds": 20.693328013643622,
+  "sampled_control_transitions": 1024,
+  "valid_transitions": 1024,
+  "excluded_reset_transitions": 0,
+  "rollout_seconds": 13.571705042384565,
+  "rollout_transitions_per_second": 75.45109452364593,
+  "backward_batch": 1024,
+  "backward_seconds": 0.05396963469684124,
+  "actor_loss": -1.7136335372924805e-07,
+  "critic_loss": 0.03299063816666603,
+  "actor_grad_norm": 22.25784683227539,
+  "pytorch_peak_allocated_mib": 349.4443359375,
+  "gravity_cone_max_degrees": 1.0,
+  "limitations": [
+    "No optimizer update, learning-speed or time-to-target measured.",
+    "PyTorch peak excludes native PhysX/Vulkan allocations."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "wandb": "0.22.3",
+  "python": "/home/junqiy/projects/unionmimic/.venv/bin/python",
+  "synthetic_86_character_key": "accepted and round-tripped through isolated temporary netrc",
+  "real_credentials_used": false,
+  "offline_steps": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "data_file": "/home/junqiy/projects/unionmimic/work/logs/wandb-key-fix-20261102/wandb/offline-run-20261102_100809-c5p65vbg/run-c5p65vbg.wandb",
+  "online_sync": "awaiting_verification",
+  "changed_packages": {
+    "wandb": [
+      "0.17.9",
+      "0.22.3"
+    ]
+  },
+  "added_packages": {
+    "annotated-types": "0.7.0",
+    "eval-type-backport": "0.4.0",
+    "pydantic": "2.10.6",
+    "pydantic-core": "2.27.2",
+    "pysocks": "1.7.1"
+  },
+  "pip_check": "passed",
+  "cli_version": "0.22.3"
+}

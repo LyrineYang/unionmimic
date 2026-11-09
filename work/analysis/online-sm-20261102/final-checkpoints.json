@@ -1,0 +1,32 @@
+[
+  {
+    "run": "online-sm-20261102-pilot-v1",
+    "checkpoint_sha256": "6ca3afc58997ef52aba4e673f729f65327e51440edf537086d5d636126cbb560",
+    "finite_tensors": 229,
+    "counts": {
+      "model": 1700,
+      "actor": 150,
+      "critic": 3000,
+      "cycles": 150
+    },
+    "replay_steps": 1328,
+    "frames": 84992,
+    "source_snapshot_verified": true,
+    "resume_verified": true
+  },
+  {
+    "run": "online-ppo-20261102-pilot-v2",
+    "checkpoint_sha256": "5d336e1735a9201937bf4c10cbfa88603bcc4ec564cb37f83d9bf03467fbb828",
+    "finite_tensors": 160,
+    "counts": {
+      "model": 0,
+      "actor": 1440,
+      "critic": 1440,
+      "cycles": 90
+    },
+    "replay_steps": 3008,
+    "frames": 192512,
+    "source_snapshot_verified": true,
+    "resume_verified": true
+  }
+]

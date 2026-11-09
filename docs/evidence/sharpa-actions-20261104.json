@@ -1,0 +1,147 @@
+{
+  "checked_unix": 1793759189.157623,
+  "sm_status": {
+    "status": "running",
+    "phase": "long_training",
+    "pid": 44726,
+    "gpu": 2,
+    "updated_unix": 1793759185.1396468,
+    "started_unix": 1793721214.4259481,
+    "deadline_unix": 1793764414.4259481,
+    "updates": 4420,
+    "actor_updates": 4120,
+    "model_updates": 44200,
+    "critic_optimizer_steps": 82400,
+    "valid_rows": 45390890
+  },
+  "sm_sources_changed": [],
+  "ppo_pilot": {
+    "passed": true,
+    "learning_gain_verified": false,
+    "iterations": 5,
+    "optimizer_steps": 100,
+    "recollected_policy_iterations": 4,
+    "reward_max_error": 5.0067901611328125e-06,
+    "seconds": 269.65571999549866,
+    "peak_allocated_gib": 2.3590526580810547
+  },
+  "ppo_runner_check": {
+    "passed": true,
+    "learning_gain_verified": false,
+    "iterations": 2,
+    "optimizer_steps": 40,
+    "recollected_policy_iterations": 1,
+    "reward_max_error": 5.0067901611328125e-06,
+    "seconds": 170.9302659034729,
+    "peak_allocated_gib": 2.36641263961792
+  },
+  "ppo_pilot_evaluation": {
+    "passed": true,
+    "episodes": 512,
+    "seed": 20261105,
+    "protocol": "First completed valid policy episode per env, no survivor filtering",
+    "mean_return": -17.875598907470703,
+    "mean_rotation_rad": 0.04959695041179657,
+    "failure_rate": 1.0,
+    "mean_axis_deviation_rad": 0.375390887260437,
+    "reward_max_error": 3.814697265625e-06,
+    "seconds": 92.12904715538025,
+    "checkpoint_sha256": "60f999974aec914c0892fe2e8e607e5ad60673cbbc86377cab1ea70d99253eb1"
+  },
+  "reference_clips": [
+    {
+      "id": "02_continuous_single_axis/clip_001",
+      "frames": 960,
+      "seconds": 19.18,
+      "sha256": "041b5bb58400f0ca1ab4d0ecf54a6e9e39211b49fc7cc01f3489eebb378db4ab"
+    },
+    {
+      "id": "02_continuous_single_axis/clip_002",
+      "frames": 658,
+      "seconds": 13.14,
+      "sha256": "a4f27add2002036efea25fe1854f731ce34a53e3eb84d6cdd4c580775423adba"
+    },
+    {
+      "id": "02_continuous_single_axis/clip_003",
+      "frames": 969,
+      "seconds": 19.36,
+      "sha256": "5f9ef7d6b6a9f7abff1c487db682f84776e219b29976baef78c57a55f4141941"
+    },
+    {
+      "id": "02_continuous_single_axis/clip_004",
+      "frames": 846,
+      "seconds": 16.9,
+      "sha256": "235b02f5b4549ca278777fd7d13de175861093c938534ebdcbe2b1fab62fbd7a"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_001",
+      "frames": 970,
+      "seconds": 19.38,
+      "sha256": "85067746200234089cc3ab0d23866ac85656157240f0d675a7181265c9d70e7b"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_002",
+      "frames": 767,
+      "seconds": 15.32,
+      "sha256": "0c88f015909647e6e55ae80f36d2936bdfed164f6893b78115f5265b57c7850f"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_003",
+      "frames": 1054,
+      "seconds": 21.06,
+      "sha256": "8f0a5e3f2f147b359e0d76d27192d460ed614a64896c2a08b2e8f8f1ff68c719"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_004",
+      "frames": 1192,
+      "seconds": 23.82,
+      "sha256": "ccb197e479e7c093009da50af196f99c5e9c16eb5a2186146adb0bc155fce128"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_005",
+      "frames": 960,
+      "seconds": 19.18,
+      "sha256": "7d7082f5a09b7cd8c47a5b956b615bc589efd104a725b2e8184706110778fb24"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_006",
+      "frames": 973,
+      "seconds": 19.44,
+      "sha256": "b458c29ca1b18e1efc78c0966c0a8c9d9d750b46d9818387ba1b0e51c8cf607f"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_007",
+      "frames": 1016,
+      "seconds": 20.3,
+      "sha256": "43ad6c4375effbee679c115172622327aa33665a8076dd6b091eb1802b1c0169"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_008",
+      "frames": 996,
+      "seconds": 19.900000000000002,
+      "sha256": "cc645e0bf05fb427d773d9481f5c2e937a8191767472e580610545132b4504b1"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_009",
+      "frames": 990,
+      "seconds": 19.78,
+      "sha256": "9f7291679f85c94ddf341093363e5d25d9363714f7ef3612b55aa0244807fc80"
+    }
+  ],
+  "reference_targets_implemented": true,
+  "reference_physics_adapter_complete": false,
+  "sharpa_joint_retarget_complete": false,
+  "tests": {
+    "paired_ppo": 3,
+    "motions": 5,
+    "passed": true
+  },
+  "new_long_training_started": false,
+  "sources": {
+    "unionmimic/motions.py": "4783b64118721825a7e2904035f3a6bf7f4c982a32aea72772c1f20e3b6f125a",
+    "unionmimic/leap_sharpa/paired_ppo.py": "77b1c35de3fa97169e456f36befd323bd5a169e96741bd38cafe7d1f0e00b7a2",
+    "scripts/pilot_sharpa_ppo.py": "1af64421cfcecddbeb1407b0df4cb94a0268131e10fe3c9b2ac4d5091d9a5f65",
+    "scripts/record_sharpa_leap.py": "ecac950c503f61b1831568ba49d23a623437c3d773e8987e14e0779460212422",
+    "scripts/preview_reference_motions.py": "fb4146cba16d453615e764a7eb334df1026ee5e80a6d8afc0c354883f3f301a1"
+  }
+}

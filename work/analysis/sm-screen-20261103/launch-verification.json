@@ -1,0 +1,94 @@
+{
+  "checked_unix": 1793704028.8380136,
+  "lanes": {
+    "gpu1": {
+      "status": "running",
+      "phase": "train",
+      "arm": "S0",
+      "gpu": 1,
+      "pid": 19014,
+      "segment": 0,
+      "started_unix": 1793703911.9110384,
+      "updated_unix": 1793703913.0436738,
+      "deadline_unix": 1793708712.508419,
+      "completed": []
+    },
+    "gpu2": {
+      "status": "running",
+      "phase": "train",
+      "arm": "S1",
+      "gpu": 2,
+      "pid": 19019,
+      "segment": 0,
+      "started_unix": 1793703911.9343472,
+      "updated_unix": 1793703913.0634627,
+      "deadline_unix": 1793708712.5283546,
+      "completed": []
+    },
+    "gpu3": {
+      "status": "running",
+      "phase": "train",
+      "arm": "S6",
+      "gpu": 3,
+      "pid": 19024,
+      "segment": 0,
+      "started_unix": 1793703911.9647396,
+      "updated_unix": 1793703913.0965612,
+      "deadline_unix": 1793708712.5594232,
+      "completed": []
+    }
+  },
+  "workers": {
+    "S0": {
+      "status": "running",
+      "phase": "update",
+      "pid": 19058,
+      "gpu": 1,
+      "arm": "sm",
+      "updated_unix": 1793704025.963288,
+      "started_unix": 1793703920.881461,
+      "deadline_unix": 1793708712.508419,
+      "counts": {
+        "model": 51120,
+        "actor": 4812,
+        "critic": 96240,
+        "cycles": 4812
+      },
+      "frames": 2626048
+    },
+    "S1": {
+      "status": "running",
+      "phase": "update",
+      "pid": 19059,
+      "gpu": 2,
+      "arm": "sm",
+      "updated_unix": 1793704026.894594,
+      "started_unix": 1793703920.8782313,
+      "deadline_unix": 1793708712.5283546,
+      "counts": {
+        "model": 51140,
+        "actor": 4814,
+        "critic": 96280,
+        "cycles": 4814
+      },
+      "frames": 2621760
+    },
+    "S6": {
+      "status": "running",
+      "phase": "collect",
+      "pid": 19060,
+      "gpu": 3,
+      "arm": "sm",
+      "updated_unix": 1793704027.5350246,
+      "started_unix": 1793703920.82908,
+      "deadline_unix": 1793708712.5594232,
+      "counts": {
+        "model": 51130,
+        "actor": 4813,
+        "critic": 96260,
+        "cycles": 4813
+      },
+      "frames": 2626048
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "video": "/home/junqiy/projects/unionmimic/work/demos/unionmimic-showcase-20261109/showcase.mp4",
+  "clips": [
+    {
+      "source": "/home/junqiy/projects/unionmimic/work/demos/sharpa-leap-z-20261104-v2/demo.mp4",
+      "start_s": 0,
+      "duration_s": 8.0,
+      "playback_speed": 1,
+      "label": "Trained policy / historical diagnostic task"
+    },
+    {
+      "source": "/home/junqiy/projects/unionmimic/work/demos/wuji-mesh-showcase-20261109-v1/02_continuous_single_axis.mp4",
+      "start_s": 0,
+      "duration_s": 8.0,
+      "playback_speed": 1,
+      "label": "Kinematic reference playback / no learned policy"
+    },
+    {
+      "source": "/home/junqiy/projects/unionmimic/work/demos/wuji-mesh-showcase-20261109-v1/03_continuous_multi_axis.mp4",
+      "start_s": 0,
+      "duration_s": 8.0,
+      "playback_speed": 1,
+      "label": "Kinematic reference playback / no learned policy"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "started_unix": 1793762687.5788443,
+  "cli": {
+    "gpu": 0,
+    "envs": 52,
+    "out": "work/analysis/pen-contact16-20261104-v2",
+    "retarget": "/home/junqiy/projects/unionmimic/work/motions/sharpa-pen-contact16-20261104-v2"
+  },
+  "sources": {
+    "scripts/check_pen_physics.py": "bf78b59e968cd0212322ce28962403d373058b7a63db19a2720d98eb6065bc2d",
+    "unionmimic/pen_simulator.py": "ef73790f467e564615a72cb530b45db37e77696007760bc9caf43b74098773e9",
+    "unionmimic/pen_tasks.py": "f377e89d8c8e0f0e0958fe1ea9bbd1cf5e1223856052d232363910eea8c6d930",
+    "unionmimic/pen_camera.py": "dcacbbeacda9305f292a0131625aee8572a8476dfddb11427a0624292e237801",
+    "unionmimic/hand_kinematics.py": "301dfa3bf6cdfb79efa6b9e1e7cc14257cac6990dc3e0b3b5ed9eb0cbadf1873",
+    "assets/reference_pen/pen.urdf": "65b4eb4d7937f1967f011e85480d50a18d532626fceccad999a316c440d98675"
+  }
+}

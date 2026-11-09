@@ -1,0 +1,211 @@
+{
+  "checked_unix": 1793630864.971762,
+  "status": "four_lanes_running",
+  "plan": "config/online-sm-long-20261102-12h.plan.json",
+  "plan_sha256": "201d204db2d2914ed774f1d305f7df2030d87ebe79318ed3fcc9e68ef92a8b7e",
+  "source_hashes_match": {
+    "unionmimic/online/learner.py": true,
+    "unionmimic/online/tracking.py": true,
+    "unionmimic/online/__init__.py": true,
+    "unionmimic/online/task.py": true,
+    "unionmimic/online/simulator.py": true,
+    "unionmimic/online/core.py": true,
+    "unionmimic/online/worker.py": true,
+    "scripts/train_online.py": true,
+    "scripts/evaluate_online.py": true,
+    "scripts/online_long_lane.py": true,
+    "scripts/launch_online_long.py": true,
+    "scripts/finalize_online_long.py": true,
+    "scripts/env.sh": true,
+    "scripts/check_runtime.py": true,
+    "config/runtime-lock.json": true,
+    "config/wandb.env": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_rotation.py": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_camera_rotation.py": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/base/vec_task.py": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/utils/spin_reward_utils.py": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/task/WMCraftnetRotation.yaml": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/train/WMCraftnetPPO.yaml": true,
+    "work/upstreams/WM-Craftnet/rl_games/common/common_losses.py": true,
+    "work/upstreams/WM-Craftnet/rl_games/common/schedulers.py": true,
+    "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py": true
+  },
+  "lanes": [
+    {
+      "name": "sm-seed92001",
+      "gpu": 0,
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619331.9851978,
+        "deadline_unix": 1793662531.9851978,
+        "training_deadline_unix": 1793660731.9851978,
+        "gpu": 0,
+        "arm": "sm-seed92001",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "state": {
+        "status": "running",
+        "phase": "train",
+        "pid": 52688,
+        "segment": 3,
+        "started_unix": 1793619331.9851978,
+        "deadline_unix": 1793662531.9851978,
+        "training_deadline_unix": 1793660731.9851978,
+        "updated_unix": 1793628435.627264
+      },
+      "worker": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 11474,
+        "gpu": 0,
+        "arm": "sm",
+        "updated_unix": 1793630863.7106063,
+        "started_unix": 1793619339.5465202,
+        "deadline_unix": 1793660731.9851978,
+        "counts": {
+          "model": 23210,
+          "actor": 2301,
+          "critic": 46020,
+          "cycles": 2301
+        },
+        "frames": 1186304
+      },
+      "process_alive": true
+    },
+    {
+      "name": "sm-seed92002",
+      "gpu": 1,
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619331.9727345,
+        "deadline_unix": 1793662531.9727345,
+        "training_deadline_unix": 1793660731.9727345,
+        "gpu": 1,
+        "arm": "sm-seed92002",
+        "algorithm": "sm",
+        "seed": 92002,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "state": {
+        "status": "running",
+        "phase": "train",
+        "pid": 52693,
+        "segment": 3,
+        "started_unix": 1793619331.9727345,
+        "deadline_unix": 1793662531.9727345,
+        "training_deadline_unix": 1793660731.9727345,
+        "updated_unix": 1793628487.4723618
+      },
+      "worker": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 11995,
+        "gpu": 1,
+        "arm": "sm",
+        "updated_unix": 1793630863.6716454,
+        "started_unix": 1793619339.5354843,
+        "deadline_unix": 1793660731.9727345,
+        "counts": {
+          "model": 23280,
+          "actor": 2308,
+          "critic": 46160,
+          "cycles": 2308
+        },
+        "frames": 1189888
+      },
+      "process_alive": true
+    },
+    {
+      "name": "ppo-seed92001",
+      "gpu": 2,
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619332.01499,
+        "deadline_unix": 1793662532.01499,
+        "training_deadline_unix": 1793660732.01499,
+        "gpu": 2,
+        "arm": "ppo-seed92001",
+        "algorithm": "ppo",
+        "seed": 92001,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "state": {
+        "status": "running",
+        "phase": "train",
+        "pid": 52698,
+        "segment": 3,
+        "started_unix": 1793619332.01499,
+        "deadline_unix": 1793662532.01499,
+        "training_deadline_unix": 1793660732.01499,
+        "updated_unix": 1793628188.1646452
+      },
+      "worker": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 9738,
+        "gpu": 2,
+        "arm": "ppo",
+        "updated_unix": 1793630861.8649807,
+        "started_unix": 1793619339.693361,
+        "deadline_unix": 1793660732.01499,
+        "counts": {
+          "model": 0,
+          "actor": 26864,
+          "critic": 26864,
+          "cycles": 1679
+        },
+        "frames": 3446784
+      },
+      "process_alive": true
+    },
+    {
+      "name": "ppo-seed92002",
+      "gpu": 3,
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619332.015506,
+        "deadline_unix": 1793662532.015506,
+        "training_deadline_unix": 1793660732.015506,
+        "gpu": 3,
+        "arm": "ppo-seed92002",
+        "algorithm": "ppo",
+        "seed": 92002,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "state": {
+        "status": "running",
+        "phase": "train",
+        "pid": 52705,
+        "segment": 3,
+        "started_unix": 1793619332.015506,
+        "deadline_unix": 1793662532.015506,
+        "training_deadline_unix": 1793660732.015506,
+        "updated_unix": 1793628905.8849547
+      },
+      "worker": {
+        "status": "running",
+        "phase": "collect",
+        "pid": 16980,
+        "gpu": 3,
+        "arm": "ppo",
+        "updated_unix": 1793630861.2935696,
+        "started_unix": 1793619339.5702145,
+        "deadline_unix": 1793660732.015506,
+        "counts": {
+          "model": 0,
+          "actor": 24448,
+          "critic": 24448,
+          "cycles": 1528
+        },
+        "frames": 3137536
+      },
+      "process_alive": true
+    }
+  ],
+  "gpu": "0, 4033 MiB, 54 %\n1, 4033 MiB, 51 %\n2, 3990 MiB, 56 %\n3, 3991 MiB, 54 %\n",
+  "acceptance": "13 tests and completed SM/PPO pilots; no pilot control gain. Current run result pending.",
+  "authorization": "Latest user instruction: use four idle GPUs for up to 12 hours each; old cumulative cap superseded.",
+  "watchdog_enabled": false
+}

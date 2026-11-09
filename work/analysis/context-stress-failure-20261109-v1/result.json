@@ -1,0 +1,117 @@
+{
+  "results": [
+    {
+      "variant": "history",
+      "metrics": [
+        {
+          "target": "failure_within_10",
+          "verified": true,
+          "alpha": 100.0,
+          "brier": 0.005432764836521832,
+          "positive": 10,
+          "total": 1833,
+          "prevalence": 0.005455537370430988,
+          "average_precision": 0.006591709859033744,
+          "auc": 0.5826659352715304,
+          "precision_top5": 0.0,
+          "recall_top5": 0.0
+        },
+        {
+          "target": "fall_within_10",
+          "verified": false,
+          "reason": "No positive/negative inner-label support"
+        }
+      ]
+    },
+    {
+      "variant": "history_wsm",
+      "metrics": [
+        {
+          "target": "failure_within_10",
+          "verified": true,
+          "alpha": 0.1,
+          "brier": 0.006456219120040907,
+          "positive": 10,
+          "total": 1833,
+          "prevalence": 0.005455537370430988,
+          "average_precision": 0.003746428029609077,
+          "auc": 0.24322545255074055,
+          "precision_top5": 0.0,
+          "recall_top5": 0.0
+        },
+        {
+          "target": "fall_within_10",
+          "verified": false,
+          "reason": "No positive/negative inner-label support"
+        }
+      ]
+    },
+    {
+      "variant": "history_shuffled",
+      "metrics": [
+        {
+          "target": "failure_within_10",
+          "verified": true,
+          "alpha": 0.001,
+          "brier": 0.006157123890263352,
+          "positive": 10,
+          "total": 1833,
+          "prevalence": 0.005455537370430988,
+          "average_precision": 0.004615848245603378,
+          "auc": 0.3905101481075151,
+          "precision_top5": 0.0,
+          "recall_top5": 0.0
+        },
+        {
+          "target": "fall_within_10",
+          "verified": false,
+          "reason": "No positive/negative inner-label support"
+        }
+      ]
+    }
+  ],
+  "source": "/home/junqiy/projects/unionmimic/work/analysis/sm-context-stress-20261109-v1",
+  "source_sha256": "4e59c21bf95b6bea5d21eebcba68aef34123fff0283eb1bbfe714c70e3897a92",
+  "seconds": 2.3557469844818115,
+  "split": {
+    "fit": [
+      0,
+      2,
+      6,
+      7,
+      8,
+      11,
+      12,
+      13,
+      15
+    ],
+    "inner": [
+      5,
+      9,
+      14,
+      17
+    ],
+    "outer": [
+      1,
+      3,
+      4,
+      10
+    ]
+  },
+  "positive": {
+    "fit": [
+      10.0,
+      0.0
+    ],
+    "inner": [
+      10.0,
+      0.0
+    ],
+    "outer": [
+      10.0,
+      0.0
+    ]
+  },
+  "protocol": "Linear ridge, regularization picked by inner episode AP, untouched outer episodes. Causal input only. Full ten-step windows or an earlier observed terminal failure; timeout-censored negatives excluded.",
+  "limits": "Exploratory stress-data diagnostic; correlated time rows, few episodes and one behavior seed; information not causal control benefit. Failure includes stall, fall is reported separately."
+}

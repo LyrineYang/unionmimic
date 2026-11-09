@@ -1,0 +1,99 @@
+{
+  "checked_unix": 1793702622.8485398,
+  "arms": {
+    "sm-detach": {
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach/best-by-development-return.pt",
+      "checkpoint_sha256": "3570e68f2a01881a02a0ee558ccc4c065aeb8bdb2a70d81fc20e87b044aae5e1",
+      "episodes_per_seed": 20,
+      "seeds": [
+        95001,
+        95002,
+        95003,
+        95004,
+        95005,
+        95006,
+        95007,
+        95008,
+        95009,
+        95010
+      ],
+      "selection": "first complete episode of every environment; no early-completion filtering",
+      "mean_return": 613.7450088739395,
+      "mean_rotation": 30.62541636094451,
+      "mean_axis_deviation": 0.20027971210956566,
+      "mean_offaxis": 36.75660714387894,
+      "failures": 12,
+      "seconds": 812.7500402927399,
+      "episodes": 200,
+      "source_hashes_checked": 15,
+      "checkpoint_finite": true,
+      "lane_status": "completed",
+      "counts": {
+        "model": 72200,
+        "actor": 7200,
+        "critic": 144000,
+        "cycles": 7200
+      },
+      "checkpoint_bytes": 121821862,
+      "total_gpu_hours": 11.735999590953192,
+      "development_selection": {
+        "mean_return": 678.9262826442719,
+        "mean_rotation": 35.27453556098044,
+        "failures": 2,
+        "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-11/evaluation.json",
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach/checkpoints/segment-11.pt"
+      },
+      "full_plan_hashes_checked": 35,
+      "milestone_50_percent": false,
+      "milestone_80_percent": false,
+      "finite_episode_metrics_and_parity_passed": true
+    },
+    "sm-detach-warm": {
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/best-by-development-return.pt",
+      "checkpoint_sha256": "cea5a0dbf5ea1d40d3f65b38234666cd6690cd09cacc44e47deb84a902b2f225",
+      "episodes_per_seed": 20,
+      "seeds": [
+        95001,
+        95002,
+        95003,
+        95004,
+        95005,
+        95006,
+        95007,
+        95008,
+        95009,
+        95010
+      ],
+      "selection": "first complete episode of every environment; no early-completion filtering",
+      "mean_return": 748.8412412834167,
+      "mean_rotation": 49.697653824165464,
+      "mean_axis_deviation": 0.23750289942787234,
+      "mean_offaxis": 40.615904662311074,
+      "failures": 8,
+      "seconds": 758.5295240879059,
+      "episodes": 200,
+      "source_hashes_checked": 15,
+      "checkpoint_finite": true,
+      "lane_status": "completed",
+      "counts": {
+        "model": 51000,
+        "actor": 4800,
+        "critic": 96000,
+        "cycles": 4800
+      },
+      "checkpoint_bytes": 121821926,
+      "total_gpu_hours": 11.720775229268604,
+      "development_selection": {
+        "mean_return": 810.1551575660706,
+        "mean_rotation": 54.13433939777315,
+        "failures": 1,
+        "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-07/evaluation.json",
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/checkpoints/segment-07.pt"
+      },
+      "full_plan_hashes_checked": 35,
+      "milestone_50_percent": true,
+      "milestone_80_percent": false,
+      "finite_episode_metrics_and_parity_passed": true
+    }
+  }
+}

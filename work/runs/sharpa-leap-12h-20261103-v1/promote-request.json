@@ -1,0 +1,10 @@
+{
+  "action": "promote",
+  "explicit_user_request": true,
+  "requested_unix": 1793721329.7648683,
+  "preserve_model_optimizer_replay_rng": true,
+  "minimum_model_warmup": 300,
+  "minimum_current_policy_recollection": 1,
+  "independent_evaluation_required": true,
+  "deadline_unix": 1793764414.4259481
+}

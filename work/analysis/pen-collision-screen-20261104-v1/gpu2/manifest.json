@@ -1,0 +1,17 @@
+{
+  "started_unix": 1793763451.941931,
+  "cli": {
+    "gpu": 2,
+    "envs": 52,
+    "out": "work/analysis/pen-collision-screen-20261104-v1/gpu2",
+    "retarget": "/home/junqiy/projects/unionmimic/work/motions/sharpa-pen-collision-gpu2-20261104-v1"
+  },
+  "sources": {
+    "scripts/check_pen_physics.py": "9db8052d9aa1713f5f61fd401ebc9617f94dfa8a0a3b7f89f25d7704c4b84b3f",
+    "unionmimic/pen_simulator.py": "76bfab9f3fa4a428fa270ddeed3cb8055323bc1739f77f66e57ce3f75cfed1c0",
+    "unionmimic/pen_tasks.py": "f377e89d8c8e0f0e0958fe1ea9bbd1cf5e1223856052d232363910eea8c6d930",
+    "unionmimic/pen_camera.py": "dcacbbeacda9305f292a0131625aee8572a8476dfddb11427a0624292e237801",
+    "unionmimic/hand_kinematics.py": "301dfa3bf6cdfb79efa6b9e1e7cc14257cac6990dc3e0b3b5ed9eb0cbadf1873",
+    "assets/reference_pen/pen.urdf": "65b4eb4d7937f1967f011e85480d50a18d532626fceccad999a316c440d98675"
+  }
+}

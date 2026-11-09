@@ -1,0 +1,8 @@
+{
+  "approved": true,
+  "arms": [
+    "ppo"
+  ],
+  "manifest_sha256": "dd9ace018d9ece4c070cc2dde6bbb2d2370647a3310fa6600ca379e5795ae0f1",
+  "authorization": "User explicitly authorized training-code verification, plan optimization and training launch; this bounded recheck verifies the repaired PPO path"
+}

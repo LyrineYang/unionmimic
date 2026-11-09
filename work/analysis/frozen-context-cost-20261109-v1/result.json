@@ -1,0 +1,90 @@
+{
+  "parameters": {
+    "encoder": 4968896,
+    "rssm": 8146432,
+    "heads": 19526921
+  },
+  "parameter_total": 32642249,
+  "weights_unchanged": true,
+  "measurements": [
+    {
+      "label": "real_encoder_no_grad",
+      "passed": true,
+      "seconds": 2.415354860946536,
+      "incremental_peak_gib": 0.16150188446044922,
+      "batch": 256,
+      "repeats": 2,
+      "embedding_dim": 8704,
+      "decoders_called": false
+    },
+    {
+      "label": "rssm_input_bptt",
+      "passed": true,
+      "seconds": 0.04618805926293135,
+      "incremental_peak_gib": 0.05243349075317383,
+      "batch": 256,
+      "horizon": 4,
+      "input_gradient_norm": 0.001637890818528831,
+      "weight_gradients": false,
+      "decoders_called": false
+    },
+    {
+      "label": "rssm_input_bptt",
+      "passed": true,
+      "seconds": 0.10927722696214914,
+      "incremental_peak_gib": 0.18312501907348633,
+      "batch": 256,
+      "horizon": 16,
+      "input_gradient_norm": 30.042463302612305,
+      "weight_gradients": false,
+      "decoders_called": false
+    },
+    {
+      "label": "rssm_input_bptt",
+      "passed": true,
+      "seconds": 0.03804003540426493,
+      "incremental_peak_gib": 0.20839738845825195,
+      "batch": 1024,
+      "horizon": 4,
+      "input_gradient_norm": 0.0008713325951248407,
+      "weight_gradients": false,
+      "decoders_called": false
+    },
+    {
+      "label": "rssm_input_bptt",
+      "passed": true,
+      "seconds": 0.10615337453782558,
+      "incremental_peak_gib": 0.7271428108215332,
+      "batch": 1024,
+      "horizon": 16,
+      "input_gradient_norm": 8.959586143493652,
+      "weight_gradients": false,
+      "decoders_called": false
+    },
+    {
+      "label": "rssm_input_bptt",
+      "passed": true,
+      "seconds": 0.07629388105124235,
+      "incremental_peak_gib": 0.8333630561828613,
+      "batch": 4096,
+      "horizon": 4,
+      "input_gradient_norm": 0.00040766553138382733,
+      "weight_gradients": false,
+      "decoders_called": false
+    },
+    {
+      "label": "rssm_input_bptt",
+      "passed": true,
+      "seconds": 0.18085243459790945,
+      "incremental_peak_gib": 2.908966541290283,
+      "batch": 4096,
+      "horizon": 16,
+      "input_gradient_norm": 11.85732364654541,
+      "weight_gradients": false,
+      "decoders_called": false
+    }
+  ],
+  "recorded_control_dt": 0.10002,
+  "checkpoint_sha256": "3215205fe1fad48e97f5745ab90bb2377d53012c1a0d2634edf186699ccab7f7",
+  "limitation": "Isolated FP32 context branch; excludes simulator, SM model, actor, critic, posterior replay and bridge. Synthetic initial states/actions for cost only; no control benefit demonstrated. Encoder includes first-call overhead."
+}

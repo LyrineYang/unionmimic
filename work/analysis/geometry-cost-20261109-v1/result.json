@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "batch": 16,
+      "chunk": 16,
+      "seconds": 0.003294719662517309,
+      "rows_per_s": 4856.255353687757,
+      "peak_increment_mib": 9.7607421875
+    },
+    {
+      "batch": 256,
+      "chunk": 256,
+      "seconds": 0.008077169675379992,
+      "rows_per_s": 31694.270429939486,
+      "peak_increment_mib": 148.0029296875
+    },
+    {
+      "batch": 4096,
+      "chunk": 256,
+      "seconds": 0.12412726921029389,
+      "rows_per_s": 32998.38968551415,
+      "peak_increment_mib": 148.0029296875
+    }
+  ],
+  "encoder_parameters": 4968896,
+  "readout_coefficients": 28305,
+  "device": "Tesla V100-SXM2-32GB",
+  "scope": "FP32 frozen encoder + readout, device-resident inputs, no backward, no simulator/camera/transfer; 4096 is 16 chunks of 256.",
+  "end_to_end_training_speed_measured": false
+}

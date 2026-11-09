@@ -4,6 +4,13 @@ cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.."
 source scripts/env.sh
 mkdir -p work/downloads work/tools work/upstreams work/checkpoints work/logs
 
+# An existing measured runtime is verified, never silently reinstalled.
+if [[ -x "$UNIONMIMIC_VENV_DIR/bin/python" && -f config/runtime-lock.json ]]; then
+    python scripts/check_runtime.py
+    echo 'Existing isolated runtime verified. To rebuild, set UNIONMIMIC_VENV_DIR to a new directory.'
+    exit 0
+fi
+
 check_hash() {
     local expected="$1" artifact="$2"
     printf '%s  %s\n' "$expected" "$artifact" | sha256sum --check --status
@@ -18,11 +25,14 @@ download() {
     mv -- "${artifact}.partial" "$artifact"
 }
 
-if [[ ! -x .venv/bin/python ]]; then
+if [[ ! -x "$UNIONMIMIC_VENV_DIR/bin/python" ]]; then
     download 'https://github.com/astral-sh/python-build-standalone/releases/download/20241002/cpython-3.8.20%2B20241002-x86_64-unknown-linux-gnu-install_only.tar.gz' \
         work/downloads/python38.tar.gz 285e141c36f88b2e9357654c5f77d1f8fb29cc25132698fe35bb30d787f38e87
-    tar -xzf work/downloads/python38.tar.gz -C work/tools
-    work/tools/python/bin/python3.8 -m venv .venv
+    if [[ ! -x work/tools/python/bin/python3.8 ]]; then
+        tar -xzf work/downloads/python38.tar.gz -C work/tools
+    fi
+    work/tools/python/bin/python3.8 -c 'import sys; assert sys.version_info[:3] == (3, 8, 20)'
+    work/tools/python/bin/python3.8 -m venv "$UNIONMIMIC_VENV_DIR"
 fi
 
 if [[ ! -d work/upstreams/WM-Craftnet/.git ]]; then
@@ -33,6 +43,7 @@ if [[ "$(git -C work/upstreams/WM-Craftnet rev-parse HEAD)" != a1e825acaf50ade29
     echo 'Upstream revision mismatch; inspect existing work before changing it.' >&2
     exit 1
 fi
+bash scripts/apply_upstream_patches.sh
 
 download https://developer.nvidia.com/isaac-gym-preview-4 \
     work/downloads/IsaacGym_Preview_4_Package.tar.gz c51d77ac1144b91b356f439c7313d8d59468147e37187ebffe7cdbc3154fdb8f
@@ -45,7 +56,12 @@ download https://huggingface.co/SharpaIT/WM-Craftnet/resolve/main/wm_craftnet_se
 python -m pip install --index-url https://pypi.org/simple pip==24.3.1 setuptools==69.5.1 wheel==0.45.1
 python -m pip install --index-url https://pypi.org/simple --extra-index-url https://download.pytorch.org/whl/cu118 \
     'torch==2.1.0+cu118' 'torchvision==0.16.0+cu118' 'numpy==1.22.2'
-python -m pip install --index-url https://pypi.org/simple -r config/requirements-runtime.txt
+if [[ -f config/requirements-runtime.lock.txt ]]; then
+    python -m pip install --index-url https://pypi.org/simple --extra-index-url https://download.pytorch.org/whl/cu118 \
+        -r config/requirements-runtime.lock.txt
+else
+    python -m pip install --index-url https://pypi.org/simple -r config/requirements-runtime.txt
+fi
 python -m pip install --no-deps --no-build-isolation -e work/isaacgym/python
 
 download https://github.com/facebookresearch/pytorch3d/archive/refs/tags/v0.7.5.tar.gz \

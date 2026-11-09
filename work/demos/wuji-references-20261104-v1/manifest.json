@@ -1,0 +1,22 @@
+[
+  {
+    "id": "02_continuous_single_axis/clip_001",
+    "source_sha256": "041b5bb58400f0ca1ab4d0ecf54a6e9e39211b49fc7cc01f3489eebb378db4ab",
+    "frames": 960,
+    "duration": 19.18,
+    "video": "/home/junqiy/projects/unionmimic/work/demos/wuji-references-20261104-v1/02_continuous_single_axis.mp4",
+    "kind": "source_wrist_local_reference",
+    "sharpa_retarget_verified": false,
+    "policy_rollout": false
+  },
+  {
+    "id": "03_continuous_multi_axis/clip_001",
+    "source_sha256": "85067746200234089cc3ab0d23866ac85656157240f0d675a7181265c9d70e7b",
+    "frames": 970,
+    "duration": 19.38,
+    "video": "/home/junqiy/projects/unionmimic/work/demos/wuji-references-20261104-v1/03_continuous_multi_axis.mp4",
+    "kind": "source_wrist_local_reference",
+    "sharpa_retarget_verified": false,
+    "policy_rollout": false
+  }
+]

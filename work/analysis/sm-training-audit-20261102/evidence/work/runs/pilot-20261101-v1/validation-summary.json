@@ -1,0 +1,43 @@
+{
+  "results": [
+    {
+      "status": "validated",
+      "arm": "ppo",
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/pilot-20261101-v1/ppo/last.pt",
+      "sha256": "e3af5d8a7e14af6ff1213f6aed2cb7b7e3a4b0b70f42b3c2f4a64e6c0a45c452",
+      "episodes": 32,
+      "mean_return": 1069.1587371826172,
+      "baseline_return": 1076.1462097167969,
+      "return_change_percent": -0.6493051289023777,
+      "rotation_radians": 56.66189384460449,
+      "baseline_rotation_radians": 57.517592430114746,
+      "failures": 0,
+      "prediction_passed": null,
+      "pilot_stability_gate": true,
+      "statistical_improvement_claim": false,
+      "locked_test_opened": false,
+      "long_training_started": false,
+      "next": "Review pilot stability, expanded SM direction test and paired-seed allocation before long training"
+    },
+    {
+      "status": "validated",
+      "arm": "dynamics",
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/pilot-20261101-v1/dynamics/last.pt",
+      "sha256": "db9ead52b75ab32e00945135f2c6f778d06a852aa5024beff9b93b3f72554a4e",
+      "episodes": 32,
+      "mean_return": 1051.53271484375,
+      "baseline_return": 1076.1462097167969,
+      "return_change_percent": -2.2871887342821418,
+      "rotation_radians": 56.172274589538574,
+      "baseline_rotation_radians": 57.517592430114746,
+      "failures": 0,
+      "prediction_passed": true,
+      "pilot_stability_gate": true,
+      "statistical_improvement_claim": false,
+      "locked_test_opened": false,
+      "long_training_started": false,
+      "next": "Review pilot stability, expanded SM direction test and paired-seed allocation before long training"
+    }
+  ],
+  "long_training_started": false
+}

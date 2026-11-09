@@ -1,0 +1,597 @@
+{
+  "checked_unix": 1793703700.1579335,
+  "complete": true,
+  "engineering_passed": true,
+  "arms": {
+    "S0": {
+      "status": "completed",
+      "cycles": 4,
+      "gpu": 0,
+      "actual_gpu_hours": 0.10139272232850392,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S0/segment-0.pt",
+          "checkpoint_sha256": "cf478a6574193fea7e6ba63388606f1a23c4f0f9fe72ec7f9310078aebfcb764",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 745.8221406936646,
+          "mean_rotation": 45.18937474489212,
+          "mean_axis_deviation": 0.3036737447299384,
+          "mean_offaxis": 36.465511322021484,
+          "failures": 1,
+          "seconds": 84.36232042312622
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S0/segment-1.pt",
+          "checkpoint_sha256": "3e61a3196318c09de3f195252c5fcbb829ca83f364a4f1bd6c1337f4c0c0c5c5",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 736.7079467773438,
+          "mean_rotation": 42.854386031627655,
+          "mean_axis_deviation": 0.27202898048492796,
+          "mean_offaxis": 34.149164497852325,
+          "failures": 1,
+          "seconds": 88.32620215415955
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 741.2650437355042,
+      "mean_rotation": 44.02188038825989,
+      "mean_axis_deviation": 0.28785136260743316,
+      "failure_rate": 0.125,
+      "parity": {
+        "parity_rows": 1022,
+        "max_reward_error": 3.5762786865234375e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S0/learner/last.pt",
+      "checkpoint_sha256": "3e61a3196318c09de3f195252c5fcbb829ca83f364a4f1bd6c1337f4c0c0c5c5",
+      "median_cycle_seconds": 4.481051206588745
+    },
+    "S1": {
+      "status": "completed",
+      "cycles": 4,
+      "gpu": 1,
+      "actual_gpu_hours": 0.10290614479117924,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S1/segment-0.pt",
+          "checkpoint_sha256": "65eed3418202a3e3140d8a93be94ad7f6a5bed49fc796b420f32139d9f5c177e",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 745.7828321456909,
+          "mean_rotation": 44.44958132505417,
+          "mean_axis_deviation": 0.28342952681645184,
+          "mean_offaxis": 35.359255373477936,
+          "failures": 1,
+          "seconds": 88.30328798294067
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S1/segment-1.pt",
+          "checkpoint_sha256": "7ea614626e3e63868642e7d6df3d8552dcf2c8258df09cfc50a62acd64088325",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 823.8775939941406,
+          "mean_rotation": 48.416841983795166,
+          "mean_axis_deviation": 0.20385092808060856,
+          "mean_offaxis": 39.871256589889526,
+          "failures": 0,
+          "seconds": 89.53815722465515
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 784.8302130699158,
+      "mean_rotation": 46.43321165442467,
+      "mean_axis_deviation": 0.2436402274485302,
+      "failure_rate": 0.0625,
+      "parity": {
+        "parity_rows": 320,
+        "max_reward_error": 1.5497207641601562e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S1/learner/last.pt",
+      "checkpoint_sha256": "7ea614626e3e63868642e7d6df3d8552dcf2c8258df09cfc50a62acd64088325",
+      "median_cycle_seconds": 4.063556671142578
+    },
+    "S2": {
+      "status": "completed",
+      "cycles": 4,
+      "gpu": 0,
+      "actual_gpu_hours": 0.12707240131166248,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S2/segment-0.pt",
+          "checkpoint_sha256": "c137dc49309c83b127bcdfd1f05a2b27af66bb0e7a2db599d9a6180c5b62589d",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 738.1455430984497,
+          "mean_rotation": 43.819611966609955,
+          "mean_axis_deviation": 0.28079225019050114,
+          "mean_offaxis": 35.881512463092804,
+          "failures": 1,
+          "seconds": 87.62927198410034
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S2/segment-1.pt",
+          "checkpoint_sha256": "f910247c9cebaabcd17740052c78f189249a9579e079d4fcc522b6bb05a15404",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 812.0331497192383,
+          "mean_rotation": 48.237449645996094,
+          "mean_axis_deviation": 0.2105370391324821,
+          "mean_offaxis": 40.98070669174194,
+          "failures": 0,
+          "seconds": 173.02766346931458
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 775.089346408844,
+      "mean_rotation": 46.028530806303024,
+      "mean_axis_deviation": 0.24566464466149163,
+      "failure_rate": 0.0625,
+      "parity": {
+        "parity_rows": 1024,
+        "max_reward_error": 2.6226043701171875e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S2/learner/last.pt",
+      "checkpoint_sha256": "f910247c9cebaabcd17740052c78f189249a9579e079d4fcc522b6bb05a15404",
+      "median_cycle_seconds": 4.985832691192627
+    },
+    "S3": {
+      "status": "completed",
+      "cycles": 4,
+      "gpu": 3,
+      "actual_gpu_hours": 0.1020688560936186,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S3/segment-0.pt",
+          "checkpoint_sha256": "f77604737c871e4e25a93163f207358f598c007224917bb12703f61fe404167b",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 818.4109191894531,
+          "mean_rotation": 47.825111865997314,
+          "mean_axis_deviation": 0.20916869075422787,
+          "mean_offaxis": 39.82003116607666,
+          "failures": 0,
+          "seconds": 88.13832330703735
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S3/segment-1.pt",
+          "checkpoint_sha256": "c539cfab9709bb0b951ed27355d9075163440a1d01dd58385183febb80d94916",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 730.3556241989136,
+          "mean_rotation": 42.73611372709274,
+          "mean_axis_deviation": 0.2774763847070276,
+          "mean_offaxis": 34.04889219999313,
+          "failures": 1,
+          "seconds": 88.36176204681396
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 774.3832716941833,
+      "mean_rotation": 45.28061279654503,
+      "mean_axis_deviation": 0.24332253773062773,
+      "failure_rate": 0.0625,
+      "parity": {
+        "parity_rows": 319,
+        "max_reward_error": 2.7418136596679688e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S3/learner/last.pt",
+      "checkpoint_sha256": "c539cfab9709bb0b951ed27355d9075163440a1d01dd58385183febb80d94916",
+      "median_cycle_seconds": 3.759652853012085
+    },
+    "S4": {
+      "status": "completed",
+      "cycles": 4,
+      "gpu": 1,
+      "actual_gpu_hours": 0.10342262725035349,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S4/segment-0.pt",
+          "checkpoint_sha256": "36a77302d8938acc27350e06ce3a0d32973300d41050b88b39a3a9c9d9e6fd20",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 832.1281967163086,
+          "mean_rotation": 49.02922534942627,
+          "mean_axis_deviation": 0.21086231675971462,
+          "mean_offaxis": 40.32941794395447,
+          "failures": 0,
+          "seconds": 87.58136177062988
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S4/segment-1.pt",
+          "checkpoint_sha256": "bfb4da6124dabc72d0e05d4c68eee4ec6914b8749c9e0aa7637b0bd6ba67e92b",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 731.2258853912354,
+          "mean_rotation": 42.14605665206909,
+          "mean_axis_deviation": 0.2285011530627064,
+          "mean_offaxis": 36.16196131706238,
+          "failures": 1,
+          "seconds": 87.95144557952881
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 781.677041053772,
+      "mean_rotation": 45.58764100074768,
+      "mean_axis_deviation": 0.2196817349112105,
+      "failure_rate": 0.0625,
+      "parity": {
+        "parity_rows": 1024,
+        "max_reward_error": 3.2186508178710938e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S4/learner/last.pt",
+      "checkpoint_sha256": "bfb4da6124dabc72d0e05d4c68eee4ec6914b8749c9e0aa7637b0bd6ba67e92b",
+      "median_cycle_seconds": 5.002822160720825
+    },
+    "S5": {
+      "status": "completed",
+      "cycles": 4,
+      "gpu": 2,
+      "actual_gpu_hours": 0.10290243658754561,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S5/segment-0.pt",
+          "checkpoint_sha256": "0a189c444e4558d84a0dd6bc8267cc3ccf6f541e65b7087291caac378f2e610c",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 825.9669036865234,
+          "mean_rotation": 48.33439779281616,
+          "mean_axis_deviation": 0.2111870696745723,
+          "mean_offaxis": 40.141597270965576,
+          "failures": 0,
+          "seconds": 88.04271817207336
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S5/segment-1.pt",
+          "checkpoint_sha256": "030e2eebfe1ef5057aba4190ab1eea3812c7a1ddfde774ba9a560ea9b62db5cf",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 810.883918762207,
+          "mean_rotation": 46.860440254211426,
+          "mean_axis_deviation": 0.2137282210660268,
+          "mean_offaxis": 38.797484159469604,
+          "failures": 0,
+          "seconds": 88.64512968063354
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 818.4254112243652,
+      "mean_rotation": 47.597419023513794,
+      "mean_axis_deviation": 0.21245764537029954,
+      "failure_rate": 0.0,
+      "parity": {
+        "parity_rows": 319,
+        "max_reward_error": 1.5497207641601562e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S5/learner/last.pt",
+      "checkpoint_sha256": "030e2eebfe1ef5057aba4190ab1eea3812c7a1ddfde774ba9a560ea9b62db5cf",
+      "median_cycle_seconds": 3.8123929500579834
+    },
+    "S6": {
+      "status": "completed",
+      "cycles": 4,
+      "gpu": 2,
+      "actual_gpu_hours": 0.10248118380705516,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S6/segment-0.pt",
+          "checkpoint_sha256": "732e3bed55f08e5de8d9f1535802b6ba366dc7ecd8d28287629ceb553d39aa6b",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 746.5957736968994,
+          "mean_rotation": 44.243511736392975,
+          "mean_axis_deviation": 0.290453108801304,
+          "mean_offaxis": 34.82825994491577,
+          "failures": 1,
+          "seconds": 86.30421042442322
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S6/segment-1.pt",
+          "checkpoint_sha256": "c02cd4499deae5070b5f2d9267fa218fe5eec6395ba969944a9b8c682902cb79",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 824.0794677734375,
+          "mean_rotation": 47.9098162651062,
+          "mean_axis_deviation": 0.1968390970345003,
+          "mean_offaxis": 38.81024646759033,
+          "failures": 0,
+          "seconds": 87.48695874214172
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 785.3376207351685,
+      "mean_rotation": 46.07666400074959,
+      "mean_axis_deviation": 0.24364610291790215,
+      "failure_rate": 0.0625,
+      "parity": {
+        "parity_rows": 1022,
+        "max_reward_error": 2.86102294921875e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S6/learner/last.pt",
+      "checkpoint_sha256": "c02cd4499deae5070b5f2d9267fa218fe5eec6395ba969944a9b8c682902cb79",
+      "median_cycle_seconds": 4.651074409484863
+    },
+    "S7": {
+      "status": "completed",
+      "cycles": 4,
+      "gpu": 3,
+      "actual_gpu_hours": 0.09805168959829542,
+      "evaluations": [
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S7/segment-0.pt",
+          "checkpoint_sha256": "e6dd95d1a5ec1885ac08a44597d6141c35f87fb0968a506913d6dee0545650e8",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 827.2177810668945,
+          "mean_rotation": 48.25463581085205,
+          "mean_axis_deviation": 0.21215070395105814,
+          "mean_offaxis": 39.83727169036865,
+          "failures": 0,
+          "seconds": 87.91835117340088
+        },
+        {
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S7/segment-1.pt",
+          "checkpoint_sha256": "ef24d232a0bbb620fad7f13149e0b088b9ca50177f10441bc5ac10fb7961a823",
+          "episodes_per_seed": 8,
+          "seeds": [
+            94001
+          ],
+          "selection": "first complete episode of every environment; no early-completion filtering",
+          "mean_return": 744.0322895050049,
+          "mean_rotation": 43.75957316160202,
+          "mean_axis_deviation": 0.2850534766995321,
+          "mean_offaxis": 35.19359344244003,
+          "failures": 1,
+          "seconds": 88.32610654830933
+        }
+      ],
+      "actor_start": "8652227ddfad67851d3844bf0e5b6615c53ab3f8a9df448107a231239552c9ae",
+      "mean_return": 785.6250352859497,
+      "mean_rotation": 46.007104486227036,
+      "mean_axis_deviation": 0.24860209032529512,
+      "failure_rate": 0.0625,
+      "parity": {
+        "parity_rows": 320,
+        "max_reward_error": 1.3113021850585938e-06,
+        "max_action_error": 0.0,
+        "max_target_error": 0.0,
+        "reset_frame_terminations": 0
+      },
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-screen-pilots-20261103-v1/S7/learner/last.pt",
+      "checkpoint_sha256": "ef24d232a0bbb620fad7f13149e0b088b9ca50177f10441bc5ac10fb7961a823",
+      "median_cycle_seconds": 4.156041622161865
+    }
+  },
+  "ranking": [
+    "S5",
+    "S7",
+    "S6",
+    "S1",
+    "S4",
+    "S2",
+    "S3",
+    "S0"
+  ],
+  "selection": "mean of two fixed development checkpoints; joint gate first, then return",
+  "repeated_development_seeds_not_independent": true,
+  "source_sha256": {
+    "config/runtime-lock.json": "678c1dd8d51e1a93d06b205e4330d4599d8d8ffedad70e2e9a81bf5d2171651c",
+    "config/wandb.env": "fda86669eff0f47c7702f7ed824a367acabe03f4ea8ca088dd6aa398de6956f7",
+    "scripts/check_runtime.py": "593f0813889bc44e8b14ac9435b5c178b9caaa02fccf641ad89ce0a7604e90e4",
+    "scripts/complete_baseline_preflight.py": "a77d802a30b4f2fcce0632b166b9ad4d0659176dae03d0f003a7bc01c7d00bf5",
+    "scripts/env.sh": "ad13fc90dbe5e0e5a5b9cb1aa1b84cd040028a14ba5657576ff4cde4c09b0baf",
+    "scripts/evaluate_online.py": "683676c256c06d5013651c7696454df1a1c3695e94c07d68b7cbad22afbcfd85",
+    "scripts/finalize_online_long.py": "8477914373387ede7524ff88878608fd87f3e83aefb3aa3a3a252dc345e79b9d",
+    "scripts/launch_online_baseline.py": "f1d5674e9f1a138d73ba66c6673e5434f4e27a7685b8494e4d4675bc2521047f",
+    "scripts/launch_online_candidate.py": "8078e2dc655ab51e3797b2275ee1cf791605b9a7b767bffdb876d3769a0c3642",
+    "scripts/launch_online_long.py": "ee25bfb10f9a2279f0046f21c7aa1660ae07a2d21daeecd4b856e12fa1fb90f2",
+    "scripts/launch_screening.py": "65bef870d4f97c37ad9c2cce461530f543367e24bc13b62ba8dd7061b1c408ee",
+    "scripts/online_baseline_lane.py": "1d9f235c3789c147f9f48bff087ca252be4a4995e173c6eb05fd13185ab5b4a5",
+    "scripts/online_candidate_lane.py": "3cf4870b1b09449c2c4f1f9b1360184790f96a8e10c94f1d955255195958d3fa",
+    "scripts/online_long_lane.py": "f28baa06ceae043972f54f103a9b3a1ed541166c9b23b0b7eb7b52424a67736a",
+    "scripts/screening_lane.py": "f12fea292ea0e3fe7feee287eca85336cd3667f977069694892fae6eada2265b",
+    "scripts/screening_summary.py": "db417dd9211b3cc7cfdd146e56b764539f2f684e282aef91a6deacf2d242f7e0",
+    "scripts/train_online.py": "d3b5ccfa8288503b1e6ae60b56bb99bddd09e1841e9498f75340e1242570d3a8",
+    "scripts/train_online_baseline.py": "02c752a56e7210bfc8e65c9e790154c94004580e51a6776f4660c8a952bd57b9",
+    "scripts/train_online_candidate.py": "4761f905b37cefe5c3b6fd10c67318d6969c9b8e20cb285e62c32e34b58ecd6a",
+    "scripts/train_online_screen.py": "b2a591baba6d9fc720333d01891a0f50ed3231af99ae3a1992efac53396df942",
+    "scripts/wait_online_baseline.py": "ae03d29b75c76a8f8fbb1d0dc3adc4dcf3437443931851e80e4b8841ed5c4387",
+    "tests/test_online_baseline.py": "15c9c980343c0b8fb9a9c4c5f96869fc74692c54c654e6ae14b6edd5e74f5d3a",
+    "tests/test_online_baseline_coordinator.py": "527da1884b5052af1a309e710a58e248aef5e6660526859e88e166f8cc124f2e",
+    "tests/test_online_screen.py": "95c8abbe8fc908473559d72b3aca9e6466e3c1102b8d028c2cf649a6da54794e",
+    "unionmimic/common.py": "12115b32b321ed3e8c1fba2bace4a338f903a7e7afe27b88043dd070c444553d",
+    "unionmimic/online/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+    "unionmimic/online/learner.py": "1b626430413d98cf1554565386641ee63a102c84a2cf06075c4d0ee4dac187e4",
+    "unionmimic/online/simulator.py": "43a9a491031be0152af689e91d0a5e553e957fb0e143a7facb4512f16b2dec08",
+    "unionmimic/online/task.py": "c61eb144788e3b9f3338adb4938f256d8f9ae9b341a431692c54d33debefc45b",
+    "unionmimic/online/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online/worker.py": "49fb1a3ffb77839b54c33fa81088e5c8618ad5fc47d2c1d5276e62c918a60aef",
+    "unionmimic/online_baseline/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online_baseline/core.py": "750f8b6eca2c632d1e84a5099cd51b793d7be8ee53eda1b073413738e7902233",
+    "unionmimic/online_baseline/curriculum.py": "a77d8a2d6e5c9b38a05077bf566c5f67449835f85de24903b938d0e197242e48",
+    "unionmimic/online_baseline/learner.py": "f04158c5e25522beeac4a9ff470f00747ff189dc7c62b2d1bbd97495b971306e",
+    "unionmimic/online_baseline/simulator.py": "12b60a239087888fed9f05883dfcf137654e36b5e0df83635e774e8e6c62c6fd",
+    "unionmimic/online_baseline/task.py": "c93f6d85db003addda2c7b99bac0b3a8435b9048e05384a693cda403c8e2c0fb",
+    "unionmimic/online_baseline/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online_baseline/worker.py": "e8f2ab502c45f1f5e7ebbf948019f103ccfcfc7484573313f241826f2c3f69c8",
+    "unionmimic/online_candidate/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online_candidate/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+    "unionmimic/online_candidate/learner.py": "7bcfddb29c63df0cb97ae2af4bc808faa601d96aba52aac4f4f0e3f14c4f2d99",
+    "unionmimic/online_candidate/simulator.py": "43a9a491031be0152af689e91d0a5e553e957fb0e143a7facb4512f16b2dec08",
+    "unionmimic/online_candidate/task.py": "c93f6d85db003addda2c7b99bac0b3a8435b9048e05384a693cda403c8e2c0fb",
+    "unionmimic/online_candidate/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online_candidate/worker.py": "89f76d786a7db84f7c22fd6adec08a0c1d794267b7c5b75a94bf951e07ac0233",
+    "unionmimic/online_screen/__init__.py": "0463a1476962911e55b6bbded044366703449f3dd591cc496ce0c7194911c4f1",
+    "unionmimic/online_screen/branch.py": "9d1d61b18a1322ccdf129cfe2cbc8f0bdb03df722874be502e0667a0b520971b",
+    "unionmimic/online_screen/worker.py": "cde26c13fe920ac36a725d564bb7ed7b7dc1ed8997c7112d502cc31851eeeed6",
+    "work/analysis/sm-factorial-20261103/pilot_driver.py": "c7978d492af953f3b39c92fee11da30edde9c4c4a5383952e482d7065dfa6165",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/task/WMCraftnetRotation.yaml": "1baec80813b3a6fd8a5275f966d0d5d3febe4127844ad88ff21089705d6f9f30",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/train/WMCraftnetPPO.yaml": "b81488e09bc4e1603390020c33f9e47e20fc1daf2947912510c1546cc4792637",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/base/vec_task.py": "911ddb4434a2f3cd98925d539d475802f8f0736f47174e3b8a5630f68147357f",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_camera_rotation.py": "f0d1bc6e01049b6b9325057f21b13096f79734d2f2fc2838edca0eefdc378097",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_rotation.py": "5632e38e80f684dabf95ab15716301ca81cf6bcb1672508d74cb87264c6c1bdf",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/utils/spin_reward_utils.py": "e83c424a4b3d8add3224e1cfac9dc5a88938c38623a1630b54eefc631c6d90d4",
+    "work/upstreams/WM-Craftnet/rl_games/common/common_losses.py": "9134b3cea449fd2ab566cf5ed6fcc8951434de228020fd5162cf6beb5cdaf5c2",
+    "work/upstreams/WM-Craftnet/rl_games/common/schedulers.py": "3fd0d4b2b9472d495458d258bff82bf5fb6bd6c18d91fc20df1b2c9c23d3a5cc",
+    "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py": "c7cc0a4962feb00002e62d37b969a075beadeded5a61f124d4bce85120f9e239"
+  },
+  "actual_gpu_hours": 0.840298061768214,
+  "long_training_launched": false,
+  "checkpoint_checks": [
+    {
+      "arm": "S0",
+      "finite": true,
+      "exact_counts_and_frames": true,
+      "collected_vector_steps": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "arm": "S1",
+      "finite": true,
+      "exact_counts_and_frames": true,
+      "collected_vector_steps": [
+        2,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "arm": "S2",
+      "finite": true,
+      "exact_counts_and_frames": true,
+      "collected_vector_steps": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "arm": "S3",
+      "finite": true,
+      "exact_counts_and_frames": true,
+      "collected_vector_steps": [
+        2,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "arm": "S4",
+      "finite": true,
+      "exact_counts_and_frames": true,
+      "collected_vector_steps": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "arm": "S5",
+      "finite": true,
+      "exact_counts_and_frames": true,
+      "collected_vector_steps": [
+        2,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "arm": "S6",
+      "finite": true,
+      "exact_counts_and_frames": true,
+      "collected_vector_steps": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "arm": "S7",
+      "finite": true,
+      "exact_counts_and_frames": true,
+      "collected_vector_steps": [
+        2,
+        3,
+        2,
+        3
+      ]
+    }
+  ]
+}

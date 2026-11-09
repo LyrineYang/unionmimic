@@ -2,7 +2,9 @@
 
 The complete static preview lives in [`website/`](../website/). It is designed for later publication; no hosting, domain, analytics, or external font service is required for the local preview.
 
-![Desktop rendering of the UnionMimic project page](assets/website-preview.png)
+Historical layout preview (the image predates the 2 November mainline revision; current source text follows [MAINLINE.md](MAINLINE.md)):
+
+![Historical desktop rendering of the UnionMimic project page](assets/website-preview.png)
 
 The page was rendered in Firefox at desktop and mobile sizes. Local links, SVGs, image assets, horizontal overflow on a 390px viewport, and both model-explanation controls were checked. This checks the presentation; it does not validate the training implementation.
 
@@ -62,8 +64,8 @@ Before a public release, decide the website audience independently of repository
 The next content additions should be backed by actual experiments:
 
 1. A policy video with checkpoint identity, task conditions and playback speed.
-2. PPO/SM curves from matched runs with seeds, budgets and raw measurements.
+2. SM / SM+prior precision and cost curves from matched runs; PPO-Sim as a separate reference.
 3. Prediction-versus-simulator examples, including contact switches and failures.
 4. A release page with reproducible commands and downloadable, licensed artifacts.
 
-Update README, [STATUS.md](STATUS.md), and website status text together when new evidence is accepted. The cover and pipeline are copied into `website/assets/` for self-contained deployment; keep those copies byte-identical to `docs/assets/`.
+Update README, [STATUS.md](STATUS.md), and website status text together when new evidence is accepted. The old cover and pipeline exports are copied into `website/assets/`; the pipeline describes the historical single-RSSM design and is no longer the current architecture. Keep any retained copies byte-identical; use [ARCHITECTURE.md](ARCHITECTURE.md) for the current two-model diagram.

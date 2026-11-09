@@ -1,0 +1,41 @@
+{
+  "arm": "a00",
+  "gpu": 0,
+  "seconds": 322.5839295387268,
+  "counts": {
+    "model": 320,
+    "actor": 12,
+    "critic": 240,
+    "cycles": 12
+  },
+  "frames": 24576,
+  "parity": {
+    "parity_rows": 1024,
+    "max_reward_error": 1.9073486328125e-06,
+    "max_action_error": 0.0,
+    "max_target_error": 0.0,
+    "reset_frame_terminations": 0
+  },
+  "curriculum_resume": {
+    "kind": "resume",
+    "unix": 1793667134.136238,
+    "cycles": 10,
+    "frames": 23552,
+    "replay_steps": 368,
+    "new_simulator_episodes": true,
+    "curriculum_restored": true,
+    "curriculum_angle": 1.0,
+    "curriculum_count": 175
+  },
+  "finite_checkpoint": true,
+  "actor_updated": true,
+  "initial_actor_digest": "84c5a28dd7ff428218527a3c36475e0e532d4142343955347da22f90c5cb80a5",
+  "mean_cycle_seconds": 4.775211493174235,
+  "physical_evaluation": {
+    "mean_return": -12.823474645614624,
+    "mean_rotation": -0.029521714488510042,
+    "failures": 8
+  },
+  "run": "/home/junqiy/projects/unionmimic/work/runs/sm-factorial-pilot-20261103-a00",
+  "passed": true
+}

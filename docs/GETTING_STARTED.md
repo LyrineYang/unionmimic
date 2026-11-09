@@ -1,5 +1,7 @@
 # Getting started
 
+Current baseline development uses the pinned LEAP native recipe, followed by Sharpa adaptation. Use [the native execution record](LEAP_NATIVE_EXECUTION_20261103.md) and [its isolated environment](ENVIRONMENT.md) for that path. The Isaac Gym steps below preserve the original Sharpa runtime check and historical experiments.
+
 ## Runtime prerequisites
 
 Verified stack: Linux, Tesla V100-SXM2-32GB, Python 3.8.20, PyTorch 2.1.0 / CUDA 11.8, Isaac Gym Preview 4, PyTorch3D 0.7.5, driver 530.30.02. CUDA alone is insufficient: depth cameras need a working Vulkan/EGL path.
@@ -22,6 +24,8 @@ Use `--stage cuda`, `--stage gym`, or `--stage policy` for individual checks. Ou
 ## Local resources
 
 `source scripts/env.sh` sets environment and cache paths. `.venv/` and `work/` contain dependencies, upstream code, weights, data and logs; they are excluded from Git. Proxy settings belong in ignored `config/network.local.env`; see [the example](../config/network.example.env). Never commit credentials.
+
+For the measured package lock, environment verification, candidate-environment rebuilds and W&B configuration, see [environment management](ENVIRONMENT.md). Existing locked environments are checked rather than reinstalled by bootstrap.
 
 Isaac Gym's convex-decomposition cache uses its default user directory. The launcher retains the NVIDIA EGL library mapping to address the observed rendering-thread exit issue while still cleaning up the simulator.
 

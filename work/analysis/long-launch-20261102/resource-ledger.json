@@ -1,0 +1,72 @@
+{
+  "per_card_hours": {
+    "0": 1.3183369765679043,
+    "1": 1.8069139462709427,
+    "2": 1.60637907034821,
+    "3": 1.3273300125863818
+  },
+  "total_gpu_hours": 6.0589600057734385,
+  "intervals": {
+    "0": [
+      {
+        "started_unix": 1793596965.9677444,
+        "completed_unix": 1793601351.98086,
+        "hours": 1.2183369765679042,
+        "note": "Conservative continuous reservation: SM500, physical checks, GPU0 probes, PPO repair/resume trial; overlapping interim GPU diagnostics included"
+      }
+    ],
+    "1": [
+      {
+        "started_unix": 1793547155.374887,
+        "completed_unix": 1793548498.326143,
+        "hours": 0.3730420155657662,
+        "note": "Original PPO pilot plus its validation"
+      },
+      {
+        "started_unix": 1793597025.9677444,
+        "completed_unix": 1793602187.906695,
+        "hours": 1.4338719307051764,
+        "note": "Continuous reservation: GPU1 probes and anchored RSSM trial/validation"
+      }
+    ],
+    "2": [
+      {
+        "started_unix": 1793547155.374887,
+        "completed_unix": 1793549182.9474065,
+        "hours": 0.5632145887613297,
+        "note": "Original RSSM pilot plus its validation"
+      },
+      {
+        "started_unix": 1793597025.9921494,
+        "completed_unix": 1793600745.1470556,
+        "hours": 1.0330985850758023,
+        "note": "GPU2 read-only probe grid"
+      },
+      {
+        "started_unix": 1793604343.2915006,
+        "completed_unix": 1793604379.528728,
+        "hours": 0.010065896511077881,
+        "note": "Full fixed-posterior action/gradient analysis"
+      }
+    ],
+    "3": [
+      {
+        "started_unix": 1793597026.0015724,
+        "completed_unix": 1793601527.3837516,
+        "hours": 1.250383938683404,
+        "note": "Original bounded GPU3 probe; failed deadline preserved"
+      },
+      {
+        "started_unix": 1793604054.504149,
+        "completed_unix": 1793604331.510015,
+        "hours": 0.07694607390297784,
+        "note": "Only three incomplete read-only branches completed"
+      }
+    ]
+  },
+  "safety_reserve_gpu0_hours": 0.1,
+  "accounting": "Conservative occupied/reserved GPU wall time; overlaps counted once; includes both original pilots, validations and new launch checks. Ended first 12-hour run and earlier shared pretraining assets are outside this new budget.",
+  "long_training_gpu_hours": 32,
+  "final_evaluation_reserved_gpu_hours": 8,
+  "upper_bound_gpu_hours": 46.058960005773436
+}

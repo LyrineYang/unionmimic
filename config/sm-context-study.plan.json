@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "status": "baseline_pilots_verified_four_lane_launch_authorized",
+  "objective": "Complete SM from-scratch online baseline on the current Sharpa hand, then frozen WSM policy context.",
+  "predecessor_run": "work/runs/adaptation-20261102-v1",
+  "predecessor_status": "stopped_by_user",
+  "budget": {
+    "original_gpu_hours": 48,
+    "consumed_gpu_hours": 14.943860507408779,
+    "remaining_gpu_hours": 33.05613949259122,
+    "next_stage_proposed_cap_gpu_hours": 48,
+    "paired_pilots_gpu_hours": 0,
+    "baseline_training_gpu_hours": 16,
+    "final_evaluation_reserve_gpu_hours": 4,
+    "prior_consumed_per_card_gpu_hours": {
+      "0": 3.625081415242619,
+      "1": 4.329634035891956,
+      "2": 3.6618668085336687,
+      "3": 3.3272782477405336
+    },
+    "next_stage_proposed_per_card_gpu_hours": {
+      "0": 12,
+      "1": 12,
+      "2": 12,
+      "3": 12
+    },
+    "post_stage_upper_bound_per_card_gpu_hours": {
+      "0": 15.625081415242619,
+      "1": 16.329634035891957,
+      "2": 15.661866808533668,
+      "3": 15.327278247740534
+    },
+    "pilot_actual_gpu_hours": 0.9428926546043822,
+    "legacy_cap_superseded": true
+  },
+  "baseline_training": {
+    "arms": [
+      "sm_from_scratch",
+      "ppo_sim_from_scratch"
+    ],
+    "gpus_per_arm": 1,
+    "hours_per_arm": 8,
+    "paired_training_seeds": [
+      92001
+    ],
+    "interpretation": "Exploratory one-seed baseline/method-cost check, not the final two-seed SM-versus-prior comparison.",
+    "capability_milestones": {
+      "reference": "released policy measured under matching task/evaluation conditions",
+      "joint_return_and_signed_rotation_fractions": [
+        0.5,
+        0.8
+      ],
+      "observed_failure_rate_max": 0.05,
+      "report_failure_uncertainty": true,
+      "no_reference_policy_training_data": true
+    },
+    "proposed_gpu_by_arm": {
+      "sm_from_scratch": 0,
+      "ppo_sim_from_scratch": 2
+    }
+  },
+  "main_comparison": {
+    "arms": [
+      "sm",
+      "sm_plus_frozen_wsm_context"
+    ],
+    "paired_seeds": 2,
+    "status": "later_stage_budget_not_allocated"
+  },
+  "tasks": [
+    {
+      "id": "T0",
+      "name": "Task/state/reward/controller/evaluation contracts",
+      "state": "verified_engineering"
+    },
+    {
+      "id": "T1",
+      "name": "Independent SM dynamics and complete current-policy learning loop",
+      "state": "verified_engineering"
+    },
+    {
+      "id": "T2",
+      "name": "Two bounded physical pilots and actual save/resume verification",
+      "state": "verified_engineering"
+    },
+    {
+      "id": "T3",
+      "name": "Eight-hour SM/PPO baseline learning comparison",
+      "state": "authorized_pending_launch"
+    },
+    {
+      "id": "T4",
+      "name": "Frozen WSM context and observation/feature bridge",
+      "state": "planned"
+    },
+    {
+      "id": "T5",
+      "name": "Two-seed SM versus SM+prior comparison",
+      "state": "later_stage"
+    }
+  ],
+  "protocol": "docs/EXPERIMENTS.md",
+  "launcher_compatible": false,
+  "wandb": true,
+  "recurring_watchdog": false,
+  "auxiliary_work": {
+    "proposed_gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "hours_each_max": 0.5,
+    "includes_all_preflight_gpu_checks": false,
+    "verify_availability_before_launch": true,
+    "do_not_interrupt_other_projects": true,
+    "inside_lane_12h": true
+  },
+  "long_training_plan": "config/online-sm-long-20261102-12h.plan.json"
+}

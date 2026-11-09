@@ -1,0 +1,84 @@
+{
+  "checked_unix": 1793605261.9617844,
+  "passed": true,
+  "gpus": [
+    {
+      "gpu": 0,
+      "arm": "ppo",
+      "status": "running",
+      "supervisor_pid": 529,
+      "child_pid": 796,
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/startup-verification/gpu0.pt",
+      "checkpoint_sha256": "b9cd7d3b5bee3085734bc1e3b190d0ef483993af7d13fb3102646d4c486bc83a",
+      "updated_expected_modules": true,
+      "frozen_modules_unchanged": true,
+      "finite_parameters": true,
+      "epoch": 13,
+      "actor_updates": 228,
+      "physical_frames": 233472
+    },
+    {
+      "gpu": 1,
+      "arm": "dynamics",
+      "status": "running",
+      "supervisor_pid": 543,
+      "child_pid": 2980,
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/startup-verification/gpu1.pt",
+      "checkpoint_sha256": "4a4bfc85296675d23e1d32c42dd3ecf8df96ae63e2a8552588e932ea5cd895b9",
+      "updated_expected_modules": true,
+      "frozen_modules_unchanged": true,
+      "finite_parameters": true,
+      "dynamics_updates": 50
+    },
+    {
+      "gpu": 2,
+      "arm": "ppo",
+      "status": "running",
+      "supervisor_pid": 556,
+      "child_pid": 797,
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/startup-verification/gpu2.pt",
+      "checkpoint_sha256": "bb706725a73d63d0c7d3b34151796d1c17659aa3768ef61c7730e8ea23e64c00",
+      "updated_expected_modules": true,
+      "frozen_modules_unchanged": true,
+      "finite_parameters": true,
+      "epoch": 13,
+      "actor_updates": 224,
+      "physical_frames": 229376
+    },
+    {
+      "gpu": 3,
+      "arm": "dynamics",
+      "status": "running",
+      "supervisor_pid": 563,
+      "child_pid": 2951,
+      "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/adaptation-20261102-v1/startup-verification/gpu3.pt",
+      "checkpoint_sha256": "1e6dd9b7f50f56f4face2ef097fbcd82139b8aa5b32e70b2d03a6689ad68defe",
+      "updated_expected_modules": true,
+      "frozen_modules_unchanged": true,
+      "finite_parameters": true,
+      "dynamics_updates": 50
+    }
+  ],
+  "original_checkpoint_unchanged": true,
+  "previous_run_best_weights": [
+    {
+      "gpu": 0,
+      "best_checkpoint_hash_unchanged": true
+    },
+    {
+      "gpu": 1,
+      "best_checkpoint_hash_unchanged": true
+    },
+    {
+      "gpu": 2,
+      "best_checkpoint_hash_unchanged": true
+    },
+    {
+      "gpu": 3,
+      "best_checkpoint_hash_unchanged": true
+    }
+  ],
+  "wandb": false,
+  "recurring_watchdog": false,
+  "note": "Actual updates verified; 8-hour training and final evaluation remain in progress"
+}

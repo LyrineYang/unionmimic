@@ -1,0 +1,22 @@
+{
+  "kind": "AR1 residual candidate, not calibrated confidence",
+  "rho": [
+    0.84564608335495,
+    0.8169667720794678,
+    0.9530291557312012
+  ],
+  "bias_mm": [
+    0.20324259996414185,
+    0.04458783566951752,
+    -0.37025129795074463
+  ],
+  "innovation_std_mm": [
+    0.4668991267681122,
+    0.5876837372779846,
+    0.9281231760978699
+  ],
+  "calibration95_radius_mm": 4.127932071685791,
+  "heldout_radius_coverage": 0.9141675233840942,
+  "input_gradient_identity": true,
+  "limits": "Marginal and temporal error approximation only; multi-step physical F prediction and closed-loop control not yet validated."
+}

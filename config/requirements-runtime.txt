@@ -5,7 +5,7 @@ gym==0.23.1
 scipy==1.10.1
 tensorboardX==2.6.2.2
 tensorboard==2.14.0
-wandb==0.17.9
+wandb==0.22.3
 imageio==2.35.1
 imageio-ffmpeg==0.5.1
 h5py==3.10.0

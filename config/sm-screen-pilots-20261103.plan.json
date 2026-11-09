@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "authorization": {
+    "screening_approved": true,
+    "automatic_long_training": false,
+    "basis": "User 2026-11-03 evening explicitly requested launch of joint screening now; report results before overnight from-scratch configuration approval."
+  },
+  "parent_checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/checkpoints/segment-07.pt",
+  "parent_sha256": "cea5a0dbf5ea1d40d3f65b38234666cd6690cd09cacc44e47deb84a902b2f225",
+  "parent_counts": {
+    "model": 51000,
+    "actor": 4800,
+    "critic": 96000,
+    "cycles": 4800
+  },
+  "training_config": {
+    "envs": 64,
+    "batch": 256,
+    "model_horizon": 8,
+    "horizon": 8,
+    "model_updates": 10,
+    "actor_lr": 0.0002,
+    "model_lr": 0.0002,
+    "critic_lr": 0.0002,
+    "ppo_lr": 0.0001,
+    "gamma": 0.99,
+    "lambda": 0.95,
+    "critic_epochs": 5,
+    "ppo_batch": 512,
+    "collect_steps": 8,
+    "ppo_steps": 32,
+    "warmup_steps": 128,
+    "warmup_updates": 3000,
+    "replay_steps": 512,
+    "exploration": 0.1,
+    "warmup_collect_steps": 8,
+    "failure_fraction": 0.0,
+    "critic_norm_source": "mixed"
+  },
+  "arms": {
+    "S0": {
+      "failure_fraction": 0,
+      "critic_norm_source": "mixed",
+      "utd": 0.125,
+      "horizon": 8
+    },
+    "S1": {
+      "failure_fraction": 0,
+      "critic_norm_source": "mixed",
+      "utd": 0.4,
+      "horizon": 16
+    },
+    "S2": {
+      "failure_fraction": 0,
+      "critic_norm_source": "real",
+      "utd": 0.125,
+      "horizon": 16
+    },
+    "S3": {
+      "failure_fraction": 0,
+      "critic_norm_source": "real",
+      "utd": 0.4,
+      "horizon": 8
+    },
+    "S4": {
+      "failure_fraction": 0.25,
+      "critic_norm_source": "mixed",
+      "utd": 0.125,
+      "horizon": 16
+    },
+    "S5": {
+      "failure_fraction": 0.25,
+      "critic_norm_source": "mixed",
+      "utd": 0.4,
+      "horizon": 8
+    },
+    "S6": {
+      "failure_fraction": 0.25,
+      "critic_norm_source": "real",
+      "utd": 0.125,
+      "horizon": 8
+    },
+    "S7": {
+      "failure_fraction": 0.25,
+      "critic_norm_source": "real",
+      "utd": 0.4,
+      "horizon": 16
+    }
+  },
+  "gpu_queues": {
+    "0": [
+      "S0",
+      "S2"
+    ],
+    "1": [
+      "S1",
+      "S4"
+    ],
+    "2": [
+      "S6",
+      "S5"
+    ],
+    "3": [
+      "S7",
+      "S3"
+    ]
+  },
+  "seed": 92001,
+  "segments": 2,
+  "arm_minutes": 12,
+  "segment_minutes": 0.5,
+  "evaluation": {
+    "envs": 8,
+    "batches": 1,
+    "seed": 94001,
+    "minutes": 4
+  },
+  "hard_stop_unix": 1793719200.0,
+  "latest_arm_start_unix": 1793713800.0,
+  "source_sha256": {
+    "config/runtime-lock.json": "678c1dd8d51e1a93d06b205e4330d4599d8d8ffedad70e2e9a81bf5d2171651c",
+    "config/wandb.env": "fda86669eff0f47c7702f7ed824a367acabe03f4ea8ca088dd6aa398de6956f7",
+    "scripts/check_runtime.py": "593f0813889bc44e8b14ac9435b5c178b9caaa02fccf641ad89ce0a7604e90e4",
+    "scripts/complete_baseline_preflight.py": "a77d802a30b4f2fcce0632b166b9ad4d0659176dae03d0f003a7bc01c7d00bf5",
+    "scripts/env.sh": "ad13fc90dbe5e0e5a5b9cb1aa1b84cd040028a14ba5657576ff4cde4c09b0baf",
+    "scripts/evaluate_online.py": "683676c256c06d5013651c7696454df1a1c3695e94c07d68b7cbad22afbcfd85",
+    "scripts/finalize_online_long.py": "8477914373387ede7524ff88878608fd87f3e83aefb3aa3a3a252dc345e79b9d",
+    "scripts/launch_online_baseline.py": "f1d5674e9f1a138d73ba66c6673e5434f4e27a7685b8494e4d4675bc2521047f",
+    "scripts/launch_online_candidate.py": "8078e2dc655ab51e3797b2275ee1cf791605b9a7b767bffdb876d3769a0c3642",
+    "scripts/launch_online_long.py": "ee25bfb10f9a2279f0046f21c7aa1660ae07a2d21daeecd4b856e12fa1fb90f2",
+    "scripts/launch_screening.py": "65bef870d4f97c37ad9c2cce461530f543367e24bc13b62ba8dd7061b1c408ee",
+    "scripts/online_baseline_lane.py": "1d9f235c3789c147f9f48bff087ca252be4a4995e173c6eb05fd13185ab5b4a5",
+    "scripts/online_candidate_lane.py": "3cf4870b1b09449c2c4f1f9b1360184790f96a8e10c94f1d955255195958d3fa",
+    "scripts/online_long_lane.py": "f28baa06ceae043972f54f103a9b3a1ed541166c9b23b0b7eb7b52424a67736a",
+    "scripts/screening_lane.py": "f12fea292ea0e3fe7feee287eca85336cd3667f977069694892fae6eada2265b",
+    "scripts/screening_summary.py": "db417dd9211b3cc7cfdd146e56b764539f2f684e282aef91a6deacf2d242f7e0",
+    "scripts/train_online.py": "d3b5ccfa8288503b1e6ae60b56bb99bddd09e1841e9498f75340e1242570d3a8",
+    "scripts/train_online_baseline.py": "02c752a56e7210bfc8e65c9e790154c94004580e51a6776f4660c8a952bd57b9",
+    "scripts/train_online_candidate.py": "4761f905b37cefe5c3b6fd10c67318d6969c9b8e20cb285e62c32e34b58ecd6a",
+    "scripts/train_online_screen.py": "b2a591baba6d9fc720333d01891a0f50ed3231af99ae3a1992efac53396df942",
+    "scripts/wait_online_baseline.py": "ae03d29b75c76a8f8fbb1d0dc3adc4dcf3437443931851e80e4b8841ed5c4387",
+    "tests/test_online_baseline.py": "15c9c980343c0b8fb9a9c4c5f96869fc74692c54c654e6ae14b6edd5e74f5d3a",
+    "tests/test_online_baseline_coordinator.py": "527da1884b5052af1a309e710a58e248aef5e6660526859e88e166f8cc124f2e",
+    "tests/test_online_screen.py": "95c8abbe8fc908473559d72b3aca9e6466e3c1102b8d028c2cf649a6da54794e",
+    "unionmimic/common.py": "12115b32b321ed3e8c1fba2bace4a338f903a7e7afe27b88043dd070c444553d",
+    "unionmimic/online/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+    "unionmimic/online/learner.py": "1b626430413d98cf1554565386641ee63a102c84a2cf06075c4d0ee4dac187e4",
+    "unionmimic/online/simulator.py": "43a9a491031be0152af689e91d0a5e553e957fb0e143a7facb4512f16b2dec08",
+    "unionmimic/online/task.py": "c61eb144788e3b9f3338adb4938f256d8f9ae9b341a431692c54d33debefc45b",
+    "unionmimic/online/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online/worker.py": "49fb1a3ffb77839b54c33fa81088e5c8618ad5fc47d2c1d5276e62c918a60aef",
+    "unionmimic/online_baseline/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online_baseline/core.py": "750f8b6eca2c632d1e84a5099cd51b793d7be8ee53eda1b073413738e7902233",
+    "unionmimic/online_baseline/curriculum.py": "a77d8a2d6e5c9b38a05077bf566c5f67449835f85de24903b938d0e197242e48",
+    "unionmimic/online_baseline/learner.py": "f04158c5e25522beeac4a9ff470f00747ff189dc7c62b2d1bbd97495b971306e",
+    "unionmimic/online_baseline/simulator.py": "12b60a239087888fed9f05883dfcf137654e36b5e0df83635e774e8e6c62c6fd",
+    "unionmimic/online_baseline/task.py": "c93f6d85db003addda2c7b99bac0b3a8435b9048e05384a693cda403c8e2c0fb",
+    "unionmimic/online_baseline/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online_baseline/worker.py": "e8f2ab502c45f1f5e7ebbf948019f103ccfcfc7484573313f241826f2c3f69c8",
+    "unionmimic/online_candidate/__init__.py": "2a7d1ff3a8b4c4486163b7b2021e54c703e1af5806dcea8f8e7e806ef2083fcf",
+    "unionmimic/online_candidate/core.py": "0a8425abb85370ffd2fb259645199e5d14e400300b9f3e6563bc9c504fefeee5",
+    "unionmimic/online_candidate/learner.py": "7bcfddb29c63df0cb97ae2af4bc808faa601d96aba52aac4f4f0e3f14c4f2d99",
+    "unionmimic/online_candidate/simulator.py": "43a9a491031be0152af689e91d0a5e553e957fb0e143a7facb4512f16b2dec08",
+    "unionmimic/online_candidate/task.py": "c93f6d85db003addda2c7b99bac0b3a8435b9048e05384a693cda403c8e2c0fb",
+    "unionmimic/online_candidate/tracking.py": "b989700af6c90ec3980300b83588483d9cf73f4ab76c94df866339bc0146c0a6",
+    "unionmimic/online_candidate/worker.py": "89f76d786a7db84f7c22fd6adec08a0c1d794267b7c5b75a94bf951e07ac0233",
+    "unionmimic/online_screen/__init__.py": "0463a1476962911e55b6bbded044366703449f3dd591cc496ce0c7194911c4f1",
+    "unionmimic/online_screen/branch.py": "9d1d61b18a1322ccdf129cfe2cbc8f0bdb03df722874be502e0667a0b520971b",
+    "unionmimic/online_screen/worker.py": "cde26c13fe920ac36a725d564bb7ed7b7dc1ed8997c7112d502cc31851eeeed6",
+    "work/analysis/sm-factorial-20261103/pilot_driver.py": "c7978d492af953f3b39c92fee11da30edde9c4c4a5383952e482d7065dfa6165",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/task/WMCraftnetRotation.yaml": "1baec80813b3a6fd8a5275f966d0d5d3febe4127844ad88ff21089705d6f9f30",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/train/WMCraftnetPPO.yaml": "b81488e09bc4e1603390020c33f9e47e20fc1daf2947912510c1546cc4792637",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/base/vec_task.py": "911ddb4434a2f3cd98925d539d475802f8f0736f47174e3b8a5630f68147357f",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_camera_rotation.py": "f0d1bc6e01049b6b9325057f21b13096f79734d2f2fc2838edca0eefdc378097",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_rotation.py": "5632e38e80f684dabf95ab15716301ca81cf6bcb1672508d74cb87264c6c1bdf",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/utils/spin_reward_utils.py": "e83c424a4b3d8add3224e1cfac9dc5a88938c38623a1630b54eefc631c6d90d4",
+    "work/upstreams/WM-Craftnet/rl_games/common/common_losses.py": "9134b3cea449fd2ab566cf5ed6fcc8951434de228020fd5162cf6beb5cdaf5c2",
+    "work/upstreams/WM-Craftnet/rl_games/common/schedulers.py": "3fd0d4b2b9472d495458d258bff82bf5fb6bd6c18d91fc20df1b2c9c23d3a5cc",
+    "work/upstreams/sm-reference-audit/scripts/wm/train_yaw.py": "c7cc0a4962feb00002e62d37b969a075beadeded5a61f124d4bce85120f9e239"
+  },
+  "run_root": "work/runs/sm-screen-pilots-20261103-v1",
+  "tmux_session": "unionmimic-sm-screen-pilots",
+  "wandb": true,
+  "recurring_watchdog": false,
+  "test_seeds_opened": false,
+  "design": "2^(4-1) resolution IV; H=F*N*U in +/-1 coding",
+  "alias_pairs": [
+    "F*N = U*H",
+    "F*U = N*H",
+    "F*H = N*U"
+  ],
+  "cycles_per_segment": 2
+}

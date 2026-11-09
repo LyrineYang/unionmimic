@@ -1,0 +1,1 @@
+{"envs": 4, "batch": 16, "model_horizon": 4, "horizon": 4, "warmup_steps": 20, "warmup_updates": 2, "model_updates": 2, "collect_steps": 4, "replay_steps": 64, "critic_epochs": 1, "deadline_unix": 1793617005.7108488}

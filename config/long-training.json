@@ -1,0 +1,17 @@
+{
+  "hours": 12,
+  "gpus": [0, 1, 2, 3],
+  "seeds": [10000, 20000, 30000, 40000],
+  "mode": "four_independent_seed_runs",
+  "sm_updates_per_cycle": 500,
+  "calibration_updates_per_cycle": 1000,
+  "collection_steps_per_cycle": 600,
+  "actor_learning_rate": 0.000003,
+  "anchor_coefficient": 10.0,
+  "regression_tolerance": 0.05,
+  "keep_recent_cycles": 3,
+  "tensorboard_port": 6006,
+  "wandb_mode": "disabled",
+  "socket": "unionmimic",
+  "session": "unionmimic-12h"
+}

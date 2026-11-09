@@ -1,0 +1,84 @@
+[
+  {
+    "label": "real_encoder_no_grad",
+    "passed": true,
+    "seconds": 0.027221515774726868,
+    "incremental_peak_gib": 0.15356731414794922,
+    "batch": 256,
+    "repeats": 4,
+    "embedding_dim": 8704,
+    "decoders_called": false
+  },
+  {
+    "label": "rssm_input_bptt",
+    "passed": true,
+    "seconds": 0.048262257128953934,
+    "incremental_peak_gib": 0.05499553680419922,
+    "batch": 256,
+    "horizon": 4,
+    "input_gradient_norm": 0.0005701823392882943,
+    "weight_gradients": false,
+    "decoders_called": false,
+    "sampling": "released straight-through categorical sample"
+  },
+  {
+    "label": "rssm_input_bptt",
+    "passed": true,
+    "seconds": 0.1178269274532795,
+    "incremental_peak_gib": 0.19685792922973633,
+    "batch": 256,
+    "horizon": 16,
+    "input_gradient_norm": 0.002357519930228591,
+    "weight_gradients": false,
+    "decoders_called": false,
+    "sampling": "released straight-through categorical sample"
+  },
+  {
+    "label": "rssm_input_bptt",
+    "passed": true,
+    "seconds": 0.040962330996990204,
+    "incremental_peak_gib": 0.21645402908325195,
+    "batch": 1024,
+    "horizon": 4,
+    "input_gradient_norm": 0.00026517038349993527,
+    "weight_gradients": false,
+    "decoders_called": false,
+    "sampling": "released straight-through categorical sample"
+  },
+  {
+    "label": "rssm_input_bptt",
+    "passed": true,
+    "seconds": 0.11269966140389442,
+    "incremental_peak_gib": 0.7822422981262207,
+    "batch": 1024,
+    "horizon": 16,
+    "input_gradient_norm": 0.0026380307972431183,
+    "weight_gradients": false,
+    "decoders_called": false,
+    "sampling": "released straight-through categorical sample"
+  },
+  {
+    "label": "rssm_input_bptt",
+    "passed": true,
+    "seconds": 0.07936021313071251,
+    "incremental_peak_gib": 0.8655896186828613,
+    "batch": 4096,
+    "horizon": 4,
+    "input_gradient_norm": 0.00013630364264827222,
+    "weight_gradients": false,
+    "decoders_called": false,
+    "sampling": "released straight-through categorical sample"
+  },
+  {
+    "label": "rssm_input_bptt",
+    "passed": true,
+    "seconds": 0.19045111630111933,
+    "incremental_peak_gib": 3.130035877227783,
+    "batch": 4096,
+    "horizon": 16,
+    "input_gradient_norm": 0.001084794756025076,
+    "weight_gradients": false,
+    "decoders_called": false,
+    "sampling": "released straight-through categorical sample"
+  }
+]

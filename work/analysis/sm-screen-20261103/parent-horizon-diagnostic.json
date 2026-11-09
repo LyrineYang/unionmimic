@@ -1,0 +1,29 @@
+{
+  "parent_sha256": "cea5a0dbf5ea1d40d3f65b38234666cd6690cd09cacc44e47deb84a902b2f225",
+  "samples": 512,
+  "split": "model-internal-holdout",
+  "input": "Same recorded commands and contexts; autoregressive state prediction; no parameter updates",
+  "caveat": "Surviving 16-step windows; excludes boundary-crossing windows, not a full-system unseen test or real-physics gradient test",
+  "horizons": {
+    "1": {
+      "normalized_state_mse": 0.38730862736701965,
+      "joint_rmse_rad": 0.01740550622344017,
+      "scaled_reward_rmse": 0.008495925925672054
+    },
+    "4": {
+      "normalized_state_mse": 0.5460471510887146,
+      "joint_rmse_rad": 0.030701465904712677,
+      "scaled_reward_rmse": 0.008975367993116379
+    },
+    "8": {
+      "normalized_state_mse": 0.707270622253418,
+      "joint_rmse_rad": 0.0350785069167614,
+      "scaled_reward_rmse": 0.008992587216198444
+    },
+    "16": {
+      "normalized_state_mse": 0.9596804976463318,
+      "joint_rmse_rad": 0.03814070671796799,
+      "scaled_reward_rmse": 0.009604284539818764
+    }
+  }
+}

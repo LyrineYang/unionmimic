@@ -6,7 +6,7 @@ const modes = {
   },
   imagine: {
     title: 'Let a short future inform the action.',
-    text: 'The actor and RSSM prior alternate for four predicted steps, without future sensor evidence. Reward, survival, and terminal value guide the actor update. This training path is under development.'
+    text: 'A separate SM model predicts physical trajectories for BPTT. WSM policy context must evolve through a validated predicted-observation or feature bridge. SM has learned sustained Sharpa single-object rotation from scratch. Matched PPO learning speed and the benefit of prior context remain under investigation.'
   }
 };
 const modeButtons = document.querySelectorAll('[data-mode]');

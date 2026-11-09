@@ -1,0 +1,115 @@
+{
+  "unix": 1794237855.7295008,
+  "video": {
+    "path": "/home/junqiy/projects/unionmimic/work/demos/unionmimic-geometry-story-20261109-v1/unionmimic-geometry-story.mp4",
+    "frames": 1300,
+    "metadata": {
+      "ffmpeg_version": "4.2.2-static https://johnvansickle.com/ffmpeg/ built with gcc 8 (Debian 8.3.0-6)",
+      "codec": "h264",
+      "pix_fmt": "yuv420p",
+      "fps": 25.0,
+      "source_size": [
+        1600,
+        1000
+      ],
+      "size": [
+        1600,
+        1000
+      ],
+      "rotate": 0,
+      "duration": 52.0
+    },
+    "sha256": "f32e934de29cd25bb57582791739f891951c6e19ab7a00bb7354b91676e5f4f8"
+  },
+  "active_training_sources_unchanged": {
+    "scripts/train_sharpa_leap.py": true,
+    "scripts/prepare_leap_sharpa.py": true,
+    "scripts/evaluate_sharpa_leap.py": true,
+    "unionmimic/sharpa_leap.py": true,
+    "scripts/env.sh": true,
+    "config/runtime-lock.json": true,
+    "unionmimic/leap_sharpa/__init__.py": true,
+    "unionmimic/leap_sharpa/pen_collect.py": true,
+    "unionmimic/leap_sharpa/model.py": true,
+    "unionmimic/leap_sharpa/pen_model.py": true,
+    "unionmimic/leap_sharpa/simulator.py": true,
+    "unionmimic/leap_sharpa/paired_ppo.py": true,
+    "work/runtime/leap-sharpa/native_update.py": true,
+    "work/runtime/leap-sharpa/src/in_hand_rotation_mjlab/__init__.py": true,
+    "work/runtime/leap-sharpa/src/in_hand_rotation_mjlab/world_model/policy.py": true,
+    "work/runtime/leap-sharpa/src/in_hand_rotation_mjlab/world_model/__init__.py": true,
+    "work/runtime/leap-sharpa/src/in_hand_rotation_mjlab/world_model/layout.py": true,
+    "work/runtime/leap-sharpa/src/in_hand_rotation_mjlab/world_model/model.py": true,
+    "work/runtime/leap-sharpa/src/in_hand_rotation_mjlab/world_model/replay.py": true,
+    "unionmimic/online_baseline/simulator.py": true,
+    "unionmimic/online_baseline/task.py": true,
+    "unionmimic/online_baseline/core.py": true,
+    "unionmimic/online_baseline/curriculum.py": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_rotation.py": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/wm_craftnet_camera_rotation.py": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/tasks/base/vec_task.py": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/config.yaml": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/task/WMCraftnetRotation.yaml": true,
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/train/WMCraftnetPPO.yaml": true
+  },
+  "baseline_snapshot": {
+    "status": "running",
+    "phase": "pilot",
+    "pid": 46512,
+    "gpu": 0,
+    "updated_unix": 1794237794.1424038,
+    "started_unix": 1794235629.0917802,
+    "deadline_unix": 1794250029.0917802,
+    "updates": 290,
+    "actor_updates": 0,
+    "model_updates": 2900,
+    "critic_optimizer_steps": 0,
+    "valid_rows": 3195024
+  },
+  "contracts": "3 unittest contracts passed",
+  "bridge": {
+    "rows": [
+      {
+        "horizon": 1,
+        "physical_position_error_mm": 1.299656867980957,
+        "raw_physics_to_real_estimate_mm": 2.1530916690826416,
+        "fixed_error_to_real_estimate_mm": 1.4247589111328125,
+        "ar1_mean_to_real_estimate_mm": 1.403867244720459,
+        "sensor_only_ar1_error_mm": 1.0507481098175049
+      },
+      {
+        "horizon": 4,
+        "physical_position_error_mm": 2.4746429920196533,
+        "raw_physics_to_real_estimate_mm": 2.8946356773376465,
+        "fixed_error_to_real_estimate_mm": 2.557344913482666,
+        "ar1_mean_to_real_estimate_mm": 2.4642343521118164,
+        "sensor_only_ar1_error_mm": 1.5618723630905151
+      },
+      {
+        "horizon": 8,
+        "physical_position_error_mm": 3.101851224899292,
+        "raw_physics_to_real_estimate_mm": 3.4347732067108154,
+        "fixed_error_to_real_estimate_mm": 3.1145377159118652,
+        "ar1_mean_to_real_estimate_mm": 3.0131664276123047,
+        "sensor_only_ar1_error_mm": 1.5698561668395996
+      },
+      {
+        "horizon": 16,
+        "physical_position_error_mm": 4.565866947174072,
+        "raw_physics_to_real_estimate_mm": 4.76209831237793,
+        "fixed_error_to_real_estimate_mm": 4.533815383911133,
+        "ar1_mean_to_real_estimate_mm": 4.427710056304932,
+        "sensor_only_ar1_error_mm": 1.7024067640304565
+      }
+    ],
+    "starts": 512,
+    "weights_unchanged": true,
+    "input_gradient_norm": 0.0012805188307538629,
+    "controller_target_max_error": 0.0,
+    "data_sha256": "0f3aeeed0b72e61de87b21cc4f8cf55c9eb43485a3a502af56de64fa259f13ff",
+    "model_sha256": "60588994e0ca0d436eeeed8ccee9f9f0fa628fe55ed983e95d7838c875959321",
+    "bridge_sha256": "dee63ee063b4dc570cee9c29b7f7f6cc34b218f925ddea4b4934536de133c444",
+    "protocol": "Frozen historical F, complete-episode starts, recorded executed commands and controller scales; no future observations in F/bridge propagation.",
+    "limits": "Sensor-only column substitutes ground-truth positions solely for offline error decomposition. It is not a usable actor input or a control comparison. Historical F/behavior are not the new random-policy baseline. AR1 scores use conditional mean, not stochastic coverage."
+  }
+}

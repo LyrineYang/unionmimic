@@ -1,0 +1,26 @@
+{
+  "validated": true,
+  "requires_user_confirmation": true,
+  "commands": [
+    [
+      "sm-seed92001",
+      0,
+      "source scripts/env.sh && python scripts/check_runtime.py && export WANDB_MODE=online && exec /home/junqiy/projects/unionmimic/.venv/bin/python /home/junqiy/projects/unionmimic/scripts/online_long_lane.py --plan /home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json --approval /home/junqiy/projects/unionmimic/work/analysis/online-sm-20261102/long-training-approval.json --arm sm-seed92001 --run /home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001"
+    ],
+    [
+      "sm-seed92002",
+      1,
+      "source scripts/env.sh && python scripts/check_runtime.py && export WANDB_MODE=online && exec /home/junqiy/projects/unionmimic/.venv/bin/python /home/junqiy/projects/unionmimic/scripts/online_long_lane.py --plan /home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json --approval /home/junqiy/projects/unionmimic/work/analysis/online-sm-20261102/long-training-approval.json --arm sm-seed92002 --run /home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92002"
+    ],
+    [
+      "ppo-seed92001",
+      2,
+      "source scripts/env.sh && python scripts/check_runtime.py && export WANDB_MODE=online && exec /home/junqiy/projects/unionmimic/.venv/bin/python /home/junqiy/projects/unionmimic/scripts/online_long_lane.py --plan /home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json --approval /home/junqiy/projects/unionmimic/work/analysis/online-sm-20261102/long-training-approval.json --arm ppo-seed92001 --run /home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001"
+    ],
+    [
+      "ppo-seed92002",
+      3,
+      "source scripts/env.sh && python scripts/check_runtime.py && export WANDB_MODE=online && exec /home/junqiy/projects/unionmimic/.venv/bin/python /home/junqiy/projects/unionmimic/scripts/online_long_lane.py --plan /home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json --approval /home/junqiy/projects/unionmimic/work/analysis/online-sm-20261102/long-training-approval.json --arm ppo-seed92002 --run /home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92002"
+    ]
+  ]
+}

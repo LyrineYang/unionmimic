@@ -1,0 +1,18 @@
+{
+  "started_unix": 1793765139.0294547,
+  "cli": {
+    "gpu": 3,
+    "envs": 52,
+    "out": "/home/junqiy/projects/unionmimic/work/analysis/pen-reference-v2a/gpu3",
+    "retarget": "/home/junqiy/projects/unionmimic/work/motions/sharpa-pen-joint-pose-gpu2-20261104-v1",
+    "moving": true
+  },
+  "sources": {
+    "work/runtime/pen-reference-v2a/check.py": "f256b57f0a7f7c339d8dc9da9f59553ba36498262dd402d1e29eb6c5821d9d9a",
+    "unionmimic/pen_simulator.py": "aa05a437bdb122ab5e82ffa3cbf42c190b83aaaf9187525182ab35505a1339a1",
+    "unionmimic/pen_tasks.py": "1bca0b8e7e5ba203a16dbc490f0b8728e37a0325e9b2a4d3125c42c11e3c52e4",
+    "unionmimic/pen_camera.py": "dcacbbeacda9305f292a0131625aee8572a8476dfddb11427a0624292e237801",
+    "unionmimic/hand_kinematics.py": "301dfa3bf6cdfb79efa6b9e1e7cc14257cac6990dc3e0b3b5ed9eb0cbadf1873",
+    "assets/reference_pen/pen.urdf": "65b4eb4d7937f1967f011e85480d50a18d532626fceccad999a316c440d98675"
+  }
+}

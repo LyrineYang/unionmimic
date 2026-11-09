@@ -1,0 +1,7 @@
+{
+  "status": "stopped",
+  "pid": 36059,
+  "gpu": 1,
+  "unix": 1793762930.280209,
+  "error": "InterruptedError('User stop; no automatic resume')"
+}

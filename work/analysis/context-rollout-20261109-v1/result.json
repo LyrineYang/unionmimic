@@ -1,0 +1,156 @@
+{
+  "rows": [
+    {
+      "mode": "fixed_context",
+      "horizon": 1,
+      "latent_rmse": 0.14862069487571716,
+      "joint_rmse": 0.18927986919879913,
+      "tactile_brier": 0.18779097497463226,
+      "observation_persistence_joint_rmse": 0.1783047765493393,
+      "observation_persistence_tactile_brier": 0.30195313692092896
+    },
+    {
+      "mode": "fixed_context",
+      "horizon": 2,
+      "latent_rmse": 0.23915593326091766,
+      "joint_rmse": 0.31813475489616394,
+      "tactile_brier": 0.25625523924827576,
+      "observation_persistence_joint_rmse": 0.31831416487693787,
+      "observation_persistence_tactile_brier": 0.3734374940395355
+    },
+    {
+      "mode": "fixed_context",
+      "horizon": 4,
+      "latent_rmse": 0.31603047251701355,
+      "joint_rmse": 0.48987987637519836,
+      "tactile_brier": 0.3307807147502899,
+      "observation_persistence_joint_rmse": 0.49682363867759705,
+      "observation_persistence_tactile_brier": 0.45976564288139343
+    },
+    {
+      "mode": "fixed_context",
+      "horizon": 8,
+      "latent_rmse": 0.3249373137950897,
+      "joint_rmse": 0.5059361457824707,
+      "tactile_brier": 0.32127007842063904,
+      "observation_persistence_joint_rmse": 0.5143912434577942,
+      "observation_persistence_tactile_brier": 0.4449218809604645
+    },
+    {
+      "mode": "fixed_context",
+      "horizon": 16,
+      "latent_rmse": 0.32316967844963074,
+      "joint_rmse": 0.4995996356010437,
+      "tactile_brier": 0.32026705145835876,
+      "observation_persistence_joint_rmse": 0.5106141567230225,
+      "observation_persistence_tactile_brier": 0.44843751192092896
+    },
+    {
+      "mode": "action_prior_mode",
+      "horizon": 1,
+      "latent_rmse": 4.324536462263495e-08,
+      "joint_rmse": 0.11089804023504257,
+      "tactile_brier": 0.14759647846221924,
+      "observation_persistence_joint_rmse": 0.1783047765493393,
+      "observation_persistence_tactile_brier": 0.30195313692092896
+    },
+    {
+      "mode": "action_prior_mode",
+      "horizon": 2,
+      "latent_rmse": 0.053018342703580856,
+      "joint_rmse": 0.12398390471935272,
+      "tactile_brier": 0.1609077751636505,
+      "observation_persistence_joint_rmse": 0.31831416487693787,
+      "observation_persistence_tactile_brier": 0.3734374940395355
+    },
+    {
+      "mode": "action_prior_mode",
+      "horizon": 4,
+      "latent_rmse": 0.09254630655050278,
+      "joint_rmse": 0.1482515037059784,
+      "tactile_brier": 0.16365674138069153,
+      "observation_persistence_joint_rmse": 0.49682363867759705,
+      "observation_persistence_tactile_brier": 0.45976564288139343
+    },
+    {
+      "mode": "action_prior_mode",
+      "horizon": 8,
+      "latent_rmse": 0.13570772111415863,
+      "joint_rmse": 0.17327581346035004,
+      "tactile_brier": 0.16451188921928406,
+      "observation_persistence_joint_rmse": 0.5143912434577942,
+      "observation_persistence_tactile_brier": 0.4449218809604645
+    },
+    {
+      "mode": "action_prior_mode",
+      "horizon": 16,
+      "latent_rmse": 0.18296866118907928,
+      "joint_rmse": 0.2101900428533554,
+      "tactile_brier": 0.17968043684959412,
+      "observation_persistence_joint_rmse": 0.5106141567230225,
+      "observation_persistence_tactile_brier": 0.44843751192092896
+    },
+    {
+      "mode": "action_prior_sample",
+      "horizon": 1,
+      "latent_rmse": 4.324536462263495e-08,
+      "joint_rmse": 0.1087649017572403,
+      "tactile_brier": 0.1503392904996872,
+      "observation_persistence_joint_rmse": 0.1783047765493393,
+      "observation_persistence_tactile_brier": 0.30195313692092896
+    },
+    {
+      "mode": "action_prior_sample",
+      "horizon": 2,
+      "latent_rmse": 0.049434781074523926,
+      "joint_rmse": 0.11688389629125595,
+      "tactile_brier": 0.16251733899116516,
+      "observation_persistence_joint_rmse": 0.31831416487693787,
+      "observation_persistence_tactile_brier": 0.3734374940395355
+    },
+    {
+      "mode": "action_prior_sample",
+      "horizon": 4,
+      "latent_rmse": 0.0750303715467453,
+      "joint_rmse": 0.12675274908542633,
+      "tactile_brier": 0.16142356395721436,
+      "observation_persistence_joint_rmse": 0.49682363867759705,
+      "observation_persistence_tactile_brier": 0.45976564288139343
+    },
+    {
+      "mode": "action_prior_sample",
+      "horizon": 8,
+      "latent_rmse": 0.0931101068854332,
+      "joint_rmse": 0.13106758892536163,
+      "tactile_brier": 0.16084575653076172,
+      "observation_persistence_joint_rmse": 0.5143912434577942,
+      "observation_persistence_tactile_brier": 0.4449218809604645
+    },
+    {
+      "mode": "action_prior_sample",
+      "horizon": 16,
+      "latent_rmse": 0.10755132883787155,
+      "joint_rmse": 0.13986288011074066,
+      "tactile_brier": 0.16431467235088348,
+      "observation_persistence_joint_rmse": 0.5106141567230225,
+      "observation_persistence_tactile_brier": 0.44843751192092896
+    }
+  ],
+  "episodes": [
+    "000003",
+    "000013",
+    "000018",
+    "000024",
+    "000026",
+    "000027",
+    "000032",
+    "000035"
+  ],
+  "starts": 512,
+  "control_dt": 0.10002,
+  "source": "/home/junqiy/projects/unionmimic/work/runs/step2-20261101/data",
+  "state_model_sha256": "ca882bd78b163afe3a77523e59ae217bdcfbbd7479709f3e9e4c42fcb0c0983a:e5174e3602f7a6377bb45dc4cd7747ef2a62e261f206e1af845a1497efad44ba",
+  "weights_frozen": true,
+  "future_inputs": "recorded executed actions only",
+  "limits": "Held-out historical 10Hz block task. Latent labels are teacher future posteriors and tactile labels are noisy sensor bits. Decoders are used for offline diagnostics only. Not a 50Hz pen bridge or actor-training result."
+}

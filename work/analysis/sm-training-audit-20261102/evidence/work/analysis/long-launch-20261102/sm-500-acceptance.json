@@ -1,0 +1,8 @@
+{
+  "episodes": 32,
+  "mean_return": 1072.7788391113281,
+  "return_change_percent": -0.3129101394460987,
+  "rotation_radians": 57.08276176452637,
+  "failures": 0,
+  "passed": true
+}

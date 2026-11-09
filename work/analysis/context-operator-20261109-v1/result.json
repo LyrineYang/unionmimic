@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "operator_only": true,
+  "model": {
+    "wm": 531.4698486328125,
+    "term": 0.23740962147712708,
+    "aux": 1.1657766103744507,
+    "wm_twist_deg": 7.683504581451416,
+    "wm_pos_mm": 9.57698917388916
+  },
+  "actor": {
+    "J": -5.41904878616333,
+    "imag_r": -16.14173126220703,
+    "v": 427.90655517578125,
+    "gn": 2.7210848331451416,
+    "surv": 0.05591075122356415,
+    "finite": true
+  },
+  "parity": {
+    "reward": 5.513429641723633e-06,
+    "action": 0.0,
+    "target": 0.0
+  },
+  "prior_unchanged": true,
+  "model_frozen_in_actor": true,
+  "recollection": 1
+}

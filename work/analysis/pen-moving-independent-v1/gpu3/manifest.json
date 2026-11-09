@@ -1,0 +1,20 @@
+{
+  "started_unix": 1793776313.0288787,
+  "cli": {
+    "gpu": 3,
+    "envs": 208,
+    "out": "/home/junqiy/projects/unionmimic/work/analysis/pen-moving-independent-v1/gpu3",
+    "retarget": "/home/junqiy/projects/unionmimic/work/motions/sharpa-pen-contact-moving-gpu3",
+    "moving": true
+  },
+  "sources": {
+    "scripts/check_pen_physics.py": "08affac5877ad212d575916aeb907569038341b067182659a48a47d5a3e7cd99",
+    "unionmimic/pen_simulator.py": "39ce1488c71189cf6d6b27bd811ea625e7d53dc4121bb5fac16ebe53c25ded50",
+    "unionmimic/pen_tasks.py": "1bca0b8e7e5ba203a16dbc490f0b8728e37a0325e9b2a4d3125c42c11e3c52e4",
+    "unionmimic/pen_camera.py": "dcacbbeacda9305f292a0131625aee8572a8476dfddb11427a0624292e237801",
+    "unionmimic/pen_reward.py": "71ee91432b2fb11e8405eaef21a27d3b9ecfa2f91b29dbae4d88893d7f555f50",
+    "unionmimic/pen_sampling.py": "778cd3f684596a8623b8c80c8349ff57fc5b4cf78c1968106cf4d66276b9a70e",
+    "unionmimic/hand_kinematics.py": "301dfa3bf6cdfb79efa6b9e1e7cc14257cac6990dc3e0b3b5ed9eb0cbadf1873",
+    "assets/reference_pen/pen_tracking220.urdf": "4f9325d94918dd393a1a0bfe67232b030c9457e7daaa9a0b7f2b23f06d2d2376"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "status": "small_pilot_inconclusive_not_gate_pass",
+  "states": 4,
+  "directions": 2,
+  "amplitude": 0.03,
+  "model_start": "one fixed recorded pre-perturbation posterior for every branch",
+  "model_mc_per_branch": 192,
+  "physical_null_ranges": [
+    0.1265408992767334,
+    0.007190704345703125,
+    0.0054700374603271484,
+    0.09999942779541016
+  ],
+  "eligible": 4,
+  "comparisons": [
+    {
+      "direction": 0,
+      "lane": 0,
+      "physical_delta": -0.25133681297302246,
+      "physical_rotation_delta": -0.013217970728874207,
+      "model_delta_mean": -0.0032498041788736978,
+      "model_delta_mc_samples": [
+        -0.004484653472900391,
+        -0.00063323974609375,
+        -0.004631519317626953
+      ],
+      "gradient_projection": -0.0047166552394628525,
+      "null_range": 0.1265408992767334,
+      "action_mapping_max_error": 2.384185791015625e-07,
+      "eligible": false
+    },
+    {
+      "direction": 0,
+      "lane": 1,
+      "physical_delta": 0.019205093383789062,
+      "physical_rotation_delta": 0.0015681684017181396,
+      "model_delta_mean": 0.011632760365804037,
+      "model_delta_mc_samples": [
+        0.010821342468261719,
+        0.012028217315673828,
+        0.012048721313476562
+      ],
+      "gradient_projection": 0.009088007733225822,
+      "null_range": 0.007190704345703125,
+      "action_mapping_max_error": 2.384185791015625e-07,
+      "eligible": false
+    },
+    {
+      "direction": 0,
+      "lane": 2,
+      "physical_delta": -0.07823944091796875,
+      "physical_rotation_delta": -0.00872926414012909,
+      "model_delta_mean": -0.004766146341959636,
+      "model_delta_mc_samples": [
+        -0.0036468505859375,
+        -0.003765106201171875,
+        -0.006886482238769531
+      ],
+      "gradient_projection": -0.006144861690700054,
+      "null_range": 0.0054700374603271484,
+      "action_mapping_max_error": 2.384185791015625e-07,
+      "eligible": true
+    },
+    {
+      "direction": 0,
+      "lane": 3,
+      "physical_delta": -0.30784130096435547,
+      "physical_rotation_delta": -0.00014084577560424805,
+      "model_delta_mean": 0.003012975056966146,
+      "model_delta_mc_samples": [
+        0.003002166748046875,
+        0.0030879974365234375,
+        0.002948760986328125
+      ],
+      "gradient_projection": 0.002520713023841381,
+      "null_range": 0.09999942779541016,
+      "action_mapping_max_error": 2.384185791015625e-07,
+      "eligible": true
+    },
+    {
+      "direction": 1,
+      "lane": 0,
+      "physical_delta": -0.18569016456604004,
+      "physical_rotation_delta": -0.014121606945991516,
+      "model_delta_mean": -0.011890252431233725,
+      "model_delta_mc_samples": [
+        -0.012506484985351562,
+        -0.011280536651611328,
+        -0.011883735656738281
+      ],
+      "gradient_projection": -0.012344516813755035,
+      "null_range": 0.1265408992767334,
+      "action_mapping_max_error": 2.384185791015625e-07,
+      "eligible": false
+    },
+    {
+      "direction": 1,
+      "lane": 1,
+      "physical_delta": -0.34657859802246094,
+      "physical_rotation_delta": -0.01923033595085144,
+      "model_delta_mean": -0.016775767008463543,
+      "model_delta_mc_samples": [
+        -0.015456199645996094,
+        -0.0223846435546875,
+        -0.012486457824707031
+      ],
+      "gradient_projection": -0.01528487540781498,
+      "null_range": 0.007190704345703125,
+      "action_mapping_max_error": 2.384185791015625e-07,
+      "eligible": true
+    },
+    {
+      "direction": 1,
+      "lane": 2,
+      "physical_delta": -0.1191256046295166,
+      "physical_rotation_delta": -0.006498202681541443,
+      "model_delta_mean": -0.012781143188476562,
+      "model_delta_mc_samples": [
+        -0.010087013244628906,
+        -0.010256767272949219,
+        -0.017999649047851562
+      ],
+      "gradient_projection": -0.010889456607401371,
+      "null_range": 0.0054700374603271484,
+      "action_mapping_max_error": 2.384185791015625e-07,
+      "eligible": true
+    },
+    {
+      "direction": 1,
+      "lane": 3,
+      "physical_delta": 0.2842264175415039,
+      "physical_rotation_delta": 0.004491150379180908,
+      "model_delta_mean": 0.003127415974934896,
+      "model_delta_mc_samples": [
+        0.0027780532836914062,
+        0.0024633407592773438,
+        0.0041408538818359375
+      ],
+      "gradient_projection": 0.0027472982183098793,
+      "null_range": 0.09999942779541016,
+      "action_mapping_max_error": 1.7881393432617188e-07,
+      "eligible": false
+    }
+  ],
+  "gradient_sign_matches": 3,
+  "model_sign_matches": 3,
+  "optimizer_steps": 0,
+  "weights_unchanged": true,
+  "limitations": [
+    "Four starts only; no positive/negative causal verdict from this pilot.",
+    "Physical null replay has nonzero noise; only effects above a predefined bound retained.",
+    "Monte Carlo delta estimates are noisy; this is not a validated derivative of true contact dynamics.",
+    "Full contact/slip stratification and held-out action coverage remain gates before long SM training."
+  ]
+}

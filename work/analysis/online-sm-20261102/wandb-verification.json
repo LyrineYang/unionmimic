@@ -1,0 +1,16 @@
+[
+  {
+    "id": "online-sm-20261102-pilot-v1",
+    "state": "finished",
+    "url": "https://wandb.ai/lyrine-huazhong-university-of-science-and-technology/unionmimic/runs/online-sm-20261102-pilot-v1",
+    "cycle": 150,
+    "frames": 84992
+  },
+  {
+    "id": "online-ppo-20261102-pilot-v2",
+    "state": "finished",
+    "url": "https://wandb.ai/lyrine-huazhong-university-of-science-and-technology/unionmimic/runs/online-ppo-20261102-pilot-v2",
+    "cycle": 90,
+    "frames": 192512
+  }
+]

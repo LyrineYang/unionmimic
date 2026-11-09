@@ -1,0 +1,245 @@
+{
+  "results": [
+    {
+      "variant": "history",
+      "selected_alpha": [
+        0.1,
+        10.0,
+        1.0
+      ],
+      "position_mm": 3.5653840225283857,
+      "rotation_deg": 85.65089816928166,
+      "velocity_mm_s": 27.45249203154025,
+      "episode": {
+        "0": {
+          "position_mm": 4.539205932742379,
+          "rotation_deg": 73.22154325422966,
+          "velocity_mm_s": 33.89659268256517
+        },
+        "6": {
+          "position_mm": 3.0134668156291946,
+          "rotation_deg": 86.3676857387172,
+          "velocity_mm_s": 30.23293424184868
+        },
+        "12": {
+          "position_mm": 3.9622846804547383,
+          "rotation_deg": 86.91266097407888,
+          "velocity_mm_s": 23.6462542073952
+        }
+      },
+      "position_mm_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "rotation_deg_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "velocity_mm_s_delta_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "variant": "history_encoder512",
+      "selected_alpha": [
+        0.001,
+        1.0,
+        1.0
+      ],
+      "position_mm": 1.869225324140898,
+      "rotation_deg": 89.79650756110195,
+      "velocity_mm_s": 27.131823396939993,
+      "episode": {
+        "0": {
+          "position_mm": 1.6945779308018132,
+          "rotation_deg": 140.6264352121081,
+          "velocity_mm_s": 32.1649391130593
+        },
+        "6": {
+          "position_mm": 2.3680983713100168,
+          "rotation_deg": 82.24425028746887,
+          "velocity_mm_s": 29.661842739740354
+        },
+        "12": {
+          "position_mm": 1.3981532906053478,
+          "rotation_deg": 89.25747022906468,
+          "velocity_mm_s": 23.80061420545126
+        }
+      },
+      "position_mm_delta_ci95": [
+        -2.8446280019405656,
+        -0.6453684443191778
+      ],
+      "rotation_deg_delta_ci95": [
+        -4.1234354512483264,
+        67.40489195787845
+      ],
+      "velocity_mm_s_delta_ci95": [
+        -1.7316535695058732,
+        0.15435999805606215
+      ]
+    },
+    {
+      "variant": "history_wsm512",
+      "selected_alpha": [
+        0.1,
+        1.0,
+        1.0
+      ],
+      "position_mm": 2.9687498070191927,
+      "rotation_deg": 85.75137031031669,
+      "velocity_mm_s": 26.61785761736038,
+      "episode": {
+        "0": {
+          "position_mm": 3.666568100873253,
+          "rotation_deg": 130.9832339009695,
+          "velocity_mm_s": 31.985015119582215
+        },
+        "6": {
+          "position_mm": 2.732239866996111,
+          "rotation_deg": 80.11557357709141,
+          "velocity_mm_s": 28.803414208427345
+        },
+        "12": {
+          "position_mm": 3.0941784676124455,
+          "rotation_deg": 84.18699283931561,
+          "velocity_mm_s": 23.577937179000962
+        }
+      },
+      "position_mm_delta_ci95": [
+        -0.8726378318691261,
+        -0.2812269486330834
+      ],
+      "rotation_deg_delta_ci95": [
+        -6.252112161625789,
+        57.76169064673985
+      ],
+      "velocity_mm_s_delta_ci95": [
+        -1.9115775629829557,
+        -0.0683170283942367
+      ]
+    },
+    {
+      "variant": "history_shuffled512",
+      "selected_alpha": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "position_mm": 3.790585414518005,
+      "rotation_deg": 89.53369219572043,
+      "velocity_mm_s": 27.66383781707029,
+      "episode": {
+        "0": {
+          "position_mm": 4.825106558497346,
+          "rotation_deg": 82.8154706579392,
+          "velocity_mm_s": 34.39911405860923
+        },
+        "6": {
+          "position_mm": 3.5227060293693047,
+          "rotation_deg": 87.877290776057,
+          "velocity_mm_s": 30.50559762019379
+        },
+        "12": {
+          "position_mm": 3.89378592368632,
+          "rotation_deg": 92.25952479894909,
+          "velocity_mm_s": 23.74993199998754
+        }
+      },
+      "position_mm_delta_ci95": [
+        -0.0684987567684181,
+        0.50923921374011
+      ],
+      "rotation_deg_delta_ci95": [
+        1.5096050373397958,
+        9.593927403709543
+      ],
+      "velocity_mm_s_delta_ci95": [
+        0.10367779259233956,
+        0.5025213760440579
+      ]
+    },
+    {
+      "variant": "train_mean",
+      "selected_alpha": [
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "position_mm": 5.6925052743209,
+      "rotation_deg": 88.79610907193884,
+      "velocity_mm_s": 30.086492698742905,
+      "episode": {
+        "0": {
+          "position_mm": 6.625744615866725,
+          "rotation_deg": 81.13169312448326,
+          "velocity_mm_s": 36.96186500264432
+        },
+        "6": {
+          "position_mm": 6.060478864566491,
+          "rotation_deg": 97.01768619473314,
+          "velocity_mm_s": 34.661940296461
+        },
+        "12": {
+          "position_mm": 5.175975217461893,
+          "rotation_deg": 81.79458183465789,
+          "velocity_mm_s": 24.41659808122009
+        }
+      },
+      "position_mm_delta_ci95": [
+        1.213690537007155,
+        3.047012048937296
+      ],
+      "rotation_deg_delta_ci95": [
+        -5.118079139420985,
+        10.650000456015945
+      ],
+      "velocity_mm_s_delta_ci95": [
+        0.770343873824892,
+        4.429006054612316
+      ]
+    }
+  ],
+  "source": "/home/junqiy/projects/unionmimic/work/analysis/sm-context-geometry-20261109-v1",
+  "source_sha256": "9bc2e2de63824b85f8110b3364917b3c3fd482341ba71b0c19bb6ad221ec7bd3",
+  "seconds": 3.618865966796875,
+  "split": {
+    "fit": [
+      1,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      13,
+      14,
+      15,
+      17,
+      18
+    ],
+    "inner": [
+      2,
+      7,
+      11,
+      16
+    ],
+    "outer": [
+      0,
+      6,
+      12
+    ]
+  },
+  "rows": {
+    "fit": 2434,
+    "inner": 893,
+    "outer": 529
+  },
+  "target": "Current hand-local hidden object state; geometry labels never fed to policy or WSM. No future inputs.",
+  "limits": [
+    "Exploratory new target/new dataset; does not replace previous contact result.",
+    "Current encoder and recurrent WSM share pretrained source and modality; 512-d random encoder projection is lossy.",
+    "Small episodic holdout, one behavior policy/seed, different effective feature capacity; not a policy benefit or independent-seed significance test."
+  ]
+}

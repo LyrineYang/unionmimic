@@ -1,0 +1,31 @@
+{
+  "authorization": "work/authorizations/pen-comparison-20261109-v1.json",
+  "status": "work/pen-followup-20261109-status.json",
+  "input": "work/motions/sharpa-pen-phase-calibrated-20261109-v1",
+  "calibration": "work/analysis/pen-dense-calibration-20261109-v1",
+  "prefix": "work/motions/sharpa-pen-robust-reset-20261109-v3",
+  "candidate": "work/motions/sharpa-pen-dense-merged-20261109-v1",
+  "plan": "config/pen-comparison-24h-20261109-v2.json",
+  "jobs": [
+    {
+      "pid": 37361,
+      "identity": "pen-dense-calibration-20261109-v1/gpu0",
+      "result": "work/analysis/pen-dense-calibration-20261109-v1/gpu0/result.json"
+    },
+    {
+      "pid": 37371,
+      "identity": "pen-dense-calibration-20261109-v1/gpu1",
+      "result": "work/analysis/pen-dense-calibration-20261109-v1/gpu1/result.json"
+    },
+    {
+      "pid": 37374,
+      "identity": "pen-dense-calibration-20261109-v1/gpu2",
+      "result": "work/analysis/pen-dense-calibration-20261109-v1/gpu2/result.json"
+    },
+    {
+      "pid": 40373,
+      "identity": "sharpa-pen-robust-reset-20261109-v3",
+      "result": "work/motions/sharpa-pen-robust-reset-20261109-v3/manifest.json"
+    }
+  ]
+}

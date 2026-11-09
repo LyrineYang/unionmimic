@@ -1,0 +1,102 @@
+{
+  "checked_unix": 1793717785.5699804,
+  "upstream_commit": "0ab03eb2244b4a1a020d94ef38a4823bb9e15ba0",
+  "native_runtime": {
+    "passed": true,
+    "torch": "2.11.0+cu126",
+    "cuda": "12.6",
+    "gpu": "Tesla V100-SXM2-32GB",
+    "capability": [
+      7,
+      0
+    ],
+    "compiled_arches": [
+      "sm_50",
+      "sm_60",
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90"
+    ],
+    "libc": "2.28",
+    "torch_backward_finite": true,
+    "warp_kernel_exact": true,
+    "packages": {
+      "torch": "2.11.0+cu126",
+      "numpy": "2.4.6",
+      "mjlab": "1.5.0",
+      "mujoco": "3.10.0",
+      "mujoco-warp": "3.10.0.1",
+      "warp-lang": "1.14.0",
+      "rsl-rl-lib": "5.4.0"
+    }
+  },
+  "package_tests_passed": 33,
+  "source_preservation": {
+    "checked_unix": 1793717507.644876,
+    "old_screen_sources": 60,
+    "old_screen_changed": [],
+    "native_sources": 109,
+    "native_changed": []
+  },
+  "parity": {
+    "torque_work": {
+      "n": 245746,
+      "env_mean": -0.0011993646621704102,
+      "ours_mean": -0.0011917495867237449,
+      "mean_abs_diff": 9.113189662457444e-06,
+      "corr": 0.9994525909423828
+    },
+    "rotate_finite_diff": {
+      "n": 245746,
+      "env_mean": 0.00023147332831285894,
+      "ours_mean": 0.00022038705355953425,
+      "max_abs_diff": 0.2866816520690918,
+      "mean_abs_diff": 0.0012298878282308578,
+      "corr": 0.9964332580566406
+    },
+    "object_linvel_penalty": {
+      "n": 245746,
+      "env_mean": -0.004513234365731478,
+      "ours_mean": -0.004516304470598698,
+      "max_abs_diff": 0.05887345224618912,
+      "mean_abs_diff": 0.0018690311117097735,
+      "corr": 0.8017014861106873
+    },
+    "pose_diff_penalty": {
+      "n": 245746,
+      "env_mean": 0.0,
+      "ours_mean": 0.0,
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "corr": null
+    }
+  },
+  "parity_interpretation": {
+    "strict_equality": false,
+    "pose_correlation": "undefined for two all-zero sequences; no nonzero pose-reward validation",
+    "remaining_differences": "native upstream state/reward mismatch recorded, unchanged; investigate before Sharpa parity claims"
+  },
+  "published_sm_evaluation": {
+    "cold_attempt_exit_code": 124,
+    "cold_attempt_output_complete": false,
+    "warm_attempt": "in progress; same512env/60s, 1200s outer bound, progress observer only"
+  },
+  "pilot": {
+    "run": "work/runs/leap-native-pilot-20261103-v1",
+    "status": {
+      "status": "running",
+      "phase": "train",
+      "updated_unix": 1793717597.7464445
+    },
+    "full_scale": true,
+    "learning_acceptance": "pending",
+    "tmux_session": "unionmimic-leap-native",
+    "gpu": 1
+  },
+  "sharpa_adaptation": "physical/controller/model interface checked; full online SM not implemented",
+  "long_training_approved": false,
+  "auto_long_launch": false,
+  "cuda_graphs": "disabled by unmodified mjlab due to driver12.1; no global driver change"
+}

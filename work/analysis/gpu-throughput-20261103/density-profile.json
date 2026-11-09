@@ -1,0 +1,80 @@
+{
+  "status": "running",
+  "gpu": 3,
+  "started_unix": 1793710571.8669891,
+  "horizon": 16,
+  "rows": [
+    {
+      "batch": 256,
+      "profile_wall_seconds": 43.61706035397947,
+      "cuda_device_active_seconds": 0.211021,
+      "cuda_activity_fraction_with_profiler": 0.004838038104526848,
+      "cuda_event_count": 53672,
+      "scalar_host_reads": 1075,
+      "peak_allocated_gib": 0.26424217224121094,
+      "cpu_top": [
+        {
+          "name": "cudaLaunchKernel",
+          "calls": 51518,
+          "self_cpu_ms": 599.132
+        },
+        {
+          "name": "aten::mul",
+          "calls": 8109,
+          "self_cpu_ms": 230.092
+        },
+        {
+          "name": "aten::empty",
+          "calls": 9951,
+          "self_cpu_ms": 154.926
+        },
+        {
+          "name": "aten::slice",
+          "calls": 17387,
+          "self_cpu_ms": 127.744
+        },
+        {
+          "name": "aten::addmm",
+          "calls": 950,
+          "self_cpu_ms": 90.421
+        },
+        {
+          "name": "aten::sub",
+          "calls": 3071,
+          "self_cpu_ms": 83.172
+        },
+        {
+          "name": "aten::add",
+          "calls": 2883,
+          "self_cpu_ms": 79.828
+        },
+        {
+          "name": "aten::div",
+          "calls": 2669,
+          "self_cpu_ms": 75.302
+        },
+        {
+          "name": "aten::copy_",
+          "calls": 5183,
+          "self_cpu_ms": 70.066
+        },
+        {
+          "name": "aten::sum",
+          "calls": 1726,
+          "self_cpu_ms": 66.49
+        },
+        {
+          "name": "autograd::engine::evaluate_function: SliceBackward0",
+          "calls": 3416,
+          "self_cpu_ms": 57.556
+        },
+        {
+          "name": "cudaMemcpyAsync",
+          "calls": 2057,
+          "self_cpu_ms": 53.739
+        }
+      ]
+    }
+  ],
+  "limitation": "Learner-only profiling with overhead; CUDA event interval union is this process activity, not whole-GPU utilization or end-to-end learning speed."
+}

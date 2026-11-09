@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-11-01T10:19:14.242159+00:00",
+  "status": "prepared_for_user_review_no_optimizer_updates",
+  "first_training_watchdog": "inactive",
+  "original_run_restarted": false,
+  "wandb": "disabled",
+  "manifest_sha256": "cc645b9067eb33314af4395bcb31e811c3327b03414250347d2a76b1b8d167da",
+  "baseline": {
+    "seed_batches": 4,
+    "episodes": 32,
+    "returns_by_seed": {
+      "71001": 1052.20947265625,
+      "71002": 1055.320068359375,
+      "71003": 1107.376953125,
+      "71004": 1089.6783447265625
+    },
+    "mean_return": 1076.1462097167969,
+    "batch_mean_std": 26.864931023527205,
+    "mean_rotation_radians": 57.517592430114746,
+    "failures": 0,
+    "locked_final_test_opened": false,
+    "limitation": "Development baseline only; four reset batches do not establish generalization or a 1% stopping resolution."
+  },
+  "ppo": {
+    "zero_action_parity_error": true,
+    "full_epoch_backward_batches": 16,
+    "identical_policy_kl": 0.0,
+    "checkpoint_roundtrip": true,
+    "optimizer_steps": 0,
+    "envs": 256,
+    "transitions_per_second": 388.6846430754726,
+    "sampled_total_gpu_memory_mib": 5702,
+    "reset_transitions_excluded": 68
+  },
+  "rssm": {
+    "finite_nonzero_gradients": true,
+    "encoder_image_decoder_frozen": true,
+    "recomputed_cache_passes_original_prediction_gates": true,
+    "optimizer_steps": 0,
+    "checkpoint_roundtrip": true,
+    "fit_seconds_per_batch": [
+      6.075703905895352,
+      5.526468198746443
+    ],
+    "fitting_quality_after_updates": "unmeasured"
+  },
+  "action_sensitivity": {
+    "status": "small_pilot_inconclusive_not_gate_pass",
+    "starts": 4,
+    "eligible": 4,
+    "sign_matches": 3,
+    "pass_gate": false
+  },
+  "tests": {
+    "passed": 21,
+    "log": "tests-final.log",
+    "unapproved_launch_denied": true
+  },
+  "ready_for_review": [
+    "Bounded physical PPO pilot",
+    "Bounded RSSM supervised fitting pilot"
+  ],
+  "deferred": [
+    "Full stratified action-sensitivity acceptance",
+    "Critic/anchor ablation training",
+    "PPO inside WM",
+    "Automatic online RSSM/SM alternation",
+    "Formal four-card comparison"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "source_commit": "2becb7380fed86171056f9bf4338b2a6a0c14b01",
+  "source_file": "work/upstreams/dex-supermimic/src/dex_supermimic/assets/resources/aruco_pen250/xmls/pen_tracking.xml",
+  "source_sha256": "5cd6ab83aaeb267af192a0ea760317b580014bf1cb7fd745443b61c666900462",
+  "length": 0.22,
+  "radius": 0.00745,
+  "mass": 0.03,
+  "shaft_length": 0.14800000000000002,
+  "cap_centers": [
+    -0.092,
+    0.092
+  ],
+  "inertia": [
+    1.2064099460317314e-06,
+    0.0001514589340735412,
+    0.0001514589340735412
+  ],
+  "adaptation": "single fixed recorded-motion-length pen; no geometry randomization or image-marker detector"
+}

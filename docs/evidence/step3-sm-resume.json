@@ -1,0 +1,17 @@
+{
+  "step": 225,
+  "actor_parity_max_error": 0.0,
+  "input_gradient_norms": [
+    0.6657148599624634,
+    0.011989223770797253
+  ],
+  "actor_changed": true,
+  "world_model_unchanged": true,
+  "failure_head_unchanged": true,
+  "normalization_unchanged": true,
+  "critic_frozen_during_actor_update": true,
+  "horizon": 4,
+  "reward_scale": 0.01,
+  "seconds": 3.8879366498440504,
+  "training_mode": "short_horizon_imagination_from_real_episode_starts"
+}

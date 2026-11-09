@@ -1,0 +1,31 @@
+{
+  "checkpoint": "/home/junqiy/projects/unionmimic/work/checkpoints/wm_craftnet_set_z.pth",
+  "checkpoint_sha256": "3215205fe1fad48e97f5745ab90bb2377d53012c1a0d2634edf186699ccab7f7",
+  "seed": 123,
+  "episodes": 8,
+  "mean_return": 1073.5606689453125,
+  "returns": [
+    1023.1212768554688,
+    1071.1910400390625,
+    1150.8486328125,
+    1066.636962890625,
+    1211.1038818359375,
+    874.0267333984375,
+    1051.0740966796875,
+    1140.4825439453125
+  ],
+  "lengths": [
+    499,
+    499,
+    499,
+    499,
+    499,
+    499,
+    499,
+    499
+  ],
+  "failures": 0,
+  "falls": 0,
+  "timeouts": 8,
+  "failure_rate": 0.0
+}

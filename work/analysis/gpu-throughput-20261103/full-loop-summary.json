@@ -1,0 +1,35 @@
+[
+  {
+    "envs": 64,
+    "batch": 256,
+    "seconds": 5.689415313980796,
+    "updates_per_hour": 632.7539476953978,
+    "raw_transitions_per_second": 89.99167256112324,
+    "torch_peak_gib": 0.32551097869873047,
+    "replay_gib": 0.0994873046875,
+    "checkpoint_gib": 0.11346379294991493,
+    "actor_digest": "2c5f8054e3111af87e24af95cf66caa7e82431dc6300947b22eb56613bf1d9a0"
+  },
+  {
+    "envs": 256,
+    "batch": 1024,
+    "seconds": 6.366179802201011,
+    "updates_per_hour": 565.4882695514434,
+    "raw_transitions_per_second": 321.6999933448211,
+    "torch_peak_gib": 1.040461540222168,
+    "replay_gib": 0.39794921875,
+    "checkpoint_gib": 0.41242722049355507,
+    "actor_digest": "2c5f8054e3111af87e24af95cf66caa7e82431dc6300947b22eb56613bf1d9a0"
+  },
+  {
+    "envs": 512,
+    "batch": 2048,
+    "seconds": 6.901396935636347,
+    "updates_per_hour": 521.6335234118887,
+    "raw_transitions_per_second": 593.5030310819712,
+    "torch_peak_gib": 1.9794073104858398,
+    "replay_gib": 0.7958984375,
+    "checkpoint_gib": 0.8110449649393559,
+    "actor_digest": "2c5f8054e3111af87e24af95cf66caa7e82431dc6300947b22eb56613bf1d9a0"
+  }
+]

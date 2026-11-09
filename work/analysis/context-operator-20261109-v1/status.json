@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "pid": 49175,
+  "gpu": 3,
+  "mode": "rollout",
+  "updates": 0,
+  "actor_updates": 0,
+  "updated_unix": 1794229308.1247878,
+  "started_unix": 1794229206.157612,
+  "deadline_unix": 1794229556.157612
+}

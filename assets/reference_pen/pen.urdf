@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Recorded Wuji reference: 220 mm shaft along local X; 15 mm diameter, 30 g. -->
+<robot name="reference_pen">
+  <link name="pen">
+    <inertial><mass value="0.03"/><inertia ixx="0.00000084375" ixy="0" ixz="0" iyy="0.000121421875" iyz="0" izz="0.000121421875"/></inertial>
+    <visual><origin rpy="0 1.5707963267948966 0"/><geometry><cylinder radius="0.0075" length="0.22"/></geometry><material name="orange"><color rgba="0.95 0.4 0.08 1"/></material></visual>
+    <collision><origin rpy="0 1.5707963267948966 0"/><geometry><cylinder radius="0.0075" length="0.22"/></geometry></collision>
+  </link>
+</robot>

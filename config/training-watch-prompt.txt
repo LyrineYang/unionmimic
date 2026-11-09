@@ -1,0 +1,20 @@
+这是用户授权的每两小时训练巡检，不是要求再次创建定时任务。
+
+项目：/home/junqiy/projects/unionmimic
+当前训练：work/runs/four-gpu-20261101，tmux socket 为 unionmimic，session 为 unionmimic-12h。
+先读取 docs/TRAINING.md 和本聊天最新用户指示，再检查四个 gpuN/status.json、当前阶段日志、events.jsonl、checkpoint、真实进程和 GPU 状态。用上次巡检记录判断是否实际推进；单独一个 stale 状态或低 GPU 利用率不能证明卡死。检查磁盘、数值异常、长时间无进展和原定训练截止时间。
+
+用户授权你诊断和修复本项目的训练异常，并从已验证断点继续。只处理本次训练自己的进程和文件；保留正常任务、原权重、最佳权重、累计指标和其他未提交修改。先判断失败原因，再做最小修复并验证，不盲目反复重启。不要降低验收门槛、随意改训练目标、延长原 12 小时预算或启用 W&B 同步。
+
+已知历史问题：Isaac Gym 在输出完整结果后原生析构发生 SIGSEGV。当前 collect/evaluate 使用 simulation_worker.py 的独立进程退出路径。不要通过吞掉任务异常或直接把 failed 改为 running 来恢复。
+完整阶段输出须经过 unionmimic/recovery.py 校验；确认失败窗口已退出后可使用：
+source scripts/env.sh
+python scripts/resume_long_training.py --run work/runs/four-gpu-20261101 --gpus <实际失败的卡号>
+若输出不完整，保留现场，从已经验证的 checkpoint 补跑失败阶段；需要调整恢复脚本时先加必要检查。不要恢复用户主动停止的任务。不要修改全局驱动、其他项目或绕过权限审批。
+
+每次把检查时间、各卡状态与进度、异常诊断、采取的动作和验证结果记录到该训练目录 watchdog/checks/ 下，使用不同文件名，避免覆盖历史；更新 watchdog/latest-check.json。
+正常运行且无需行动时保持静默，不向用户发送例行进展消息。仅在修复完成、需要用户处理、出现新的重要故障或训练结束时，在本聊天简洁通知；不要发邮件或其他外部消息。
+
+原截止时间约为 2026-11-01 14:44:40 Asia/Shanghai，以各任务 started_unix + 12 小时为准。到期后不启动新的训练，确认任务退出，必要时检查并结束属于本任务的超时残留进程，汇总最佳策略与评估结果。完成最终检查后运行以下命令停止本次巡检：
+bash scripts/run_training_check.sh disable --run work/runs/four-gpu-20261101
+如果任务被用户取消或四卡已结束，也停止本次巡检。不要归档这个项目聊天。

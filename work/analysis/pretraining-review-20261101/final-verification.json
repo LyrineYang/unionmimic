@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-11-01T10:20:23.109059+00:00",
+  "source_hashes_match_review": true,
+  "original_best_weights": [
+    {
+      "gpu": 0,
+      "status": "time_budget_reached",
+      "best_hash_unchanged": true
+    },
+    {
+      "gpu": 1,
+      "status": "completed",
+      "best_hash_unchanged": true
+    },
+    {
+      "gpu": 2,
+      "status": "time_budget_reached",
+      "best_hash_unchanged": true
+    },
+    {
+      "gpu": 3,
+      "status": "time_budget_reached",
+      "best_hash_unchanged": true
+    }
+  ],
+  "original_watchdog_active": false,
+  "optimizer_steps_this_preparation": 0,
+  "training_launch_approved": false,
+  "all_preflight_processes_exited": true,
+  "unrelated_gpu_process_preserved": true,
+  "wandb": "disabled",
+  "report": "/home/junqiy/projects/unionmimic/work/analysis/pretraining-review-20261101/report.html"
+}

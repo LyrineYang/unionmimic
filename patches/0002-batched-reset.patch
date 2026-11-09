@@ -1,0 +1,16 @@
+diff --git a/isaacgymenvs/tasks/wm_craftnet_rotation.py b/isaacgymenvs/tasks/wm_craftnet_rotation.py
+--- a/isaacgymenvs/tasks/wm_craftnet_rotation.py
++++ b/isaacgymenvs/tasks/wm_craftnet_rotation.py
+@@ -1845,7 +1845,10 @@
+                                                      gymtorch.unwrap_tensor(object_indices), len(object_indices))
+ 
+         # reset shadow hand
+-        self.arm_hand_dof_pos[env_ids, :] = self.arm_hand_dof_default_pos
+-        self.arm_hand_dof_vel[env_ids, :] = self.arm_hand_dof_default_vel 
++        # Materialize the batch for deterministic CUDA indexing of strided views.
++        reset_pos = self.arm_hand_dof_default_pos.unsqueeze(0).expand(env_ids.numel(), -1).contiguous()
++        reset_vel = self.arm_hand_dof_default_vel.unsqueeze(0).expand(env_ids.numel(), -1).contiguous()
++        self.arm_hand_dof_pos[env_ids, :] = reset_pos
++        self.arm_hand_dof_vel[env_ids, :] = reset_vel
+ 
+         hand_indices = self.hand_indices[env_ids].to(torch.int32)

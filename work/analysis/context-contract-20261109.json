@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "cached full RSSM state exact",
+    "reset-invalid starts excluded",
+    "one-step recorded executed-action alignment",
+    "frozen prior permits input gradients",
+    "zero-context actor native equivalence",
+    "zero-context insensitive to prior values",
+    "context actor input gradients"
+  ],
+  "one_step_max_error": 2.086162567138672e-07,
+  "action_gradient_norm": 0.003348676487803459,
+  "prior_unchanged": true
+}

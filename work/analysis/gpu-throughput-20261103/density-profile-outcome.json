@@ -1,0 +1,19 @@
+{
+  "checked_unix": 1793711017.175308,
+  "status": "partial_diagnostic_process_exited",
+  "completed_batches": [
+    256
+  ],
+  "process_exit_verified": true,
+  "external_timeout_seconds": 120,
+  "exit_code_not_collected": true,
+  "limitation": "Profiler postprocessing was expensive; full three-batch profile was not completed. Do not use profile_wall_seconds or activity fraction as production utilization.",
+  "useful_evidence": [
+    {
+      "batch": 256,
+      "kernel_launch_calls": 51518,
+      "scalar_extractions": 1075,
+      "scalar_extractions_not_all_gpu_syncs": true
+    }
+  ]
+}

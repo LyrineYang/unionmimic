@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "returncode": 1,
+  "refused_before_run_directory_creation": true,
+  "stderr_tail": "TimeoutError: Authorized training window expired; a new user authorization is required"
+}

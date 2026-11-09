@@ -1,0 +1,70 @@
+{
+  "unix": 1793671705.0210242,
+  "reason": "Latest user instruction: report results and obtain explicit formal confirmation before long training or resuming the new factorial experiment.",
+  "actions": [
+    {
+      "pid": 42862,
+      "argv": [
+        "/home/junqiy/projects/unionmimic/.venv/bin/python",
+        "/home/junqiy/projects/unionmimic/scripts/wait_online_baseline.py",
+        "--plan",
+        "/home/junqiy/projects/unionmimic/config/sm-factorial-20261103.plan.json",
+        "--approval",
+        "/home/junqiy/projects/unionmimic/work/analysis/sm-factorial-20261103/authorization.json",
+        "--arm",
+        "c01"
+      ],
+      "action": "SIGTERM_to_owned_coordinator_or_queue"
+    },
+    {
+      "pid": 42869,
+      "argv": [
+        "/home/junqiy/projects/unionmimic/.venv/bin/python",
+        "/home/junqiy/projects/unionmimic/scripts/wait_online_baseline.py",
+        "--plan",
+        "/home/junqiy/projects/unionmimic/config/sm-factorial-20261103.plan.json",
+        "--approval",
+        "/home/junqiy/projects/unionmimic/work/analysis/sm-factorial-20261103/authorization.json",
+        "--arm",
+        "d11"
+      ],
+      "action": "SIGTERM_to_owned_coordinator_or_queue"
+    },
+    {
+      "pid": 42852,
+      "argv": [
+        "/home/junqiy/projects/unionmimic/.venv/bin/python",
+        "/home/junqiy/projects/unionmimic/scripts/online_baseline_lane.py",
+        "--plan",
+        "/home/junqiy/projects/unionmimic/config/sm-factorial-20261103.plan.json",
+        "--approval",
+        "/home/junqiy/projects/unionmimic/work/analysis/sm-factorial-20261103/authorization.json",
+        "--arm",
+        "a00",
+        "--run",
+        "/home/junqiy/projects/unionmimic/work/runs/sm-factorial-20261103-v1/a00"
+      ],
+      "action": "SIGTERM_to_owned_coordinator_or_queue"
+    },
+    {
+      "pid": 42857,
+      "argv": [
+        "/home/junqiy/projects/unionmimic/.venv/bin/python",
+        "/home/junqiy/projects/unionmimic/scripts/online_baseline_lane.py",
+        "--plan",
+        "/home/junqiy/projects/unionmimic/config/sm-factorial-20261103.plan.json",
+        "--approval",
+        "/home/junqiy/projects/unionmimic/work/analysis/sm-factorial-20261103/authorization.json",
+        "--arm",
+        "b10",
+        "--run",
+        "/home/junqiy/projects/unionmimic/work/runs/sm-factorial-20261103-v1/b10"
+      ],
+      "action": "SIGTERM_to_owned_coordinator_or_queue"
+    }
+  ],
+  "old_candidate_tasks_untouched": [
+    6648,
+    6653
+  ]
+}

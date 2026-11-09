@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "optimizer_steps": 0,
+  "weights_unchanged": true,
+  "stale_states_removed": true,
+  "prediction_gate_requires_revalidation": true,
+  "step": 0
+}

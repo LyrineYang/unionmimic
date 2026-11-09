@@ -1,0 +1,676 @@
+{
+  "checked_unix": 1793664119.425127,
+  "checked_shanghai": "2026-11-03T08:01:59.425127+08:00",
+  "baseline_final": [
+    {
+      "gpu": 0,
+      "name": "sm-seed92001",
+      "run": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001",
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619331.9851978,
+        "deadline_unix": 1793662531.9851978,
+        "training_deadline_unix": 1793660731.9851978,
+        "gpu": 0,
+        "arm": "sm-seed92001",
+        "algorithm": "sm",
+        "seed": 92001,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "lane_status": {
+        "status": "completed",
+        "phase": "finished",
+        "pid": 52688,
+        "started_unix": 1793619331.9851978,
+        "deadline_unix": 1793662531.9851978,
+        "ended_unix": 1793661452.528451,
+        "best": {
+          "mean_return": 305.5851004123688,
+          "mean_rotation": 1.2858239377383143,
+          "failures": 10,
+          "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-12/evaluation.json",
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/checkpoints/segment-12.pt"
+        },
+        "locked_test_pending": false,
+        "final_report": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/locked-test/evaluation.json"
+      },
+      "worker_status": {
+        "status": "stopped",
+        "phase": "user_signal",
+        "pid": 33522,
+        "gpu": 0,
+        "arm": "sm",
+        "updated_unix": 1793660733.205704,
+        "started_unix": 1793619339.5465202,
+        "deadline_unix": 1793660731.9851978,
+        "counts": {
+          "model": 84550,
+          "actor": 8435,
+          "critic": 168700,
+          "cycles": 8435
+        },
+        "frames": 4327168,
+        "partial_cycle_preserved": true
+      },
+      "counts": {
+        "model": 84550,
+        "actor": 8435,
+        "critic": 168700,
+        "cycles": 8435
+      },
+      "frames": 4327168,
+      "occupied_gpu_hours": 11.700150903662045,
+      "evaluation": {
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/best-by-development-return.pt",
+        "checkpoint_sha256": "504ce62df5b0189ea5d7b636ac2a2c2989b49bda80f6a8f051223b23d0bf0af9",
+        "episodes_per_seed": 20,
+        "seeds": [
+          95001,
+          95002,
+          95003,
+          95004,
+          95005,
+          95006,
+          95007,
+          95008,
+          95009,
+          95010
+        ],
+        "selection": "first complete episode of every environment; no early-completion filtering",
+        "mean_return": 330.6163823091984,
+        "mean_rotation": 1.356520241307444,
+        "mean_axis_deviation": 0.2519153268876276,
+        "mean_offaxis": 8.908466582283728,
+        "failures": 48,
+        "seconds": 683.7303192615509
+      },
+      "episodes": 200,
+      "failure_rate": 0.24,
+      "failure_wilson95": [
+        0.1860661599241369,
+        0.30373340979204166
+      ],
+      "mean_episode_steps": 421.81,
+      "checkpoint_verification": [
+        {
+          "file": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/best-by-development-return.pt",
+          "sha256": "504ce62df5b0189ea5d7b636ac2a2c2989b49bda80f6a8f051223b23d0bf0af9",
+          "finite_tensors": 230,
+          "counts": {
+            "model": 78200,
+            "actor": 7800,
+            "critic": 156000,
+            "cycles": 7800
+          }
+        },
+        {
+          "file": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/learner/last.pt",
+          "sha256": "83c4e713a13b5d29c939c48482939bccc894842bb4bea3ef0b968058ba824e98",
+          "finite_tensors": 230,
+          "counts": {
+            "model": 84550,
+            "actor": 8435,
+            "critic": 168700,
+            "cycles": 8435
+          }
+        }
+      ],
+      "development": [
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-00/evaluation.json",
+          "hours": 0.8561971682972378,
+          "mean_return": -35.519658885896206,
+          "mean_rotation": 0.141495033272804,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-01/evaluation.json",
+          "hours": 1.6938499869240655,
+          "mean_return": -3.9279701709747314,
+          "mean_rotation": 0.07803630256239558,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-02/evaluation.json",
+          "hours": 2.5221262698041067,
+          "mean_return": -6.827836632728577,
+          "mean_rotation": 0.03162758111284347,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-03/evaluation.json",
+          "hours": 3.3508584170209037,
+          "mean_return": 6.940433323383331,
+          "mean_rotation": 0.08549233924713917,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-04/evaluation.json",
+          "hours": 4.175785259339545,
+          "mean_return": 13.946112751960754,
+          "mean_rotation": 0.046850143331539584,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-05/evaluation.json",
+          "hours": 4.991052410403888,
+          "mean_return": 13.195880055427551,
+          "mean_rotation": 0.0868954487159499,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-06/evaluation.json",
+          "hours": 5.7873353050814735,
+          "mean_return": 12.43897020816803,
+          "mean_rotation": 0.09376822567173804,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-07/evaluation.json",
+          "hours": 6.591971876886156,
+          "mean_return": 6.08404803276062,
+          "mean_rotation": 0.038994461687252624,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-08/evaluation.json",
+          "hours": 7.396343044969771,
+          "mean_return": 18.627074360847473,
+          "mean_rotation": 0.08894082139158854,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-09/evaluation.json",
+          "hours": 8.194516727394529,
+          "mean_return": 9.15358853340149,
+          "mean_rotation": 0.027115258300000278,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-10/evaluation.json",
+          "hours": 8.99872703399923,
+          "mean_return": 22.82822060585022,
+          "mean_rotation": 0.03359846329476568,
+          "failures": 32
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-11/evaluation.json",
+          "hours": 9.829992367360328,
+          "mean_return": 248.99363911151886,
+          "mean_rotation": 0.5126089526747819,
+          "failures": 23
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/sm-seed92001/development-12/evaluation.json",
+          "hours": 10.654410935706563,
+          "mean_return": 305.5851004123688,
+          "mean_rotation": 1.2858239377383143,
+          "failures": 10
+        }
+      ]
+    },
+    {
+      "gpu": 2,
+      "name": "ppo-seed92001",
+      "run": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001",
+      "launch": {
+        "plan": "/home/junqiy/projects/unionmimic/config/online-sm-long-20261102-12h.plan.json",
+        "started_unix": 1793619332.01499,
+        "deadline_unix": 1793662532.01499,
+        "training_deadline_unix": 1793660732.01499,
+        "gpu": 2,
+        "arm": "ppo-seed92001",
+        "algorithm": "ppo",
+        "seed": 92001,
+        "approval_sha256": "37a781bf649f1c9538a44347e5198b650380d5c07b9842bd9564ef77909f0e82"
+      },
+      "lane_status": {
+        "status": "completed",
+        "phase": "finished",
+        "pid": 52698,
+        "started_unix": 1793619332.01499,
+        "deadline_unix": 1793662532.01499,
+        "ended_unix": 1793661532.188829,
+        "best": {
+          "mean_return": 780.7209241390228,
+          "mean_rotation": 58.38255568407476,
+          "failures": 2,
+          "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-12/evaluation.json",
+          "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/checkpoints/segment-12.pt"
+        },
+        "locked_test_pending": false,
+        "final_report": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/locked-test/evaluation.json"
+      },
+      "worker_status": {
+        "status": "stopped",
+        "phase": "user_signal",
+        "pid": 31200,
+        "gpu": 2,
+        "arm": "ppo",
+        "updated_unix": 1793660732.3746808,
+        "started_unix": 1793619339.693361,
+        "deadline_unix": 1793660732.01499,
+        "counts": {
+          "model": 0,
+          "actor": 95407,
+          "critic": 95407,
+          "cycles": 5962
+        },
+        "frames": 12220416,
+        "partial_cycle_preserved": true
+      },
+      "counts": {
+        "model": 0,
+        "actor": 95407,
+        "critic": 95407,
+        "cycles": 5962
+      },
+      "frames": 12220416,
+      "occupied_gpu_hours": 11.722270510792733,
+      "evaluation": {
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/best-by-development-return.pt",
+        "checkpoint_sha256": "483feb3ed37dcbf1da69fe40f57a143397e405585f59c6bc6eb8dbef270ad349",
+        "episodes_per_seed": 20,
+        "seeds": [
+          95001,
+          95002,
+          95003,
+          95004,
+          95005,
+          95006,
+          95007,
+          95008,
+          95009,
+          95010
+        ],
+        "selection": "first complete episode of every environment; no early-completion filtering",
+        "mean_return": 762.3760439294576,
+        "mean_rotation": 56.54216778106056,
+        "mean_axis_deviation": 0.22527361083411862,
+        "mean_offaxis": 29.468077827095986,
+        "failures": 7,
+        "seconds": 764.3833634853363
+      },
+      "episodes": 200,
+      "failure_rate": 0.035,
+      "failure_wilson95": [
+        0.017055542008567192,
+        0.07047061152229073
+      ],
+      "mean_episode_steps": 484.64,
+      "checkpoint_verification": [
+        {
+          "file": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/best-by-development-return.pt",
+          "sha256": "483feb3ed37dcbf1da69fe40f57a143397e405585f59c6bc6eb8dbef270ad349",
+          "finite_tensors": 161,
+          "counts": {
+            "model": 0,
+            "actor": 87360,
+            "critic": 87360,
+            "cycles": 5460
+          }
+        },
+        {
+          "file": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/learner/last.pt",
+          "sha256": "ab283a9e8188ad5cdca81288f4cf772e294a2c3f0f85f1c24ccfa92c28090201",
+          "finite_tensors": 161,
+          "counts": {
+            "model": 0,
+            "actor": 95407,
+            "critic": 95407,
+            "cycles": 5962
+          }
+        }
+      ],
+      "development": [
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-00/evaluation.json",
+          "hours": 0.8233846279647615,
+          "mean_return": 507.2329275608063,
+          "mean_rotation": 36.89339924417436,
+          "failures": 2
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-01/evaluation.json",
+          "hours": 1.6437503071626027,
+          "mean_return": 518.905600309372,
+          "mean_rotation": 37.89129835925996,
+          "failures": 2
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-02/evaluation.json",
+          "hours": 2.4551358053419325,
+          "mean_return": 589.3209686279297,
+          "mean_rotation": 41.82001483999193,
+          "failures": 2
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-03/evaluation.json",
+          "hours": 3.255139076246156,
+          "mean_return": 656.7623703479767,
+          "mean_rotation": 46.371941393241286,
+          "failures": 1
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-04/evaluation.json",
+          "hours": 4.068056356112162,
+          "mean_return": 696.8912842273712,
+          "mean_rotation": 48.187335556373,
+          "failures": 1
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-05/evaluation.json",
+          "hours": 4.874140485723814,
+          "mean_return": 702.257847070694,
+          "mean_rotation": 48.502191131934524,
+          "failures": 2
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-06/evaluation.json",
+          "hours": 5.68463026550081,
+          "mean_return": 711.433975070715,
+          "mean_rotation": 49.449783286079764,
+          "failures": 1
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-07/evaluation.json",
+          "hours": 6.498241495556302,
+          "mean_return": 726.7290189266205,
+          "mean_rotation": 56.43823625706136,
+          "failures": 2
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-08/evaluation.json",
+          "hours": 7.309594992399216,
+          "mean_return": 738.3808414936066,
+          "mean_rotation": 56.6291519459337,
+          "failures": 2
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-09/evaluation.json",
+          "hours": 8.119554307659467,
+          "mean_return": 727.7241790294647,
+          "mean_rotation": 56.31033361516893,
+          "failures": 2
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-10/evaluation.json",
+          "hours": 8.920499908195602,
+          "mean_return": 769.5759174823761,
+          "mean_rotation": 58.612050062045455,
+          "failures": 1
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-11/evaluation.json",
+          "hours": 9.722320793800884,
+          "mean_return": 772.1935741901398,
+          "mean_rotation": 59.161187713965774,
+          "failures": 1
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-12/evaluation.json",
+          "hours": 10.524880998333295,
+          "mean_return": 780.7209241390228,
+          "mean_rotation": 58.38255568407476,
+          "failures": 2
+        },
+        {
+          "path": "work/runs/sm-baseline-12h-20261102-v1/ppo-seed92001/development-13/evaluation.json",
+          "hours": 11.335168140994178,
+          "mean_return": 721.3247471451759,
+          "mean_rotation": 54.94381723366678,
+          "failures": 4
+        }
+      ]
+    }
+  ],
+  "candidates_in_progress": [
+    {
+      "gpu": 1,
+      "name": "sm-detach",
+      "worker_status": {
+        "status": "running",
+        "phase": "update",
+        "pid": 46394,
+        "gpu": 1,
+        "arm": "sm",
+        "updated_unix": 1793664168.0387776,
+        "started_unix": 1793634573.178068,
+        "deadline_unix": 1793675965.71221,
+        "counts": {
+          "model": 59390,
+          "actor": 5919,
+          "critic": 118380,
+          "cycles": 5919
+        },
+        "frames": 3039232
+      },
+      "lane_status": {
+        "status": "running",
+        "phase": "train",
+        "pid": 6648,
+        "segment": 9,
+        "started_unix": 1793634565.71221,
+        "deadline_unix": 1793677765.71221,
+        "training_deadline_unix": 1793675965.71221,
+        "updated_unix": 1793661645.1400054
+      },
+      "best": {
+        "mean_return": 620.8948203325272,
+        "mean_rotation": 33.25923344353214,
+        "failures": 4,
+        "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-05/evaluation.json",
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach/checkpoints/segment-05.pt"
+      },
+      "latest_evaluation": {
+        "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-08/evaluation.json",
+        "mean_return": 600.2331812977791,
+        "mean_rotation": 31.939872912829742,
+        "failures": 7,
+        "episodes": 32
+      },
+      "development": [
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-00/evaluation.json",
+          "mean_return": -46.95866610854864,
+          "mean_rotation": -0.016653810198477004,
+          "failures": 32,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-01/evaluation.json",
+          "mean_return": -54.39675509929657,
+          "mean_rotation": 0.04307064648310188,
+          "failures": 32,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-02/evaluation.json",
+          "mean_return": -56.77231390029192,
+          "mean_rotation": 0.5560318924835883,
+          "failures": 32,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-03/evaluation.json",
+          "mean_return": 2.0031943917274475,
+          "mean_rotation": 0.7787905274890363,
+          "failures": 32,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-04/evaluation.json",
+          "mean_return": 363.1866286993027,
+          "mean_rotation": 18.160437973216176,
+          "failures": 16,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-05/evaluation.json",
+          "mean_return": 620.8948203325272,
+          "mean_rotation": 33.25923344353214,
+          "failures": 4,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-06/evaluation.json",
+          "mean_return": 436.74551486968994,
+          "mean_rotation": 21.692301189526916,
+          "failures": 12,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-07/evaluation.json",
+          "mean_return": 548.5373834967613,
+          "mean_rotation": 29.03324070945382,
+          "failures": 5,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach/development-08/evaluation.json",
+          "mean_return": 600.2331812977791,
+          "mean_rotation": 31.939872912829742,
+          "failures": 7,
+          "episodes": 32
+        }
+      ],
+      "pid_alive": true,
+      "coordinator_alive": true,
+      "process_check_context": "host /proc",
+      "process_checked_unix": 1793664171.258659
+    },
+    {
+      "gpu": 3,
+      "name": "sm-detach-warm",
+      "worker_status": {
+        "status": "running",
+        "phase": "update",
+        "pid": 54069,
+        "gpu": 3,
+        "arm": "sm",
+        "updated_unix": 1793664170.8058987,
+        "started_unix": 1793634573.2803805,
+        "deadline_unix": 1793675965.5371234,
+        "counts": {
+          "model": 59550,
+          "actor": 5655,
+          "critic": 113100,
+          "cycles": 5655
+        },
+        "frames": 3057664
+      },
+      "lane_status": {
+        "status": "running",
+        "phase": "train",
+        "pid": 6653,
+        "segment": 9,
+        "started_unix": 1793634565.5371234,
+        "deadline_unix": 1793677765.5371234,
+        "training_deadline_unix": 1793675965.5371234,
+        "updated_unix": 1793662913.6220841
+      },
+      "best": {
+        "mean_return": 810.1551575660706,
+        "mean_rotation": 54.13433939777315,
+        "failures": 1,
+        "evaluation": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-07/evaluation.json",
+        "checkpoint": "/home/junqiy/projects/unionmimic/work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/checkpoints/segment-07.pt"
+      },
+      "latest_evaluation": {
+        "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-08/evaluation.json",
+        "mean_return": 734.5705711841583,
+        "mean_rotation": 49.740176470950246,
+        "failures": 1,
+        "episodes": 32
+      },
+      "development": [
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-00/evaluation.json",
+          "mean_return": -54.455285266041756,
+          "mean_rotation": 0.5299540066916961,
+          "failures": 32,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-01/evaluation.json",
+          "mean_return": -58.388044252991676,
+          "mean_rotation": 0.841730703948997,
+          "failures": 32,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-02/evaluation.json",
+          "mean_return": -13.180060520768166,
+          "mean_rotation": 0.2739816110697575,
+          "failures": 32,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-03/evaluation.json",
+          "mean_return": -2.3869345858693123,
+          "mean_rotation": 0.10810150231191074,
+          "failures": 32,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-04/evaluation.json",
+          "mean_return": 0.7527895420789719,
+          "mean_rotation": 0.08681220827565994,
+          "failures": 32,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-05/evaluation.json",
+          "mean_return": 153.9131921827793,
+          "mean_rotation": 14.993021752685308,
+          "failures": 4,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-06/evaluation.json",
+          "mean_return": 727.2681486606598,
+          "mean_rotation": 47.803708320483565,
+          "failures": 4,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-07/evaluation.json",
+          "mean_return": 810.1551575660706,
+          "mean_rotation": 54.13433939777315,
+          "failures": 1,
+          "episodes": 32
+        },
+        {
+          "path": "work/runs/sm-candidate-12h-20261102-v1/sm-detach-warm/development-08/evaluation.json",
+          "mean_return": 734.5705711841583,
+          "mean_rotation": 49.740176470950246,
+          "failures": 1,
+          "episodes": 32
+        }
+      ],
+      "pid_alive": true,
+      "coordinator_alive": true,
+      "process_check_context": "host /proc",
+      "process_checked_unix": 1793664171.2589133
+    }
+  ],
+  "source_hashes_match": {
+    "config/online-sm-long-20261102-12h.plan.json": true,
+    "config/online-sm-candidate-20261102.plan.json": true
+  },
+  "notes": [
+    "Final results are development-selected checkpoints, not the last checkpoint.",
+    "Baseline worker stopped/user_signal reflects coordinator SIGTERM at its original training cutoff; final tests completed normally.",
+    "No restart, extra training or evaluation performed. Candidate results remain development-only.",
+    "No fatal error found in current candidate stdout/evaluation/W&B logs at inspection; the user-observed bedtime error is not identified."
+  ],
+  "wandb_status_check": {
+    "both_candidate_service_states": "running",
+    "observed_cycles": [
+      5890,
+      5634
+    ],
+    "note": "Summary worker_status=segment_complete is left from prior segment; the actual remote run state is running."
+  },
+  "host_gpu_snapshot": "0, 5 MiB, 0 %\n1, 4033 MiB, 4 %\n2, 4 MiB, 0 %\n3, 4033 MiB, 6 %\n"
+}

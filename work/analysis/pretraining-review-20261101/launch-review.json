@@ -1,0 +1,212 @@
+{
+  "schema": 1,
+  "status": "awaiting_user_review_no_training_started",
+  "checkpoint": "work/runs/step2-20261101/calibrated/best.pt",
+  "dataset": "work/runs/step2-20261101/dataset",
+  "immutable_inputs": [
+    {
+      "path": "work/runs/step2-20261101/calibrated/best.pt",
+      "sha256": "ebebb1d885acedf9a603456e2032051c7f9bd5d7eb98c0d4b105b8b0d8273d05"
+    },
+    {
+      "path": "work/runs/step2-20261101/dataset/episodes.h5",
+      "sha256": "0d9969d48e21882fa7e5b6b5c379661058e806e36af948f7f6e8dc38f5717cba"
+    },
+    {
+      "path": "work/runs/step2-20261101/dataset/config.yaml",
+      "sha256": "c27ee45bc820cfb6a209148587a7e4d03d9803cee387717206d5e5d5df26d455"
+    }
+  ],
+  "source_sha256": {
+    "docs/EXPERIMENTS.md": "dd137dafc6915c2ab620f12ac720cc52cdc6227cefe1c27690cf5b4a16232a3c",
+    "scripts/analyze_replay_sensitivity.py": "176058a13d1aae5ee5ebf8527e129f095d2dc131995ac0f5f753e7edfed28e75",
+    "scripts/diagnose_reward.py": "80a9871b7f27b21704cb5fa2d5e925b31ea9f142676014ceeca6631164a5cbdd",
+    "scripts/env.sh": "f39055778323382c14087232a749ac9c3c8d704035a1f978325d40634392fe11",
+    "scripts/preflight_dynamics.py": "e1b81d0895aba24acbb9eb0941be143382d7718927204d767eb349e04458ecb4",
+    "scripts/preflight_ppo.py": "8a9473e1dcaf848e7fb39601e46164c6ff932787aee81fb853871b9b1dc5077d",
+    "scripts/probe_replayed_action.py": "ac4720676d62ecf2251e635c569e90661766da6eb15656529a41a1a37dae9e54",
+    "scripts/train_reviewed_pilot.py": "33cc5eac0a9288f9336e8e257d810753c3ba2d03217db6cd2b0d552acbf71e9d",
+    "unionmimic/__init__.py": "8f862be59464cd8bde3b3b85f586ffc2d118770e8d80afe9e5f8eaf3b6a5f812",
+    "unionmimic/calibrate.py": "350973f290a83aff1064a1943c15588e13c158e9cb7d5fec8c0f2fc2275b160c",
+    "unionmimic/cli.py": "2ee150bad8ca087c00fa2eb7e190e72f89c96470817f830ad0ce40b6f46599d7",
+    "unionmimic/collect.py": "f2b73c270b41a977d9a612ddf45e9bc879cf5d3a12821b5bf35469c2dba4aa3a",
+    "unionmimic/common.py": "12115b32b321ed3e8c1fba2bace4a338f903a7e7afe27b88043dd070c444553d",
+    "unionmimic/data_contracts.py": "abde11378f8b98a5c6024be3906a5ec1ca839e75d6a5ef9f31c3b34433bccf2b",
+    "unionmimic/dynamics_fit.py": "749e572fb4196f9b4c9c98c3feea02dc3205a5715682973f94dafa60737e871a",
+    "unionmimic/evaluate.py": "eddb3dc9fdaa62480acc972616f9a1dff32dceca2088fa9415e4953cd3025794",
+    "unionmimic/merge.py": "27e93e1329ccda841f218b7a057856fefc481aee8ef9e1017016d68086400367",
+    "unionmimic/models.py": "7c7c2bd9822aefe6a77eecabf60419771d708029271dd5085a139a37d56e5f10",
+    "unionmimic/night.py": "890c15a10112ec966466dc1febbdba6e1094083d49059e4370a655bdf174065b",
+    "unionmimic/ppo.py": "2d5c27ede9d7f6a121bed6b242b0667ab48942be71f00f894c5b06645272f1d9",
+    "unionmimic/prepare.py": "e760bd82a04d6eaf2e1057f7bedd12957a6f75df7c15effb6e57364d18bd0597",
+    "unionmimic/recovery.py": "032afa9a6e80c077499f49368bc0289be52815d46795e1d83c4b0db083d49e1c",
+    "unionmimic/retention.py": "e4dc3b80cbbdd4f4be60bdd534edb7fb1483a7b6d85f3d89754d953c35f58167",
+    "unionmimic/review_gate.py": "91bacbd0aac947baab38a41d18860281238e585ed4c6e0a345e534c50d4ccdf5",
+    "unionmimic/runtime.py": "533a619e871d550e23ff506df7960c63dfe5ce14dadc08d2f81595881ed2c36a",
+    "unionmimic/sensitivity.py": "8dd759d17df62a718c4626eb435fbeda4beb7267b3ceaaac02c8f957a0e354b0",
+    "unionmimic/simulation_worker.py": "1716a7baef482a6392186a0cfd4b7b17069e28cb2721980ae0f9cec1268e64c3",
+    "unionmimic/sm.py": "eb1e407b8a5570c55e18f7d76cd01efdd97c150b52fa35b775a0ccb7da393f00",
+    "unionmimic/telemetry.py": "7617877ffba6c5498fdeb5e2c158adf6b7732beaff7d41bb57bdd36ba4936eaf",
+    "work/upstreams/WM-Craftnet/isaacgymenvs/cfg/train/WMCraftnetPPO.yaml": "b81488e09bc4e1603390020c33f9e47e20fc1daf2947912510c1546cc4792637",
+    "work/upstreams/WM-Craftnet/rl_games/algos_torch/a2c_continuous.py": "325d2fcac8f9bd2fc65b31139a13ec0bcb1c279c692825ba07060cedea6aa768",
+    "work/upstreams/WM-Craftnet/rl_games/algos_torch/torch_ext.py": "020e9b720d8ac793b5f3df6b87ee8b0a4d98f04bd93f58f0e553f50ce010d8c8",
+    "work/upstreams/WM-Craftnet/rl_games/common/schedulers.py": "3fd0d4b2b9472d495458d258bff82bf5fb6bd6c18d91fc20df1b2c9c23d3a5cc"
+  },
+  "ppo_pilot": {
+    "envs": 256,
+    "horizon": 16,
+    "batch_frames": 16384,
+    "minibatch": 4096,
+    "mini_epochs": 4,
+    "actor_lr": 0.0001,
+    "critic_lr": 0.0003,
+    "seed": 51001,
+    "max_epochs": 16,
+    "max_seconds": 1800,
+    "save_every_epochs": 4,
+    "lr_schedule": "upstream adaptive, kl_threshold=0.02",
+    "gamma": 0.99,
+    "gae": 0.95,
+    "clip": 0.2,
+    "precision": "FP32",
+    "model": "frozen",
+    "critic": "fresh latent critic matching SM architecture/input",
+    "caution": "Bounded pilot only. Upstream asymmetric critic is not used. Each H16 block has its own GAE bootstrap; blocks accumulate before updating."
+  },
+  "dynamics_pilot": {
+    "batch": 8,
+    "length": 32,
+    "horizon": 4,
+    "lr": 1e-05,
+    "seed": 63001,
+    "updates": 250,
+    "max_seconds": 2400,
+    "save_every": 50,
+    "feature_drift_coefficient": 0.01,
+    "clip_norm": 10.0,
+    "trainable": [
+      "RSSM",
+      "reward head",
+      "proprioceptive decoder",
+      "failure head"
+    ],
+    "frozen": [
+      "encoder",
+      "image decoder",
+      "actor"
+    ],
+    "caution": "Custom conservative adaptation pilot, not original SuperMimic physical-state model or the full upstream WM objective."
+  },
+  "startup_sequence": [
+    "Independently evaluate baseline on fixed development batches",
+    "PPO bounded pilot and development evaluation",
+    "RSSM bounded fitting pilot, rebuild states, revalidate predictions and original actor",
+    "SM ablations only after model/action-response gates; no automatic start"
+  ],
+  "forbidden": [
+    "W&B sync",
+    "old four-gpu run restart",
+    "automatic 12-hour comparison launch"
+  ],
+  "long_comparison": {
+    "status": "deferred_until_pilots_validated",
+    "training_seeds": [
+      51001,
+      51002
+    ],
+    "arms": [
+      "physical PPO",
+      "SM"
+    ],
+    "resource_ceiling_gpu_hours": 48,
+    "resource_cap_is_not_convergence": true,
+    "target_return_relative_gain": 0.05,
+    "target_rotation_relative_gain_min": 0.0,
+    "failure_noninferiority_margin": 0.02,
+    "quality_stop": "Target reached on three consecutive development checks, then locked final evaluation; insufficient CI evidence is inconclusive",
+    "plateau_stop": "After >=1M physical transitions and >=6 development evaluations: no >=1% best-mean improvement across 6 consecutive checks, provided baseline noise is below that threshold; otherwise increase evaluation precision before applying plateau stop",
+    "safety_stop": [
+      "nonfinite loss or gradients",
+      "invalid/stale model cache",
+      "failed model validation",
+      "development return >5% below baseline on two checks",
+      "resource cap"
+    ],
+    "evaluation_interval_physical_frames": 131072,
+    "formal_max_physical_frames": null,
+    "note": "These are a predeclared protocol, not an implemented/approved automatic long-run controller. Pilots measure whether this task has headroom and set estimates; no speedup claim.",
+    "sample_limit_status": "Set after bounded pilots; no formal launch approval"
+  },
+  "evaluation": {
+    "dev_seeds": [
+      71001,
+      71002,
+      71003,
+      71004,
+      71005,
+      71006,
+      71007,
+      71008,
+      71009,
+      71010,
+      71011,
+      71012,
+      71013,
+      71014,
+      71015,
+      71016
+    ],
+    "dev_episodes_per_seed": 8,
+    "periodic_dev_seeds": [
+      71001,
+      71002,
+      71003,
+      71004
+    ],
+    "locked_test_seeds": [
+      81001,
+      81002,
+      81003,
+      81004,
+      81005,
+      81006,
+      81007,
+      81008,
+      81009,
+      81010,
+      81011,
+      81012,
+      81013,
+      81014,
+      81015,
+      81016,
+      81017,
+      81018,
+      81019,
+      81020,
+      81021,
+      81022,
+      81023,
+      81024,
+      81025
+    ],
+    "test_episodes_per_seed": 8,
+    "test_opened": false,
+    "inference": "Bootstrap by reset batch within training seed; record physical start tensors and seed replay error. No claim that GPU PhysX seeds imply exact pairing.",
+    "baseline_development_files": [
+      "baseline-dev-71001.json",
+      "baseline-dev-71002.json",
+      "baseline-dev-71003.json",
+      "baseline-dev-71004.json"
+    ]
+  },
+  "provenance": {
+    "ppo_standard": "WM-Craftnet Table 7 / pinned WMCraftnetPPO.yaml",
+    "ppo_envs": "Measured on V100, 256:391 transitions/s; batch accumulated to16384",
+    "critic": "Custom matched-SM critic, upstream asymmetric critic excluded for primary optimizer comparison",
+    "rssm_pilot_lr": "Conservative new choice 1e-5; original WM LR1e-4",
+    "model_supervision": "Native RSSM and KL, project-specific multi-step prop/reward/failure supervision; no new model architecture",
+    "budgets": "Bounded diagnostic pilot; duration estimated from measured local throughput, not expected convergence",
+    "kl_measurement": "Local stable Gaussian KL corrects upstream epsilon bias; PPO clipped actor loss unchanged"
+  }
+}

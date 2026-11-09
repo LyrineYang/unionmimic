@@ -1,0 +1,8 @@
+{
+  "reason": "Only 3 branches missing after known 75-minute read-only cap; failed process exited; partial output preserved",
+  "started_unix": 1793604054.504149,
+  "completed_unix": 1793604331.510015,
+  "seconds": 277.0058660507202,
+  "completed_jobs": 3,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "started_unix": 1793597026.0015724,
+  "deadline_unix": 1793601526.0015724,
+  "gpu": 3,
+  "optimizer_steps": 0,
+  "job": "amp-05-d6-s1",
+  "completed_jobs": 51,
+  "updated_unix": 1793604331.510015,
+  "error": null,
+  "seconds": 4501.382180452347,
+  "continuation_seconds": 277.0058660507202,
+  "original_failure_preserved": "status-before-timecap-completion.json"
+}
