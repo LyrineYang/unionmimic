@@ -1,6 +1,6 @@
 <p align="center">
 
-当前状态（2026-11-09晚）：已交付[52秒中文Demo](work/demos/unionmimic-geometry-story-20261109-v1/unionmimic-geometry-story.mp4)及[几何先验实测](docs/GEOMETRY_AND_DEMO_BACKUP_20261109.md)。独立测试位置估计4.00→2.18 mm，尚无策略控制收益；新的4096环境SM基线运行中，最多至11月10日02:47:09上海。50Hz转笔物理验收仍未通过，原24小时窗口不变。
+当前状态（2026-11-10上海交接快照）：最新SM和匹配PPO均已完成，最终开发评估、对应检查点及[本地交接入口](docs/handoff-20261109/README.md)已整理。保留[52秒中文Demo](work/demos/unionmimic-geometry-story-20261109-v1/unionmimic-geometry-story.mp4)；几何估计收益不等于策略收益，50Hz转笔物理验收仍未通过。
 
   <img src="docs/assets/cover.svg" alt="UnionMimic — From sensing to learning. Visuotactile world models for dexterous control." width="100%">
 </p>
@@ -16,18 +16,18 @@
 
 # UnionMimic
 
-[Published results and demos](docs/RESULTS_RELEASE_20261109.md) · [SM/PPO validation](docs/SM_PPO_VALIDATION_20261109.md)
+[Local handoff and downloads](docs/handoff-20261109/README.md) · [Published results and demos](docs/RESULTS_RELEASE_20261109.md) · [SM/PPO validation](docs/SM_PPO_VALIDATION_20261109.md)
 
 **SuperMimic learning with a WM-Craftnet recurrent context prior.**
 
-**Verified scope:** SM learns sustained z-axis rotation on the Sharpa hand from an untrained actor/critic. At an early checkpoint near two hours: 40.43 rad and 7.03% failures; the last historical development evaluation recorded 1 failure in 512 episodes. A matched PPO speed comparison is now being measured; full pen adaptation and prior control benefit remain unverified. [Evidence and comparison protocol](docs/SM_PPO_VALIDATION_20261109.md).
+**Verified scope:** SM learns sustained z-axis rotation on the Sharpa hand from an untrained actor/critic. At an early checkpoint near two hours: 40.43 rad and 7.03% failures; the last historical development evaluation recorded 1 failure in 512 episodes. The latest matched SM/PPO runs have completed and their final development evaluations are archived; a general speedup claim is not established; full pen adaptation and prior control benefit remain unverified. [Evidence and comparison protocol](docs/SM_PPO_VALIDATION_20261109.md).
 
 UnionMimic keeps two model roles separate: SuperMimic's learned physical dynamics supports imagined rollouts and actor BPTT; WM-Craftnet summarizes depth, touch, proprioception and action history into additional policy context.
 
 The implemented diagnostic task is **one Sharpa hand, one object, z-axis rotation**. The next action scope is two capability tasks and two external reference motions; their training settings are on hold pending [reference-implementation validation and Sharpa adaptation](docs/REFERENCE_BASELINE_AUDIT_20261103.md). Establish a strong SM baseline with an untrained actor and critic through [reference-code review and Sharpa adaptation experiments](docs/SM_REPRODUCTION.md), then compare that tuned baseline against SM with a frozen pretrained WSM context branch. Both arms inherit the baseline improvements. Measure control precision, rotation progress, failures and total learning cost. PPO-Sim provides a learning/cost reference.
 
 > **Research preview · 9 November 2026**
-> A frozen WM-Craftnet encoder and a small geometry readout reduce current-object position error on an independent simulation seed; random-encoder and depth-clamped controls are recorded. This is perception evidence, not improved policy control. Three earlier short context-training arms failed to learn sustained rotation. A new full-recipe SM baseline is running from scratch; the old stopped runs remain closed. Full 50 Hz pen adaptation still fails its physical gate. [Current evidence](docs/GEOMETRY_AND_DEMO_BACKUP_20261109.md) · [Demo labels and sources](docs/DEMOS.md).
+> A frozen WM-Craftnet encoder and a small geometry readout reduce current-object position error on an independent simulation seed; random-encoder and depth-clamped controls are recorded. This is perception evidence, not improved policy control. Three earlier short context-training arms failed to learn sustained rotation. The new full-recipe SM baseline and matched PPO comparison have completed; the old stopped runs remain closed. Full 50 Hz pen adaptation still fails its physical gate. [Current evidence](docs/GEOMETRY_AND_DEMO_BACKUP_20261109.md) · [Demo labels and sources](docs/DEMOS.md).
 
 ## The idea
 

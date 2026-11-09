@@ -1,0 +1,4669 @@
+{
+  "passed": true,
+  "full_recipe_short_training": true,
+  "abbreviated_by_explicit_user_request": false,
+  "learning_gain_verified": false,
+  "updates": 350,
+  "model_updates": 3500,
+  "actor_updates": 50,
+  "critic_optimizer_steps": 1000,
+  "used_actor_updates": 49,
+  "parity": {
+    "reward": 9.59634780883789e-06,
+    "action": 0.0,
+    "target": 0.0
+  },
+  "initial": {
+    "actor": "2c34ea70024d66a7718dd9b530751db7e3c1323a98105ca299b75566ddf1e2a8",
+    "critic": "fafef3f251ddf671c03dac48259af87b6b1e3c54181c19a14d95742741cebf00",
+    "model": "7dda8006b64da039c0ea4948980d66e4d00a02bdaea49186afcfde846b0f52a2"
+  },
+  "final": {
+    "actor": "8967b75f038a5ba1c010559c6d24c427d65b120abd0eb881c913d216522887c9",
+    "critic": "1d16aa951df47dd52555f558ead00762246425c189a938519a6620f711549223",
+    "model": "60fbb62da1c5ec501827c858095ea1f185975e7af13139fc0ff23274d3183443"
+  },
+  "seconds": 2681.178899049759,
+  "source_hashes_unchanged": true,
+  "actual_config": {
+    "envs": 4096,
+    "replay": 1000,
+    "wm_batch": 2048,
+    "wm_steps": 10,
+    "wm_k": 8,
+    "starts": 4096,
+    "horizon": 16,
+    "wm_only": 300,
+    "utd": 0.4,
+    "warmup": 64,
+    "lr": 0.0002,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "imag_noise": 0.0,
+    "imag_noise_final": null,
+    "imag_noise_updates": 6000
+  },
+  "evaluation": {
+    "passed": true,
+    "episodes": 512,
+    "seed": 20261105,
+    "protocol": "First completed valid policy episode per env, no survivor filtering",
+    "mean_return": 29.0753173828125,
+    "mean_rotation_rad": 0.029172644019126892,
+    "failure_rate": 1.0,
+    "mean_axis_deviation_rad": 0.31667280197143555,
+    "reward_max_error": 3.814697265625e-06,
+    "seconds": 63.253313064575195,
+    "checkpoint_sha256": "e30f6f5498d41a90f0849940da2a3e1ad75adabe735bd2cceb5685cdbb928499",
+    "rows": [
+      {
+        "return_raw": 19.012985229492188,
+        "rotation_rad": -0.012563907541334629,
+        "offaxis_rad": 0.6125912070274353,
+        "axis_deviation_rad": 0.2921037971973419,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.94390869140625,
+        "rotation_rad": 0.07804960012435913,
+        "offaxis_rad": 0.40459510684013367,
+        "axis_deviation_rad": 0.3752148449420929,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.815940856933594,
+        "rotation_rad": -0.004206316079944372,
+        "offaxis_rad": 0.33527499437332153,
+        "axis_deviation_rad": 0.3370095193386078,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.732376098632812,
+        "rotation_rad": 0.01565384678542614,
+        "offaxis_rad": 0.43121251463890076,
+        "axis_deviation_rad": 0.3755105137825012,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.626628875732422,
+        "rotation_rad": 0.020209938287734985,
+        "offaxis_rad": 0.33187049627304077,
+        "axis_deviation_rad": 0.3023436665534973,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.04550552368164,
+        "rotation_rad": 0.0843367874622345,
+        "offaxis_rad": 0.5639591813087463,
+        "axis_deviation_rad": 0.3044653534889221,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.967174530029297,
+        "rotation_rad": 0.0656517893075943,
+        "offaxis_rad": 0.5348666906356812,
+        "axis_deviation_rad": 0.3848932981491089,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.961883544921875,
+        "rotation_rad": -0.002404996193945408,
+        "offaxis_rad": 0.32302752137184143,
+        "axis_deviation_rad": 0.32114869356155396,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.196334838867188,
+        "rotation_rad": 0.035298388451337814,
+        "offaxis_rad": 0.3547781705856323,
+        "axis_deviation_rad": 0.32416340708732605,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.26214599609375,
+        "rotation_rad": 0.006529893726110458,
+        "offaxis_rad": 0.39962077140808105,
+        "axis_deviation_rad": 0.36862218379974365,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.3626708984375,
+        "rotation_rad": 0.01837126910686493,
+        "offaxis_rad": 0.35444462299346924,
+        "axis_deviation_rad": 0.3188532888889313,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.078269958496094,
+        "rotation_rad": 0.04311623051762581,
+        "offaxis_rad": 0.22129739820957184,
+        "axis_deviation_rad": 0.27098822593688965,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.018325805664062,
+        "rotation_rad": 0.007465117145329714,
+        "offaxis_rad": 0.4644729197025299,
+        "axis_deviation_rad": 0.3003922998905182,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.932720184326172,
+        "rotation_rad": 0.01304254774004221,
+        "offaxis_rad": 0.30463865399360657,
+        "axis_deviation_rad": 0.20776621997356415,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.446678161621094,
+        "rotation_rad": 0.005950579419732094,
+        "offaxis_rad": 0.3454746603965759,
+        "axis_deviation_rad": 0.3108718991279602,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 13.202495574951172,
+        "rotation_rad": -0.0018823535647243261,
+        "offaxis_rad": 0.47199341654777527,
+        "axis_deviation_rad": 0.2836036682128906,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.655887603759766,
+        "rotation_rad": 0.004404568579047918,
+        "offaxis_rad": 0.4496798515319824,
+        "axis_deviation_rad": 0.2856079936027527,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.438251495361328,
+        "rotation_rad": -0.02532281167805195,
+        "offaxis_rad": 0.4896623194217682,
+        "axis_deviation_rad": 0.27497172355651855,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.6463623046875,
+        "rotation_rad": -0.04027801752090454,
+        "offaxis_rad": 0.443060964345932,
+        "axis_deviation_rad": 0.2940104603767395,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.26740264892578,
+        "rotation_rad": -0.002487184014171362,
+        "offaxis_rad": 0.3272254467010498,
+        "axis_deviation_rad": 0.24225345253944397,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.84023666381836,
+        "rotation_rad": 0.056521832942962646,
+        "offaxis_rad": 0.5180952548980713,
+        "axis_deviation_rad": 0.28055787086486816,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.85116195678711,
+        "rotation_rad": -0.006064682267606258,
+        "offaxis_rad": 0.2589641511440277,
+        "axis_deviation_rad": 0.29633480310440063,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.137680053710938,
+        "rotation_rad": 0.024565203115344048,
+        "offaxis_rad": 0.5003390908241272,
+        "axis_deviation_rad": 0.3053084909915924,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.116188049316406,
+        "rotation_rad": 0.001094231614843011,
+        "offaxis_rad": 0.5257765054702759,
+        "axis_deviation_rad": 0.3328867256641388,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.831321716308594,
+        "rotation_rad": 0.03436438739299774,
+        "offaxis_rad": 0.47998863458633423,
+        "axis_deviation_rad": 0.322426438331604,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.823486328125,
+        "rotation_rad": 0.06225697323679924,
+        "offaxis_rad": 0.4183982014656067,
+        "axis_deviation_rad": 0.3316158354282379,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.282302856445312,
+        "rotation_rad": -0.014420464634895325,
+        "offaxis_rad": 0.27961429953575134,
+        "axis_deviation_rad": 0.31728777289390564,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.818618774414062,
+        "rotation_rad": 0.0012129638344049454,
+        "offaxis_rad": 0.4088127315044403,
+        "axis_deviation_rad": 0.3186640441417694,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 56.14299392700195,
+        "rotation_rad": 0.10221357643604279,
+        "offaxis_rad": 0.7669390439987183,
+        "axis_deviation_rad": 0.30878058075904846,
+        "steps": 85,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.101940155029297,
+        "rotation_rad": 0.06132470816373825,
+        "offaxis_rad": 0.44049519300460815,
+        "axis_deviation_rad": 0.30693843960762024,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.796226501464844,
+        "rotation_rad": -0.004942651838064194,
+        "offaxis_rad": 0.50888991355896,
+        "axis_deviation_rad": 0.27799639105796814,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.128623962402344,
+        "rotation_rad": 0.05564776062965393,
+        "offaxis_rad": 0.3499748706817627,
+        "axis_deviation_rad": 0.30560338497161865,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.945388793945312,
+        "rotation_rad": 0.011651940643787384,
+        "offaxis_rad": 0.31953367590904236,
+        "axis_deviation_rad": 0.3606832027435303,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 65.26918029785156,
+        "rotation_rad": -1.490558497607708e-05,
+        "offaxis_rad": 0.34637242555618286,
+        "axis_deviation_rad": 0.30897438526153564,
+        "steps": 93,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.99829864501953,
+        "rotation_rad": 0.06028769910335541,
+        "offaxis_rad": 0.34350019693374634,
+        "axis_deviation_rad": 0.43027275800704956,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.257488250732422,
+        "rotation_rad": -0.028764519840478897,
+        "offaxis_rad": 0.3979831039905548,
+        "axis_deviation_rad": 0.3575283885002136,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 57.15976333618164,
+        "rotation_rad": 0.09505599737167358,
+        "offaxis_rad": 0.6870032548904419,
+        "axis_deviation_rad": 0.3406652510166168,
+        "steps": 89,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.13094711303711,
+        "rotation_rad": -0.017696412280201912,
+        "offaxis_rad": 0.4940735101699829,
+        "axis_deviation_rad": 0.306925505399704,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.067092895507812,
+        "rotation_rad": -0.0011527787428349257,
+        "offaxis_rad": 0.5517569780349731,
+        "axis_deviation_rad": 0.3031386137008667,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.40711212158203,
+        "rotation_rad": 0.008802913129329681,
+        "offaxis_rad": 0.33924639225006104,
+        "axis_deviation_rad": 0.2681419253349304,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.247570037841797,
+        "rotation_rad": -0.01755722053349018,
+        "offaxis_rad": 0.2876158654689789,
+        "axis_deviation_rad": 0.2432851493358612,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.41922378540039,
+        "rotation_rad": 0.04977024346590042,
+        "offaxis_rad": 0.494437575340271,
+        "axis_deviation_rad": 0.3332003951072693,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.072956085205078,
+        "rotation_rad": -0.037952788174152374,
+        "offaxis_rad": 0.3326488137245178,
+        "axis_deviation_rad": 0.3017917573451996,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 88.116943359375,
+        "rotation_rad": 0.17376741766929626,
+        "offaxis_rad": 0.9203142523765564,
+        "axis_deviation_rad": 0.3868156373500824,
+        "steps": 116,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.419235229492188,
+        "rotation_rad": 0.017315814271569252,
+        "offaxis_rad": 0.5169788002967834,
+        "axis_deviation_rad": 0.3408747911453247,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 89.04644012451172,
+        "rotation_rad": 0.2102733999490738,
+        "offaxis_rad": 0.8275178670883179,
+        "axis_deviation_rad": 0.31817883253097534,
+        "steps": 109,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 12.613704681396484,
+        "rotation_rad": 0.01299278438091278,
+        "offaxis_rad": 0.45500054955482483,
+        "axis_deviation_rad": 0.36186540126800537,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 26.229228973388672,
+        "rotation_rad": 0.025250140577554703,
+        "offaxis_rad": 0.3807477056980133,
+        "axis_deviation_rad": 0.30644649267196655,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.758277893066406,
+        "rotation_rad": -0.0016721421852707863,
+        "offaxis_rad": 0.3573959767818451,
+        "axis_deviation_rad": 0.2714430093765259,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.820804595947266,
+        "rotation_rad": 0.0008670494426041842,
+        "offaxis_rad": 0.25585806369781494,
+        "axis_deviation_rad": 0.2886660695075989,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.27289581298828,
+        "rotation_rad": 0.08031067252159119,
+        "offaxis_rad": 0.45183873176574707,
+        "axis_deviation_rad": 0.3159329891204834,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.629417419433594,
+        "rotation_rad": -0.011414251290261745,
+        "offaxis_rad": 0.17632921040058136,
+        "axis_deviation_rad": 0.32896971702575684,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.585060119628906,
+        "rotation_rad": -0.00795474648475647,
+        "offaxis_rad": 0.15009143948554993,
+        "axis_deviation_rad": 0.3014555275440216,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.941211700439453,
+        "rotation_rad": 0.0005297914613038301,
+        "offaxis_rad": 0.42416995763778687,
+        "axis_deviation_rad": 0.33988574147224426,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.26892852783203,
+        "rotation_rad": 0.013876891694962978,
+        "offaxis_rad": 0.703188419342041,
+        "axis_deviation_rad": 0.3039192259311676,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.917152404785156,
+        "rotation_rad": 0.07549449801445007,
+        "offaxis_rad": 0.47015616297721863,
+        "axis_deviation_rad": 0.31477051973342896,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.389057159423828,
+        "rotation_rad": 0.015195246785879135,
+        "offaxis_rad": 0.3345921039581299,
+        "axis_deviation_rad": 0.24984632432460785,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.38909149169922,
+        "rotation_rad": -0.006363222375512123,
+        "offaxis_rad": 0.47144845128059387,
+        "axis_deviation_rad": 0.3049571216106415,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.79644012451172,
+        "rotation_rad": 0.01962653547525406,
+        "offaxis_rad": 0.41050469875335693,
+        "axis_deviation_rad": 0.33445289731025696,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 80.14260864257812,
+        "rotation_rad": 0.0539097860455513,
+        "offaxis_rad": 0.4571596086025238,
+        "axis_deviation_rad": 0.3559349775314331,
+        "steps": 111,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.93008804321289,
+        "rotation_rad": 0.014110253192484379,
+        "offaxis_rad": 0.3716740310192108,
+        "axis_deviation_rad": 0.2765231728553772,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.349048614501953,
+        "rotation_rad": 0.034184470772743225,
+        "offaxis_rad": 0.559927225112915,
+        "axis_deviation_rad": 0.33498892188072205,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.44533920288086,
+        "rotation_rad": -0.011605947278439999,
+        "offaxis_rad": 0.392395555973053,
+        "axis_deviation_rad": 0.3075259029865265,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.68675994873047,
+        "rotation_rad": 0.030892066657543182,
+        "offaxis_rad": 0.35377469658851624,
+        "axis_deviation_rad": 0.29708102345466614,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.174468994140625,
+        "rotation_rad": 0.010847878642380238,
+        "offaxis_rad": 0.20906153321266174,
+        "axis_deviation_rad": 0.3154507875442505,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 13.637313842773438,
+        "rotation_rad": -0.0005953721120022237,
+        "offaxis_rad": 0.22709360718727112,
+        "axis_deviation_rad": 0.29072922468185425,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.541309356689453,
+        "rotation_rad": -0.010308093391358852,
+        "offaxis_rad": 0.24614427983760834,
+        "axis_deviation_rad": 0.31222647428512573,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.5841064453125,
+        "rotation_rad": 0.010674325749278069,
+        "offaxis_rad": 0.3353424370288849,
+        "axis_deviation_rad": 0.31270524859428406,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.892425537109375,
+        "rotation_rad": 0.01629043184220791,
+        "offaxis_rad": 0.24781519174575806,
+        "axis_deviation_rad": 0.25014767050743103,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.80333709716797,
+        "rotation_rad": 0.029392002150416374,
+        "offaxis_rad": 0.45422178506851196,
+        "axis_deviation_rad": 0.34128549695014954,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.810070037841797,
+        "rotation_rad": 0.01212336029857397,
+        "offaxis_rad": 0.2412869781255722,
+        "axis_deviation_rad": 0.3127836585044861,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.808414459228516,
+        "rotation_rad": 0.008937299251556396,
+        "offaxis_rad": 0.2717491686344147,
+        "axis_deviation_rad": 0.3522299528121948,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.251575469970703,
+        "rotation_rad": 0.06588079035282135,
+        "offaxis_rad": 0.4868246018886566,
+        "axis_deviation_rad": 0.3425044119358063,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.628311157226562,
+        "rotation_rad": 0.032425809651613235,
+        "offaxis_rad": 0.3841961622238159,
+        "axis_deviation_rad": 0.3010219633579254,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 62.576698303222656,
+        "rotation_rad": 0.11891009658575058,
+        "offaxis_rad": 0.7908914685249329,
+        "axis_deviation_rad": 0.351167231798172,
+        "steps": 87,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.775924682617188,
+        "rotation_rad": -0.01241398137062788,
+        "offaxis_rad": 0.3551734983921051,
+        "axis_deviation_rad": 0.3211856484413147,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.643218994140625,
+        "rotation_rad": 0.005541174206882715,
+        "offaxis_rad": 0.22785328328609467,
+        "axis_deviation_rad": 0.3019779920578003,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 12.502525329589844,
+        "rotation_rad": -0.008036051876842976,
+        "offaxis_rad": 0.3501870930194855,
+        "axis_deviation_rad": 0.32686659693717957,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.740829467773438,
+        "rotation_rad": 0.103700652718544,
+        "offaxis_rad": 0.7404254674911499,
+        "axis_deviation_rad": 0.2901606261730194,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.918426513671875,
+        "rotation_rad": 0.03419633209705353,
+        "offaxis_rad": 0.4879806339740753,
+        "axis_deviation_rad": 0.3042224943637848,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.260440826416016,
+        "rotation_rad": 0.03607131913304329,
+        "offaxis_rad": 0.542907178401947,
+        "axis_deviation_rad": 0.3325754702091217,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.378170013427734,
+        "rotation_rad": -0.03165794536471367,
+        "offaxis_rad": 0.29276949167251587,
+        "axis_deviation_rad": 0.348092645406723,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.96636199951172,
+        "rotation_rad": 0.0326661579310894,
+        "offaxis_rad": 0.5462034344673157,
+        "axis_deviation_rad": 0.29993483424186707,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.328472137451172,
+        "rotation_rad": -0.010442578233778477,
+        "offaxis_rad": 0.3435232937335968,
+        "axis_deviation_rad": 0.30046775937080383,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 32.74293518066406,
+        "rotation_rad": 0.06159401312470436,
+        "offaxis_rad": 0.4197765588760376,
+        "axis_deviation_rad": 0.3589710593223572,
+        "steps": 69,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.302135467529297,
+        "rotation_rad": 0.06315355747938156,
+        "offaxis_rad": 0.3688328266143799,
+        "axis_deviation_rad": 0.3120032548904419,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.771480560302734,
+        "rotation_rad": 0.022067170590162277,
+        "offaxis_rad": 0.4079650938510895,
+        "axis_deviation_rad": 0.3260991871356964,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.633819580078125,
+        "rotation_rad": 0.024536501616239548,
+        "offaxis_rad": 0.14648650586605072,
+        "axis_deviation_rad": 0.32216304540634155,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.72460174560547,
+        "rotation_rad": 0.007530709262937307,
+        "offaxis_rad": 0.12025381624698639,
+        "axis_deviation_rad": 0.30330121517181396,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.195552825927734,
+        "rotation_rad": 0.04193376749753952,
+        "offaxis_rad": 0.32191330194473267,
+        "axis_deviation_rad": 0.3539673686027527,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.854938507080078,
+        "rotation_rad": 0.014289943501353264,
+        "offaxis_rad": 0.2769985496997833,
+        "axis_deviation_rad": 0.30405762791633606,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.929302215576172,
+        "rotation_rad": 0.020379336550831795,
+        "offaxis_rad": 0.5143725275993347,
+        "axis_deviation_rad": 0.32982078194618225,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.7572021484375,
+        "rotation_rad": 0.012883959338068962,
+        "offaxis_rad": 0.3961842358112335,
+        "axis_deviation_rad": 0.2899467349052429,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.599884033203125,
+        "rotation_rad": 0.04099874570965767,
+        "offaxis_rad": 0.3302261531352997,
+        "axis_deviation_rad": 0.40403255820274353,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.316238403320312,
+        "rotation_rad": 0.031001068651676178,
+        "offaxis_rad": 0.23846963047981262,
+        "axis_deviation_rad": 0.31831425428390503,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 13.823455810546875,
+        "rotation_rad": -0.012198194861412048,
+        "offaxis_rad": 0.30084359645843506,
+        "axis_deviation_rad": 0.2514983117580414,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.322452545166016,
+        "rotation_rad": 0.08696825802326202,
+        "offaxis_rad": 0.3872160017490387,
+        "axis_deviation_rad": 0.371414452791214,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.526710510253906,
+        "rotation_rad": -0.025274520739912987,
+        "offaxis_rad": 0.43973493576049805,
+        "axis_deviation_rad": 0.29746562242507935,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.48233413696289,
+        "rotation_rad": -0.02049914374947548,
+        "offaxis_rad": 0.3060081899166107,
+        "axis_deviation_rad": 0.3008301258087158,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.399944305419922,
+        "rotation_rad": 0.07329100370407104,
+        "offaxis_rad": 0.40789490938186646,
+        "axis_deviation_rad": 0.32225334644317627,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 66.46800994873047,
+        "rotation_rad": -0.015307183377444744,
+        "offaxis_rad": 0.7508575916290283,
+        "axis_deviation_rad": 0.3659868836402893,
+        "steps": 95,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.615432739257812,
+        "rotation_rad": 0.026871440932154655,
+        "offaxis_rad": 0.47910499572753906,
+        "axis_deviation_rad": 0.2879144847393036,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.951927185058594,
+        "rotation_rad": 0.004072646610438824,
+        "offaxis_rad": 0.21856144070625305,
+        "axis_deviation_rad": 0.2982923984527588,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.672477722167969,
+        "rotation_rad": -0.026248741894960403,
+        "offaxis_rad": 0.5476190447807312,
+        "axis_deviation_rad": 0.30523401498794556,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.702003479003906,
+        "rotation_rad": 0.05818357691168785,
+        "offaxis_rad": 0.4159994423389435,
+        "axis_deviation_rad": 0.3506554365158081,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.007671356201172,
+        "rotation_rad": -0.006922232918441296,
+        "offaxis_rad": 0.48506221175193787,
+        "axis_deviation_rad": 0.3506811559200287,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.125038146972656,
+        "rotation_rad": -0.005666387267410755,
+        "offaxis_rad": 0.24314211308956146,
+        "axis_deviation_rad": 0.3672240078449249,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.394046783447266,
+        "rotation_rad": 0.024988144636154175,
+        "offaxis_rad": 0.28385129570961,
+        "axis_deviation_rad": 0.3135819137096405,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.032917022705078,
+        "rotation_rad": 0.005140479188412428,
+        "offaxis_rad": 0.5011759996414185,
+        "axis_deviation_rad": 0.283698707818985,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.853763580322266,
+        "rotation_rad": 0.10211660712957382,
+        "offaxis_rad": 0.45258286595344543,
+        "axis_deviation_rad": 0.3983532786369324,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 57.94453811645508,
+        "rotation_rad": 0.07553566992282867,
+        "offaxis_rad": 0.9159191846847534,
+        "axis_deviation_rad": 0.3772594928741455,
+        "steps": 99,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.358882904052734,
+        "rotation_rad": 0.02696213312447071,
+        "offaxis_rad": 0.34821513295173645,
+        "axis_deviation_rad": 0.3110206127166748,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.00448226928711,
+        "rotation_rad": 0.05363985896110535,
+        "offaxis_rad": 0.30590349435806274,
+        "axis_deviation_rad": 0.30562299489974976,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.16064453125,
+        "rotation_rad": -0.009945162571966648,
+        "offaxis_rad": 0.2390071153640747,
+        "axis_deviation_rad": 0.26794731616973877,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.820571899414062,
+        "rotation_rad": -0.033185925334692,
+        "offaxis_rad": 0.3822072446346283,
+        "axis_deviation_rad": 0.28734472393989563,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.25110626220703,
+        "rotation_rad": -0.001545049250125885,
+        "offaxis_rad": 0.2989954650402069,
+        "axis_deviation_rad": 0.30839088559150696,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.675933837890625,
+        "rotation_rad": 0.02625323459506035,
+        "offaxis_rad": 0.41700834035873413,
+        "axis_deviation_rad": 0.2887962758541107,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.982921600341797,
+        "rotation_rad": 0.007696045096963644,
+        "offaxis_rad": 0.5149427056312561,
+        "axis_deviation_rad": 0.2626470923423767,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.174156188964844,
+        "rotation_rad": 0.051736049354076385,
+        "offaxis_rad": 0.32575955986976624,
+        "axis_deviation_rad": 0.26909783482551575,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.530288696289062,
+        "rotation_rad": 0.015582210384309292,
+        "offaxis_rad": 0.4156341850757599,
+        "axis_deviation_rad": 0.3375227749347687,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 59.248077392578125,
+        "rotation_rad": 0.0029108510352671146,
+        "offaxis_rad": 0.6326441168785095,
+        "axis_deviation_rad": 0.2582937479019165,
+        "steps": 95,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.60138702392578,
+        "rotation_rad": 0.00662451796233654,
+        "offaxis_rad": 0.2274514138698578,
+        "axis_deviation_rad": 0.27594900131225586,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.68157958984375,
+        "rotation_rad": 0.009704169817268848,
+        "offaxis_rad": 0.3398723900318146,
+        "axis_deviation_rad": 0.2566797733306885,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.290306091308594,
+        "rotation_rad": -0.0022385038901120424,
+        "offaxis_rad": 0.3007562458515167,
+        "axis_deviation_rad": 0.3127315938472748,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.241199493408203,
+        "rotation_rad": 0.05444501340389252,
+        "offaxis_rad": 0.4420481026172638,
+        "axis_deviation_rad": 0.3521735966205597,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 75.77392578125,
+        "rotation_rad": 0.06952562183141708,
+        "offaxis_rad": 0.6393744349479675,
+        "axis_deviation_rad": 0.34634503722190857,
+        "steps": 103,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.581771850585938,
+        "rotation_rad": 0.021542876958847046,
+        "offaxis_rad": 0.25070998072624207,
+        "axis_deviation_rad": 0.2873317301273346,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.46985626220703,
+        "rotation_rad": 0.011609863489866257,
+        "offaxis_rad": 0.48304319381713867,
+        "axis_deviation_rad": 0.30070966482162476,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.22146224975586,
+        "rotation_rad": 0.012353316880762577,
+        "offaxis_rad": 0.3592602014541626,
+        "axis_deviation_rad": 0.4010660946369171,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.93140411376953,
+        "rotation_rad": 0.03275343030691147,
+        "offaxis_rad": 0.3836243152618408,
+        "axis_deviation_rad": 0.3984341621398926,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.5391845703125,
+        "rotation_rad": 0.011009897105395794,
+        "offaxis_rad": 0.21155966818332672,
+        "axis_deviation_rad": 0.3099701702594757,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.169971466064453,
+        "rotation_rad": 0.018136393278837204,
+        "offaxis_rad": 0.339966356754303,
+        "axis_deviation_rad": 0.22056937217712402,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.09638214111328,
+        "rotation_rad": 0.011411374434828758,
+        "offaxis_rad": 0.2260199785232544,
+        "axis_deviation_rad": 0.2902812957763672,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.307342529296875,
+        "rotation_rad": 0.042155999690294266,
+        "offaxis_rad": 0.3699389696121216,
+        "axis_deviation_rad": 0.3630412518978119,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.796794891357422,
+        "rotation_rad": 0.007178409490734339,
+        "offaxis_rad": 0.33241987228393555,
+        "axis_deviation_rad": 0.2849995195865631,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 11.419605255126953,
+        "rotation_rad": 0.024101711809635162,
+        "offaxis_rad": 0.3164229393005371,
+        "axis_deviation_rad": 0.2802182137966156,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.806072235107422,
+        "rotation_rad": 0.0024126353673636913,
+        "offaxis_rad": 0.36587557196617126,
+        "axis_deviation_rad": 0.32207047939300537,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 72.24722290039062,
+        "rotation_rad": 0.0811476856470108,
+        "offaxis_rad": 0.6312229633331299,
+        "axis_deviation_rad": 0.37008681893348694,
+        "steps": 102,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 27.38622283935547,
+        "rotation_rad": 0.04322897642850876,
+        "offaxis_rad": 0.30030104517936707,
+        "axis_deviation_rad": 0.328054279088974,
+        "steps": 62,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.123409271240234,
+        "rotation_rad": 0.03748638555407524,
+        "offaxis_rad": 0.49409207701683044,
+        "axis_deviation_rad": 0.35939663648605347,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.049057006835938,
+        "rotation_rad": 0.011469954624772072,
+        "offaxis_rad": 0.2697336673736572,
+        "axis_deviation_rad": 0.3162001967430115,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 79.89839172363281,
+        "rotation_rad": 0.07134617120027542,
+        "offaxis_rad": 1.1271374225616455,
+        "axis_deviation_rad": 0.35881665349006653,
+        "steps": 118,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.350975036621094,
+        "rotation_rad": -0.048776187002658844,
+        "offaxis_rad": 0.3795701265335083,
+        "axis_deviation_rad": 0.2862350344657898,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.30615997314453,
+        "rotation_rad": 0.028763871639966965,
+        "offaxis_rad": 0.19913679361343384,
+        "axis_deviation_rad": 0.2881920635700226,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.695846557617188,
+        "rotation_rad": 0.005894383881241083,
+        "offaxis_rad": 0.32552066445350647,
+        "axis_deviation_rad": 0.24169433116912842,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.830459594726562,
+        "rotation_rad": -0.0007351844105869532,
+        "offaxis_rad": 0.28056448698043823,
+        "axis_deviation_rad": 0.2624688148498535,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.39556121826172,
+        "rotation_rad": -0.0045678745955228806,
+        "offaxis_rad": 0.47469979524612427,
+        "axis_deviation_rad": 0.27818575501441956,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.311023712158203,
+        "rotation_rad": 0.06416529417037964,
+        "offaxis_rad": 0.46414831280708313,
+        "axis_deviation_rad": 0.34328433871269226,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.065235137939453,
+        "rotation_rad": 0.008943066000938416,
+        "offaxis_rad": 0.3138154149055481,
+        "axis_deviation_rad": 0.28646591305732727,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.656883239746094,
+        "rotation_rad": 0.018837222829461098,
+        "offaxis_rad": 0.49156349897384644,
+        "axis_deviation_rad": 0.31453007459640503,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.37246322631836,
+        "rotation_rad": 0.021157896146178246,
+        "offaxis_rad": 0.4716736674308777,
+        "axis_deviation_rad": 0.3037289083003998,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.289749145507812,
+        "rotation_rad": 0.030771391466259956,
+        "offaxis_rad": 0.4216814339160919,
+        "axis_deviation_rad": 0.30590441823005676,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 46.6963996887207,
+        "rotation_rad": 0.00033843377605080605,
+        "offaxis_rad": 0.39338773488998413,
+        "axis_deviation_rad": 0.2424124777317047,
+        "steps": 79,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.791858673095703,
+        "rotation_rad": 0.001959335058927536,
+        "offaxis_rad": 0.313425749540329,
+        "axis_deviation_rad": 0.23172330856323242,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.43354034423828,
+        "rotation_rad": 0.016517600044608116,
+        "offaxis_rad": 0.5019773840904236,
+        "axis_deviation_rad": 0.3289228081703186,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.967937469482422,
+        "rotation_rad": -0.00846223346889019,
+        "offaxis_rad": 0.44834980368614197,
+        "axis_deviation_rad": 0.3390883505344391,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.709911346435547,
+        "rotation_rad": 0.0061570871621370316,
+        "offaxis_rad": 0.43815362453460693,
+        "axis_deviation_rad": 0.33889690041542053,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.69715118408203,
+        "rotation_rad": 0.0753248929977417,
+        "offaxis_rad": 0.4899326264858246,
+        "axis_deviation_rad": 0.27869367599487305,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.169933319091797,
+        "rotation_rad": 0.0616442933678627,
+        "offaxis_rad": 0.38908249139785767,
+        "axis_deviation_rad": 0.3909008502960205,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.226699829101562,
+        "rotation_rad": 0.06494986265897751,
+        "offaxis_rad": 0.4577072560787201,
+        "axis_deviation_rad": 0.31754404306411743,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.47907257080078,
+        "rotation_rad": -0.0423801988363266,
+        "offaxis_rad": 0.46229133009910583,
+        "axis_deviation_rad": 0.293855756521225,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.916912078857422,
+        "rotation_rad": -0.007719909772276878,
+        "offaxis_rad": 0.4401579201221466,
+        "axis_deviation_rad": 0.30274441838264465,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.14704132080078,
+        "rotation_rad": 0.04653521627187729,
+        "offaxis_rad": 0.21402719616889954,
+        "axis_deviation_rad": 0.35731226205825806,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.327484130859375,
+        "rotation_rad": 0.10574936121702194,
+        "offaxis_rad": 0.4091077446937561,
+        "axis_deviation_rad": 0.26620981097221375,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 59.18180465698242,
+        "rotation_rad": 0.010327299125492573,
+        "offaxis_rad": 0.1966821551322937,
+        "axis_deviation_rad": 0.2263239175081253,
+        "steps": 93,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.73931884765625,
+        "rotation_rad": 0.05165327712893486,
+        "offaxis_rad": 0.400741845369339,
+        "axis_deviation_rad": 0.35677605867385864,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.83535385131836,
+        "rotation_rad": 0.022623484954237938,
+        "offaxis_rad": 0.30872711539268494,
+        "axis_deviation_rad": 0.3106794059276581,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 47.3386344909668,
+        "rotation_rad": 0.012019598856568336,
+        "offaxis_rad": 0.5206150412559509,
+        "axis_deviation_rad": 0.3209090828895569,
+        "steps": 80,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.724956512451172,
+        "rotation_rad": -0.005240286700427532,
+        "offaxis_rad": 0.3890257179737091,
+        "axis_deviation_rad": 0.32574865221977234,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.15280532836914,
+        "rotation_rad": 0.0709197074174881,
+        "offaxis_rad": 0.3879808485507965,
+        "axis_deviation_rad": 0.289609432220459,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.26577377319336,
+        "rotation_rad": 0.011231699958443642,
+        "offaxis_rad": 0.3463860750198364,
+        "axis_deviation_rad": 0.2869739830493927,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 77.70623016357422,
+        "rotation_rad": -0.009611948393285275,
+        "offaxis_rad": 0.7144978642463684,
+        "axis_deviation_rad": 0.3069609999656677,
+        "steps": 101,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 70.68063354492188,
+        "rotation_rad": 0.006817536894232035,
+        "offaxis_rad": 0.4858720600605011,
+        "axis_deviation_rad": 0.24048376083374023,
+        "steps": 101,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.964763641357422,
+        "rotation_rad": -0.013282163999974728,
+        "offaxis_rad": 0.3589950501918793,
+        "axis_deviation_rad": 0.24359090626239777,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 26.57974624633789,
+        "rotation_rad": 0.0007817812729626894,
+        "offaxis_rad": 0.3548697233200073,
+        "axis_deviation_rad": 0.2613251507282257,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 12.385189056396484,
+        "rotation_rad": 0.047003209590911865,
+        "offaxis_rad": 0.2849345803260803,
+        "axis_deviation_rad": 0.32707592844963074,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.585769653320312,
+        "rotation_rad": 0.02441355586051941,
+        "offaxis_rad": 0.29020100831985474,
+        "axis_deviation_rad": 0.31734034419059753,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 35.9967155456543,
+        "rotation_rad": 0.029145652428269386,
+        "offaxis_rad": 0.49143168330192566,
+        "axis_deviation_rad": 0.34015005826950073,
+        "steps": 70,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.44293975830078,
+        "rotation_rad": 0.04589422047138214,
+        "offaxis_rad": 0.5176193714141846,
+        "axis_deviation_rad": 0.3496488034725189,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.225017547607422,
+        "rotation_rad": -0.0018900949507951736,
+        "offaxis_rad": 0.5098752379417419,
+        "axis_deviation_rad": 0.30860650539398193,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.983383178710938,
+        "rotation_rad": 0.036379214376211166,
+        "offaxis_rad": 0.42682141065597534,
+        "axis_deviation_rad": 0.32202771306037903,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.001079559326172,
+        "rotation_rad": 0.025106197223067284,
+        "offaxis_rad": 0.34429657459259033,
+        "axis_deviation_rad": 0.30351293087005615,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.552093505859375,
+        "rotation_rad": -0.003487324807792902,
+        "offaxis_rad": 0.39469096064567566,
+        "axis_deviation_rad": 0.3114582598209381,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 28.08391571044922,
+        "rotation_rad": 0.02099302038550377,
+        "offaxis_rad": 0.40379559993743896,
+        "axis_deviation_rad": 0.2707533836364746,
+        "steps": 68,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.84209442138672,
+        "rotation_rad": -0.01474696397781372,
+        "offaxis_rad": 0.31539878249168396,
+        "axis_deviation_rad": 0.3025687336921692,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.69039535522461,
+        "rotation_rad": 0.060924772173166275,
+        "offaxis_rad": 0.45407623052597046,
+        "axis_deviation_rad": 0.34115907549858093,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.301143646240234,
+        "rotation_rad": 0.035822127014398575,
+        "offaxis_rad": 0.3575690686702728,
+        "axis_deviation_rad": 0.3490201532840729,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.180313110351562,
+        "rotation_rad": 0.04518214240670204,
+        "offaxis_rad": 0.484665185213089,
+        "axis_deviation_rad": 0.37497204542160034,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.051658630371094,
+        "rotation_rad": 0.023266544565558434,
+        "offaxis_rad": 0.24965284764766693,
+        "axis_deviation_rad": 0.3363109529018402,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.08951187133789,
+        "rotation_rad": -0.025181962177157402,
+        "offaxis_rad": 0.2548515498638153,
+        "axis_deviation_rad": 0.356661319732666,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.70209503173828,
+        "rotation_rad": -0.004715133924037218,
+        "offaxis_rad": 0.3378554880619049,
+        "axis_deviation_rad": 0.2624434232711792,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.759265899658203,
+        "rotation_rad": 0.0731712281703949,
+        "offaxis_rad": 0.5639146566390991,
+        "axis_deviation_rad": 0.3246019184589386,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.650264739990234,
+        "rotation_rad": -0.013356715440750122,
+        "offaxis_rad": 0.3349921703338623,
+        "axis_deviation_rad": 0.2922121584415436,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.01569366455078,
+        "rotation_rad": 0.0024975414853543043,
+        "offaxis_rad": 0.2570284605026245,
+        "axis_deviation_rad": 0.3492615222930908,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.672821044921875,
+        "rotation_rad": 0.07420873641967773,
+        "offaxis_rad": 0.397305965423584,
+        "axis_deviation_rad": 0.35064056515693665,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.30361557006836,
+        "rotation_rad": 0.011057174764573574,
+        "offaxis_rad": 0.3086456060409546,
+        "axis_deviation_rad": 0.3348196744918823,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 64.92276000976562,
+        "rotation_rad": 0.2377432882785797,
+        "offaxis_rad": 0.5704027414321899,
+        "axis_deviation_rad": 0.4359143376350403,
+        "steps": 89,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.12302017211914,
+        "rotation_rad": 0.06591029465198517,
+        "offaxis_rad": 0.5754974484443665,
+        "axis_deviation_rad": 0.29888156056404114,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.5560302734375,
+        "rotation_rad": 0.005069635808467865,
+        "offaxis_rad": 0.3416461646556854,
+        "axis_deviation_rad": 0.30572283267974854,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.383930206298828,
+        "rotation_rad": 0.05798506736755371,
+        "offaxis_rad": 0.4725914001464844,
+        "axis_deviation_rad": 0.40223413705825806,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.48215103149414,
+        "rotation_rad": -0.014578644186258316,
+        "offaxis_rad": 0.46241918206214905,
+        "axis_deviation_rad": 0.2941133677959442,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 13.95876693725586,
+        "rotation_rad": 0.02238590084016323,
+        "offaxis_rad": 0.5362265110015869,
+        "axis_deviation_rad": 0.30708426237106323,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.499073028564453,
+        "rotation_rad": 0.014788465574383736,
+        "offaxis_rad": 0.3653767704963684,
+        "axis_deviation_rad": 0.2961164712905884,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.53033447265625,
+        "rotation_rad": 0.06662911921739578,
+        "offaxis_rad": 0.5066985487937927,
+        "axis_deviation_rad": 0.32928210496902466,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.282257080078125,
+        "rotation_rad": 0.009015385992825031,
+        "offaxis_rad": 0.5569980144500732,
+        "axis_deviation_rad": 0.32041260600090027,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.942413330078125,
+        "rotation_rad": -0.0013636138755828142,
+        "offaxis_rad": 0.33466294407844543,
+        "axis_deviation_rad": 0.28625765442848206,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 74.8494644165039,
+        "rotation_rad": 0.0279963631182909,
+        "offaxis_rad": 0.6313446760177612,
+        "axis_deviation_rad": 0.3375776410102844,
+        "steps": 108,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.470279693603516,
+        "rotation_rad": 0.010737599804997444,
+        "offaxis_rad": 0.4639521539211273,
+        "axis_deviation_rad": 0.294147789478302,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.730812072753906,
+        "rotation_rad": 0.023212313652038574,
+        "offaxis_rad": 0.33003711700439453,
+        "axis_deviation_rad": 0.3264104723930359,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 26.419891357421875,
+        "rotation_rad": 0.131067156791687,
+        "offaxis_rad": 0.5582034587860107,
+        "axis_deviation_rad": 0.3594313859939575,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.459552764892578,
+        "rotation_rad": 0.039171747863292694,
+        "offaxis_rad": 0.5220559239387512,
+        "axis_deviation_rad": 0.32124173641204834,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.28668212890625,
+        "rotation_rad": -0.005661927629262209,
+        "offaxis_rad": 0.29118582606315613,
+        "axis_deviation_rad": 0.23260319232940674,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.323959350585938,
+        "rotation_rad": 0.04233373701572418,
+        "offaxis_rad": 0.49447229504585266,
+        "axis_deviation_rad": 0.337002158164978,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 41.143863677978516,
+        "rotation_rad": 0.05668162181973457,
+        "offaxis_rad": 0.6835163831710815,
+        "axis_deviation_rad": 0.3435269296169281,
+        "steps": 78,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 75.75614166259766,
+        "rotation_rad": 0.16400636732578278,
+        "offaxis_rad": 1.218484878540039,
+        "axis_deviation_rad": 0.32179751992225647,
+        "steps": 106,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.718097686767578,
+        "rotation_rad": 0.11253056675195694,
+        "offaxis_rad": 0.4173951745033264,
+        "axis_deviation_rad": 0.32278791069984436,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.60830307006836,
+        "rotation_rad": -0.002285009017214179,
+        "offaxis_rad": 0.19518181681632996,
+        "axis_deviation_rad": 0.29763656854629517,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 158.02206420898438,
+        "rotation_rad": 0.10728316754102707,
+        "offaxis_rad": 0.7191037535667419,
+        "axis_deviation_rad": 0.30211567878723145,
+        "steps": 168,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.698028564453125,
+        "rotation_rad": 0.055989012122154236,
+        "offaxis_rad": 0.37743693590164185,
+        "axis_deviation_rad": 0.3449992835521698,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.841365814208984,
+        "rotation_rad": 0.019919417798519135,
+        "offaxis_rad": 0.24516862630844116,
+        "axis_deviation_rad": 0.27798715233802795,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 91.39247131347656,
+        "rotation_rad": 0.025850120931863785,
+        "offaxis_rad": 0.5397974252700806,
+        "axis_deviation_rad": 0.2795226275920868,
+        "steps": 116,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.021419525146484,
+        "rotation_rad": 0.014708523638546467,
+        "offaxis_rad": 0.5613961219787598,
+        "axis_deviation_rad": 0.2925955355167389,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.096607208251953,
+        "rotation_rad": 0.010823540389537811,
+        "offaxis_rad": 0.6670283675193787,
+        "axis_deviation_rad": 0.3031764626502991,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.943595886230469,
+        "rotation_rad": -0.00017367303371429443,
+        "offaxis_rad": 0.3284452557563782,
+        "axis_deviation_rad": 0.29008233547210693,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.452468872070312,
+        "rotation_rad": -0.01920299232006073,
+        "offaxis_rad": 0.5402891635894775,
+        "axis_deviation_rad": 0.30793991684913635,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.531509399414062,
+        "rotation_rad": -0.0086139515042305,
+        "offaxis_rad": 0.23870818316936493,
+        "axis_deviation_rad": 0.31087180972099304,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.841121673583984,
+        "rotation_rad": 0.028067555278539658,
+        "offaxis_rad": 0.31183433532714844,
+        "axis_deviation_rad": 0.25855162739753723,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.984298706054688,
+        "rotation_rad": 0.030153844505548477,
+        "offaxis_rad": 0.44439300894737244,
+        "axis_deviation_rad": 0.34454721212387085,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 43.16596221923828,
+        "rotation_rad": 0.3697291612625122,
+        "offaxis_rad": 0.5912083387374878,
+        "axis_deviation_rad": 0.4190102219581604,
+        "steps": 74,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.47356414794922,
+        "rotation_rad": 0.0402132123708725,
+        "offaxis_rad": 0.6130771636962891,
+        "axis_deviation_rad": 0.39565908908843994,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.23986053466797,
+        "rotation_rad": 0.009637375362217426,
+        "offaxis_rad": 0.3538082242012024,
+        "axis_deviation_rad": 0.28992316126823425,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.382522583007812,
+        "rotation_rad": 0.01717146672308445,
+        "offaxis_rad": 0.2782247066497803,
+        "axis_deviation_rad": 0.2891934812068939,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.265789031982422,
+        "rotation_rad": 0.045624155551195145,
+        "offaxis_rad": 0.3814045786857605,
+        "axis_deviation_rad": 0.2556764483451843,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 63.185428619384766,
+        "rotation_rad": -0.041829030960798264,
+        "offaxis_rad": 0.6383049488067627,
+        "axis_deviation_rad": 0.2923944294452667,
+        "steps": 98,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.212642669677734,
+        "rotation_rad": -0.007898912765085697,
+        "offaxis_rad": 0.24557743966579437,
+        "axis_deviation_rad": 0.249970480799675,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.74190902709961,
+        "rotation_rad": 0.007899689488112926,
+        "offaxis_rad": 0.3159027099609375,
+        "axis_deviation_rad": 0.27083322405815125,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.87301254272461,
+        "rotation_rad": 0.025646647438406944,
+        "offaxis_rad": 0.2669380307197571,
+        "axis_deviation_rad": 0.3289736211299896,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 85.86003112792969,
+        "rotation_rad": 0.09785833209753036,
+        "offaxis_rad": 0.8986135721206665,
+        "axis_deviation_rad": 0.3670068681240082,
+        "steps": 119,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.475658416748047,
+        "rotation_rad": 0.00781049532815814,
+        "offaxis_rad": 0.2900702953338623,
+        "axis_deviation_rad": 0.33524399995803833,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 68.18373107910156,
+        "rotation_rad": 0.035651035606861115,
+        "offaxis_rad": 0.3354477882385254,
+        "axis_deviation_rad": 0.3356712758541107,
+        "steps": 101,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.525707244873047,
+        "rotation_rad": 0.0654444769024849,
+        "offaxis_rad": 0.5119643211364746,
+        "axis_deviation_rad": 0.2802327275276184,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.0450439453125,
+        "rotation_rad": 0.019609184935688972,
+        "offaxis_rad": 0.2905801236629486,
+        "axis_deviation_rad": 0.3061348497867584,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 149.06124877929688,
+        "rotation_rad": 0.08379670232534409,
+        "offaxis_rad": 1.7317599058151245,
+        "axis_deviation_rad": 0.3376476764678955,
+        "steps": 162,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.671470642089844,
+        "rotation_rad": -0.013499120250344276,
+        "offaxis_rad": 0.426214337348938,
+        "axis_deviation_rad": 0.36218124628067017,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.13709259033203,
+        "rotation_rad": -0.004455685615539551,
+        "offaxis_rad": 0.2914811372756958,
+        "axis_deviation_rad": 0.32550856471061707,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.31005859375,
+        "rotation_rad": 0.11583162844181061,
+        "offaxis_rad": 0.5711090564727783,
+        "axis_deviation_rad": 0.42909568548202515,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 37.71450424194336,
+        "rotation_rad": 0.30658164620399475,
+        "offaxis_rad": 0.5937412977218628,
+        "axis_deviation_rad": 0.4040963053703308,
+        "steps": 74,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.445842742919922,
+        "rotation_rad": -0.0036856106016784906,
+        "offaxis_rad": 0.2612358033657074,
+        "axis_deviation_rad": 0.32376712560653687,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.80988311767578,
+        "rotation_rad": 0.0033916593529284,
+        "offaxis_rad": 0.3342192471027374,
+        "axis_deviation_rad": 0.2650020718574524,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 75.4302978515625,
+        "rotation_rad": -0.02390286512672901,
+        "offaxis_rad": 0.6298474669456482,
+        "axis_deviation_rad": 0.3167775571346283,
+        "steps": 106,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.815990447998047,
+        "rotation_rad": -0.001964043825864792,
+        "offaxis_rad": 0.44330596923828125,
+        "axis_deviation_rad": 0.2974631190299988,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 67.20088195800781,
+        "rotation_rad": 0.0618443489074707,
+        "offaxis_rad": 0.799261748790741,
+        "axis_deviation_rad": 0.2840517461299896,
+        "steps": 97,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.458942413330078,
+        "rotation_rad": 0.02527962625026703,
+        "offaxis_rad": 0.4278550446033478,
+        "axis_deviation_rad": 0.353323370218277,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.283084869384766,
+        "rotation_rad": 0.0013515653554350138,
+        "offaxis_rad": 0.5789702534675598,
+        "axis_deviation_rad": 0.33978360891342163,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 61.54783248901367,
+        "rotation_rad": 0.03113880567252636,
+        "offaxis_rad": 0.2795330584049225,
+        "axis_deviation_rad": 0.26271703839302063,
+        "steps": 92,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 78.04969787597656,
+        "rotation_rad": 0.015844466164708138,
+        "offaxis_rad": 0.9059686660766602,
+        "axis_deviation_rad": 0.30654385685920715,
+        "steps": 107,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.10541534423828,
+        "rotation_rad": 0.017996013164520264,
+        "offaxis_rad": 0.42095747590065,
+        "axis_deviation_rad": 0.3493015468120575,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 82.30732727050781,
+        "rotation_rad": 0.07828016579151154,
+        "offaxis_rad": 0.6045460104942322,
+        "axis_deviation_rad": 0.27253609895706177,
+        "steps": 107,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.300216674804688,
+        "rotation_rad": -0.02571568824350834,
+        "offaxis_rad": 0.3846728503704071,
+        "axis_deviation_rad": 0.39272281527519226,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.889751434326172,
+        "rotation_rad": -0.026202987879514694,
+        "offaxis_rad": 0.5069844722747803,
+        "axis_deviation_rad": 0.3102574348449707,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.138229370117188,
+        "rotation_rad": 0.005138665437698364,
+        "offaxis_rad": 0.35838016867637634,
+        "axis_deviation_rad": 0.3744460642337799,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.028858184814453,
+        "rotation_rad": 0.01336938887834549,
+        "offaxis_rad": 0.4902494251728058,
+        "axis_deviation_rad": 0.33885619044303894,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.18817901611328,
+        "rotation_rad": 0.014775321818888187,
+        "offaxis_rad": 0.35071614384651184,
+        "axis_deviation_rad": 0.34713441133499146,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.59654998779297,
+        "rotation_rad": 0.03682488203048706,
+        "offaxis_rad": 0.3572181463241577,
+        "axis_deviation_rad": 0.3792968690395355,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.981525421142578,
+        "rotation_rad": -0.0007483736844733357,
+        "offaxis_rad": 0.6160053014755249,
+        "axis_deviation_rad": 0.3096141517162323,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 68.32022094726562,
+        "rotation_rad": -0.018269576132297516,
+        "offaxis_rad": 0.7839882373809814,
+        "axis_deviation_rad": 0.33421432971954346,
+        "steps": 95,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.049259185791016,
+        "rotation_rad": 0.01561672706156969,
+        "offaxis_rad": 0.3580302894115448,
+        "axis_deviation_rad": 0.3522058129310608,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.356075286865234,
+        "rotation_rad": 0.03846713900566101,
+        "offaxis_rad": 0.41569915413856506,
+        "axis_deviation_rad": 0.2642974555492401,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.95559310913086,
+        "rotation_rad": -0.002493386622518301,
+        "offaxis_rad": 0.28382906317710876,
+        "axis_deviation_rad": 0.2934519648551941,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.58155059814453,
+        "rotation_rad": -0.014362972229719162,
+        "offaxis_rad": 0.5107542872428894,
+        "axis_deviation_rad": 0.3402135670185089,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.18267822265625,
+        "rotation_rad": 0.08230728656053543,
+        "offaxis_rad": 0.5401442050933838,
+        "axis_deviation_rad": 0.37552762031555176,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.734905242919922,
+        "rotation_rad": 0.032047003507614136,
+        "offaxis_rad": 0.49849647283554077,
+        "axis_deviation_rad": 0.30860480666160583,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.5489501953125,
+        "rotation_rad": 0.10948178172111511,
+        "offaxis_rad": 0.5194201469421387,
+        "axis_deviation_rad": 0.3575300872325897,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 83.40901947021484,
+        "rotation_rad": 0.32695454359054565,
+        "offaxis_rad": 0.8040875792503357,
+        "axis_deviation_rad": 0.45891550183296204,
+        "steps": 105,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.082382202148438,
+        "rotation_rad": -0.01391126774251461,
+        "offaxis_rad": 0.39816001057624817,
+        "axis_deviation_rad": 0.2709222435951233,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 80.17888641357422,
+        "rotation_rad": 0.06802714616060257,
+        "offaxis_rad": 0.6499039530754089,
+        "axis_deviation_rad": 0.3224595785140991,
+        "steps": 108,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 107.68525695800781,
+        "rotation_rad": 0.08375444263219833,
+        "offaxis_rad": 0.6907562613487244,
+        "axis_deviation_rad": 0.3462649881839752,
+        "steps": 126,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.71035385131836,
+        "rotation_rad": 0.08490295708179474,
+        "offaxis_rad": 0.5705727338790894,
+        "axis_deviation_rad": 0.3535110056400299,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.223236083984375,
+        "rotation_rad": 0.033027928322553635,
+        "offaxis_rad": 0.34776467084884644,
+        "axis_deviation_rad": 0.3501584827899933,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.405864715576172,
+        "rotation_rad": -0.0316123329102993,
+        "offaxis_rad": 0.3647201657295227,
+        "axis_deviation_rad": 0.27166318893432617,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 59.346595764160156,
+        "rotation_rad": 0.0462038628757,
+        "offaxis_rad": 0.9501825571060181,
+        "axis_deviation_rad": 0.3455006778240204,
+        "steps": 96,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.774761199951172,
+        "rotation_rad": 0.007873132824897766,
+        "offaxis_rad": 0.29183629155158997,
+        "axis_deviation_rad": 0.32705894112586975,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.892379760742188,
+        "rotation_rad": 0.07359874993562698,
+        "offaxis_rad": 0.472561240196228,
+        "axis_deviation_rad": 0.37040916085243225,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.117733001708984,
+        "rotation_rad": 0.014709340408444405,
+        "offaxis_rad": 0.38372066617012024,
+        "axis_deviation_rad": 0.2935015857219696,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.598812103271484,
+        "rotation_rad": 0.004568362608551979,
+        "offaxis_rad": 0.212984099984169,
+        "axis_deviation_rad": 0.3271004259586334,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.515277862548828,
+        "rotation_rad": -0.0045783123932778835,
+        "offaxis_rad": 0.33938565850257874,
+        "axis_deviation_rad": 0.2743808627128601,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.64826202392578,
+        "rotation_rad": 0.07918674498796463,
+        "offaxis_rad": 0.5282914638519287,
+        "axis_deviation_rad": 0.35613512992858887,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.875545501708984,
+        "rotation_rad": 0.10473822057247162,
+        "offaxis_rad": 0.44977056980133057,
+        "axis_deviation_rad": 0.3833983838558197,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.130355834960938,
+        "rotation_rad": 0.056707169860601425,
+        "offaxis_rad": 0.32303252816200256,
+        "axis_deviation_rad": 0.3382956385612488,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.827896118164062,
+        "rotation_rad": 0.008521553128957748,
+        "offaxis_rad": 0.38496133685112,
+        "axis_deviation_rad": 0.29538100957870483,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 92.69306182861328,
+        "rotation_rad": -0.01580549217760563,
+        "offaxis_rad": 0.646460771560669,
+        "axis_deviation_rad": 0.3104602098464966,
+        "steps": 117,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.161449432373047,
+        "rotation_rad": 0.04603699594736099,
+        "offaxis_rad": 0.2980245351791382,
+        "axis_deviation_rad": 0.2704157829284668,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.600948333740234,
+        "rotation_rad": 0.004816738422960043,
+        "offaxis_rad": 0.3467227518558502,
+        "axis_deviation_rad": 0.3163810968399048,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.624309539794922,
+        "rotation_rad": 0.014084507711231709,
+        "offaxis_rad": 0.33278942108154297,
+        "axis_deviation_rad": 0.29558777809143066,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.873931884765625,
+        "rotation_rad": 0.026309067383408546,
+        "offaxis_rad": 0.4647025167942047,
+        "axis_deviation_rad": 0.3543541431427002,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.455020904541016,
+        "rotation_rad": 0.00975923053920269,
+        "offaxis_rad": 0.5090996623039246,
+        "axis_deviation_rad": 0.26472270488739014,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.402603149414062,
+        "rotation_rad": 0.02412954531610012,
+        "offaxis_rad": 0.6048955321311951,
+        "axis_deviation_rad": 0.25677579641342163,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.51953887939453,
+        "rotation_rad": 0.0889711081981659,
+        "offaxis_rad": 0.5693904757499695,
+        "axis_deviation_rad": 0.38311001658439636,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.282146453857422,
+        "rotation_rad": -0.010066772811114788,
+        "offaxis_rad": 0.2834765613079071,
+        "axis_deviation_rad": 0.28370264172554016,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.98003387451172,
+        "rotation_rad": 0.008133607916533947,
+        "offaxis_rad": 0.3673548996448517,
+        "axis_deviation_rad": 0.30481380224227905,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.725833892822266,
+        "rotation_rad": 0.008710154332220554,
+        "offaxis_rad": 0.15907371044158936,
+        "axis_deviation_rad": 0.2824588418006897,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.720497131347656,
+        "rotation_rad": 0.06604528427124023,
+        "offaxis_rad": 0.4868931174278259,
+        "axis_deviation_rad": 0.3065427541732788,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 58.185420989990234,
+        "rotation_rad": -0.005632268730551004,
+        "offaxis_rad": 0.6511721014976501,
+        "axis_deviation_rad": 0.30947065353393555,
+        "steps": 88,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.730064392089844,
+        "rotation_rad": 0.002408095635473728,
+        "offaxis_rad": 0.24927571415901184,
+        "axis_deviation_rad": 0.2945859730243683,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.915912628173828,
+        "rotation_rad": 0.04617556557059288,
+        "offaxis_rad": 0.31927400827407837,
+        "axis_deviation_rad": 0.26699161529541016,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.02987289428711,
+        "rotation_rad": 0.00023793961736373603,
+        "offaxis_rad": 0.19305942952632904,
+        "axis_deviation_rad": 0.27244478464126587,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.901771545410156,
+        "rotation_rad": 0.07360302656888962,
+        "offaxis_rad": 0.4238898456096649,
+        "axis_deviation_rad": 0.3594200313091278,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.19571304321289,
+        "rotation_rad": 0.055961646139621735,
+        "offaxis_rad": 0.34765225648880005,
+        "axis_deviation_rad": 0.3615657389163971,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 46.662330627441406,
+        "rotation_rad": 0.06704557687044144,
+        "offaxis_rad": 0.6564880609512329,
+        "axis_deviation_rad": 0.3539508581161499,
+        "steps": 83,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 88.56925964355469,
+        "rotation_rad": 0.05946781486272812,
+        "offaxis_rad": 0.6806051731109619,
+        "axis_deviation_rad": 0.26681551337242126,
+        "steps": 112,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.436256408691406,
+        "rotation_rad": 0.006640303879976273,
+        "offaxis_rad": 0.4263148009777069,
+        "axis_deviation_rad": 0.30494144558906555,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.735984802246094,
+        "rotation_rad": 0.08885001391172409,
+        "offaxis_rad": 0.578521192073822,
+        "axis_deviation_rad": 0.31589993834495544,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.011634826660156,
+        "rotation_rad": 0.07183922827243805,
+        "offaxis_rad": 0.34333816170692444,
+        "axis_deviation_rad": 0.3056429624557495,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.436019897460938,
+        "rotation_rad": 0.06209103390574455,
+        "offaxis_rad": 0.34703657031059265,
+        "axis_deviation_rad": 0.4028894901275635,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 26.762256622314453,
+        "rotation_rad": -0.013848193921148777,
+        "offaxis_rad": 0.44648563861846924,
+        "axis_deviation_rad": 0.37015870213508606,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.838111877441406,
+        "rotation_rad": 0.07180861383676529,
+        "offaxis_rad": 0.46465200185775757,
+        "axis_deviation_rad": 0.34085536003112793,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.617340087890625,
+        "rotation_rad": 0.020821459591388702,
+        "offaxis_rad": 0.47644543647766113,
+        "axis_deviation_rad": 0.3258473575115204,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.494945526123047,
+        "rotation_rad": 0.020265143364667892,
+        "offaxis_rad": 0.5356557965278625,
+        "axis_deviation_rad": 0.3078373074531555,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.220611572265625,
+        "rotation_rad": 0.0029361506458371878,
+        "offaxis_rad": 0.4073231518268585,
+        "axis_deviation_rad": 0.2577362060546875,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.555328369140625,
+        "rotation_rad": 0.04930933192372322,
+        "offaxis_rad": 0.33907970786094666,
+        "axis_deviation_rad": 0.32260748744010925,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.71735382080078,
+        "rotation_rad": 0.029413966462016106,
+        "offaxis_rad": 0.5409325361251831,
+        "axis_deviation_rad": 0.3645681142807007,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.676902770996094,
+        "rotation_rad": -0.030114002525806427,
+        "offaxis_rad": 0.30436310172080994,
+        "axis_deviation_rad": 0.3638557493686676,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.302013397216797,
+        "rotation_rad": 0.027818094938993454,
+        "offaxis_rad": 0.4031440019607544,
+        "axis_deviation_rad": 0.37354549765586853,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.037891387939453,
+        "rotation_rad": 0.011894427239894867,
+        "offaxis_rad": 0.171491801738739,
+        "axis_deviation_rad": 0.2592601478099823,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.757286071777344,
+        "rotation_rad": -0.001051221857778728,
+        "offaxis_rad": 0.46283212304115295,
+        "axis_deviation_rad": 0.3218245208263397,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.237415313720703,
+        "rotation_rad": 0.04074011743068695,
+        "offaxis_rad": 0.1660458892583847,
+        "axis_deviation_rad": 0.2656524181365967,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 79.53421020507812,
+        "rotation_rad": 0.027957161888480186,
+        "offaxis_rad": 0.46736669540405273,
+        "axis_deviation_rad": 0.28037893772125244,
+        "steps": 112,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 81.4823989868164,
+        "rotation_rad": 0.05648598447442055,
+        "offaxis_rad": 0.5427408218383789,
+        "axis_deviation_rad": 0.34920230507850647,
+        "steps": 111,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.740360260009766,
+        "rotation_rad": 0.0151671152561903,
+        "offaxis_rad": 0.42206689715385437,
+        "axis_deviation_rad": 0.3307172954082489,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.589378356933594,
+        "rotation_rad": -0.01650833524763584,
+        "offaxis_rad": 0.3951984643936157,
+        "axis_deviation_rad": 0.24314600229263306,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.413101196289062,
+        "rotation_rad": -0.00823186058551073,
+        "offaxis_rad": 0.36933037638664246,
+        "axis_deviation_rad": 0.24442802369594574,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.810466766357422,
+        "rotation_rad": 0.015717633068561554,
+        "offaxis_rad": 0.5483919978141785,
+        "axis_deviation_rad": 0.276958703994751,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.206123352050781,
+        "rotation_rad": -0.06184815987944603,
+        "offaxis_rad": 0.5624045133590698,
+        "axis_deviation_rad": 0.31302595138549805,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.952899932861328,
+        "rotation_rad": 0.01384222786873579,
+        "offaxis_rad": 0.42999833822250366,
+        "axis_deviation_rad": 0.3142009377479553,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 80.20464324951172,
+        "rotation_rad": 0.06311526894569397,
+        "offaxis_rad": 0.7932863831520081,
+        "axis_deviation_rad": 0.3750927150249481,
+        "steps": 108,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.893131256103516,
+        "rotation_rad": 0.016123224049806595,
+        "offaxis_rad": 0.10245998203754425,
+        "axis_deviation_rad": 0.32077762484550476,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.305187225341797,
+        "rotation_rad": -0.0037372985389083624,
+        "offaxis_rad": 0.3135111927986145,
+        "axis_deviation_rad": 0.28885799646377563,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.954204559326172,
+        "rotation_rad": 0.047655630856752396,
+        "offaxis_rad": 0.38400575518608093,
+        "axis_deviation_rad": 0.3456684648990631,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.161865234375,
+        "rotation_rad": -0.022829441353678703,
+        "offaxis_rad": 0.41227319836616516,
+        "axis_deviation_rad": 0.32061490416526794,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 92.57395935058594,
+        "rotation_rad": 0.03519557788968086,
+        "offaxis_rad": 0.5993775129318237,
+        "axis_deviation_rad": 0.3132663369178772,
+        "steps": 115,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.450878143310547,
+        "rotation_rad": 0.008144797757267952,
+        "offaxis_rad": 0.47714608907699585,
+        "axis_deviation_rad": 0.25112810730934143,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.206771850585938,
+        "rotation_rad": 0.021510200574994087,
+        "offaxis_rad": 0.4182569682598114,
+        "axis_deviation_rad": 0.3324465751647949,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.015918731689453,
+        "rotation_rad": 0.2335839569568634,
+        "offaxis_rad": 0.7295119166374207,
+        "axis_deviation_rad": 0.32645872235298157,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.407459259033203,
+        "rotation_rad": 0.03461176156997681,
+        "offaxis_rad": 0.2298664003610611,
+        "axis_deviation_rad": 0.32175227999687195,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.188312530517578,
+        "rotation_rad": 0.022476300597190857,
+        "offaxis_rad": 0.4522824287414551,
+        "axis_deviation_rad": 0.34016838669776917,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.63330078125,
+        "rotation_rad": -0.008122613653540611,
+        "offaxis_rad": 0.3434520363807678,
+        "axis_deviation_rad": 0.30189529061317444,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.393020629882812,
+        "rotation_rad": -0.008506371639668941,
+        "offaxis_rad": 0.4075465798377991,
+        "axis_deviation_rad": 0.30166375637054443,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.880313873291016,
+        "rotation_rad": 0.05669248849153519,
+        "offaxis_rad": 0.29677441716194153,
+        "axis_deviation_rad": 0.307354599237442,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.97021484375,
+        "rotation_rad": 0.053230948746204376,
+        "offaxis_rad": 0.4232042133808136,
+        "axis_deviation_rad": 0.3621624708175659,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.732952117919922,
+        "rotation_rad": 0.015272071585059166,
+        "offaxis_rad": 0.18464651703834534,
+        "axis_deviation_rad": 0.269192636013031,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.579246520996094,
+        "rotation_rad": 0.02235471084713936,
+        "offaxis_rad": 0.2229018658399582,
+        "axis_deviation_rad": 0.29633936285972595,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.9569091796875,
+        "rotation_rad": 5.9555633924901485e-05,
+        "offaxis_rad": 0.4177713096141815,
+        "axis_deviation_rad": 0.3152981996536255,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.017208099365234,
+        "rotation_rad": -0.01121619064360857,
+        "offaxis_rad": 0.3367169499397278,
+        "axis_deviation_rad": 0.3213871717453003,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 13.019989013671875,
+        "rotation_rad": 0.04212992638349533,
+        "offaxis_rad": 0.5397200584411621,
+        "axis_deviation_rad": 0.33896663784980774,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.549163818359375,
+        "rotation_rad": 0.004408248700201511,
+        "offaxis_rad": 0.6000891327857971,
+        "axis_deviation_rad": 0.3827162981033325,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.242198944091797,
+        "rotation_rad": 0.037885893136262894,
+        "offaxis_rad": 0.6025159358978271,
+        "axis_deviation_rad": 0.3218224048614502,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.424564361572266,
+        "rotation_rad": 0.02763843722641468,
+        "offaxis_rad": 0.36821192502975464,
+        "axis_deviation_rad": 0.30891042947769165,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.78842544555664,
+        "rotation_rad": 0.010828755795955658,
+        "offaxis_rad": 0.3286778926849365,
+        "axis_deviation_rad": 0.356372594833374,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.566810607910156,
+        "rotation_rad": 0.037468913942575455,
+        "offaxis_rad": 0.3187814950942993,
+        "axis_deviation_rad": 0.30154868960380554,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.717174530029297,
+        "rotation_rad": -0.009905761107802391,
+        "offaxis_rad": 0.36369088292121887,
+        "axis_deviation_rad": 0.31736189126968384,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 28.047130584716797,
+        "rotation_rad": -0.03871474787592888,
+        "offaxis_rad": 0.5359168648719788,
+        "axis_deviation_rad": 0.2956615388393402,
+        "steps": 66,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.6192626953125,
+        "rotation_rad": -0.001072644256055355,
+        "offaxis_rad": 0.21087013185024261,
+        "axis_deviation_rad": 0.27959144115448,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 85.19270324707031,
+        "rotation_rad": 0.07152958959341049,
+        "offaxis_rad": 0.6367947459220886,
+        "axis_deviation_rad": 0.31932923197746277,
+        "steps": 119,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.037769317626953,
+        "rotation_rad": -0.0004425579681992531,
+        "offaxis_rad": 0.4475506544113159,
+        "axis_deviation_rad": 0.33951446413993835,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.06805419921875,
+        "rotation_rad": 0.04187680035829544,
+        "offaxis_rad": 0.37327152490615845,
+        "axis_deviation_rad": 0.2914653718471527,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.308086395263672,
+        "rotation_rad": 0.023394279181957245,
+        "offaxis_rad": 0.3390617072582245,
+        "axis_deviation_rad": 0.3239533305168152,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.696922302246094,
+        "rotation_rad": 0.1610315889120102,
+        "offaxis_rad": 0.60923171043396,
+        "axis_deviation_rad": 0.3365912139415741,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.00255584716797,
+        "rotation_rad": -0.010070213116705418,
+        "offaxis_rad": 0.4914129376411438,
+        "axis_deviation_rad": 0.3311730623245239,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.147384643554688,
+        "rotation_rad": -0.005498726386576891,
+        "offaxis_rad": 0.3657052218914032,
+        "axis_deviation_rad": 0.31068533658981323,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 26.416973114013672,
+        "rotation_rad": 0.1273876577615738,
+        "offaxis_rad": 0.5350618958473206,
+        "axis_deviation_rad": 0.36552128195762634,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.952434539794922,
+        "rotation_rad": 0.007882237434387207,
+        "offaxis_rad": 0.3428910970687866,
+        "axis_deviation_rad": 0.2998846173286438,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.716777801513672,
+        "rotation_rad": 0.03303636983036995,
+        "offaxis_rad": 0.41150209307670593,
+        "axis_deviation_rad": 0.3731866478919983,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.013748168945312,
+        "rotation_rad": -0.009280418045818806,
+        "offaxis_rad": 0.18711337447166443,
+        "axis_deviation_rad": 0.33268624544143677,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.69662094116211,
+        "rotation_rad": 0.11949390172958374,
+        "offaxis_rad": 0.7892853021621704,
+        "axis_deviation_rad": 0.33390724658966064,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.679607391357422,
+        "rotation_rad": 0.003943076357245445,
+        "offaxis_rad": 0.5088036060333252,
+        "axis_deviation_rad": 0.2944466769695282,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.360164642333984,
+        "rotation_rad": 0.049486804753541946,
+        "offaxis_rad": 0.44960257411003113,
+        "axis_deviation_rad": 0.3233740031719208,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.390995025634766,
+        "rotation_rad": 0.03911735862493515,
+        "offaxis_rad": 0.4116016626358032,
+        "axis_deviation_rad": 0.30408036708831787,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.69609832763672,
+        "rotation_rad": 0.03607672080397606,
+        "offaxis_rad": 0.49055707454681396,
+        "axis_deviation_rad": 0.31200429797172546,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.16318130493164,
+        "rotation_rad": 0.006089427042752504,
+        "offaxis_rad": 0.2283303439617157,
+        "axis_deviation_rad": 0.29365935921669006,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.69176483154297,
+        "rotation_rad": 0.05354594811797142,
+        "offaxis_rad": 0.5085223317146301,
+        "axis_deviation_rad": 0.3184022605419159,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.63519287109375,
+        "rotation_rad": -0.006335604004561901,
+        "offaxis_rad": 0.5076929330825806,
+        "axis_deviation_rad": 0.25257402658462524,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.83631134033203,
+        "rotation_rad": 0.033269841223955154,
+        "offaxis_rad": 0.2756976783275604,
+        "axis_deviation_rad": 0.35811159014701843,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.73534393310547,
+        "rotation_rad": 0.01848936639726162,
+        "offaxis_rad": 0.35961928963661194,
+        "axis_deviation_rad": 0.3204621970653534,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 17.120952606201172,
+        "rotation_rad": 0.031514108180999756,
+        "offaxis_rad": 0.3568553626537323,
+        "axis_deviation_rad": 0.2961135506629944,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.862762451171875,
+        "rotation_rad": 0.013092216104269028,
+        "offaxis_rad": 0.22385771572589874,
+        "axis_deviation_rad": 0.26267150044441223,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.64053726196289,
+        "rotation_rad": 0.006220297887921333,
+        "offaxis_rad": 0.14799454808235168,
+        "axis_deviation_rad": 0.31367695331573486,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.554611206054688,
+        "rotation_rad": 0.01960228942334652,
+        "offaxis_rad": 0.2920511066913605,
+        "axis_deviation_rad": 0.3318137526512146,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.535953521728516,
+        "rotation_rad": 0.026919646188616753,
+        "offaxis_rad": 0.16628490388393402,
+        "axis_deviation_rad": 0.2790362536907196,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.673431396484375,
+        "rotation_rad": 0.020764121785759926,
+        "offaxis_rad": 0.390264093875885,
+        "axis_deviation_rad": 0.24743269383907318,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.33697509765625,
+        "rotation_rad": -0.00027307006530463696,
+        "offaxis_rad": 0.10447505116462708,
+        "axis_deviation_rad": 0.2690179944038391,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.542251586914062,
+        "rotation_rad": -0.010056204162538052,
+        "offaxis_rad": 0.5405709743499756,
+        "axis_deviation_rad": 0.304912269115448,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.778255462646484,
+        "rotation_rad": 0.0270643662661314,
+        "offaxis_rad": 0.44706884026527405,
+        "axis_deviation_rad": 0.3161540925502777,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 82.69110870361328,
+        "rotation_rad": 0.09245773404836655,
+        "offaxis_rad": 1.183424711227417,
+        "axis_deviation_rad": 0.32388055324554443,
+        "steps": 105,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.717544555664062,
+        "rotation_rad": -0.018809551373124123,
+        "offaxis_rad": 0.345175564289093,
+        "axis_deviation_rad": 0.24737514555454254,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.036598205566406,
+        "rotation_rad": 0.00459041865542531,
+        "offaxis_rad": 0.38873863220214844,
+        "axis_deviation_rad": 0.32411909103393555,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.024024963378906,
+        "rotation_rad": 0.011420752853155136,
+        "offaxis_rad": 0.28701654076576233,
+        "axis_deviation_rad": 0.3267119824886322,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.22945785522461,
+        "rotation_rad": 0.031732574105262756,
+        "offaxis_rad": 0.36043283343315125,
+        "axis_deviation_rad": 0.34300434589385986,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 37.17033386230469,
+        "rotation_rad": 0.014151123352348804,
+        "offaxis_rad": 0.2819928824901581,
+        "axis_deviation_rad": 0.3242822587490082,
+        "steps": 72,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 72.72430419921875,
+        "rotation_rad": -0.016696982085704803,
+        "offaxis_rad": 0.6958023309707642,
+        "axis_deviation_rad": 0.30957651138305664,
+        "steps": 107,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.04775619506836,
+        "rotation_rad": -0.008381224237382412,
+        "offaxis_rad": 0.42807886004447937,
+        "axis_deviation_rad": 0.2912539839744568,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.637470245361328,
+        "rotation_rad": 0.07447052747011185,
+        "offaxis_rad": 0.5456147193908691,
+        "axis_deviation_rad": 0.364993691444397,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 90.87881469726562,
+        "rotation_rad": 0.17604662477970123,
+        "offaxis_rad": 1.2552030086517334,
+        "axis_deviation_rad": 0.3032408654689789,
+        "steps": 116,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.302215576171875,
+        "rotation_rad": 0.053246669471263885,
+        "offaxis_rad": 0.5573071837425232,
+        "axis_deviation_rad": 0.3370172679424286,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 66.00535583496094,
+        "rotation_rad": -0.006956679746508598,
+        "offaxis_rad": 0.6238381266593933,
+        "axis_deviation_rad": 0.30398792028427124,
+        "steps": 95,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.757343292236328,
+        "rotation_rad": 0.025963174179196358,
+        "offaxis_rad": 0.3587568998336792,
+        "axis_deviation_rad": 0.360544353723526,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 60.5374641418457,
+        "rotation_rad": 0.026171095669269562,
+        "offaxis_rad": 0.406808465719223,
+        "axis_deviation_rad": 0.312151163816452,
+        "steps": 88,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.233047485351562,
+        "rotation_rad": -0.0027905269525945187,
+        "offaxis_rad": 0.26540711522102356,
+        "axis_deviation_rad": 0.24835678935050964,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.167739868164062,
+        "rotation_rad": 0.011619982309639454,
+        "offaxis_rad": 0.32296448945999146,
+        "axis_deviation_rad": 0.22885972261428833,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.200122833251953,
+        "rotation_rad": 0.06288759410381317,
+        "offaxis_rad": 0.505008339881897,
+        "axis_deviation_rad": 0.40796273946762085,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 15.103130340576172,
+        "rotation_rad": -0.015334625728428364,
+        "offaxis_rad": 0.3585074543952942,
+        "axis_deviation_rad": 0.30643221735954285,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.68006134033203,
+        "rotation_rad": 0.07737212628126144,
+        "offaxis_rad": 0.36408817768096924,
+        "axis_deviation_rad": 0.33826619386672974,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.33266830444336,
+        "rotation_rad": 0.010523172095417976,
+        "offaxis_rad": 0.42473551630973816,
+        "axis_deviation_rad": 0.2863216698169708,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.11962127685547,
+        "rotation_rad": 0.014452081173658371,
+        "offaxis_rad": 0.09917198121547699,
+        "axis_deviation_rad": 0.30906781554222107,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.910675048828125,
+        "rotation_rad": 0.005473865196108818,
+        "offaxis_rad": 0.42712825536727905,
+        "axis_deviation_rad": 0.35779741406440735,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 69.97407531738281,
+        "rotation_rad": 0.08801630139350891,
+        "offaxis_rad": 0.8207724094390869,
+        "axis_deviation_rad": 0.35615599155426025,
+        "steps": 100,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.769222259521484,
+        "rotation_rad": 0.012736953794956207,
+        "offaxis_rad": 0.301283597946167,
+        "axis_deviation_rad": 0.29378387331962585,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.723514556884766,
+        "rotation_rad": 0.05121386796236038,
+        "offaxis_rad": 0.3823637366294861,
+        "axis_deviation_rad": 0.24833926558494568,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.0107421875,
+        "rotation_rad": 0.11119396239519119,
+        "offaxis_rad": 0.611884593963623,
+        "axis_deviation_rad": 0.33829644322395325,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 86.10371398925781,
+        "rotation_rad": 0.08214892446994781,
+        "offaxis_rad": 0.793546736240387,
+        "axis_deviation_rad": 0.36510083079338074,
+        "steps": 117,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.962024688720703,
+        "rotation_rad": -0.016003210097551346,
+        "offaxis_rad": 0.2260962426662445,
+        "axis_deviation_rad": 0.2896551787853241,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.584762573242188,
+        "rotation_rad": 0.03055000677704811,
+        "offaxis_rad": 0.27858972549438477,
+        "axis_deviation_rad": 0.27470165491104126,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.234146118164062,
+        "rotation_rad": -0.0060923052951693535,
+        "offaxis_rad": 0.27671077847480774,
+        "axis_deviation_rad": 0.2549998462200165,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.86483383178711,
+        "rotation_rad": 0.025983747094869614,
+        "offaxis_rad": 0.4070104956626892,
+        "axis_deviation_rad": 0.293670117855072,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.884681701660156,
+        "rotation_rad": 0.011113591492176056,
+        "offaxis_rad": 0.24315550923347473,
+        "axis_deviation_rad": 0.3254937529563904,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.64257049560547,
+        "rotation_rad": 0.04686208441853523,
+        "offaxis_rad": 0.39303669333457947,
+        "axis_deviation_rad": 0.3923581540584564,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 14.518238067626953,
+        "rotation_rad": 0.04521173611283302,
+        "offaxis_rad": 0.48538848757743835,
+        "axis_deviation_rad": 0.27882272005081177,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.465194702148438,
+        "rotation_rad": 0.10450009256601334,
+        "offaxis_rad": 0.49102744460105896,
+        "axis_deviation_rad": 0.3203546702861786,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.557682037353516,
+        "rotation_rad": 0.044915199279785156,
+        "offaxis_rad": 0.3638298511505127,
+        "axis_deviation_rad": 0.3062419891357422,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 62.46232986450195,
+        "rotation_rad": 0.018683498725295067,
+        "offaxis_rad": 0.4506120979785919,
+        "axis_deviation_rad": 0.35404476523399353,
+        "steps": 91,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.191925048828125,
+        "rotation_rad": 0.048587292432785034,
+        "offaxis_rad": 0.4608581066131592,
+        "axis_deviation_rad": 0.3609941303730011,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 13.34238052368164,
+        "rotation_rad": 0.05499831587076187,
+        "offaxis_rad": 0.3170326352119446,
+        "axis_deviation_rad": 0.3799961805343628,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.634445190429688,
+        "rotation_rad": 0.06534206122159958,
+        "offaxis_rad": 0.3799986243247986,
+        "axis_deviation_rad": 0.33312171697616577,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.754745483398438,
+        "rotation_rad": 0.06391437351703644,
+        "offaxis_rad": 0.5927180051803589,
+        "axis_deviation_rad": 0.3189097046852112,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.05907440185547,
+        "rotation_rad": 0.0023321525659412146,
+        "offaxis_rad": 0.30172818899154663,
+        "axis_deviation_rad": 0.30108121037483215,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.38658905029297,
+        "rotation_rad": 0.034482479095458984,
+        "offaxis_rad": 0.469679057598114,
+        "axis_deviation_rad": 0.34835657477378845,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.659584045410156,
+        "rotation_rad": 0.00579726230353117,
+        "offaxis_rad": 0.26494306325912476,
+        "axis_deviation_rad": 0.32789215445518494,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.78325653076172,
+        "rotation_rad": 0.0662156268954277,
+        "offaxis_rad": 0.4638127386569977,
+        "axis_deviation_rad": 0.27436256408691406,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.005149841308594,
+        "rotation_rad": 0.036096103489398956,
+        "offaxis_rad": 0.3305422067642212,
+        "axis_deviation_rad": 0.30028900504112244,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.62762451171875,
+        "rotation_rad": 0.012962534092366695,
+        "offaxis_rad": 0.3354625403881073,
+        "axis_deviation_rad": 0.3049580752849579,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.609779357910156,
+        "rotation_rad": 0.00010139076039195061,
+        "offaxis_rad": 0.6893501281738281,
+        "axis_deviation_rad": 0.30624887347221375,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.132915496826172,
+        "rotation_rad": 0.050416018813848495,
+        "offaxis_rad": 0.3632090389728546,
+        "axis_deviation_rad": 0.32188600301742554,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 52.72456741333008,
+        "rotation_rad": 0.08134397119283676,
+        "offaxis_rad": 0.6626225113868713,
+        "axis_deviation_rad": 0.37099799513816833,
+        "steps": 84,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 83.93866729736328,
+        "rotation_rad": 0.04132062941789627,
+        "offaxis_rad": 0.6192548871040344,
+        "axis_deviation_rad": 0.35896602272987366,
+        "steps": 109,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.616806030273438,
+        "rotation_rad": -0.001490103080868721,
+        "offaxis_rad": 0.4082429111003876,
+        "axis_deviation_rad": 0.3088909089565277,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 121.30645751953125,
+        "rotation_rad": 0.2247239351272583,
+        "offaxis_rad": 1.3179960250854492,
+        "axis_deviation_rad": 0.3478127121925354,
+        "steps": 140,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.684219360351562,
+        "rotation_rad": -0.027714133262634277,
+        "offaxis_rad": 0.29593610763549805,
+        "axis_deviation_rad": 0.28840214014053345,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 98.14262390136719,
+        "rotation_rad": -0.02457500621676445,
+        "offaxis_rad": 0.6331871747970581,
+        "axis_deviation_rad": 0.25209370255470276,
+        "steps": 119,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 71.4203109741211,
+        "rotation_rad": -0.04869287461042404,
+        "offaxis_rad": 0.8683351278305054,
+        "axis_deviation_rad": 0.25832974910736084,
+        "steps": 112,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.076171875,
+        "rotation_rad": 0.04689909890294075,
+        "offaxis_rad": 0.4897110164165497,
+        "axis_deviation_rad": 0.3327998220920563,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.37908172607422,
+        "rotation_rad": 0.0370507575571537,
+        "offaxis_rad": 0.3001005947589874,
+        "axis_deviation_rad": 0.3506895899772644,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.12090301513672,
+        "rotation_rad": 0.1805698424577713,
+        "offaxis_rad": 0.7718192934989929,
+        "axis_deviation_rad": 0.34108132123947144,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.14234161376953,
+        "rotation_rad": 0.05893677845597267,
+        "offaxis_rad": 0.509174644947052,
+        "axis_deviation_rad": 0.3105335235595703,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.268138885498047,
+        "rotation_rad": 0.012514205649495125,
+        "offaxis_rad": 0.29744771122932434,
+        "axis_deviation_rad": 0.27741846442222595,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.95853042602539,
+        "rotation_rad": 0.06412333250045776,
+        "offaxis_rad": 0.38270771503448486,
+        "axis_deviation_rad": 0.38673824071884155,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.76266860961914,
+        "rotation_rad": 0.01672694832086563,
+        "offaxis_rad": 0.20727358758449554,
+        "axis_deviation_rad": 0.3783281147480011,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.592411041259766,
+        "rotation_rad": 0.015730828046798706,
+        "offaxis_rad": 0.3993329107761383,
+        "axis_deviation_rad": 0.30847668647766113,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.774517059326172,
+        "rotation_rad": 0.014747247099876404,
+        "offaxis_rad": 0.31310003995895386,
+        "axis_deviation_rad": 0.32369720935821533,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.09278106689453,
+        "rotation_rad": 0.05921436846256256,
+        "offaxis_rad": 0.306029349565506,
+        "axis_deviation_rad": 0.2678789496421814,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.86102294921875,
+        "rotation_rad": 0.002954701893031597,
+        "offaxis_rad": 0.23906005918979645,
+        "axis_deviation_rad": 0.22918057441711426,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 10.899993896484375,
+        "rotation_rad": 0.018607618287205696,
+        "offaxis_rad": 0.2912115454673767,
+        "axis_deviation_rad": 0.3061962425708771,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 79.5482406616211,
+        "rotation_rad": 0.05788835510611534,
+        "offaxis_rad": 0.7488321661949158,
+        "axis_deviation_rad": 0.2926945984363556,
+        "steps": 106,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 13.276134490966797,
+        "rotation_rad": -0.03566232696175575,
+        "offaxis_rad": 0.6404601335525513,
+        "axis_deviation_rad": 0.32860904932022095,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.88265609741211,
+        "rotation_rad": -0.010861343704164028,
+        "offaxis_rad": 0.39365774393081665,
+        "axis_deviation_rad": 0.3471547067165375,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.435482025146484,
+        "rotation_rad": 0.029449164867401123,
+        "offaxis_rad": 0.30929502844810486,
+        "axis_deviation_rad": 0.24116787314414978,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.515689849853516,
+        "rotation_rad": -0.03706622123718262,
+        "offaxis_rad": 0.5835513472557068,
+        "axis_deviation_rad": 0.2481120079755783,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.46475601196289,
+        "rotation_rad": 0.0425715297460556,
+        "offaxis_rad": 0.3873669505119324,
+        "axis_deviation_rad": 0.34923771023750305,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.894603729248047,
+        "rotation_rad": 0.011432155966758728,
+        "offaxis_rad": 0.34176281094551086,
+        "axis_deviation_rad": 0.36272987723350525,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 63.567832946777344,
+        "rotation_rad": -0.03802203759551048,
+        "offaxis_rad": 0.886686384677887,
+        "axis_deviation_rad": 0.31850406527519226,
+        "steps": 96,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 16.938953399658203,
+        "rotation_rad": 0.008967203088104725,
+        "offaxis_rad": 0.4065530598163605,
+        "axis_deviation_rad": 0.3468559980392456,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 130.90188598632812,
+        "rotation_rad": 0.12284068763256073,
+        "offaxis_rad": 1.2204283475875854,
+        "axis_deviation_rad": 0.29369163513183594,
+        "steps": 149,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.793514251708984,
+        "rotation_rad": 0.014954328536987305,
+        "offaxis_rad": 0.3788803815841675,
+        "axis_deviation_rad": 0.2937851548194885,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 22.787246704101562,
+        "rotation_rad": 0.00758711900562048,
+        "offaxis_rad": 0.27477550506591797,
+        "axis_deviation_rad": 0.2297629714012146,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.545860290527344,
+        "rotation_rad": 0.023958517238497734,
+        "offaxis_rad": 0.24963776767253876,
+        "axis_deviation_rad": 0.3496590554714203,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.653499603271484,
+        "rotation_rad": -0.007732628379017115,
+        "offaxis_rad": 0.2902956008911133,
+        "axis_deviation_rad": 0.2880878150463104,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.98943328857422,
+        "rotation_rad": 0.0545620396733284,
+        "offaxis_rad": 0.41735947132110596,
+        "axis_deviation_rad": 0.36926186084747314,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.297378540039062,
+        "rotation_rad": -0.022106390446424484,
+        "offaxis_rad": 0.3933522701263428,
+        "axis_deviation_rad": 0.3269990086555481,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.015857696533203,
+        "rotation_rad": 0.01919764280319214,
+        "offaxis_rad": 0.5463340878486633,
+        "axis_deviation_rad": 0.2577458322048187,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.021873474121094,
+        "rotation_rad": -0.01306048035621643,
+        "offaxis_rad": 0.7374047040939331,
+        "axis_deviation_rad": 0.32415762543678284,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.764625549316406,
+        "rotation_rad": 0.050127048045396805,
+        "offaxis_rad": 0.5799119472503662,
+        "axis_deviation_rad": 0.42142370343208313,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.361190795898438,
+        "rotation_rad": 0.01949363946914673,
+        "offaxis_rad": 0.177217036485672,
+        "axis_deviation_rad": 0.28243571519851685,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.849021911621094,
+        "rotation_rad": 0.06724163144826889,
+        "offaxis_rad": 0.4523066282272339,
+        "axis_deviation_rad": 0.3290615379810333,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 42.315799713134766,
+        "rotation_rad": -0.004145493730902672,
+        "offaxis_rad": 0.4773207902908325,
+        "axis_deviation_rad": 0.2657208740711212,
+        "steps": 76,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.07453155517578,
+        "rotation_rad": 0.06932312995195389,
+        "offaxis_rad": 0.547944962978363,
+        "axis_deviation_rad": 0.29056602716445923,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.943084716796875,
+        "rotation_rad": 0.007485647220164537,
+        "offaxis_rad": 0.4131435751914978,
+        "axis_deviation_rad": 0.33603188395500183,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.729480743408203,
+        "rotation_rad": 0.04224560782313347,
+        "offaxis_rad": 0.40018805861473083,
+        "axis_deviation_rad": 0.32438308000564575,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.757110595703125,
+        "rotation_rad": 0.008543944917619228,
+        "offaxis_rad": 0.2009529322385788,
+        "axis_deviation_rad": 0.33263054490089417,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.741832733154297,
+        "rotation_rad": -0.007810181938111782,
+        "offaxis_rad": 0.4452269971370697,
+        "axis_deviation_rad": 0.39189231395721436,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 25.885089874267578,
+        "rotation_rad": 0.013390947133302689,
+        "offaxis_rad": 0.38357430696487427,
+        "axis_deviation_rad": 0.30543598532676697,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.795860290527344,
+        "rotation_rad": 0.007288236171007156,
+        "offaxis_rad": 0.201442688703537,
+        "axis_deviation_rad": 0.2959340214729309,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.583171844482422,
+        "rotation_rad": -0.001988968811929226,
+        "offaxis_rad": 0.6451439261436462,
+        "axis_deviation_rad": 0.2861153483390808,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 54.25175857543945,
+        "rotation_rad": 0.08811894804239273,
+        "offaxis_rad": 0.5379644632339478,
+        "axis_deviation_rad": 0.32827863097190857,
+        "steps": 85,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.963191986083984,
+        "rotation_rad": -0.009077992290258408,
+        "offaxis_rad": 0.2817142605781555,
+        "axis_deviation_rad": 0.33066800236701965,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 73.91973876953125,
+        "rotation_rad": 0.1557491272687912,
+        "offaxis_rad": 0.541204035282135,
+        "axis_deviation_rad": 0.3184520900249481,
+        "steps": 101,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.175113677978516,
+        "rotation_rad": -0.005834881216287613,
+        "offaxis_rad": 0.3614392876625061,
+        "axis_deviation_rad": 0.3625863492488861,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.076221466064453,
+        "rotation_rad": 0.058377720415592194,
+        "offaxis_rad": 0.3780640959739685,
+        "axis_deviation_rad": 0.2840411365032196,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 94.73727416992188,
+        "rotation_rad": -0.0025926826056092978,
+        "offaxis_rad": 0.7704517841339111,
+        "axis_deviation_rad": 0.32682713866233826,
+        "steps": 118,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.09789276123047,
+        "rotation_rad": 0.06350255757570267,
+        "offaxis_rad": 0.3836657702922821,
+        "axis_deviation_rad": 0.3796594440937042,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.40058135986328,
+        "rotation_rad": -0.0023718741722404957,
+        "offaxis_rad": 0.17117124795913696,
+        "axis_deviation_rad": 0.3208320140838623,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 51.759735107421875,
+        "rotation_rad": 0.04786044359207153,
+        "offaxis_rad": 0.6069344878196716,
+        "axis_deviation_rad": 0.39287078380584717,
+        "steps": 89,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 18.169464111328125,
+        "rotation_rad": -0.004954072181135416,
+        "offaxis_rad": 0.2346666306257248,
+        "axis_deviation_rad": 0.29608139395713806,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 24.551403045654297,
+        "rotation_rad": 0.08946018666028976,
+        "offaxis_rad": 0.4248580038547516,
+        "axis_deviation_rad": 0.31487154960632324,
+        "steps": 61,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 20.33941650390625,
+        "rotation_rad": 0.0016567851416766644,
+        "offaxis_rad": 0.2657230794429779,
+        "axis_deviation_rad": 0.3883279263973236,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.871463775634766,
+        "rotation_rad": 0.04573732614517212,
+        "offaxis_rad": 0.29736101627349854,
+        "axis_deviation_rad": 0.2937641441822052,
+        "steps": 60,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 21.78020477294922,
+        "rotation_rad": -0.004860656801611185,
+        "offaxis_rad": 0.35755041241645813,
+        "axis_deviation_rad": 0.32653340697288513,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 68.64436340332031,
+        "rotation_rad": -0.05000770092010498,
+        "offaxis_rad": 0.45994502305984497,
+        "axis_deviation_rad": 0.34646356105804443,
+        "steps": 99,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 53.835792541503906,
+        "rotation_rad": 0.025948813185095787,
+        "offaxis_rad": 0.27968519926071167,
+        "axis_deviation_rad": 0.24478809535503387,
+        "steps": 91,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 23.563705444335938,
+        "rotation_rad": 0.04809139668941498,
+        "offaxis_rad": 0.48247018456459045,
+        "axis_deviation_rad": 0.35421615839004517,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 54.99704360961914,
+        "rotation_rad": 0.005408162251114845,
+        "offaxis_rad": 0.6020942330360413,
+        "axis_deviation_rad": 0.36274024844169617,
+        "steps": 90,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 53.32670593261719,
+        "rotation_rad": -0.015458161011338234,
+        "offaxis_rad": 0.2805345356464386,
+        "axis_deviation_rad": 0.319318562746048,
+        "steps": 87,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 19.24173355102539,
+        "rotation_rad": 0.04859912768006325,
+        "offaxis_rad": 0.432725727558136,
+        "axis_deviation_rad": 0.36989691853523254,
+        "steps": 59,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 73.34596252441406,
+        "rotation_rad": 0.04794212430715561,
+        "offaxis_rad": 0.8149322271347046,
+        "axis_deviation_rad": 0.3028062880039215,
+        "steps": 109,
+        "failure": true,
+        "timeout": false
+      },
+      {
+        "return_raw": 118.71581268310547,
+        "rotation_rad": 0.2242448776960373,
+        "offaxis_rad": 0.9288434386253357,
+        "axis_deviation_rad": 0.3144538104534149,
+        "steps": 133,
+        "failure": true,
+        "timeout": false
+      }
+    ]
+  }
+}

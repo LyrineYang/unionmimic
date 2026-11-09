@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "learning_gain_verified": false,
+  "iterations": 193,
+  "optimizer_steps": 3860,
+  "recollected_policy_iterations": 192,
+  "reward_max_error": 7.62939453125e-06,
+  "seconds": 6783.935087919235,
+  "peak_allocated_gib": 2.366520404815674
+}

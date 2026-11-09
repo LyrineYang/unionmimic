@@ -1,0 +1,5 @@
+{
+  "evaluation": "evaluation-final",
+  "mean_return": 822.6219482421875,
+  "selection": "maximum native mean return on fixed development seed"
+}

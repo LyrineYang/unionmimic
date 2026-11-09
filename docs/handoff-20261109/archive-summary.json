@@ -1,0 +1,16 @@
+{
+  "source_snapshot_commit": "f97878addf0d02e4eb810ed2f0da9a9636b0331b",
+  "scope": "UnionMimic only",
+  "source": {
+    "planned_files": 36658,
+    "planned_bytes": 145687531310,
+    "verified_volume_count": 36,
+    "total_volume_count": 42
+  },
+  "reconciliation": {
+    "state": "pending; user requested GitHub push first"
+  },
+  "full_archives_uploaded_to_github": false,
+  "receiver_verification": "Full server archives await local download; repository material is checked separately",
+  "server_path": "/home/junqiy/projects/unionmimic-handoff-20261109"
+}

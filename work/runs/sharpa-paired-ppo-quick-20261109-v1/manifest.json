@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "envs": 4096,
+    "rollout": 32,
+    "epochs": 5,
+    "minibatches": 4,
+    "lr": 0.001,
+    "clip": 0.2,
+    "entropy": 0.003,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "desired_kl": 0.01,
+    "max_grad": 1.0,
+    "initial_std": 0.7,
+    "min_std": 0.05,
+    "max_std": 1.0
+  },
+  "cli": {
+    "gpu": 3,
+    "run": "/home/junqiy/projects/unionmimic/work/runs/sharpa-paired-ppo-quick-20261109-v1",
+    "iterations": 5,
+    "seed": 20261104,
+    "approved_plan": "/home/junqiy/projects/unionmimic/config/sharpa-paired-ppo-quick-20261109.approved.json"
+  },
+  "started_unix": 1794238704.6705592,
+  "from_scratch": true,
+  "ws_model_used": false,
+  "actor": "730 -> 512/512/256 ELU tanh",
+  "critic": "279 -> 256/128 LN SiLU",
+  "deviations_from_native_ppo": [
+    "SM-matched actor output/critic architecture and privileged features",
+    "validity mask for delayed Isaac resets",
+    "normalizers fixed during rollout/update"
+  ],
+  "sources": {
+    "scripts/pilot_sharpa_ppo.py": "449962399b882b52d018bd570cfb428b739c7d53cf94b83bdb83b43d138e4cae",
+    "unionmimic/ppo_plan.py": "5d4fc68186fe3c5a6b4c0a4f01e6bd4df7b698d22957d7b983415f670f1f0346",
+    "unionmimic/leap_sharpa/paired_ppo.py": "77b1c35de3fa97169e456f36befd323bd5a169e96741bd38cafe7d1f0e00b7a2",
+    "unionmimic/leap_sharpa/model.py": "bf34474bb20fb49ebe8c9387a01726e74cce2742f73f32d989cc5c8b4cd13a16",
+    "unionmimic/online_baseline/simulator.py": "96c445d1bed3efa6ef0ca1dfa861214d26807efdffc90f1fcb9cc7a94ce92789",
+    "work/upstreams/WM-Craftnet/rl_games/common/common_losses.py": "9134b3cea449fd2ab566cf5ed6fcc8951434de228020fd5162cf6beb5cdaf5c2",
+    "work/upstreams/sm-reference-audit/src/in_hand_rotation_mjlab/tasks/hand_cube/config/leap_left_custom/rl_cfg.py": "a5343006680a9eee650c2bd3f3bbb5e566e5165f616210478dad8a76d95bf2bd"
+  },
+  "deadline_unix": 1794245904.6705592,
+  "approved_plan": {
+    "approved_by_user": true,
+    "hours": 2,
+    "recipe": {
+      "envs": 4096,
+      "rollout": 32,
+      "epochs": 5,
+      "minibatches": 4,
+      "lr": 0.001,
+      "clip": 0.2,
+      "entropy": 0.003,
+      "gamma": 0.99,
+      "lam": 0.95,
+      "desired_kl": 0.01,
+      "max_grad": 1.0,
+      "initial_std": 0.7,
+      "min_std": 0.05,
+      "max_std": 1.0
+    },
+    "pilot": "work/runs/sharpa-paired-ppo-operator-20261109-v1",
+    "run": "work/runs/sharpa-paired-ppo-quick-20261109-v1",
+    "method": "PPO-Sim",
+    "task": "Sharpa22/single corner block/z-axis rotation",
+    "paired_sm_run": "work/runs/geometry-sm-baseline-20261109-v1",
+    "seed": 20261104,
+    "development_seed": 20261105,
+    "heldout_seed": 20261120,
+    "starts_untrained": true,
+    "prior_loaded": false,
+    "automatic_resume": false,
+    "task_motion_extension": false,
+    "approval_requirement": "Scoped two-hour comparison authorized; no automatic resume or extension",
+    "approval": "User requested a quick SM/PPO time-to-performance experiment; two-hour bounded comparison, 2026-11-09",
+    "evaluation_elapsed_minutes": [
+      30,
+      60,
+      90
+    ],
+    "comparison": "earliest measured checkpoint matching return, rotation, failure and axis-error profile; report timing brackets and interaction count, without assuming SM is faster",
+    "scope": "quick_sm_ppo_comparison",
+    "authorization_deadline_unix": 1794311095,
+    "historical_sm_run": "work/runs/sharpa-leap-12h-20261103-v1",
+    "comparability_limits": [
+      "Development-only single training seed; historical timings are descriptive.",
+      "Report total wall time and time excluding development evaluation separately.",
+      "No claim that SM beats PPO before results; stopped historical PPO is incomplete."
+    ]
+  }
+}
