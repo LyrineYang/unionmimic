@@ -18,17 +18,25 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--gpu',type=int,required=True);ap.add_argument('--run',required=True)
     ap.add_argument('--iterations',type=int,default=5);ap.add_argument('--seed',type=int,default=20261104)
     ap.add_argument('--approved-plan')
+    ap.add_argument('--spin-sign',type=int,choices=(-1,1),default=1)
     a=ap.parse_args();assert 2<=a.iterations<=20
     plan=None
     if a.approved_plan:
         plan=json.loads(Path(a.approved_plan).read_text())
         validate_plan(plan,RECIPE,a.run,a.seed,time.time(),ROOT)
+        assert plan.get('gpu',a.gpu)==a.gpu,'GPU differs from the approved plan'
+        assert plan.get('spin_sign',1)==a.spin_sign,'Rotation direction differs from the approved plan'
         pilot=ROOT/plan['pilot']
         assert json.loads((pilot/'acceptance.json').read_text())['passed']
-        assert json.loads((pilot/'evaluation.json').read_text())['passed']
+        pilot_eval=json.loads((pilot/'evaluation.json').read_text())
+        assert pilot_eval['passed'] and pilot_eval.get('spin_sign',1)==a.spin_sign
+        if plan.get('verify_operator_sources'):
+            pilot_manifest=json.loads((pilot/'manifest.json').read_text())
+            assert all(file_digest(ROOT/p)==h for p,h in pilot_manifest['sources'].items()),'Operator sources have changed'
+            assert pilot_eval['checkpoint_sha256']==file_digest(pilot/'actor.pt')
     run=Path(a.run).resolve();run.mkdir(parents=True,exist_ok=False);start=time.time();torch.set_num_threads(4)
     deadline=start+(plan['hours']*3600 if plan else 1200)
-    sources=[Path(__file__),ROOT/'unionmimic/ppo_plan.py',ROOT/'unionmimic/leap_sharpa/paired_ppo.py',ROOT/'unionmimic/leap_sharpa/model.py',ROOT/'unionmimic/online_baseline/simulator.py',
+    sources=[Path(__file__),ROOT/'scripts/evaluate_sharpa_leap.py',ROOT/'unionmimic/ppo_plan.py',ROOT/'unionmimic/leap_sharpa/paired_ppo.py',ROOT/'unionmimic/leap_sharpa/model.py',ROOT/'unionmimic/online_baseline/simulator.py',
              ROOT/'work/upstreams/WM-Craftnet/rl_games/common/common_losses.py',
              ROOT/'work/upstreams/sm-reference-audit/src/in_hand_rotation_mjlab/tasks/hand_cube/config/leap_left_custom/rl_cfg.py']
     write_json(run/'manifest.json',dict(recipe=RECIPE,cli=vars(a),started_unix=start,from_scratch=True,ws_model_used=False,
@@ -42,8 +50,12 @@ def main():
     def stopped(*_):raise InterruptedError('User stop; no automatic resume')
     signal.signal(signal.SIGTERM,stopped);signal.signal(signal.SIGINT,stopped)
     try:
-        status('initializing');env,task,cfg=make_simulator(4096,a.gpu,a.seed);device=env.device
+        status('initializing');env,task,cfg=make_simulator(4096,a.gpu,a.seed,spin_sign=a.spin_sign);device=env.device
+        assert bool((env.spin_axis[:,2]==a.spin_sign).all())
+        if plan and plan.get('verify_operator_sources'):torch.manual_seed(a.seed+1)
         actor=Actor(730,22).to(device);critic=Critic(279).to(device);learner=PairedPPO(actor,critic)
+        initial=dict(actor=digest(actor.net),critic=digest(critic.net))
+        write_json(run/'initial.json',initial)
         history=env.obs_buf[:,:73,None].transpose(1,2).expand(-1,10,-1).clone()
         cm=torch.zeros(100,device=device);cs=torch.ones(100,device=device);errors=[];recollected=0
         def collect(warm=False):
@@ -72,7 +84,7 @@ def main():
         def save(path):
             save_checkpoint(path,dict(actor=actor.checkpoint(),critic=critic.state_dict(),optimizer=learner.optimizer.state_dict(),
                 log_std=learner.log_std.detach(),context_mean=cm,context_std=cs,task_constants=task.cfg,iterations=i,
-                exact_simulator_resume=False))
+                exact_simulator_resume=False,spin_sign=a.spin_sign,initial=initial))
         best=-float('inf');last_eval=time.time();last_save=time.time();eval_seconds=0.;valid_total=0
         eval_schedule=list(plan.get('evaluation_elapsed_minutes',[120,240,360,480,600])) if plan else []
         def evaluate(label):

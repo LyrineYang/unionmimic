@@ -1,0 +1,36 @@
+{
+  "approved_by_user": true,
+  "approval": "2026-11-10 user directed debugging first, then four-GPU parallel fast-action/SM comparison",
+  "hours": 1,
+  "gpu": 1,
+  "seed": 20261104,
+  "development_seed": 20261105,
+  "heldout_seed": 20261120,
+  "spin_sign": 1,
+  "run": "work/runs/sharpa-1h-ppo-posz-20261110-v1",
+  "pilot": "work/runs/sharpa-1h-ppo-posz-operator-20261110-v1",
+  "evaluation_elapsed_minutes": [
+    15,
+    30
+  ],
+  "automatic_resume": false,
+  "authorization_deadline_unix": 1794311095,
+  "scope": "quick_sm_ppo_comparison",
+  "recipe": {
+    "envs": 4096,
+    "rollout": 32,
+    "epochs": 5,
+    "minibatches": 4,
+    "lr": 0.001,
+    "clip": 0.2,
+    "entropy": 0.003,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "desired_kl": 0.01,
+    "max_grad": 1.0,
+    "initial_std": 0.7,
+    "min_std": 0.05,
+    "max_std": 1.0
+  },
+  "verify_operator_sources": true
+}

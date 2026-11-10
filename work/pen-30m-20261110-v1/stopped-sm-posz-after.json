@@ -1,0 +1,12 @@
+{
+  "status": "stopped",
+  "phase": "quick_training",
+  "pid": 47895,
+  "gpu": 0,
+  "updated_unix": 1794266806.326366,
+  "started_unix": 1794265963.0462215,
+  "deadline_unix": 1794269563.0462215,
+  "updates": 115,
+  "actor_updates": 55,
+  "error": "InterruptedError('Stop requested; no automatic resume')"
+}

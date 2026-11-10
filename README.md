@@ -72,6 +72,7 @@ This verifies the runtime path. It is **not** a full-episode success rate, a tra
 
 | Read | What it answers |
 | :--- | :--- |
+| [Technical handoff](docs/TECHNICAL_HANDOFF_20261110.md) | How did the design evolve, what has been verified, and where should development resume? |
 | [Mainline](docs/MAINLINE.md) | What is the accepted goal, scope and sequence? |
 | [Insights](docs/INSIGHTS.md) | What can perception and differentiable control share? |
 | [Architecture](docs/ARCHITECTURE.md) | Where do observations, actions and gradients go? |

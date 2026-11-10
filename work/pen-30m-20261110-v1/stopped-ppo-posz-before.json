@@ -1,0 +1,22 @@
+{
+  "status": "running",
+  "pid": 47905,
+  "gpu": 1,
+  "unix": 1794266787.8219213,
+  "policy_loss": -0.011690129525959492,
+  "value_loss": 62.36079788208008,
+  "kl": 0.014179411344230175,
+  "actor_grad": 0.35076579451560974,
+  "critic_grad": 26.10430908203125,
+  "lr": 0.0006666666666666669,
+  "std": 0.7203764915466309,
+  "optimizer_steps": 440,
+  "valid_rows": 130554,
+  "kind": "update",
+  "iteration": 22,
+  "elapsed": 824.7913279533386,
+  "evaluation_seconds": 0.0,
+  "environment_transitions": 3145728,
+  "valid_training_transitions": 2871371,
+  "reward_mean": -0.574282169342041
+}

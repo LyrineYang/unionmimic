@@ -99,6 +99,30 @@ class ReferenceAdaptationTests(unittest.TestCase):
         predicted,_=model(s,torch.zeros(16,22),nc,scale=torch.full((16,1),.2),external_force=actual)
         torch.testing.assert_close(predicted[:,X['external_force']],actual)
 
+    def test_physical_fit_path_preserves_eight_step_loss_and_gradients(self):
+        model,s,sn,c=self.fixture()
+        original=copy.deepcopy(model)
+        command=torch.full((16,22),.2)
+        inputs=dict(scale=torch.full((16,1),.2),external_force=torch.full((16,3),.02))
+        old_state=new_state=s
+        old_loss=new_loss=0.
+        error=PhysicalError()
+        error.fit(s,sn)
+        for _ in range(8):
+            old_state,_=original(old_state,command,original.normalize(c),**inputs)
+            new_state=model.physical_transition(new_state,command,model.normalize(c),**inputs)
+            torch.testing.assert_close(old_state[:,:79],new_state[:,:79],atol=0,rtol=0)
+            torch.testing.assert_close(old_state[:,145:],new_state[:,145:],atol=0,rtol=0)
+            old_loss+=error(old_state,sn).mean()
+            new_loss+=error(new_state,sn).mean()
+        torch.testing.assert_close(original.failure_logit(old_state,original.normalize(c)),
+                                   model.failure_logit(new_state,model.normalize(c)),atol=0,rtol=0)
+        old_loss.backward()
+        new_loss.backward()
+        for old,new in zip(original.physics.parameters(),model.physics.parameters()):
+            torch.testing.assert_close(old.grad,new.grad)
+        self.assertTrue(all(p.grad is None for p in model.sensors.parameters()))
+
     def test_zero_contact_labels_keep_force_loss_and_gradient_finite(self):
         model,s,sn,c=self.fixture();sn[:,94:101]=0
         model.fit_stats(s,sn,c)

@@ -21,7 +21,9 @@ def main():
     started=time.time();torch.set_num_threads(4)
     ck=torch.load(a.checkpoint,map_location='cpu');actor=Actor.from_checkpoint(ck['actor']).to('cuda:%d'%a.gpu).eval()
     assert actor.obs_dim==730 and actor.act_dim==22 and actor.hidden==(512,512,256)
-    env,task,_=make_simulator(512,a.gpu,a.seed);device=env.device
+    spin_sign=ck.get('spin_sign',1)
+    env,task,_=make_simulator(512,a.gpu,a.seed,spin_sign=spin_sign);device=env.device
+    assert bool((env.spin_axis[:,2]==spin_sign).all())
     frame=env.obs_buf[:,:73].clamp(-5,5);history=frame[:,None].expand(-1,10,-1).clone()
     active=torch.ones(512,dtype=torch.bool,device=device);returns=torch.zeros(512,device=device)
     rotations=torch.zeros_like(returns);offaxis=torch.zeros_like(returns);tilts=torch.zeros_like(returns);steps=torch.zeros_like(returns)
@@ -47,7 +49,7 @@ def main():
     result=dict(passed=True,episodes=512,seed=a.seed,protocol='First completed valid policy episode per env, no survivor filtering',
         mean_return=float(returns.mean()),mean_rotation_rad=float(rotations.mean()),failure_rate=float(failed.float().mean()),
         mean_axis_deviation_rad=float((tilts/steps.clamp_min(1)).mean()),reward_max_error=reward_error,
-        seconds=time.time()-started,checkpoint_sha256=file_digest(a.checkpoint),rows=rows)
+        seconds=time.time()-started,checkpoint_sha256=file_digest(a.checkpoint),spin_sign=spin_sign,rows=rows)
     write_json(out,result);print(json.dumps({k:v for k,v in result.items() if k!='rows'}),flush=True)
 
 

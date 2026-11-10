@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checked_unix": 1794265955.0825703,
+  "lanes": {
+    "ppo-negz": {
+      "gpu": 3,
+      "pilot": "work/runs/sharpa-1h-ppo-negz-operator-20261110-v1",
+      "spin_sign": -1,
+      "checkpoint_sha256": "08bddd336a083b1427c46ea4649c38676f59458aa65aa9a10a2ebd2f7518aef4",
+      "reward_max_error": 4.32133674621582e-06,
+      "acceptance_seconds": 173.70098876953125,
+      "evaluation_seconds": 103.05546021461487
+    },
+    "ppo-posz": {
+      "gpu": 1,
+      "pilot": "work/runs/sharpa-1h-ppo-posz-operator-20261110-v1",
+      "spin_sign": 1,
+      "checkpoint_sha256": "e37ce1d460dca30f6df860b6b932070e5b61feae4f2f8cbe2228250db46bf412",
+      "reward_max_error": 3.814697265625e-06,
+      "acceptance_seconds": 170.71629667282104,
+      "evaluation_seconds": 83.03135824203491
+    },
+    "sm-negz": {
+      "gpu": 2,
+      "pilot": "work/runs/sharpa-1h-sm-negz-operator-20261110-v1",
+      "spin_sign": -1,
+      "checkpoint_sha256": "10460fb27125485a6584c319110ff60172e2562751fa9404ce7391c412b3ecf8",
+      "reward_max_error": 3.814697265625e-06,
+      "acceptance_seconds": 116.84015798568726,
+      "evaluation_seconds": 121.7616400718689
+    },
+    "sm-posz": {
+      "gpu": 0,
+      "pilot": "work/runs/sharpa-1h-sm-posz-operator-20261110-v1",
+      "spin_sign": 1,
+      "checkpoint_sha256": "fe8bc57e0827ce0ecb0cd5704d02ec11ca0ad638e875fb13d17058c8934dc84a",
+      "reward_max_error": 3.814697265625e-06,
+      "acceptance_seconds": 119.55899739265442,
+      "evaluation_seconds": 78.20668029785156
+    }
+  }
+}

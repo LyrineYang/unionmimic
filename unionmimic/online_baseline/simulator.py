@@ -38,7 +38,9 @@ class StudyRotation(RealmanSharpaHa4CameraRotation):
         super().pre_physics_step(actions)
 
 
-def make_simulator(nenv, gpu, seed):
+def make_simulator(nenv, gpu, seed, *, spin_sign=1):
+    if spin_sign not in (-1,1):
+        raise ValueError('spin_sign must be -1 or +1')
     torch.cuda.set_device(gpu)
     os.chdir(UPSTREAM)
     # Import registers upstream OmegaConf resolvers, but never constructs a player.
@@ -61,10 +63,13 @@ def make_simulator(nenv, gpu, seed):
     assert env.control_mode=='relative' and env.act_moving_average==.8
     assert not env.camera_policy_enabled and env.wm_adapter is None
     assert env.used_training_objects==['set_obj6_block_corner']
+    env.all_spin_choices.mul_(spin_sign)
     env.study_properties=torch.zeros(nenv,4,device=env.device)
     env.reset_buf[:]=1
     env.step(torch.zeros(nenv,22,device=env.device))
-    return env,task_from_env(env),OmegaConf.to_container(cfg,resolve=True)
+    resolved=OmegaConf.to_container(cfg,resolve=True)
+    if spin_sign==-1:resolved['task']['env']['studySpinSign']=spin_sign
+    return env,task_from_env(env),resolved
 
 
 def task_from_env(env):

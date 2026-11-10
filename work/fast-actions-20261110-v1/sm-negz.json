@@ -1,0 +1,20 @@
+{
+  "approved_by_user": true,
+  "approval": "2026-11-10 user directed debugging first, then four-GPU parallel fast-action/SM comparison",
+  "hours": 1,
+  "gpu": 2,
+  "seed": 20261104,
+  "development_seed": 20261105,
+  "heldout_seed": 20261120,
+  "spin_sign": -1,
+  "run": "work/runs/sharpa-1h-sm-negz-20261110-v1",
+  "pilot": "work/runs/sharpa-1h-sm-negz-operator-20261110-v1",
+  "evaluation_elapsed_minutes": [
+    15,
+    30
+  ],
+  "automatic_resume": false,
+  "authorization_deadline_unix": 1794311095,
+  "scope": "sharpa_action_quick_sm",
+  "model_warmup_rounds": 60
+}

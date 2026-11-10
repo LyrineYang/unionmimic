@@ -1,0 +1,21 @@
+{
+  "stage": "completed",
+  "gpu": 1,
+  "pid": 47455,
+  "unix": 1794268430.451617,
+  "elapsed": 494.59352231025696,
+  "iteration": 78,
+  "actor_updates": 54,
+  "summary": {
+    "reference_single_axis": {
+      "episodes": 128,
+      "mean_return": 15.848839614540339,
+      "success_rate": 0.0,
+      "failures": 128,
+      "completed_with_peak_at_most_50n": 0,
+      "mean_position_error_mm": 14.08749608695507,
+      "mean_shaft_error_deg": 24.78876006603241
+    }
+  },
+  "valid_rows": 131311
+}

@@ -1,0 +1,260 @@
+{
+  "clips": [
+    {
+      "id": "02_continuous_single_axis/clip_001",
+      "file": "02_continuous_single_axis__clip_001.pt",
+      "frames": 960,
+      "mean_keypoint_error_m": 0.011742967180907726,
+      "p95_keypoint_error_m": 0.021061230450868607,
+      "max_joint_speed_rad_s": 10.819138526916504,
+      "retarget_sha256": "3d5d8b837d51a64d3c1f4cec460a342a235f2e8977ba5766552d1fb68d07892b",
+      "selected_parent": "work/motions/sharpa-pen-contact-moving-gpu3"
+    },
+    {
+      "id": "02_continuous_single_axis/clip_002",
+      "file": "02_continuous_single_axis__clip_002.pt",
+      "frames": 658,
+      "mean_keypoint_error_m": 0.009330726228654385,
+      "p95_keypoint_error_m": 0.020813805982470512,
+      "max_joint_speed_rad_s": 9.358301162719727,
+      "retarget_sha256": "f7241402379ea0fd9b8b324b93311dec3bb078832efd289f2bceb26c0f0ef7ef",
+      "selected_parent": "work/motions/sharpa-pen-contact-constant-20261104-v1"
+    },
+    {
+      "id": "02_continuous_single_axis/clip_003",
+      "file": "02_continuous_single_axis__clip_003.pt",
+      "frames": 969,
+      "mean_keypoint_error_m": 0.008829115889966488,
+      "p95_keypoint_error_m": 0.020977383479475975,
+      "max_joint_speed_rad_s": 7.696477890014648,
+      "retarget_sha256": "382e4a69f417c1cf85f2f83fee026282c945c392469e01a2d3fa139baefff89c",
+      "selected_parent": "work/motions/sharpa-pen-contact-constant-20261104-v1"
+    },
+    {
+      "id": "02_continuous_single_axis/clip_004",
+      "file": "02_continuous_single_axis__clip_004.pt",
+      "frames": 846,
+      "mean_keypoint_error_m": 0.00925759319216013,
+      "p95_keypoint_error_m": 0.020894888788461685,
+      "max_joint_speed_rad_s": 6.261473655700684,
+      "retarget_sha256": "3ca672d975c533c5ad9ea03ef0aedba81fd8f0e3dd615cec5218a31e39c28ac6",
+      "selected_parent": "work/motions/sharpa-pen-contact-moving-gpu3"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_001",
+      "file": "03_continuous_multi_axis__clip_001.pt",
+      "frames": 970,
+      "mean_keypoint_error_m": 0.00899418443441391,
+      "p95_keypoint_error_m": 0.01954987831413746,
+      "max_joint_speed_rad_s": 5.426788330078125,
+      "retarget_sha256": "0fa81b0497b4b658b313d3c081fd1cf96dd79c88d0489983e2df737a4cc81494",
+      "selected_parent": "work/motions/sharpa-pen-contact-constant-20261104-v1"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_002",
+      "file": "03_continuous_multi_axis__clip_002.pt",
+      "frames": 767,
+      "mean_keypoint_error_m": 0.009028499014675617,
+      "p95_keypoint_error_m": 0.01937413588166237,
+      "max_joint_speed_rad_s": 6.5023064613342285,
+      "retarget_sha256": "cdb3fd6bea5cdb2a743012f04a2b80714ee78a466bfb99ae19a5d7b86b4d193d",
+      "selected_parent": "work/motions/sharpa-pen-contact-moving-gpu2"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_003",
+      "file": "03_continuous_multi_axis__clip_003.pt",
+      "frames": 1054,
+      "mean_keypoint_error_m": 0.009303262457251549,
+      "p95_keypoint_error_m": 0.019342217594385147,
+      "max_joint_speed_rad_s": 5.447444438934326,
+      "retarget_sha256": "6ad233ec9aee156237c45b351fe37619d0f19a4d98ca18d9380a233df262efa3",
+      "selected_parent": "work/motions/sharpa-pen-contact-moving-gpu3"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_004",
+      "file": "03_continuous_multi_axis__clip_004.pt",
+      "frames": 1192,
+      "mean_keypoint_error_m": 0.009241681545972824,
+      "p95_keypoint_error_m": 0.019309304654598236,
+      "max_joint_speed_rad_s": 6.259134292602539,
+      "retarget_sha256": "3a06b38cf280209bf0050c19db7fba9163cd5a21d26d06e542abf47ef3275699",
+      "selected_parent": "work/motions/sharpa-pen-contact-moving-gpu3"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_005",
+      "file": "03_continuous_multi_axis__clip_005.pt",
+      "frames": 960,
+      "mean_keypoint_error_m": 0.00937644112855196,
+      "p95_keypoint_error_m": 0.019847210496664047,
+      "max_joint_speed_rad_s": 5.250363826751709,
+      "retarget_sha256": "38784de675bb4697e74c961be4b0e3120808a7b671f63cb4e8764f037f77bc6b",
+      "selected_parent": "work/motions/sharpa-pen-contact-constant-20261104-v1"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_006",
+      "file": "03_continuous_multi_axis__clip_006.pt",
+      "frames": 973,
+      "mean_keypoint_error_m": 0.008907665498554707,
+      "p95_keypoint_error_m": 0.01943015120923519,
+      "max_joint_speed_rad_s": 6.183531761169434,
+      "retarget_sha256": "dd0a90ed703ba62bc6d8aae7a696586f55baacbc2295e41e08469f8c1b201ac9",
+      "selected_parent": "work/motions/sharpa-pen-contact-constant-20261104-v1"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_007",
+      "file": "03_continuous_multi_axis__clip_007.pt",
+      "frames": 1016,
+      "mean_keypoint_error_m": 0.009195836260914803,
+      "p95_keypoint_error_m": 0.020087238401174545,
+      "max_joint_speed_rad_s": 7.965139865875244,
+      "retarget_sha256": "717e886e628ea209671f0fa94f8c082132882ff489b638f33d9be5789f5cbce3",
+      "selected_parent": "work/motions/sharpa-pen-contact-constant-20261104-v1"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_008",
+      "file": "03_continuous_multi_axis__clip_008.pt",
+      "frames": 996,
+      "mean_keypoint_error_m": 0.008866812102496624,
+      "p95_keypoint_error_m": 0.020064227283000946,
+      "max_joint_speed_rad_s": 13.669538497924805,
+      "retarget_sha256": "edfbd3c59f30e2418929defc89d6b6b722a0210370d8e29aefb8a439837ef47d",
+      "selected_parent": "work/motions/sharpa-pen-contact-constant-20261104-v1"
+    },
+    {
+      "id": "03_continuous_multi_axis/clip_009",
+      "file": "03_continuous_multi_axis__clip_009.pt",
+      "frames": 990,
+      "mean_keypoint_error_m": 0.009135150350630283,
+      "p95_keypoint_error_m": 0.019723938778042793,
+      "max_joint_speed_rad_s": 6.9944915771484375,
+      "retarget_sha256": "8a3d73d654dbdf85667a3be06166211c94f8bc8d3f74b576abef7d5b476e0a1b",
+      "selected_parent": "work/motions/sharpa-pen-contact-moving-gpu3"
+    }
+  ],
+  "joint_names": [
+    "right_index_MCP_FE",
+    "right_index_MCP_AA",
+    "right_index_PIP",
+    "right_index_DIP",
+    "right_middle_MCP_FE",
+    "right_middle_MCP_AA",
+    "right_middle_PIP",
+    "right_middle_DIP",
+    "right_pinky_CMC",
+    "right_pinky_MCP_FE",
+    "right_pinky_MCP_AA",
+    "right_pinky_PIP",
+    "right_pinky_DIP",
+    "right_ring_MCP_FE",
+    "right_ring_MCP_AA",
+    "right_ring_PIP",
+    "right_ring_DIP",
+    "right_thumb_CMC_FE",
+    "right_thumb_CMC_AA",
+    "right_thumb_MCP_FE",
+    "right_thumb_MCP_AA",
+    "right_thumb_IP"
+  ],
+  "urdf_sha256": "78ab1b670d547bdfbc277e3357a8f8b4717c9faf9989cd0cafe5879779386ee0",
+  "rotation_row": [
+    [
+      -0.021091675385832787,
+      0.9930256605148315,
+      -0.11600059270858765
+    ],
+    [
+      0.995442271232605,
+      0.010064899921417236,
+      -0.09483127295970917
+    ],
+    [
+      -0.09300225973129272,
+      -0.11747206002473831,
+      -0.9887117743492126
+    ]
+  ],
+  "translation": [
+    -0.005201410967856646,
+    0.0013570471201092005,
+    -0.01678164303302765
+  ],
+  "anchor_alignment_rmse_m": 0.006632003467530012,
+  "geometry_only": true,
+  "physics_verified": false,
+  "limits_satisfied": true,
+  "seconds": 29.61006474494934,
+  "selection": {
+    "development_seed": 20261107,
+    "criterion": "per clip maximize min(hold,moving) acceptable count, then total; all 13 clips retained",
+    "choices": [
+      2,
+      0,
+      0,
+      2,
+      0,
+      1,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    "parent_manifests": {
+      "work/motions/sharpa-pen-contact-constant-20261104-v1": "6c0f97b39f918846b3fb560449802c397c8149994a994e3e0f8cdfbe19c2d53a",
+      "work/motions/sharpa-pen-contact-moving-gpu2": "201b97c455cb2229e08fe91d78113d907c1300bc65d522060af1635d24d580ad",
+      "work/motions/sharpa-pen-contact-moving-gpu3": "472c28f03b3532babb1e7062851b6d55e4a89ad322deced00987bd57f38d2a36"
+    },
+    "development_acceptance_counts": [
+      201,
+      199
+    ],
+    "development_n": 208,
+    "heldout_seeds": [
+      20261161,
+      20261162
+    ],
+    "time_warp": false
+  },
+  "quick_lead_calibration": {
+    "clips": [
+      0,
+      2,
+      6,
+      7
+    ],
+    "seed": 20261245,
+    "parent_manifest_sha256": "8cd94be8e1f435679db66a24d25c9987f642899d7a1ebd8c076f51a627c6ae79",
+    "trials": [
+      {
+        "failed": [
+          0,
+          1,
+          2,
+          1
+        ],
+        "peak_force_n": [
+          22.44244384765625,
+          1223.13037109375,
+          2139.07421875,
+          79.23735046386719
+        ]
+      },
+      {
+        "failed": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "peak_force_n": [
+          11.685098648071289,
+          33.8614387512207,
+          59.08266067504883,
+          11.429464340209961
+        ]
+      }
+    ]
+  }
+}

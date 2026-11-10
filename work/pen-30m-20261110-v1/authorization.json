@@ -1,0 +1,63 @@
+{
+  "user_authorized": true,
+  "scope": "bounded_first_frame_pen_prototype",
+  "started_unix": 1794266845.4338672,
+  "deadline_unix": 1794268645.4338672,
+  "budget_seconds": 1800,
+  "includes_physics_gate_training_and_evaluation": true,
+  "original_full_gate_unchanged": true,
+  "auto_resume": false,
+  "retarget": "work/motions/sharpa-pen-reference-selected-20261104-v1",
+  "physics_seeds": [
+    20261240,
+    20261241
+  ],
+  "training_seed": 20261242,
+  "evaluation_seed": 20261243,
+  "retarget_candidates": {
+    "selected": "work/motions/sharpa-pen-reference-selected-20261104-v1",
+    "robust": "work/motions/sharpa-pen-robust-reset-20261109-v3",
+    "calibrated": "work/pen-30m-20261110-v1/calibrated-retarget",
+    "calibrated-alt": "work/pen-30m-20261110-v1/calibrated-alt-retarget",
+    "fine": "work/pen-30m-20261110-v1/fine-retarget",
+    "fine-alt": "work/pen-30m-20261110-v1/fine-alt-retarget",
+    "segment": "work/pen-30m-20261110-v1/segment-retarget",
+    "soft-depen": "work/pen-30m-20261110-v1/calibrated-retarget",
+    "medium-depen": "work/pen-30m-20261110-v1/calibrated-retarget",
+    "velocity-depen": "work/pen-30m-20261110-v1/calibrated-retarget",
+    "low-mid-depen": "work/pen-30m-20261110-v1/calibrated-retarget",
+    "upper-mid-depen": "work/pen-30m-20261110-v1/calibrated-retarget",
+    "high-depen": "work/pen-30m-20261110-v1/calibrated-retarget",
+    "fixed-grip-125": "work/pen-30m-20261110-v1/calibrated-retarget",
+    "fixed-grip-175": "work/pen-30m-20261110-v1/calibrated-retarget"
+  },
+  "candidate_gate": "Two held-out seeds, at least 29/32 episodes sustain the 1 s hold plus first 1 s of motion with no failure and peak <=50N; FK <1e-4 m",
+  "qualification_scope": "Whole single clip or original-speed 5 s segment, first-frame only; report scope separately. Full-duration random-phase acceptance unchanged.",
+  "numerics_by_candidate": {
+    "soft-depen": {
+      "max_depenetration_velocity": 0.25
+    },
+    "medium-depen": {
+      "max_depenetration_velocity": 1.0
+    },
+    "velocity-depen": {
+      "max_depenetration_velocity": 0.5,
+      "num_velocity_iterations": 4
+    },
+    "low-mid-depen": {
+      "max_depenetration_velocity": 0.75
+    },
+    "upper-mid-depen": {
+      "max_depenetration_velocity": 1.5
+    },
+    "high-depen": {
+      "max_depenetration_velocity": 2.0
+    },
+    "fixed-grip-125": {
+      "fixed_friction_scale": 1.25
+    },
+    "fixed-grip-175": {
+      "fixed_friction_scale": 1.75
+    }
+  }
+}

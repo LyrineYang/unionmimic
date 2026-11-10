@@ -1,0 +1,14 @@
+{
+  "status": "running",
+  "phase": "quick_training",
+  "pid": 47895,
+  "gpu": 0,
+  "updated_unix": 1794266769.0864515,
+  "started_unix": 1794265963.0462215,
+  "deadline_unix": 1794269563.0462215,
+  "updates": 110,
+  "actor_updates": 50,
+  "model_updates": 1100,
+  "critic_optimizer_steps": 1000,
+  "valid_rows": 1375468
+}

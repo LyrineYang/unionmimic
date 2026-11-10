@@ -27,6 +27,9 @@ def constants(env):
 
 
 class PenModel(SharpaModel):
+    def physical_transition(self,s,command,c,*,scale,external_force):
+        return self(s,command,c,scale=scale,external_force=external_force)[0]
+
     def __init__(self,cfg,tasks):
         super().__init__(cfg);self.tasks=tasks
         self.controller=ResidualCommand(cfg['lower'],cfg['upper'])

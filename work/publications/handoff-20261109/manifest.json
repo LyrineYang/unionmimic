@@ -9,33 +9,33 @@
     },
     {
       "path": "README.md",
-      "size": 8487,
-      "sha256": "ff26765c9a19a19dc73a83c30f55b57ed684763b60a5ef7771f2cead3cf204bd"
+      "size": 8637,
+      "sha256": "848bcb576da88593ae90d8c59449c09cc7d26d23100d4d4d53d7283385003568"
     },
     {
       "path": "docs/GEOMETRY_AND_DEMO_BACKUP_20261109.md",
-      "size": 8512,
-      "sha256": "56b6ec5122938b3e1b8bf0ac40e8b8a728b9f8649e147770fbc2254ca6ecd695"
+      "size": 8625,
+      "sha256": "4707c45d61e8cb42d1a0dc9e50bcc890d20ab2a498c52c92d9a51e12ee5321f8"
     },
     {
       "path": "docs/MAINLINE.md",
-      "size": 18215,
-      "sha256": "a64a0118281edaea2aa261a3cf890de8fdf756222b6765e40ae04722b51b7e0e"
+      "size": 19043,
+      "sha256": "4e5cfc30dea1d1087f2e90b081a4ad05e78c97561740b0192efa162b51e421e8"
     },
     {
       "path": "docs/SM_PPO_VALIDATION_20261109.md",
-      "size": 7803,
-      "sha256": "5891e50e7f66e2f7bb48dde9f744b7324d33ee69feff40265299538f872cfc0d"
+      "size": 16845,
+      "sha256": "aa3d3989ff424386410b57382eb15a977c3b3f2d8b1a1f4207518fd2aa474131"
     },
     {
       "path": "docs/STATUS.md",
-      "size": 22602,
-      "sha256": "0def2e1d24e006b16d059aa94480e0696d0f949539aed23449bf67ed1695717c"
+      "size": 22759,
+      "sha256": "99176534288fb39770c9874fc41c594e22ad9b27a77fff9eaf61988f1af4615e"
     },
     {
       "path": "docs/TRAINING.md",
-      "size": 33548,
-      "sha256": "8278aaf385822ab722396d5db8c272dc15133d2d88550b57debd7abeb6641537"
+      "size": 34179,
+      "sha256": "83905ff3a0cc9a4dc329bf497b6092d2543a76d0fa4d19fec129d26645a3a13f"
     },
     {
       "path": "docs/handoff-20261109/README.md",

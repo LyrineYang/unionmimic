@@ -161,8 +161,15 @@ def make_pen_simulator(nenv,gpu,seed,retarget,render=False,fixed_phase=None,phys
     raw['env']['relScale']=.5
     raw['env']['actionsMovingAverage']=.5
     if physics_numerics:
-        assert set(physics_numerics)<= {'max_depenetration_velocity','num_velocity_iterations'}
-        raw['sim']['physx'].update(physics_numerics)
+        options=dict(physics_numerics)
+        fixed_friction=options.pop('fixed_friction_scale',None)
+        assert set(options)<= {'max_depenetration_velocity','num_velocity_iterations'}
+        raw['sim']['physx'].update(options)
+        if fixed_friction is not None:
+            friction=raw['env']['frictionRandomization']
+            lower,upper=friction['scale_range']
+            assert lower<=fixed_friction<=upper
+            friction['scale_range']=[fixed_friction,fixed_friction]
     if tasks.manifest.get('pen_limits')=='hardware_90pct':
         raw['env']['trainLimit']={'global_scale':.9,'unilateral_override_deg':{}}
     if 'gravityCurriculum' in raw['env']:raw['env']['gravityCurriculum']['enabled']=False

@@ -73,18 +73,27 @@ class SharpaModel(nn.Module):
         for data,prefix in [(self.sensor_features(s,sn,nc),'sensor'),(sn[:,79:145],'y'),(self.failure_features(sn,nc),'term')]:
             getattr(self,prefix+'_mu').copy_(data.mean(0));getattr(self,prefix+'_sd').copy_(data.std(0).clamp_min(1e-4))
 
-    def forward(self,s,command,c,scale=None,external_force=None):
+    def _physics_step(self,s,command,c,scale,external_force):
         if scale is None:scale=self.constants['relative_scale']*(1+(torch.rand(len(s),1,device=s.device)-.5)*.1)
         target,action=self.controller(s[:,L['cmd']],command,s[:,X['action']],scale)
         force=self.next_force(s,c) if external_force is None else external_force
         core,_=self.physics(s[:,:79],target,self.physics_context(s,c,force))
-        pred=self.sensor_raw(s,core,c,force);aux=pred*self.y_sd+self.y_mu
-        aux=torch.cat((aux[:,:15],nn.functional.softplus(pred[:,15:22])*2,aux[:,22:],force),-1)
         raw=self.raw_context(c)
         # Core angular velocity is in fixed hand coordinates; task axis is world-frame.
         omega=qrotate(raw[:,96:100],core[:,L['w']])
         stall=torch.where((omega*raw[:,C['axis']]).sum(-1,keepdim=True).abs()<self.constants['stall_speed'],
                           s[:,X['stall']]+1,torch.zeros_like(s[:,X['stall']]))
+        return core,action,force,stall
+
+    def physical_transition(self,s,command,c,*,scale,external_force):
+        """Advance the fields read by physics and failure supervision during fitting."""
+        core,action,force,stall=self._physics_step(s,command,c,scale,external_force)
+        return torch.cat((core,s[:,79:145],force,action,s[:,X['last_contact']],stall,s[:,X['progress']]+1),-1)
+
+    def forward(self,s,command,c,scale=None,external_force=None):
+        core,action,force,stall=self._physics_step(s,command,c,scale,external_force)
+        pred=self.sensor_raw(s,core,c,force);aux=pred*self.y_sd+self.y_mu
+        aux=torch.cat((aux[:,:15],nn.functional.softplus(pred[:,15:22])*2,aux[:,22:],force),-1)
         nxt=torch.cat((core,aux,action,s[:,X['last_contact']],stall,s[:,X['progress']]+1),-1)
         return nxt,self.failure_logit(nxt,c)
 

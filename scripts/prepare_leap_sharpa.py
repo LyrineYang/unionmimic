@@ -31,18 +31,17 @@ def main():
     source=(UP/'scripts/wm/train_yaw.py').read_text()
     fit=source[source.index('      # 1. world model'):source.index('      if n_up <= args.wm_only:')]
     fit=replace(fit,'sh, _ = wm(sh, cmap(sh[..., wm.S["cmd"]], acts[j], sh[..., wm.S["q"]]), c)',
-                'sh, _ = wm(sh, acts[j], c, scale=replay.plant[(g+j)%replay.L,e], external_force=snx[j,:,145:148])')
+                'sh = wm.physical_transition(sh, acts[j], c, scale=replay.plant[(g+j)%replay.L,e], external_force=snx[j,:,145:148])')
     a=fit.index('        term = (replay.done == 1).nonzero()');b=fit.index('        s1, a1, n1, c1',a)
     fit=fit[:a]+'        rr, ee = replay.failure_rows(args.wm_batch)\n'+fit[b:]
     fit=replace(fit,'cmd1 = cmap(s1[..., wm.S["cmd"]], a1, s1[..., wm.S["q"]])','cmd1 = a1')
-    fit=replace(fit,'p1, _ = wm(s1, cmd1, c1)','p1, _ = wm(s1, cmd1, c1, scale=replay.plant[rr,ee], external_force=n1[:,145:148])')
+    fit=replace(fit,'p1, _ = wm(s1, cmd1, c1)','p1 = wm.physical_transition(s1, cmd1, c1, scale=replay.plant[rr,ee], external_force=n1[:,145:148])')
     fit=replace(fit,'wm.term((wm._term_feat(p1) - wm.t_mu) / wm.t_sd).squeeze(-1)','wm.failure_logit(p1, c1)')
     fit=replace(fit,'(aux(task.aux_features(n1, cmd1, c1)).squeeze(-1) - replay.rew[rr, ee][:, 3:5].sum(-1) / aux_sd).pow(2).mean()',
                 'wm.sensor_loss(s1, n1, c1)')
     fit=replace(fit,'list(wm.parameters()) + list(aux.parameters())','list(wm.parameters())')
     fit=replace(fit,'        opt_wm.step()',
-                '        assert torch.isfinite(ld+lt+la), "Nonfinite model objective"\n'
-                '        assert all(torch.isfinite(p.grad).all() for p in wm.parameters() if p.grad is not None), "Nonfinite model gradient"\n'
+                '        assert torch.isfinite(ld+lt+la) & torch.stack([torch.isfinite(p.grad).all() for p in wm.parameters() if p.grad is not None]).all(), "Nonfinite model update"\n'
                 '        opt_wm.step()')
     actor=source[source.index('      # 2. actor through imagination'):source.index('      hist.append(st)',source.index('      # 2. actor through imagination'))]
     actor=replace(actor,'set_grad([wm, aux],','set_grad([wm],')
@@ -58,7 +57,7 @@ def main():
     actor=replace(actor,'      if ok:\n        opt_pi.step()',
                   '      assert ok and torch.isfinite(loss_pi) and torch.isfinite(gn), "Nonfinite actor update"\n      opt_pi.step()')
     actor=replace(actor,'          opt_v.step()',
-                  '          assert torch.isfinite(l) and all(torch.isfinite(p.grad).all() for p in critic.parameters() if p.grad is not None), "Nonfinite critic update"\n          opt_v.step()')
+                  '          assert torch.isfinite(l) & torch.stack([torch.isfinite(p.grad).all() for p in critic.parameters() if p.grad is not None]).all(), "Nonfinite critic update"\n          opt_v.step()')
     def wrap(name,args,body):
         # Original inner block has six spaces; function body has two.
         return '\ndef '+name+'('+args+'):\n  st = {}\n'+''.join(line[4:]+'\n' for line in body.splitlines())+'  return st\n'
